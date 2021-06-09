@@ -14,6 +14,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    if: "!contains(github.event.head_commit.message, '[--skip build]')"
+
     strategy:
       matrix:
         node-version: [14.15.1]
@@ -27,4 +29,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build
+    - run: git branch 
+    - run: git add -A
+    - run: git commit -m 'build htmls -- skip build'
+    # - run: git push origin
     - run: ls -al
