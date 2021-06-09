@@ -19,7 +19,6 @@ jobs:
     strategy:
       matrix:
         node-version: [14.15.1]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v2
@@ -29,7 +28,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: git branch 
     
     - uses: EndBug/add-and-commit@v7
       with:
