@@ -13,6 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'SKIP-BUILD')"
 
     strategy:
       matrix:
@@ -27,3 +28,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm run build
+
+    - uses: EndBug/add-and-commit@v7
+        with:
+          message: 'BUILD HTML;; --SKIP-BUILD'
