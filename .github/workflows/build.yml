@@ -23,14 +23,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    
+    - name: Build Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm run build
     - run: git branch 
-    - run: git add -A
-    - run: git commit -m 'build htmls -- skip build'
-    # - run: git push origin
-    - run: ls -al
+    
+    - name: ADD and COMMIT
+    - uses: EndBug/add-and-commit@v7
+      with:
+        add: '.'
+        author_name: github_actor
+        author_email: platform@ilark.co.kr
+        default_author: github_actor
+        message: 'BUILD HTMLS -- skip build'
+        push: true
