@@ -1,0 +1,51 @@
+@media (min-width: 768px) {
+    .favsymbol, .symbol__back, .curation__back, .symbol__wrapper{width: 768px !important;}
+/*    .curation__back{height: 40% !important;}*/
+    .symbol__img{margin-top: -40% !important;}
+}
+
+
+/**Main-Symbol*********/
+.favsymbol{height: 100vh; }
+.symbol__wrapper{position: relative; background: #F6F5E8; width: 100vw; height: 100vh; min-width: 320px;}
+.symbol__back{position: absolute; bottom: 0; left: 0; width: 100%; height: 60%; padding:0 32px; background: #001E01; box-sizing: border-box;}
+.symbol__img{margin-top: -45%; width: 100%;}
+.symbol__img > img{width: 100%; margin: 0 auto;}
+.symbol__info{margin-top: 56px; width: 100%; color: #F6F5E8;}
+.symbol__info--title{font-size: 1.7em; font-weight: bold; line-height: 1.4em; margin-bottom: 20px;}
+.symbol__info--desc{font-weight: 200; }
+.symbol__info--btn{position: absolute; bottom: 56px; }
+
+
+/**Main-Curation*********/
+.curation__back{position: absolute; top: 280px; left: 0; width: 100%; height: 22%; padding:0 32px; background: #001E01; box-sizing: border-box;}
+.curation__info{width: calc(100% - 64px); color: #111; position: absolute; left: 32px; bottom: 56px;}
+.curation__info--title{font-size: 2.2em; font-weight: bold; line-height: 1.4em; margin-bottom: 20px;}
+
+
+/**Main-Featd*********/
+.featd{padding: 16px;}
+.featd__recommend{margin-top: 32px;}
+.featd__bestseller{margin-top: 16px;}
+.featd__taste{margin-top: 56px;}
+.featd--title{font-weight: bold; font-size: 2.0em; margin-bottom: 6px;}
+.featd--title__taste{font-weight: bold; font-size: 2.2em; line-height: 1.1em; margin-bottom: 32px;}
+.featd--desc{display: block; margin-bottom: 20px;}
+.featd--img{display: block; }
+.featd--img > img{width: 100%; }
+
+
+/**Prd list*********/
+.ctgr-title{font-size: 1.4em; font-weight: 200; text-align: center; margin: 32px 0;}
+.ctgr__filter{padding:0 16px; text-align: right;}
+.filter-align{position: relative; padding: 4px 20px 4px 12px; font-size: 0.9em; color: #707070; background: #FFF; border: none; background: url(../images/ic-fold-down.svg) right 2px no-repeat; background-size: 16px; }
+.filter-align:focus{outline: none;}
+.ctgr__tag-swiper{margin-left: 16px; width: 100%; overflow: hidden;}
+.ctgr-tagwrap{width: 1000px; height: 100%; display: flex; flex-wrap: wrap;}
+.ctgr-tagwrap > li{display: inline-block; margin-right: 8px;}
+.ctgr-tagwrap > li > .tag{display: inline-block; padding: 4px 10px; background: #FFF; border: 1px solid #EAEAEA; }
+.ctgr-tagwrap > li > .click{display: inline-block; padding: 4px 10px; background: #245217; color: #FFF;}
+.ctgr__list{padding: 0 16px; box-sizing: border-box;}
+.list__header{margin-top: 40px; display: flex; justify-content: space-between; align-items: flex-end;}
+.list__header > a{display: inline-block; font-size: 0.9em; color: #999;}
+.list-title{font-size: 2.0em; line-height: 1;}
