@@ -1,2 +1,2 @@
-demo: https://ilark-platform.github.io/daab_publisher/
-dev: npm run serve
+- demo: https://ilark-platform.github.io/daab_publisher/
+- dev: npm run serve
