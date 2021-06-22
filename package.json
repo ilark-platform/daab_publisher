@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node index.js"
+    "build": "node index.js",
+    "serve": "npx http-server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/seunghaekim-ilark/orfeo_publisher#readme",
   "dependencies": {
     "dayjs": "^1.10.4",
+    "http-server": "^0.12.3",
     "jsdom": "^16.5.3"
   }
 }
