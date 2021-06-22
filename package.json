@@ -21,7 +21,9 @@
   "homepage": "https://github.com/seunghaekim-ilark/orfeo_publisher#readme",
   "dependencies": {
     "dayjs": "^1.10.4",
+    "gitlog": "^4.0.4",
     "http-server": "^0.12.3",
-    "jsdom": "^16.5.3"
+    "jsdom": "^16.5.3",
+    "lodash": "^4.17.21"
   }
 }
