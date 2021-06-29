@@ -5,7 +5,7 @@
     
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
-<!--    <link rel="stylesheet" href="css/prd.css">-->
+    <link rel="stylesheet" href="css/prd.css">
     <link rel="stylesheet" href="css/option.css">
     <link rel="stylesheet" href="css/slider.css">
     
@@ -182,8 +182,31 @@
                     </div>
                 </div>
             </div>
+            <!--옵션선택안함으로 퉁치는 방법-->
             <div class="option--wrap">
                 <div class="option--box switch">
+                    <div class="option--name">부가상품</div>
+                    <!--<div class="option--selected">
+                        <div class="option--detail">
+                            <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                            <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="option--expand">
+                    <ul>
+                        <li> <span class="detail-thumbnail"></span>
+                            <span class="detail-text">옵션 선택안함</span></li>
+                        <li> <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                            <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span></li>
+                        <li> <span class="detail-thumbnail"><img src="images/prd_img_5.png" alt=""></span>
+                            <span class="detail-text">TREE</span><span class="detail-price">20,000원/월</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--토글스위치 지우고 삭제 버튼 넣는 방법-->
+            <div class="option--wrap">
+                <div class="option--box nopadding">
                     <div class="option--name">부가상품</div>
                     <div class="option--selected">
                         <div class="option--detail">
@@ -191,14 +214,7 @@
                             <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span>
                         </div>
                     </div>
-                </div>
-                <div class="option--expand">
-                    <ul>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span></li>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_5.png" alt=""></span>
-                            <span class="detail-text">TREE</span><span class="detail-price">20,000원/월</span></li>
-                    </ul>
+                    <button class="selected-item-del">삭제</button>
                 </div>
             </div>
         </div>
