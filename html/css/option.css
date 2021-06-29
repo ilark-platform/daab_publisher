@@ -13,8 +13,8 @@
 .noswitch{padding: 0 16px !important;}
 
 /**option--box**/
-.option--name{display: inline-block; min-width: 64px; font-weight: 200;}
-.option--selected{display: flex; justify-content: flex-end; align-items: center; text-align: right;}
+.option--name{display: inline-block; min-width: 68px; font-weight: 200;}
+.option--selected{display: flex; justify-content: flex-end; align-items: center; text-align: right; max-width: 80%}
 .option--detail{display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .detail-thumbnail{display: inline-block; width: 40px; height: 40px; margin-right: 4px; vertical-align: middle;}
 .detail-thumbnail > img{width: 100%;}
@@ -27,7 +27,7 @@
 .option--del-row{display: flex; justify-content: space-between; align-items: center; padding: 0; width: 100%; height: 50px; box-sizing: border-box; background: #FFF;}
 .selected-item{display: flex; align-items: center; height: 40px;}
 .selected-item > .option-thumb{display: inline-block; width: 40px; height: 40px; background: url(../images/subordin.svg) no-repeat; background-size: contain;}
-.selected-item-del{margin: 0 16px; background:#FFF; width: 40px; border: 0; font-size: 0.9em; color: #707070;}
+.selected-item-del{margin: 0 16px 0 8px; background:#FFF; width: 40px; border: 0; font-size: 0.9em; color: #707070;}
 .nopadding{padding-right: 0 !important;}
 
 /**option--expand**/
