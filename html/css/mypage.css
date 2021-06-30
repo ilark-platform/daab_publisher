@@ -1,0 +1,152 @@
+.back--gray{background: #EAEAEA; }
+.mypage__header{display: flex; align-items: flex-end; height: 70px; padding-left: 24px; padding-bottom: 20px; background: #FFF; border-bottom: 1px solid #CCC; box-sizing: border-box;}
+.mypage-title{display: inline-block; font-size: 1.45em; font-weight: 400; margin-right: 4px;}
+.cart-qty{display: inline-block;}
+.flex-center{display: flex; justify-content: space-between; align-items: center;}
+.flex-end{display: flex; justify-content: flex-end;}
+.flex-start{display: flex; justify-content: flex-start;}
+
+/**장바구니 - 상품**/
+.cart__wrap{}
+.cart__item{margin-top: 12px; padding: 24px 16px; background: #FFF; border-bottom: 1px solid #CCC;}
+.item__header{position: relative; display: flex; align-items: baseline; width: 100%; padding-bottom: 16px; border-bottom: 1px solid #EAEAEA;}
+input[type=checkbox].item-check{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+input[type=checkbox].item-check + label{display: inline-block; width: 18px; height: 18px; background: url(../images/box-noncheck.svg) no-repeat; background-size: contain;}
+input[type=checkbox].item-check:checked + label{background: url(../images/box-checked.svg) no-repeat; background-size: contain;}
+.item-name{display: inline-block; margin: 0 8px; max-width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.5em; font-weight: bold; line-height: 24px;}
+.item-change{font-size: 0.9em; color: #707070; cursor: pointer}
+.item-delete{position: absolute; right: 0; display: inline-block; width: 20px; height: 20px; text-indent: -9999px; background: url(../images/ic-close.svg) #FFF no-repeat; background-size: 20px; border: 0;}
+/**장바구니 - 상품 구성**/
+.item__component{padding: 12px 0 12px 32px;}
+.item__component img{height: 100%;}
+.item--single{display: flex; align-items: center;}
+.item--option{position: relative; align-items: center; margin-top: 8px; height: 40px; background: #F5F5F5;}
+.single-thumb{display: inline-block; margin-right: 16px; width: 80px; height: 80px;}
+.option-thumb{display: inline-block; width: 40px; height: 40px;}
+.single-text{display: inline-block; font-weight: 200;}
+.single-text > .sub{color: #707070; font-size: 0.9em;}
+.option-delete{position: absolute; top: 0; right: 16px; line-height: 40px; font-size: 0.9em; color: #707070;}
+/**장바구니 - 패키지 구성**/
+.item--package{display: flex; align-items: center; height: 50px;}
+.pkg-thumb{display: inline-block; margin-right: 8px; width: 40px; height: 40px;}
+.pkg-text > .main{position: relative; display: inline-block; margin-right: 17px;}
+.pkg-text > .main::after{content: ""; position: absolute; top: 3px; right: -11px; width: 1px; height: 12px; background: #CCC;}
+.item--option > .pkg-text > span{color: #707070; font-size: 0.9em;}
+
+/**장바구니 - 상품금액**/
+.item__final-option{margin-top: 8px; padding: 16px 0 24px; border-top: 1px solid #CCC;}
+.item__final-option > div{align-items: center; width: 50%;}
+.item__final-option > div > span{margin-left: 16px; font-weight: 400;}
+.item__final-option > div > select{position: relative; height: 32px; padding: 0 20px 0 0; margin-left: 8px; border: 1px solid #EAEAEA; text-align: center; text-align-last: center; -ms-text-align-last: center; -moz-text-align-last: center; background: url(../images/ic-toggle_active.svg) no-repeat 94% 50%; background-size: 14px;}
+.qty > select{width: 80px;}
+.period > select{width: 100px;}
+.item__price{align-items: baseline; color: #707070;}
+.price-pay{margin-right: 4px; font-size: 1.5em; font-weight: bold; color: #111;}
+
+/**장바구니 - 전체금액**/
+.cart__final{margin-top: 32px; padding: 8px 16px 16px; background: #FFF; box-shadow: 0 -3px 6px 0 rgba(0,0,0,0.16)}
+.cart__final > button{clear: both; display: block; width: 100%; height: 56px; border: 0; background: #245217; color: #FFF; font-weight: bold; font-size: 1.2em;}
+.folder{width: 100%; height: 24px; background:url(../images/ic-fold-down.svg) no-repeat 50%; background-size: contain; transform: rotate(180deg);}
+.folder-reverse{transform: rotate(0deg) !important;}
+.price-detail{display: none; padding-bottom: 8px; border-bottom: 1px solid #CCC;}
+.price-detail > li{color: #707070; margin-bottom: 8px;}
+.price-detail > li > .price{float: right; font-weight: bold;}
+.price-detail > li > .discount{text-decoration: line-through;}
+.price-final{padding: 24px 0;}
+.price-final > li{display: flex; justify-content: space-between; align-items: baseline; color: #707070;}
+.price-final > li >div:first-child{display: flex; align-items: center;}
+.tooltip{display: inline-block; width: 14px; height: 14px; background: url(../images/ic-tooltip.svg) no-repeat; background-size: contain; margin: 0 0 2px 4px; cursor: pointer;}
+.price-total-pay{font-size: 1.8em; font-weight: bold; color: #111; margin-right: 4px;}
+
+/**장바구니비었음**/
+.cart--empty{padding: 64px; height: 280px; background: #F5F5F5; text-align: center; box-sizing: border-box;}
+.empty-icon{margin: 0 auto 32px; width: 80px; height: 80px; border-radius: 40px; background: url(../images/ic-cart-white.svg) #EAEAEA center no-repeat; background-size: 40px;}
+.empty-msg{color: #A0A0A0;}
+.featd{padding: 16px;}
+.featd__taste{margin-top: 56px;}
+.featd--title__taste{font-weight: bold; font-size: 2em; line-height: 1.3em; margin-bottom: 32px;}
+
+
+/**체크아웃**/
+.payment__wrap{}
+.pay__box{margin-top: 12px; padding: 24px 16px; background: #FFF; border-bottom: 1px solid #CCC;}
+.pay__header{position: relative; display: flex; align-items: baseline; width: 100%; padding-bottom: 12px; border-bottom: 1px solid #EAEAEA;}
+.pay-name{display: inline-block; max-width: 245px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.2em; font-weight: bold;}
+.pay__header > button{position: absolute; bottom: 16px; right: 0; border: 0; background: #FFF; font-size: 0.9em; color: #245217;}
+.pay__info{padding-top: 16px;}
+.order__detail{padding-right: 16px;}
+.delivery__detail{position: relative; padding-right: 40px;}
+/**1.주문정보**/
+.pay__info p{font-size: 1em;}
+p.main{margin-bottom: 6px;}
+p.bold{font-weight: bold;}
+p.sub{color: #707070;}
+p.block{margin-top: 6px;}
+.pay__info hr{margin: 0; padding: 0; height: 1px; border: 0; background: #CCC;}
+/**2.배송정보**/
+span.chip{font-size: 0.7em; color: #245117; padding: 2px 4px 1px; margin-left: 8px; border-radius: 4px; border: 1px solid #245217; background: #E4EAE2;}
+.inner-btn{position: absolute; top: 16px; right: 0; border: 0; background: #FFF; font-size: 0.9em; color: #245217;}
+/**3.결제정보**/
+.payment__detail>li{position: relative; display: flex; justify-content: flex-start; align-items: center; width: 100%; height: 68px; border-radius: 8px; background: #F5F5F5; margin-bottom: 8px; padding: 12px 16px; box-sizing: border-box;}
+.payment__detail>li:last-child{margin-bottom: 0;}
+.card--selected{background: #E4EAE2 !important}
+input[type=radio].card-check{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+input[type=radio].card-check + label{position: absolute; display: inline-block; width: 100%; height: 100%; background: url(../images/radio-default.svg) 0 50% no-repeat; background-size: 20px;}
+input[type=radio].card-check:checked + label{background: url(../images/radio-selected.svg) 0 50% no-repeat; background-size: 20px;}
+.payment__detail>li>div{margin-left: 36px;}
+.payment__detail>li>div>p.main{font-size: 1em !important; margin-bottom: 2px !important;}
+/**4.렌탈약관**/
+.agreement__detail>li{position: relative; display: flex; align-items: center; width: 100%; height: 56px; border-radius: 8px; background: #E4EAE2; margin-bottom: 8px; padding: 0 16px; box-sizing: border-box;}
+input[type=checkbox].agr-check{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+input[type=checkbox].agr-check + label{position: absolute; display: inline-block; width: 100%; height: 100%; background: url(../images/round-check-white.svg) 0 50% no-repeat; background-size: 24px;}
+input[type=checkbox].agr-check:checked + label{background: url(../images/round-check-primary.svg) 0 50% no-repeat; background-size: 24px;}
+.agreement__detail>li>p.main{font-size: 1em !important; margin-bottom: 0px !important; margin-left: 40px;}
+li.terms{display: block !important; background: #FFF !important; margin: 12px 0 24px 0!important; height: 100%;}
+li.terms > p{position: relative; display: flex; justify-content: flex-start; align-items: center; margin-bottom: 8px;}
+li.terms > p > input[type=checkbox]{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+li.terms > p > input[type=checkbox] + label{display: inline-block; width: 18px; height: 18px; margin-left: 3px; margin-right: 19px; background: url(../images/round-check-gray.svg) 0 50% no-repeat; background-size: contain;}
+li.terms > p > input[type=checkbox]:checked + label{background: url(../images/round-check-primary.svg) 0 50% no-repeat; background-size: contain;}
+li.terms > p > a{position: absolute; right: 0; text-decoration: underline; color: #707070; font-size: 0.9em;}
+/**5.주문정보**/
+.pay__info > .cart__item{margin: 0; padding: 16px 0;}
+.pay__info > .cart__item:last-child{border-bottom: 0;}
+.pay__info > .cart__item > .item__header{padding: 0 12px; box-sizing: border-box; border: 0; justify-content: space-between;}
+.pay__info > .cart__item > .item__header > h3{margin: 0; font-size: 1.2em;}
+.pay__info > .cart__item > .item__header > .qty{font-size: 0.9em; color: #707070;}
+.pay__info > .cart__item > .item__component{padding: 12px;}
+.pay__info > .cart__item > .item__price{padding: 0 12px;}
+.pay__info > .cart__item > .item__price > .price-pay{font-size: 1.2em;}
+.cart__final > dl{margin-top: 40px; color: #707070;}
+.cart__final > dl > dt{font-weight: 500; margin-bottom: 4px;}
+.cart__final > dl > dt > .switch{display: inline-block; margin-left:4px; width: 16px; height: 16px; background: url(../images/ic-fold-down.svg) center 2px no-repeat; background-size: contain;}
+.cart__final > dl > dt > .switch-reverse{background: url(../images/ic-fold.svg) center 2px no-repeat !important; background-size: contain;}
+.cart__final > dl > dd{display: none; font-size: 0.9em; background: #F5F5F5; padding: 16px;margin-bottom: 8px;}
+
+
+/**체크아웃 - 수정**/
+.pay__info > div > table{width: 100%; border: 0; padding: 0; margin: 0;}
+td.textfield{display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;}
+table input[type=text], input[type=num]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
+.field--small{width: 30%}
+.field--medium{width: 70%}
+.field--large{width: 100%}
+ul.phone{display: flex; justify-content: space-between; align-items: center;}
+ul.phone>li{position: relative; display: inline-block; width: 30%; margin-right: 10px;}
+ul.phone>li:last-child{margin-right: 0;}
+ul.phone>li::before{content: "-"; position: absolute; right: -10px; top: 0; width: 10px; line-height: 34px; text-align: center; color: #999;}
+ul.phone>li:last-child::before{content: "" !important; width: 0 !important; height: 0 !important;}
+.btn-group{display: flex; justify-content: space-between; align-items: center; margin-top: 20px; width: 100%;}
+.btn-group > button{width: 49%; height: 40px; border: 0; border-radius: 0; font-weight: 400;}
+button.cancel{background: #EAEAEA;}
+button.save{background: #245217; color: #FFF;}
+span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
+.address-wrap>div>input{margin-bottom: 8px;}
+.zip{display: flex; justify-content: space-between;}
+.address-search{display: inline-block; padding: 0; margin-left: 10px; border-radius: 4px; width: 30%; height: 36px; line-height: 36px; background: #A0A0A0; text-align: center; vertical-align: middle;}
+.address-option > input[type=checkbox]{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+.address-option > input[type=checkbox] + label{display: inline-block; width: 100%; height: 18px; text-indent: 24px; margin-bottom: 32px; background: url(../images/box-noncheck.svg) no-repeat; background-size: contain;}
+.address-option > input[type=checkbox]:checked + label{background: url(../images/box-checked.svg) no-repeat; background-size: contain;}
+.holiday-chck{display: inline-block; margin-left: 24px; width: 64px; height: 20px;}
+.holiday-chck > input[type=radio]{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+.holiday-chck > input[type=radio] + label{position: absolute; display: inline-block; width: 72px; height: 18px; text-indent: 28px; background: url(../images/radio-default.svg) 0 50% no-repeat; background-size: 18px;}
+.holiday-chck > input[type=radio]:checked + label{background: url(../images/radio-selected.svg) no-repeat; background-size: 18px;}
