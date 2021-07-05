@@ -8,7 +8,7 @@
 
 /**옵션 아코디언**/
 .switch{background: url(../images/ic-toggle.svg) #FFF no-repeat; background-size: 16px; background-position: 98% 50%;}
-.switch-active{position: relative; background: url(../images/ic-toggle_active.svg) #FFF no-repeat; background-size: 16px; background-position: 96% 50%;}
+.switch-active{position: relative; background: url(../images/ic-toggle_active.svg) #FFF no-repeat; background-size: 16px; background-position: 98% 50%;}
 .switch-active::after{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: #245217;}
 .noswitch{padding: 0 16px !important;}
 
@@ -47,8 +47,8 @@
 .quantity-down{border-right: 1px solid #CCC;}
 
 /**option--expand**/
-.pkg--switch{display: flex; align-items: center; padding: 0 40px 0 16px; height: 50px; border-top: 1px solid #EAEAEA; background: url(../images/ic-toggle.svg) #FFF no-repeat; background-size: 16px; background-position: 96% 50%;}
-.pkg--switch-active{position: relative; background: url(../images/ic-toggle_active.svg) #FFF no-repeat; background-size: 16px; background-position: 96% 50%;}
+.pkg--switch{display: flex; align-items: center; padding: 0 40px 0 16px; height: 50px; border-top: 1px solid #EAEAEA; background: url(../images/ic-toggle.svg) #FFF no-repeat; background-size: 16px; background-position: 98% 50%;}
+.pkg--switch-active{position: relative; background: url(../images/ic-toggle_active.svg) #FFF no-repeat; background-size: 16px; background-position: 98% 50%;}
 .pkg--switch-active::after{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: #245217;}
 .pkg--expand{width: 100%; padding: 0 !important; box-sizing: border-box; display: none; overflow: hidden;}
 .pkg--expand ul {width: 100%; height: 100%;}

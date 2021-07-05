@@ -35,7 +35,8 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #EAEAEA;
     height: 70px;
     z-index: 20;
     transition: 0.5s;
@@ -44,6 +45,11 @@ body {
 #header.scroll {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid #EAEAEA;
+}
+
+#header.white {
+    background: rgba(255, 255, 255, 0);
+    border: 0;
 }
 
 #contents {}
@@ -115,6 +121,26 @@ select {
 
 
 
+/**Header - white**************/
+#header.white>.hd__menu>.hd__logo>a {
+    background: url(../images/daab-ci-white.svg) left no-repeat;
+}
+#header.white>.hd__menu>.hd__btn>.btn-menu>a {
+    background: url(../images/ic-menu-white.svg) center;
+}
+
+#header.white>.hd__menu>.hd__btn>.btn-back>a {
+    background: url(../images/ic-back-white.svg) center;
+}
+
+#header.white>.hd__menu>.hd__btn>.btn-search>a {
+    background: url(../images/ic-search-white.svg) center;
+}
+
+#header.white>.hd__menu>.hd__btn>.btn-cart>a {
+    background: url(../images/ic-cart-white.svg) center;
+}
+
 /**Header**************/
 .hd__menu {
     position: relative;
@@ -123,9 +149,11 @@ select {
     justify-content: space-between;
     align-items: center;
     min-width: 320px;
+    max-width: 768px;
     height: 40px;
     z-index: 10;
     padding: 15px 12px;
+    margin: 0 auto;
 }
 
 .hd__logo {
@@ -144,6 +172,7 @@ select {
     padding: 15px 0;
     background: url(../images/daab-ci.svg) left no-repeat;
 }
+
 
 /*.hd__btn{height: 40px;}*/
 .hd__btn>div {
@@ -204,6 +233,10 @@ select {
 
 
 /**Footer**************/
+.footer__wrap {
+    max-width: 768px;
+    margin: 0 auto;
+}
 .ft__btn {
     display: flex;
     justify-content: space-between;
@@ -306,18 +339,18 @@ dt+dd {
 .ft__rights>ul {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 16px;
-    flex-wrap: nowrap;
 }
 
-.ft__rights>ul>.item {
-    width: 100%;
-    text-align: center;
+.ft__rights>ul>li {
+    margin-right: 12px;
 }
 
-.ft__rights>ul>.item.divider {
-    width: 1px;
+.ft__rights>ul>.li-divider {
+    margin-right: 12px;
+    font-size: 10px;
+    color: #CCC;
 }
 
 .terms {
