@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>daab-checkout</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/mypage.css">
+
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrap" class="back--gray">
+        <!--*****헤더영역******-->
+        <header id="header">
+            <div class="hd__menu">
+                <h1 class="hd__logo">
+                    <a href="#"><span class="hidden-text">daab</span></a>
+                </h1>
+                <div class="hd__btn left">
+                    <div class="btn-back">
+                        <a href="#"><span class="hidden-text">이전 페이지</span></a>
+                    </div>
+                    <div class="btn-menu">
+                        <a href="#"><span class="hidden-text">메뉴</span></a>
+                    </div>
+                </div>
+                <div class="hd__btn right">
+                    <div class="btn-search">
+                        <a href="#"><span class="hidden-text">검색</span></a>
+                    </div>
+                    <div class="btn-cart">
+                        <a href="#"><span class="cart-count">3</span><span class="hidden-text">장바구니</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header__sub">
+            <div class="mypage__header">
+                <h2 class="mypage-title">결제</h2>
+            </div>
+        </div>
+        <!--*****본문영역******-->
+        <div id="contents">
+            <div class="payment__wrap">
+            
+            <!--1.주문정보-->
+            <div class="pay__box order">
+                <div class="pay__header">
+                    <h3 class="pay-name">주문 정보</h3>
+                    <button class="btn-change">변경</button>
+                </div>
+                <div class="pay__info">
+                    <div class="order__detail">
+                        <p class="main bold">김땡땡</p>
+                        <p class="sub">010-1111-1111</p>
+                        <p class="sub">kimkimkimkim@naver.com</p>
+                    </div>
+                </div>
+            </div>
+            <!--2.배송정보-->
+            <div class="pay__box delivery">
+                <div class="pay__header">
+                    <h3 class="pay-name">배송 정보</h3>
+                    <button class="btn-list">배송지 목록</button>
+                </div>
+                <div class="pay__info">
+                    <ul class="delivery__detail">
+                        <li>
+                            <p class="main bold">김땡땡<span class="chip">기본배송지</span></p>
+                            <p class="sub">010-1111-1111</p>
+                            <p class="sub">서울시 송파구 잠실로123 (잠실아파트 2단지) 101동 202호 (01234)</p>
+                            <p class="block">주말/공휴일 수령 : 가능</p>
+                            <button class="inner-btn">변경</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--3.결제정보-->
+            <div class="pay__box payment">
+                <div class="pay__header">
+                    <h3 class="pay-name">결제 정보</h3>
+                    <button class="btn-list">내 카드 관리</button>
+                </div>
+                <div class="pay__info">
+                    <ul class="payment__detail">
+                        <li class="card--selected">
+                            <input type="radio" name="cards" id="card1" class="card-check" checked><label for="card1"></label>
+                            <div>
+                                <p class="main bold">SAMSUNG CARD</p>
+                                <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
+                            </div>
+                        </li> <!-- 카드 -->
+                        <li>
+                            <input type="radio" name="cards"  id="card2" class="card-check"><label for="card2"></label>
+                            <div>
+                                <p class="main bold">HYUNDAI CARD</p>
+                                <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
+                            </div>
+                        </li> <!-- 카드 -->
+                        <li>
+                            <input type="radio" name="cards"  id="card3" class="card-check"><label for="card3"></label>
+                            <div>
+                                <p class="main bold">KAKAO CHECK CARD</p>
+                                <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
+                            </div>
+                        </li> <!-- 카드 -->
+                    </ul>
+                </div>
+            </div>
+            <!--4.렌탈이용약관-->
+            <div class="pay__box agreement">
+                <div class="pay__header">
+                    <h3 class="pay-name">렌탈 이용 약관</h3>
+                </div>
+                <div class="pay__info">
+                    <ul class="agreement__detail"> 
+                        <li> <!-- 전체 동의 -->
+                            <input type="checkbox" class="agr-check" id="agr1"><label for="agr1"></label>
+                            <p class="main bold">전체 약관 동의 (필수)</p>
+                        </li>
+                        <li class="terms"> <!-- 개별 동의 -->
+                            <p><input type="checkbox" id="agr1-1"><label for="agr1-1"></label>계약 확인<a href="">보기</a></p>
+                            <p><input type="checkbox" id="agr1-2"><label for="agr1-2"></label>계약 확인<a href="">보기</a></p>
+                            <p><input type="checkbox" id="agr1-3"><label for="agr1-3"></label>계약 확인<a href="">보기</a></p>
+                        </li>
+                        <li> <!-- 전체 동의 -->
+                            <input type="checkbox" class="agr-check" id="agr2"><label for="agr2"></label>
+                            <p class="main bold">제 3자 정보 제공 동의 (필수)</p>
+                        </li>
+                        <li class="terms"> <!-- 개별 동의 -->
+                            <p><input type="checkbox" id="agr2-1"><label for="agr2-1"></label>계약 확인<a href="">보기</a></p>
+                            <p><input type="checkbox" id="agr2-2"><label for="agr2-2"></label>계약 확인<a href="">보기</a></p>
+                            <p><input type="checkbox" id="agr2-3"><label for="agr2-3"></label>계약 확인<a href="">보기</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--5.주문정보-->
+            <div class="pay__box order-item">
+                <div class="pay__header">
+                    <h3 class="pay-name">주문정보</h3>
+                    <span></span>
+                </div>
+                <div class="pay__info">
+<!--cart.html의 (".cart__item")에서 일부 변경하여 사용했습니다. 
+    삭제 내용 : 체크박스(".item-check") / 옵션변경(".item-change") / 수량,기간 수정하는 영역(".item__final-option")
+    추가 내용 : 수량(".qty") / 금액 옆에 개월수("span")-->
+                <!--카트 상품-->
+                <div class="cart__item">
+                    <div class="item__header">
+                        <h3 class="item-name">PACKAGE NAME</h3>
+                        <span class="f-sub">수량: 1</span>
+                    </div>
+                    <div class="item__component">
+                        <div class="item--package">
+                            <div class="pkg-thumb"><img src="images/prd_img_1.png" alt=""></div>
+                            <div class="pkg-text">
+                                <span class="main">PHANTOM II 95DB</span>
+                                <span class="f-sub">매트블랙</span>
+                            </div>
+                        </div>
+                        <div class="item--option flex-start">
+                            <div class="option-thumb"><img src="images/subordin.svg" alt=""></div>
+                            <div class="option-thumb"><img src="images/prd_img_4.png" alt=""></div>
+                            <div class="pkg-text">
+                                <span class="main">TREEPOD</span>
+                                <span class="f-sub">매트블랙</span>
+                            </div>
+                        </div>
+                        <div class="item--package">
+                            <div class="pkg-thumb"><img src="images/prd_img_2.png" alt=""></div>
+                            <div class="pkg-text">
+                                <span class="main">PL1 Plus</span>
+                                <span class="f-sub">실버</span>
+                            </div>
+                        </div>
+                        <div class="item--package">
+                            <div class="pkg-thumb"><img src="images/prd_img_3.png" alt=""></div>
+                            <div class="pkg-text">
+                                <span class="main">TREEPOD</span>
+                                <span class="f-sub">매트블랙</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total__price flex-end">
+                        <span class="price-pay">399,000</span>원/<span>48</span>개월
+                    </div>
+                </div>
+                <!--카트 상품-->
+                <div class="cart__item">
+                    <div class="item__header">
+                        <h3 class="item-name">PHANTOM II 95DB</h3>
+                        <span class="f-sub">수량: 1</span>
+                    </div>
+                    <div class="item__component">
+                        <div class="item--single">
+                            <div class="single-thumb"><img src="images/prd_img_1.png" alt=""></div>
+                            <div class="single-text">
+                                <span class="main">PHANTOM II 95DB</span><br>
+                                <span class="f-sub">컬러 : 매트블랙</span>
+                            </div>
+                        </div>
+                        <div class="item--option flex-start">
+                            <div class="option-thumb"><img src="images/subordin.svg" alt=""></div>
+                            <div class="option-thumb"><img src="images/prd_img_4.png" alt=""></div>
+                            <div class="single-text">
+                                <span class="f-sub">TREEPOD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total__price flex-end">
+                        <span class="price-pay">399,000</span>원/<span>48</span>개월
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <!--전체금액-->
+        <div class="cart__final">
+            <div class="cart__final__wrap">
+            <div class="folder"></div><!--폴딩 버튼-->
+            <ul class="price-detail"><!--폴딩 영역-->
+                <li>
+                    <span class="label">상품 총 금액</span>
+                    <span class="price">11,234,000원</span>
+                </li>
+                <li>
+                    <span class="label">월 이용 금액</span>
+                    <span class="price">123,400원</span>
+                </li>
+                <li>
+                    <span class="label">ODE 스페셜 배송/설치비</span>
+                    <span class="price discount">50,000원</span>
+                </li>
+            </ul>
+            <ul class="price-final"><!--찐 최종 금액-->
+                <li>
+                    <div>렌탈 1회차 결제 금액<span class="tooltip"></span></div>
+                    <div><span class="price-total-pay">99,000</span>원/월</div>
+                </li>
+            </ul>
+            <button>주문하기</button>
+            <dl><!--최종 공지 열닫-->
+                <dt class="notice">개인정보 제3자 제공공지<span class="switch"></span></dt>
+                <dd class="notice-panel">전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전자상거래 구매안전 서비스 안내</dd>
+                <dt class="notice">전자상거래 구매안전 서비스 안내<span class="switch switch-reverse"></span></dt>
+                <dd class="notice-panel" style="display: block;">전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전자상거래 구매안전 서비스 안내</dd>
+            </dl>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!--최종 렌탈금액 옆에 i 눌렀을 때 레이어팝업-->
+    <div class="layer" style="display: none;">
+        <!--가운데정렬용 박스들-->
+        <div class="layer_wrap"><div class="layer_inner">
+        <!--팝업영역-->
+        <div class="layer__back">
+            <div class="layer__top">
+                <span class="point">‘daab’의 결제 정책</span>
+                <button class="close">닫기</button>
+            </div>
+            <div class="layer__text">
+                <dl>
+                    <dt>Q. 왜 렌탈요금을 바로 결제하나요?</dt>
+                    <dd>A. 구독서비스 답은 내부 정책상, 첫 렌탈료를 미리 납부합니다. 첫번째 렌탈료는 렌탈 신청당일 결제하고, 두번째 렌탈료는 두 달 후부터 납부합니다. 매월 정기결제일은 제품 설치 날짜와 동일합니다.</dd>
+                </dl>
+            </div>
+        </div>
+        </div></div>
+        <!--블랙배경-->
+        <div class="dimmed"></div>
+    </div>
+
+    <script>/*최종금액 디테일 열고닫기*/
+        var acc = document.getElementsByClassName("folder");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+
+            this.classList.toggle("folder-reverse");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+          });
+        }
+    </script>
+    <script> /*카드 라디오 버튼 선택*/
+        $(".payment__detail > li").click(function(){
+            $(this).siblings("li").removeClass("card--selected");
+            $(this).addClass("card--selected");
+        })
+    </script>
+    <script>
+        /*풋터 회사정보 열닫*/
+        $(".cp-name").click(function(){
+            $(this).siblings(".cp-info").toggleClass("open");
+            $(this).toggleClass("active");
+        })
+        /*최종 렌탈금액 옆에 i 눌렀을 때*/
+        $(".tooltip").click(function(){
+            $(".layer").css("display","block");
+        })
+        /*레이어팝업 닫기버튼*/
+        $(".close").click(function(){
+            $(".layer").css("display","none");
+        })
+    </script>
+</body>
+
+</html>

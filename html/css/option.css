@@ -2,7 +2,7 @@
 .item__option{width: 100%; padding: 16px; background: #E0E0E0; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC; box-sizing: border-box;}
 .option--wrap{margin-top: 8px;}
 .option--wrap:first-child{margin-top: 0;}
-.option--box{position: relative; display: flex; justify-content: space-between; align-items: center; padding: 0 40px 0 16px; width: 100%; height: 50px; box-sizing: border-box; background: #FFF;}
+.option--box{position: relative; display: flex; justify-content: space-between; align-items: center; padding: 0 40px 0 16px; width: 100%; height: 50px; box-sizing: border-box; background: #FFF; border-bottom: 1px solid #EAEAEA}
 .option--expand{width: 100%; display: none; overflow: hidden;}
 .option--pkg{width: 100%; overflow: hidden;}
 
@@ -11,6 +11,7 @@
 .switch-active{position: relative; background: url(../images/ic-toggle_active.svg) #FFF no-repeat; background-size: 16px; background-position: 98% 50%;}
 .switch-active::after{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: #245217;}
 .noswitch{padding: 0 16px !important;}
+.red-line::after{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: #D84444 !important;}
 
 /**option--box**/
 .option--name{display: inline-block; min-width: 68px; font-weight: 200;}
@@ -34,6 +35,7 @@
 .option--expand ul li{padding: 0 16px; line-height: 50px; background: #FFF; border-top: 1px solid #EAEAEA;}
 .option--expand ul li>.detail-thumbnail{width: 32px; height: 32px;}
 .option--expand ul li>.detail-text{font-weight: 200;}
+.f-sub{font-size: 0.9em; color: #707070;}
 
 /**수량 인풋**/
 .quantity{display: flex; justify-content: space-between; align-items: center; width: 108px; height: 32px; margin: 0; padding: 0; border: 1px solid #CCC; }

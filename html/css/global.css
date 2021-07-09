@@ -37,29 +37,36 @@ body {
     top: 0;
     background: rgba(255, 255, 255, 1);
     border: 1px solid #EAEAEA;
-    height: 70px;
+    height: 56px;
     z-index: 20;
     transition: 0.5s;
 }
 
+#header.trans {
+    background: rgba(255, 255, 255, 0);
+    border: 0;
+}
 #header.scroll {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid #EAEAEA;
 }
 
 #header.white {
+    position: absolute;
+    top: 0;
+    width: 100%;
     background: rgba(255, 255, 255, 0);
     border: 0;
 }
 
-#contents {}
+#contents {padding-bottom: 40px;}
 
 #footer {
-    margin-top: 40px;
+/*    margin-top: 40px;*/
     padding: 24px 16px 16px 16px;
     position: relative;
     background: #F0F0F0;
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid #E0E0E0;
     z-index: 2;
     font-size: 13px;
     color: #707070;
@@ -123,22 +130,26 @@ select {
 
 /**Header - white**************/
 #header.white>.hd__menu>.hd__logo>a {
-    background: url(../images/daab-ci-white.svg) left no-repeat;
+    background: url(../images/daab-ci-white.svg) center no-repeat;
 }
 #header.white>.hd__menu>.hd__btn>.btn-menu>a {
-    background: url(../images/ic-menu-white.svg) center;
+    background: url(../images/ic-menu-white.svg) center no-repeat;
+    background-size: 20px;
 }
 
 #header.white>.hd__menu>.hd__btn>.btn-back>a {
-    background: url(../images/ic-back-white.svg) center;
+    background: url(../images/ic-back-white.svg) center no-repeat;
+    background-size: 20px;
 }
 
 #header.white>.hd__menu>.hd__btn>.btn-search>a {
-    background: url(../images/ic-search-white.svg) center;
+    background: url(../images/ic-search-white.svg) center no-repeat;
+    background-size: 20px;
 }
 
 #header.white>.hd__menu>.hd__btn>.btn-cart>a {
-    background: url(../images/ic-cart-white.svg) center;
+    background: url(../images/ic-cart-white.svg) center no-repeat;
+    background-size: 20px;
 }
 
 /**Header**************/
@@ -150,44 +161,48 @@ select {
     align-items: center;
     min-width: 320px;
     max-width: 768px;
-    height: 40px;
+    height: 36px;
     z-index: 10;
-    padding: 15px 12px;
+    padding: 10px 12px;
     margin: 0 auto;
 }
 
 .hd__logo {
     position: absolute;
-    top: 0;
-    left: calc(50% - 55px);
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
     right: 50%;
+    transform: translate(-50%, -50%);
     display: block;
-    height: 70px;
+    height: 56px;
+    width: 50%;
 }
 
 .hd__logo>a {
     display: block;
-    width: 110px;
-    height: 36px;
-    padding: 15px 0;
-    background: url(../images/daab-ci.svg) left no-repeat;
+    width: 100%;
+    height: 32px;
+    margin: 12px 0;
+    background: url(../images/daab-ci.svg) center no-repeat;
+    background-size: contain;
 }
 
 
 /*.hd__btn{height: 40px;}*/
 .hd__btn>div {
     display: inline-block;
-    height: 32px;
-    padding: 19px 0;
+    height: 36px;
+    padding: 10px 0;
     margin: 0;
 }
 
 .hd__btn>div>a {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     background-repeat: no-repeat;
-    background-size: 24px;
+    background-size: 20px;
 }
 
 .btn-menu>a {
@@ -214,7 +229,7 @@ select {
 .cart-count {
     position: absolute;
     top: 0;
-    left: 16px;
+    left: 18px;
     display: inline-block;
     padding: 4px 4px 2px 4px;
     border-radius: 4px;
@@ -641,3 +656,5 @@ button.next{margin-right: 8px; background: url(../images/ic-toggle-white.svg) #9
 .layer__text{padding: 32px 20px; text-align: left;}
 .layer__text dt{font-weight: bold; padding-bottom: 12px; border-bottom: 1px solid #CCC;}
 .layer__text dd{color: #666; padding-top: 12px;}
+.layer__text ul{margin-left: 8px;}
+.layer__text ul li{list-style:disc;    }
