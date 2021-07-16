@@ -8,8 +8,11 @@
 .flex-bottom{display: flex; justify-content: space-between; align-items: flex-end;}
 .flex-end{display: flex; justify-content: flex-end;}
 .flex-start{display: flex; justify-content: flex-start;}
-.f-sub{font-size: 0.9em; color: #707070;}
+.f-black{color: #111 !important;}
+.f-sub{font-family: 'NotoSansKR'; font-size: 0.9em; color: #707070; font-weight: normal;}
+.f-price{font-weight: bold; color: #111 !important;}
 input[type=text]:focus-visible, input[type=num]:focus-visible {outline-width: 1px; outline-color: #FDBB27;}
+.f-center{text-align: center}
 
 
 /**마이페이지 메인**/
@@ -164,12 +167,12 @@ table input[type=text], input[type=num]{height: 36px; border: 1px solid #CCC; bo
 .field--medium{width: 70%}
 .field--large{width: 100%}
 ul.phone{display: flex; justify-content: space-between; align-items: center; width: 100%;}
-ul.phone>li{position: relative; display: inline-block; width: 30%; margin-right: 10px;}
+ul.phone>li{position: relative; display: inline-block; width: 30%;}
 ul.phone>li:last-child{margin-right: 0;}
-ul.phone>li::before{content: "-"; position: absolute; right: -10px; top: 0; width: 10px; line-height: 34px; text-align: center; color: #999;}
-ul.phone>li:last-child::before{content: "" !important; width: 0 !important; height: 0 !important;}
+ul.phone>li.hyphen{width: 16px;text-align: center; margin: 0;}
 .btn-group{display: flex; justify-content: space-between; align-items: center; margin-top: 20px; width: 100%;}
 .btn-group > button{width: 49%; height: 40px; border: 0; border-radius: 0; font-weight: 400;}
+button.disabled{background: #E0E0E0; color: #999; cursor: none;}
 button.cancel{background: #EAEAEA;}
 button.save{background: #245217; color: #FFF;}
 span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
@@ -236,9 +239,9 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 /**TAB 렌탈주문**/
 .order__item{margin-bottom: 20px; padding: 24px 16px; background: #FFF;}
 h3.order-status{display: inline-block; font-size: 1.4em; font-weight: bold;}
-h3.greenheader{color: #245217}
-h3.redheader{color: #D84444}
-h3.grayheader{color: #707070}
+.greenheader{color: #245217}
+.redheader{color: #D84444 !important}
+.grayheader{color: #707070}
 a.detail-page{position: relative; margin-right: 16px;}
 a.detail-page::after{position: absolute; content: ""; top: 1px; width: 16px; height: 16px; background: url(../images/ic-toggle.svg) center no-repeat; background-size: 12px;}
 .item-img-wrap{width: 100%; height: 80px; margin: 16px 0; overflow: hidden;}
@@ -277,13 +280,13 @@ a.detail-page::after{position: absolute; content: ""; top: 1px; width: 16px; hei
 .pay__detail__wrap>p{font-size: 0.9em;}
 dl.pay__detail{margin-bottom: 8px;}
 dl.row-border{padding: 16px 0; margin: 16px 0; border-top: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA}
-dl.row-border-bottom{padding: 0 0 16px; margin-bottom: 16px; border-bottom: 1px solid #EAEAEA}
+.row-border-bottom{padding: 0 0 16px; margin-bottom: 16px; border-bottom: 1px solid #EAEAEA}
 dd.price{font-weight: bold;}
 dd.date{text-align: right;}
 .card-btn-group{margin: 24px 0; width: 100%; height: 32px; border: 1px solid #CCC;}
 .noline-btn--s{width: 100%; height: 100%; color: #707070; background: rgba(255,255,255,0); border: 0;}
 .noline-btn-g{width: 100%; height: 100%; color: #245217; background: rgba(255,255,255,0); border: 0;}
-.invoice-btn{width: 100%; height: 48px; padding-top: 16px; border-top: 1px solid #EAEAEA;}
+.invoice-textbtn{width: 100%; height: 48px; padding-top: 16px; border-top: 1px solid #EAEAEA;}
 div.delivery__detail{background: #FFF; padding: 16px;}
 .link-switch{background: url(../images/ic-toggle.svg) #FFF no-repeat !important; background-size: 16px !important; background-position: 98% 50% !important;}
 .font-bold{font-weight: bold; font-size: 1.1em; color: #333;}
@@ -291,3 +294,27 @@ div.delivery__detail{background: #FFF; padding: 16px;}
 
 /**인보이스 청구내역**/
 .invoice-btn{width: 32px; height: 32px; background: url(../images/ic-invoice.svg) center no-repeat; background-size: contain; border: 0; text-indent: -9999px;}
+.invoice-wrap > li{position: relative; margin: 16px 0; padding: 0 0 16px 0; border-bottom: 1px solid #EAEAEA;}
+.list-maintext{padding-bottom: 8px !important;}
+.invoice-list td{padding-bottom: 4px;}
+
+
+/**주문취소**/
+.step__wrap{width: 100%; margin: 40px 0 24px; text-align: center;}
+.step {position: relative; line-height: 32px; width: 32px; background-color: #CCC; border: none; border-radius: 50%; display: inline-block; color: #FFF; font-weight: bold;}
+.dashline{display: inline-block; width: 64px; height: 4px; border-top: 1px dashed #CCC;}
+.step.finish{background-color: #04AA6D;}
+.tab{display: none; padding: 16px;}
+.cancel__title > h3{font-size: 1.45em; line-height: 1.4em; margin-bottom: 32px;}
+.cancel__title > h3 > span{font-weight: bold;}
+.cancel__title > a.detail-page{display: inline-block; margin: 12px 0;}
+.cancel__survey > p{margin-bottom: 16px;}
+.cancel__survey > div{margin-bottom: 12px;}
+.cancel__survey label{font-size: 0.9em}
+.cancel-card{position: relative; display: flex; justify-content: space-between; align-items: center; width: 100%; height: 68px; border-radius: 8px; background: #F5F5F5; margin: 12px 0; padding: 12px 16px; box-sizing: border-box;}
+.summary__wrap{background: #F5F5F5; padding: 16px;}
+.cancel__summary{margin: 0 0 24px;}
+.cancel__summary:last-child{margin: 0;}
+.cancel__summary > dt{margin-bottom: 4px;}
+.cancel-process{margin-bottom: 4px; padding: 8px 12px; background: #FFF; border-radius: 4px; text-align: center;}
+.ic-next{display: inline-block; width: 20px; height: 20px; background: url(../images/ic-toggle.svg) center no-repeat; background-size: 14px;}

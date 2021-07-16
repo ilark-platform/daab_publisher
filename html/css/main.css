@@ -17,6 +17,16 @@
 .symbol__info--btn{}
 
 
+/**Main-Notice*********/
+.main__notice{width: 100%; height: 40px; background: #001E01; border-bottom: 1px solid #D0D0D0; }
+.notice__wrap{max-width: 768px; height: 40px; margin: 0 auto; padding: 0 8px 0 16px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box;}
+.notice__msg{display: flex; align-items: center; justify-content: flex-start; font-size: 0.9em; color: #FFF;}
+.notice__icon{display: inline-block; width: 18px; height: 18px; background: url(../images/notice.svg) no-repeat; background-size: contain; margin-right: 8px;}
+/*.notice__page{position: relative; display: inline-block; font-size: 0.9em; color: #707070;}*/
+.notice__page::after{position: absolute; content: ""; top: 0; width: 16px; height: 20px; background: url(../images/ic-toggle.svg) center no-repeat; background-size: 12px;}
+.notice__close{width: 20px; height: 20px; background: url(../images/ic-close-white.svg) no-repeat; background-size: contain; border: 0; text-indent: -9999px;}
+
+
 /**Main-Curation*********/
 .curation__back{position: absolute; top: 280px; left: 0; width: 100%; height: 22%; padding:0 32px; background: #001E01; box-sizing: border-box;}
 .curation__info{width: calc(100% - 64px); color: #111; position: absolute; left: 32px; bottom: 56px;}
