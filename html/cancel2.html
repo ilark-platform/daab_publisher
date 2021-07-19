@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>daab-cancel</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/option.css">
+
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!--*****헤더영역******-->
+        <header id="header">
+            <div class="hd__menu">
+                <h1 class="hd__logo">
+                    <a href="#"><span class="hidden-text">daab</span></a>
+                </h1>
+                <div class="hd__btn left">
+                    <div class="btn-back">
+                        <a href="#"><span class="hidden-text">이전 페이지</span></a>
+                    </div>
+                    <div class="btn-menu">
+                        <a href="#"><span class="hidden-text">메뉴</span></a>
+                    </div>
+                </div>
+                <div class="hd__btn right">
+                    <div class="btn-search">
+                        <a href="#"><span class="hidden-text">검색</span></a>
+                    </div>
+                    <div class="btn-cart">
+                        <a href="#"><span class="cart-count">3</span><span class="hidden-text">장바구니</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header__sub">
+            <div class="mypage__header">
+                <h2 class="mypage-title">해지신청</h2>
+            </div>
+        </div>
+        <!--*****본문영역******-->
+        <div id="contents">
+            <div class="step__wrap">
+                <span class="step">1</span>
+                <span class="dashline"></span>
+                <span class="step">2</span>
+                <span class="dashline"></span>
+                <span class="step">3</span>
+            </div>
+            
+            <div class="tab">
+                <div class="cancel__title">
+                    <h3><span>김땡땡</span> 고객님<br>해지를 고려하신다니 아쉽습니다</h3>
+                </div>
+                <div class="cancel__survey">
+                    <p class="f-black f-sub">고객님의 해지 사유를 가장 잘 설명하는 항목은 무엇인가요?</p>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonA"><label for="reasonA">제품 성능이 불만족스러워요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonB"><label for="reasonB">다른 상품을 사용해보고 싶어요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonC"><label for="reasonC">서비스 이용이 불편해요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonD"><label for="reasonD">AS가 불만족스러워요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonE"><label for="reasonE">다른 곳의 제품/서비스가 더 좋아보여요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonF"><label for="reasonF">개인 사정으로 그만 사용하고 싶어요.</label></div>
+                </div>
+            </div>
+            
+            <div class="tab">
+                <div class="order--wrap" style="padding: 0;">
+                    <div class="order__msg redbox" style="line-height:24px;">렌탈 종료일을 정해주세요.</div>
+                    <div class="option--box switch no-line" style="border: 1px solid #CCC; border-top:0;">
+                        <div class="option--name">예상 위약금&nbsp;:&nbsp;<span>1,031,000원</span></div>
+                    </div>
+                    <div class="option--expand">
+                        <div class="pay__detail__wrap">
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">발생 유형</dt>
+                                <dd class="f-black f-sub">의무사용기간 미충족</dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">렌탈 시작일</dt>
+                                <dd class="f-black f-sub">2021-01-01</dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">렌탈 종료일(회수일)</dt>
+                                <dd>
+                                    <input type="date">
+                                </dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">의무사용기간</dt>
+                                <dd class="f-black f-sub">12개월</dd>
+                            </dl>
+                            <dl class="pay__detail flex-center row-border-bottom">
+                                <dt class="f-sub">남은 일수</dt>
+                                <dd class="f-black f-sub">5개월 10일</dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub flex-center">위약금 <span class="tooltip"></span></dt>
+                                <dd class="price">1,000,000<span class="f-sub"> 원</span></dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">미납렌탈료</dt>
+                                <dd class="price">0<span class="f-sub"> 원</span></dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">연체 이자</dt>
+                                <dd class="price">0<span class="f-sub"> 원</span></dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">설치 회수비</dt>
+                                <dd class="price">31,000<span class="f-sub"> 원</span></dd>
+                            </dl>
+                            <dl class="pay__detail row-border flex-center">
+                                <dt class="f-sub">총 해지 위약금</dt>
+                                <dd class="f-sub"><span class="price-total-pay">1,031,000</span>원</dd>
+                            </dl>
+                            <p class="item-notice f-sub">산정 위약금은 가산출된 금액입니다<br><span class="f-price">회수된 상품의 상태</span>에 따라 변경될 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order--wrap" style="padding: 0;">
+                    <a href="" class="option--box link-switch" style="border: 1px solid #CCC;">
+                        <div class="option--name">렌탈 이용 계약서</div>
+                    </a>
+                </div>
+                
+                <div class="order--wrap" style="padding: 0;">
+                    <div class="option--box switch" style="border: 1px solid #CCC;">
+                        <div class="option--name">주문 정보</div>
+                    </div>
+                    <div class="option--expand">
+                        <!--싱글-->
+                        <div class="cart__item order__list" style="margin:0; padding: 12px 0; border:0;">
+                            <div class="item__header flex-center">
+                                <div>
+                                    <h3 class="order__item-name">TRANSPARENT SPEAKER</h3>
+                                    <span class="status-chip greenchip">배송중</span>
+                                </div>
+                            </div>
+                            <div class="item__component">
+                                <div class="item--single">
+                                    <div class="single-thumb"><img src="images/TS-B-Front.png" alt=""></div>
+                                    <div class="single-text">
+                                        <p class="main">PL1 Plus</p>
+                                        <p class="f-sub">컬러 : 블랙</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="item-notice f-sub">렌탈종료일 : 2023-07-01</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order--wrap" style="padding: 0;">
+                    <div class="option--box switch" style="border: 1px solid #CCC;">
+                        <div class="option--name">회수 주소 정보</div>
+                    </div>
+                    <div class="option--expand">
+                        <div>
+                            <div class="delivery__detail">
+                                <p class="main bold flex-center">김땡땡<a href="" class="f-sub">주소변경</a></p>
+                                <p class="f-sub">010-1111-1111</p>
+                                <p class="f-sub">서울시 송파구 잠실로123 (잠실아파트 2단지) 101동 202호 (01234)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order--wrap" style="padding: 0;">
+                    <div class="option--box switch" style="border: 1px solid #CCC;">
+                        <div class="option--name">위약금 결제 수단</div>
+                    </div>
+                    <div class="option--expand">
+                        <div class="cancel-card">
+                            <div>
+                                <p class="main bold">SAMSUNG CARD</p>
+                                <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
+                            </div>
+                            <a href="" class="f-sub">카드 변경</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="f-center f-sub"><br>해지 신청을 하시겠습니까?<br><span class="f-price">회수일 : 2021년 07월 20일</span></div>
+            </div>
+            
+            <div class="tab">
+                <div class="cancel__title">
+                    <h3>해지 신청 완료</h3>
+                    <p class="f-sub">해지 신청이 완료되었습니다.<br><br><span class="f-black">최종 위약금 : 1,031,000원<br>회수 신청일 : 2021년 07월 20일</span><br>최종 해지 처리는 상품 회수 후 3~5일 추가 소요될 수 있습니다. daab서비스를 이용해주셔서 감사합니다.</p>
+                </div>
+            </div>
+            
+            <div style="overflow:auto; padding: 0 16px 0;">
+                <div class="btn-group">
+                    <button type="button" id="prevBtn" class="cancel disabled" onclick="nextPrev(-1)">취소</button>
+                    <button type="button" id="nextBtn" class="save" onclick="nextPrev(1)">다음</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--i 눌렀을 때 레이어팝업-->
+    <div class="layer" style="display: none;">
+        <!--가운데정렬용 박스들-->
+        <div class="layer_wrap"><div class="layer_inner">
+        <!--팝업영역-->
+        <div class="layer__back">
+            <div class="layer__top">
+                <span class="point">위약금 안내</span>
+                <button class="close">닫기</button>
+            </div>
+            <div class="layer__text">
+                <ul>
+                    <li>정상적인 제품을 반납 할 시 에는 [월렌탈료 X {(의무사용기간 - 사용일수) ÷ 30} X 15%]+ (연체이자+미납렌탈료) 으로 내용연수를 반영한 위약금 부가한다.</li>
+                    <li>비정상적인 상태의 제품을 반납 할 시 에는 분실/파손과 동일하게 판단하여, {(제품 판매가)- [(제품판매가/렌탈약정일수)X사용개월수]} + (연체이자+미납렌탈료)으로 위약금을 부가한다.</li>
+                </ul>
+            </div>
+        </div>
+        </div></div>
+        <!--블랙배경-->
+        <div class="dimmed"></div>
+    </div>
+    
+    <!--*****풋터영역******-->
+    <footer id="footer">
+        <div class="footer__wrap">
+            <div class="ft__btn">
+                <div class="left">
+                    <a href="" class="btn-sq">로그인</a>
+                    <a href="" class="btn-sq">공지사항</a>
+                </div>
+                <div class="right">
+                    <a href="" class="btn-icon ic-kakao"><span class="hidden-text">카카오톡</span></a>
+                    <a href="" class="btn-icon ic-insta"><span class="hidden-text">인스타그램</span></a>
+                    <a href="" class="btn-icon ic-youtube"><span class="hidden-text">유튜브</span></a>
+                </div>
+            </div>
+            <div class="ft__company">
+                <div class="cp-name">
+                    <span style="font-weight:bold">(주)인사이트랩</span>
+                    <span class="ic-fold__up"></span>
+                </div>
+                <div class="cp-info">
+                    <dl>
+                        <dt>대표</dt>
+                        <dd>김지훈</dd>
+                        <dt>주소</dt>
+                        <dd>서울시 강남구 논현로 703</dd>
+                        <dt>사업자번호</dt>
+                        <dd>511-81-24974</dd>
+                        <dt>통신판매업</dt>
+                        <dd>제2001-서울강남-00452호</dd>
+                        <dt>정보담당자</dt>
+                        <dd>김땡땡</dd>
+                        <dt>고객센터</dt>
+                        <dd>
+                            <strong>1234-1234</strong><br>
+                            info@daab.com<br>
+                            평일 11:00~17:00
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="ft__rights">
+                <ul>
+                    <li><a href="#" class="terms">이용약관</a></li>
+                    <li class="li-divider">|</li>
+                    <li><a href="#" class="terms">개인정보 처리방침</a></li>
+                    <li class="li-divider">|</li>
+                    <li><a href="#" class="terms">사업자정보 확인</a></li>
+                </ul>
+                <p>ⓒ 2021 <span style="font-weight:bold">INSIGHT LAB</span> Inc., All Rights Reserved</p>
+            </div>
+            <div class="btn-totop"><span class="hidden-text">scroll to top</span></div>
+        </div>
+    </footer>
+    
+    <script>
+        /*풋터 회사정보 열닫*/
+        $(".cp-name").click(function(){
+            $(this).siblings(".cp-info").toggleClass("open");
+            $(this).toggleClass("active");
+        })
+    </script>
+    <script>
+        /*옵션 열고닫기*/
+        var acc = document.getElementsByClassName("switch");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+
+                this.classList.toggle("switch-active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script>
+        /*스텝*/
+        var currentTab = 0; // Current tab is set to be the first tab (0)
+        showTab(currentTab); // Display the current tab
+
+        function showTab(n) {
+            // This function will display the specified tab of the form ...
+            var x = document.getElementsByClassName("tab");
+            x[n].style.display = "block";
+            // ... and fix the Previous/Next buttons:
+            if (n == 1) {
+                document.getElementById("prevBtn").addClass = "disabled";
+            } else {
+                document.getElementById("prevBtn").style.display = "inline";
+            }
+            if (n == (x.length - 1)) {
+                document.getElementById("nextBtn").innerHTML = "완료";
+            } else {
+                document.getElementById("nextBtn").innerHTML = "다음";
+            }
+            // ... and run a function that displays the correct step indicator:
+            fixStepIndicator(n)
+        }
+
+        function nextPrev(n) {
+            // This function will figure out which tab to display
+            var x = document.getElementsByClassName("tab");
+            // Exit the function if any field in the current tab is invalid:
+            if (n == 1 && !validateForm()) return false;
+            // Hide the current tab:
+            x[currentTab].style.display = "none";
+            // Increase or decrease the current tab by 1:
+            currentTab = currentTab + n;
+            // if you have reached the end of the form... :
+            if (currentTab >= x.length) {
+                //...the form gets submitted:
+                document.getElementById("regForm").submit();
+                return false;
+            }
+            // Otherwise, display the correct tab:
+            showTab(currentTab);
+        }
+
+        function validateForm() {
+            // This function deals with validation of the form fields
+            var x, y, i, valid = true;
+            x = document.getElementsByClassName("tab");
+            y = x[currentTab].getElementsByTagName("input");
+            // A loop that checks every input field in the current tab:
+            for (i = 0; i < y.length; i++) {
+                // If a field is empty...
+                if (y[i].value == "") {
+                    // add an "invalid" class to the field:
+                    y[i].className += " invalid";
+                    // and set the current valid status to false:
+                    valid = false;
+                }
+            }
+            // If the valid status is true, mark the step as finished and valid:
+            if (valid) {
+                document.getElementsByClassName("step")[currentTab].className += " finish";
+            }
+            return valid; // return the valid status
+        }
+
+        function fixStepIndicator(n) {
+            // This function removes the "active" class of all steps...
+            var i, x = document.getElementsByClassName("step");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" active", "");
+            }
+            //... and adds the "active" class to the current step:
+            x[n].className += " active";
+        }
+    </script>
+    <script>
+        /* i 눌렀을 때*/
+        $(".tooltip").click(function(){
+            $(".layer").css("display","block");
+        })
+        /*레이어팝업 닫기버튼*/
+        $(".close").click(function(){
+            $(".layer").css("display","none");
+        })
+    </script>
+</body>
+
+</html>

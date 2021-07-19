@@ -647,14 +647,19 @@ cart__list > li{display: inline-block; width: 168px; height: 278px; margin: 0; p
 .swiper-btn>button{width: 20px; height: 100%; border: 0; text-indent: -9999px;}
 button.prev{margin-left: 8px; background: url(../images/ic-toggle-white.svg) #999 no-repeat; background-size: 20px 40px; transform: rotate(180deg);}
 button.next{margin-right: 8px; background: url(../images/ic-toggle-white.svg) #999 no-repeat; background-size: 20px 40px;}
+.layer__single-btn{width: 100%; height: 50px; box-sizing: border-box; border-top: 1px solid #CCC;}
+.layer__single-btn > button{width: 100%; height: 100%; margin: 0; padding: 0; border: 0; background: #FFF;}
 .layer__ft-btn{width: 100%; height: 50px; box-sizing: border-box; display: flex; justify-content: space-between; border-top: 1px solid #CCC;}
 .layer__ft-btn>button{width: 50%; height: 100%; margin: 0; padding: 0; border: 0; background: #FFF;}
 .layer__ft-btn>button:first-child{font-weight: 700; color: #245217;}
 .layer__ft-btn>button:last-child{border-left: 1px solid #CCC;}
+.confirm>button:last-child{font-weight: 700 !important; color: #245217 !important;}
+.confirm>button:first-child{border-left: 1px solid #CCC !important; font-weight: normal !important; color: #333 !important;}
 /**레이어팝업 - 툴팁아이콘눌렀을때**/
 .layer__top > .point{font-size: 1.4em; font-weight: bold; color: #111;}
 .layer__text{padding: 32px 20px; text-align: left;}
 .layer__text dt{font-weight: bold; padding-bottom: 12px; border-bottom: 1px solid #CCC;}
 .layer__text dd{color: #666; padding-top: 12px;}
 .layer__text ul{margin-left: 8px;}
-.layer__text ul li{list-style:disc;    }
+.layer__text ul li{list-style:disc;}
+.layer__text .f-sub{color:#707070;}

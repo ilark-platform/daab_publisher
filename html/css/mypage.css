@@ -120,7 +120,8 @@ p.block{margin-top: 6px;}
 /**2.배송정보**/
 span.chip{font-size: 0.7em; color: #245117; padding: 2px 4px 1px; margin-left: 8px; border-radius: 4px; border: 1px solid #245217; background: #E4EAE2;}
 span.chip--recently{font-size: 0.7em; color: #707070; padding: 2px 4px 1px; margin-left: 8px; border-radius: 4px; border: 1px solid #A0A0A0; background: #EAEAEA;}
-.inner-btn{position: absolute; top: 0; right: 0; border: 0; background: #FFF; font-size: 0.9em; color: #245217;}
+.inner-btn{position: absolute; top: 0; right: 0; border: 0;}
+.inner-btn>button{border: 0; background: #FFF; font-size: 0.9em; color: #245217;}
 /**3.결제정보**/
 .payment__detail>li{position: relative; display: flex; justify-content: flex-start; align-items: center; width: 100%; height: 68px; border-radius: 8px; background: #F5F5F5; margin-bottom: 8px; padding: 12px 16px; box-sizing: border-box;}
 .payment__detail>li:last-child{margin-bottom: 0;}
@@ -129,7 +130,19 @@ input[type=radio].card-check{width: 1px; height: 1px; overflow: hidden; position
 input[type=radio].card-check + label{position: absolute; display: inline-block; width: 100%; height: 100%; background: url(../images/radio-default.svg) 0 50% no-repeat; background-size: 20px;}
 input[type=radio].card-check:checked + label{background: url(../images/radio-selected.svg) 0 50% no-repeat; background-size: 20px;}
 .payment__detail>li>div{margin-left: 36px;}
-.payment__detail>li>div>p.main{font-size: 1em !important; margin-bottom: 2px !important;}
+.payment__detail>li>div>p.main{font-size: 1em !important; margin-bottom: 2px !important;} 
+
+.payment__detail>li>span.switch{position: absolute; right: 16px; display: inline-block; width: 16px; height: 16px; background: url(../images/ic-toggle.svg) no-repeat; background-size: contain;}
+.payment__detail>li>span.switch-on{position: absolute; right: 16px; display: inline-block; width: 16px; height: 16px; background: url(../images/ic-toggle_active.svg) no-repeat; transform: rotate(180deg); background-size: contain;}
+.card-history{display: none !important; height: 100% !important; background: #FFF !important;padding: 0 !important;}
+.card-history-one{position: relative; display: block !important; margin:0 !important; padding: 8px 16px; border-bottom: 1px solid #CCC;}
+.card-history-one:last-child{border-bottom: 0;}
+.card-history >div > dl > dt, dd {display: inline-block;}
+.card-history >div > dl > dt {width: 64px;}
+.card-history span.card-status{position: absolute; top: 8px; right: 16px; font-size: 0.9em; color: #245217;}
+li.noline{height: 120px; background: #fff !important; padding: 0 !important; text-align: center;}
+
+
 /**4.렌탈약관**/
 .agreement__detail>li{position: relative; display: flex; align-items: center; width: 100%; height: 56px; border-radius: 8px; background: #E4EAE2; margin-bottom: 8px; padding: 0 16px; box-sizing: border-box;}
 input[type=checkbox].agr-check{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
@@ -198,8 +211,8 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .address-wrap{padding:0}
 .address-wrap > li{position: relative; margin: 16px 0; padding: 0 40px 16px 0; border-bottom: 1px solid #EAEAEA;}
 .inner-delbtn{position: absolute; top: 35%; right: 16px; border: 0; background: rgba(255,255,255,0); font-size: 0.9em; color: #707070;}
-.addcard{background: #FFF !important; border: 2px dashed #CCC; color: #707070; padding: 0 !important;}
-.addcard > a{display: inline-block; width: 100%; line-height: 64px; text-align: center; color: #707070;}
+.addcard{background: #FFF !important; border: 2px dashed #CCC !important; color: #707070; padding: 0 !important;box-sizing: border-box;}
+.addcard > a{display: inline-block; width: 100%; line-height: 56px; text-align: center; color: #707070; }
 .save-check__wrap{padding: 24px 16px 0;}
 .save-chck{height: 18px; margin-bottom: 8px;}
 .save-chck:last-child;{margin-bottom: 0;}
@@ -213,6 +226,7 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .shortcut__item{display: inline-block; width: 50%; line-height: 48px; border-bottom: 1px solid #EAEAEA; text-align: center; color: #999;}
 .shortcut__tab > .current{font-weight: bold; color: #245217; border-bottom: 3px solid #245217;}
 .tab__singlepay{display: none;}
+.tab__alarm{display: none;}
 
 /**주문내역 FILTER**/
 .filter_close{padding: 24px 16px; background: #FFF; box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16); height: 48px; margin-bottom: 20px;}
@@ -256,6 +270,7 @@ a.detail-page::after{position: absolute; content: ""; top: 1px; width: 16px; hei
 .order__desc > dd:last-child{font-weight: normal;}
 .order__desc > dd > span.price{font-size: 1.5em; font-weight: bold; margin-right: 4px;}
 .order__msg{width: 100%; line-height: 36px; font-size: 0.9em; color: #FFF; text-align: center;}
+.card__msg{width: 100%; height: 40px; font-size: 0.9em; color: #245217; text-align: center; vertical-align: middle;}
 .greenbox{position: relative; background: #245217}
 .greenbox::after{position: absolute; bottom: -12px; left: calc(50% - 3px); content: ""; border-width: 6px; border-style: solid; border-color: #245217 transparent transparent transparent;}
 .redbox{position: relative; background: #D84444}
@@ -294,7 +309,7 @@ div.delivery__detail{background: #FFF; padding: 16px;}
 
 /**인보이스 청구내역**/
 .invoice-btn{width: 32px; height: 32px; background: url(../images/ic-invoice.svg) center no-repeat; background-size: contain; border: 0; text-indent: -9999px;}
-.invoice-wrap > li{position: relative; margin: 16px 0; padding: 0 0 16px 0; border-bottom: 1px solid #EAEAEA;}
+.invoice-wrap > li{position: relative; margin: 16px 0 0; padding: 0 0 16px 0; border-bottom: 1px solid #EAEAEA;}
 .list-maintext{padding-bottom: 8px !important;}
 .invoice-list td{padding-bottom: 4px;}
 
@@ -318,3 +333,34 @@ div.delivery__detail{background: #FFF; padding: 16px;}
 .cancel__summary > dt{margin-bottom: 4px;}
 .cancel-process{margin-bottom: 4px; padding: 8px 12px; background: #FFF; border-radius: 4px; text-align: center;}
 .ic-next{display: inline-block; width: 20px; height: 20px; background: url(../images/ic-toggle.svg) center no-repeat; background-size: 14px;}
+.btn__wrap{width: 100%; height: 48px; padding: 16px 0 0;}
+
+
+/**설정**/
+.info-group{margin-top: 16px;}
+.sns-account{display: flex; justify-content: space-between; padding: 0 8px;}
+.sns-account > li{display: inline-block; width: 56px; height: 56px; border-radius: 50%; background: #CCC;}
+.sns-account > li > a{display: inline-block; width: 100%; height: 100%; background-size: 75%; text-indent: -9999px;}
+.sns-kakao{background: url(../images/sns-kakao.svg) center no-repeat;}
+.sns-naver{background: url(../images/sns-naver.svg) center no-repeat;}
+.sns-google{background: url(../images/sns-google.svg) center no-repeat;}
+.sns-face{background: url(../images/sns-face.svg) center no-repeat;}
+.sns-apple{background: url(../images/sns-apple.svg) center no-repeat;}
+.alarm-setting > li {padding: 0 16px; background: #FFF; border-bottom: 8px solid #EAEAEA;}
+.alarm-setting > li > dl{display: flex; justify-content: space-between;height: 64px; align-items: center;}
+.alarm-setting > li > dl > dd > span{vertical-align: middle;}
+.pagego{display: inline-block; width: 24px; height: 24px; margin-left: 4px; background: url(../images/ic-toggle.svg) center no-repeat; background-size: 16px;}
+.subbox{background: #F5F5F5; border-radius: 8px; padding: 4px 8px; margin-bottom: 16px;}
+/* The switch - the box around the slider */
+.toggle {position: relative; display: inline-block; width: 48px;height: 24px;}
+/* Hide default HTML checkbox */
+.toggle input {opacity: 0; width: 0; height: 0;}
+/* The slider */
+.slider {position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .4s; transition: .4s;}
+.slider:before {position: absolute; content: ""; height: 16px; width: 16px; left: 4px; bottom: 4px; background-color: white; -webkit-transition: .4s; transition: .4s;}
+input:checked + .slider {background-color: #245217;}
+input:focus + .slider {box-shadow: 0 0 1px #2196F3;}
+input:checked + .slider:before {-webkit-transform: translateX(26px); -ms-transform: translateX(26px); transform: translateX(26px);}
+/* Rounded sliders */
+.slider.round {border-radius: 12px;}
+.slider.round:before {border-radius: 50%;}
