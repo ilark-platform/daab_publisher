@@ -40,9 +40,11 @@
     touch-action: pan-y
 }
 
+/*
 .swiper-container-pointer-events.swiper-container-vertical {
     touch-action: pan-x
 }
+*/
 
 .swiper-slide {
     display: flex;
