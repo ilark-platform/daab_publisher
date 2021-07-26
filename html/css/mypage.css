@@ -221,12 +221,18 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .save-chck > input[type=radio]:checked + label{background: url(../images/radio-selected.svg) 0 50% no-repeat; background-size: contain;}
 
 
+
+
 /**주문내역 TAB**/
 .shortcut__tab{display: flex; justify-content: space-between; height: 48px; padding: 0; background: #FFF;}
 .shortcut__item{display: inline-block; width: 50%; line-height: 48px; border-bottom: 1px solid #EAEAEA; text-align: center; color: #999;}
 .shortcut__tab > .current{font-weight: bold; color: #245217; border-bottom: 3px solid #245217;}
 .tab__singlepay{display: none;}
 .tab__alarm{display: none;}
+.tab__pw{display: none;}
+
+
+
 
 /**주문내역 FILTER**/
 .filter_close{padding: 24px 16px; background: #FFF; box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16); height: 48px; margin-bottom: 20px;}
@@ -247,7 +253,7 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .filter--type > label{width: 35%;}
 .filter--type > select{width: 100%; line-height: 34px; border: 1px solid #CCC; border-radius: 4px; padding: 0 8px;}
 .filter--button{width: 100%; height: 48px;}
-.final-btn{width: 100%; height: 100%; padding: 0; background: #245217; color: #FFF; border: 0;}
+.final-btn{display: block; width: 100%; height: 100%; line-height: 48px; text-align: center; padding: 0; background: #245217; color: #FFF; border: 0;}
 .line-btn{width: 100%; height: 100%; padding: 0; background: #FFF; color: #333; border: 1px solid #CCC;}
 
 /**TAB 렌탈주문**/
