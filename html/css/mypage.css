@@ -175,7 +175,7 @@ li.terms > p > a{position: absolute; right: 0; text-decoration: underline; color
 table{width: 100%;}
 .pay__info > div > table{width: 100%; border: 0; padding: 0; margin: 0;}
 td.textfield{display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;}
-table input[type="text"], input[type="password"], input[type="num"]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
+table input[type=text], input[type=num], input[type="password"]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
 .field--small{width: 30%}
 .field--medium{width: 70%}
 .field--large{width: 100%}
@@ -215,10 +215,12 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .addcard > a{display: inline-block; width: 100%; line-height: 56px; text-align: center; color: #707070; }
 .save-check__wrap{padding: 24px 16px 0;}
 .save-chck{height: 18px; margin-bottom: 8px;}
-.save-chck:last-child;{margin-bottom: 0;}
+.save-chck:last-child{margin-bottom: 0;}
 .save-chck > input[type=radio]{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
 .save-chck > input[type=radio] + label{position: absolute; display: inline-block; width: 100%; height: 18px; text-indent: 32px; background: url(../images/radio-default.svg) 0 50% no-repeat; background-size: contain;}
 .save-chck > input[type=radio]:checked + label{background: url(../images/radio-selected.svg) 0 50% no-repeat; background-size: contain;}
+
+
 
 
 /**주문내역 TAB**/
@@ -227,6 +229,10 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .shortcut__tab > .current{font-weight: bold; color: #245217; border-bottom: 3px solid #245217;}
 .tab__singlepay{display: none;}
 .tab__alarm{display: none;}
+.tab__pw{display: none;}
+
+
+
 
 /**주문내역 FILTER**/
 .filter_close{padding: 24px 16px; background: #FFF; box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16); height: 48px; margin-bottom: 20px;}
@@ -247,7 +253,7 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .filter--type > label{width: 35%;}
 .filter--type > select{width: 100%; line-height: 34px; border: 1px solid #CCC; border-radius: 4px; padding: 0 8px;}
 .filter--button{width: 100%; height: 48px;}
-.final-btn{width: 100%; height: 100%; padding: 0; background: #245217; color: #FFF; border: 0;}
+.final-btn{display: block; width: 100%; height: 100%; line-height: 48px; text-align: center; padding: 0; background: #245217; color: #FFF; border: 0;}
 .line-btn{width: 100%; height: 100%; padding: 0; background: #FFF; color: #333; border: 1px solid #CCC;}
 
 /**TAB 렌탈주문**/

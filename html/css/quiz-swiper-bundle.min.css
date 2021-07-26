@@ -215,3 +215,21 @@ label > span{display: block; width: 250px; height: 340px; margin-top: 12px; back
 .spaceB-img{background: url(../images/quiz-interior-style1.jpeg) center no-repeat;}
 .spaceC-img{background: url(../images/quiz-interior-style1.jpeg) center no-repeat;}
 .spaceD-img{background: url(../images/quiz-interior-style1.jpeg) center no-repeat;}
+
+
+
+/*quiz-splasch*/
+.curating-title{width: 100%; max-width: 768px; margin: 0 auto; padding: 48px 24px 24px; text-align: center; box-sizing: border-box;}
+.curating-title .ci{position: relative; display: block; height: 32px; margin-bottom: 48px; background: url(../images/daab-ci.svg) center no-repeat; background-size: contain; text-indent: -9999px;}
+.curating-title .ci::after{position: absolute; bottom: -24px; left: calc(50% - 12px); content: ''; width: 24px; height: 1px; background: #A0A0A0;}
+.curating-title h2{margin-bottom: 8px; font-size: 1.55em; line-height: 1.3em; font-weight: bold;}
+.flip-img{position: relative; max-width: 768px; height: 100%; margin: 0 auto; padding: 24px; box-sizing: border-box;}
+.flip-img img{position: absolute; left: 50%; transform: translate(-50%,0); width: 80%; margin: 0 auto;}
+.curating-msg{position: absolute; bottom: 72px; left: 50%; transform: translate(-50%,0); padding: 2px 12px; border-radius: 20px; background: #A0A0A0; color: #FFF; font-size: 0.9em;}
+
+/*quiz-signin*/
+#wrap > .close{position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; background: url(../images/ic-close.svg) no-repeat; background-size: contain; border: 0; text-indent: -9999px;}
+.login-wrap{position: absolute; bottom: 72px; left: 50%; transform: translate(-50%,0); width: 100%; max-width: 769px; padding: 24px 24px 0 24px; box-sizing: border-box;}
+.sns__box{margin-bottom: 40px;}
+.login__box{margin: 16px 0 0;}
+.login__box a{display: inline-block; margin-left: 6px; color: #245217; text-decoration: underline;}
