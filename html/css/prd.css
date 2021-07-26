@@ -18,7 +18,7 @@
 /**상품기본정보 - 이미지**/
 .single__swiper{position: relative; display: block; width: 100%; background: #F5F5F5; }
 .single__swiper::after{content: ""; display: block; padding-bottom: 100%;}
-.img-box{position: absolute; top: 5%; left: 5%;  width: 90%; height: 90%; overflow: hidden; }}
+.img-box{position: absolute; top: 5%; left: 5%;  width: 90%; height: 90%; overflow: hidden; }
 .img-wrap{float: left; display: inline-block; width: 10000px; height: 100%;}
 .img-wrap>img{height: 100%;}
 .single__swiper--control{margin: 16px 0;}
