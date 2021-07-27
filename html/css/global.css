@@ -655,26 +655,55 @@ a.menu{font-size: 2em; font-weight: 600; font-weight: 600; line-height: 64px;}
 .word-wrap > li > a{color: #707070;}
 
 
+/**회원가입**/
+.signup__box{position: relative; margin: 48px 0 0;}
+.signup-email{display: flex; justify-content: center; align-items: center; width: 100%; height: 48px; border: 1px solid #CCC; text-align: center;}
+.mail-icon{display: inline-block; width: 20px; height: 45px; margin: 0 8px 3px 0; background: url(../images/ic-mail.svg) center no-repeat; background-size: contain; vertical-align: middle;}
+.signup-form{padding: 24px 0 0; background: #FFF;}
+.signup-form > div:first-child{margin-bottom: 40px;}
+.signup-form > div{position: relative; margin-bottom: 24px;}
+.signup-form > div:last-child{margin-bottom: 0;}
+.confirm-mail{position: relative;}
+.signup-form .find-input{width: 100%; height: 48px;  padding: 0 8px; border: 0; border-bottom: 1px solid #CCC; border-radius: 0; box-sizing: border-box;}
+.signup-form .find-input:focus{outline: none; border-bottom: 1px solid #FD9B27}
+.inner-input{border: 0; border-bottom: 1px solid #CCC; border-radius: 0; padding: 0 8px; width: 100%; height: 48px; box-sizing: border-box;}
+.inner-input:focus{outline: none; border-bottom: 1px solid #FD9B27}
+.msg--good{position: absolute; left: 0; bottom: -24px; display: inline-block; width: 100%;}
+.form-title{margin: 24px 0;}
+input[type=checkbox].ic-psw{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+input[type=checkbox].ic-psw + label{display: inline-block; width: 48px; height: 48px; background: url(../images/ic-psw-show.svg) center no-repeat; background-size: 24px;}
+input[type=checkbox].ic-psw:checked + label{background: url(../images/ic-psw-hidden.svg) center no-repeat; background-size: 24px;}
+
+/**이용약관 양식**/
+.terms__title{text-align: center; line-height: 56px; font-size: 1.3em; font-weight: bold; width: 70% !important}
+.terms-wrap{width: 100%; height: 100%; padding: 16px; box-sizing: border-box;}
+.terms-wrap h2{margin: 16px 0; font-size: 1.7em; font-weight: 600; line-height: 1.3em;}
+.terms-wrap h3{margin-bottom: 8px; font-size: 1.4em; font-weight: 600; line-height: 1.3em;}
+.terms-wrap b{font-weight: bold;}
+
 
 /**로그인**/
-.login-wrap{padding: 40px 24px; background: #FFF;}
-.login-form > input[type=text]{display: block; width: 100%; height: 48px; margin-top: 16px; padding: 0 8px; border: 0; border-bottom: 1px solid #CCC; box-sizing: border-box;}
-.login-form > input[type=text]:focus{outline: none; border-bottom: 1px solid #FD9B27}
+.login-wrap{padding: 40px 16px 64px;}
+.login-form{margin-top: 24px;}
+.login-form > div{position: relative; margin-bottom: 24px;}
+.login-form > div:last-child{margin-bottom: 0;}
+.login-form>input[type=text], .login-form>input[type=password], .login-form>input[type=num]{display: block; width: 100%; height: 48px; margin-top: 16px; padding: 0 8px; border: 0; border-bottom: 1px solid #CCC; box-sizing: border-box;}
+.login-form > input[type=text]:focus,input[type=password]:focus,input[type=num]:focus{outline: none; border-bottom: 1px solid #FD9B27}
 .login-sub{margin: 16px 0;}
 input[type=checkbox].remember{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
 input[type=checkbox].remember + label{display: inline-block; width: 100%; height: 18px; background: url(../images/box-noncheck.svg) no-repeat; background-size: contain; text-indent: 24px;}
 input[type=checkbox].remember:checked + label{background: url(../images/box-checked.svg) no-repeat; background-size: contain;}
-.sns-wrap{padding: 32px 16px 64px; background: #EAEAEA;}
+.sns-wrap{padding: 24px 16px 64px;}
 .sns__box{margin-bottom: 48px;}
 .login__box > p{text-align: center;}
 .login__box > p > a{color: #245217; font-weight: bold; display: inline-block; margin: 0 8px;}
-.signin__box{position: relative; margin: 40px 0;}
+.signin__box{position: relative; margin: 40px 0 0;}
 .login--error{position: absolute; left: 0; top: -28px; display: inline-block; width: 100%; background: url(../images/ic-tooltip-red.svg) left no-repeat; background-size: 14px; text-indent: 16px;}
 
 
 
 /**계정찾기**/
-.tab__email{padding: 24px 24px 0;}
+.tab__email{padding: 24px 0 0;}
 .tab__email .find-input{width: 100%; height: 48px; padding: 0 8px; border: 0; border-bottom: 1px solid #CCC; border-radius: 0; box-sizing: border-box;}
 .tab__email .find-input:focus{outline: none; border-bottom: 1px solid #FD9B27}
 .tab__email .code{border: 0; border-bottom: 1px solid #CCC; border-radius: 0; padding: 0 8px; width: 100%; height: 48px; box-sizing: border-box;}
@@ -684,12 +713,12 @@ input[type=checkbox].remember:checked + label{background: url(../images/box-chec
 .verification-code .time{width: 80px; text-align: center;}
 .resend{position: absolute; right: 0; bottom: -50%; background: none; border: none; text-decoration: underline}
 button.code-require{border: 0; border-radius: none; background: #245217; color: #FFF; height: 48px; width: 100px;}
-.msg--error{position: absolute; left: 0; bottom: -60%; display: inline-block; width: 100%; background: url(../images/ic-tooltip-red.svg) left no-repeat; background-size: 14px; text-indent: 16px;}
-.tab__email--result, .tab__pw--result{display: none; padding: 24px 24px 0;}
+.msg--error{position: absolute; left: 0; bottom: -24px; display: inline-block; width: 100%; background: url(../images/ic-tooltip-red.svg) left no-repeat; background-size: 14px; text-indent: 16px;}
+.tab__email--result, .tab__pw--result{display: none; padding: 24px 0 0;}
 .result-text{text-align: center; margin: 56px 0;}
 p.margin{margin: 12px 0;}
 
-.tab__pw{padding: 32px 24px 0;}
+.tab__pw{padding: 24px 0 0;}
 .find-text{margin-bottom: 40px;}
 .tab__pw .email{position: relative; margin-bottom: 40px; }
 .tab__pw .email .find-input{width: 100%; height: 48px; padding: 0 8px; border: 0; border-bottom: 1px solid #CCC; border-radius: 0; box-sizing: border-box;}
@@ -752,3 +781,7 @@ button.next{margin-right: 8px; background: url(../images/ic-toggle-white.svg) #9
 .layer__text ul{margin-left: 8px;}
 .layer__text ul li{list-style:disc;}
 .layer__text .f-sub{color:#707070;}
+
+.confirm-msg > p{margin-bottom: 16px;}
+.confirm-msg > ul{width: 100%; margin: 0;}
+.confirm-msg > ul > li{line-height: 24px}

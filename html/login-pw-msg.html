@@ -51,36 +51,24 @@
     <div id="contents" style="padding: 0;">
 
        <div class="login-wrap">
-           <h2 class="mypage-title">로그인</h2>
+           <h2 class="mypage-title">비밀번호 재설정</h2>
+           <p class="f-black f-sub margin title-margin">새로운 비밀번호를 입력해주세요.<br>변경된 비밀번호가 고객님의 계정으로 리다이렉트 됩니다. </p>
            <div class="login-form">
-                <input type="text" class="email" placeholder="이메일 주소">
-                <input type="password" class="password" placeholder="비밀번호">
-                <div class="login-sub flex-center">
-                    <div><input type="checkbox" id="login-check" class="remember"><label for="login-check" class="f-sub">로그인 유지</label></div>
-                    <a href="" class="forgotten f-sub">아이디/비밀번호 찾기<span></span></a>
+                <div class="flex-center">
+                    <input type="password" placeholder="비밀번호" value="abcde" id="pswFirst" class="inner-input">
+                    <input type="checkbox" class="ic-psw" id="pswF" onclick="pswFirst()"><label for="pswF"></label>
+                    <!--입력값 불충분시 display:block-->
+                    <span class="msg--error f-sub redheader" style="display: block;">영문,숫자 포함 최소 6자리 이상이어야 합니다.</span>
+                </div>
+                <div class="flex-center" style="margin-bottom: 72px">
+                    <input type="password" placeholder="비밀번호 확인" value="12345" id="pswSecond" class="inner-input">
+                    <input type="checkbox" class="ic-psw" id="pswS" onclick="pswSecond()"><label for="pswS"></label>
+                    <!--입력값 불충분시 display:block-->
+                    <span class="msg--error f-sub redheader" style="display: block;">잘못 입력하셨습니다.</span>
                 </div>
                 <div class="signin__box filter--button">
-                    <button class="final-btn">로그인</button>
-                    <!--입력값 불충분시 display:block-->
-                    <span class="login--error f-sub redheader" style="display: none;">가입하지 않은 이메일이거나, 잘못된 비밀번호입니다.</span>  
-                    </div> 
-            </div>
-        </div>
-        <div class="sns-wrap" style="background: #FFF">
-            <div class="sns__box">
-                <p class="font-bold">SNS계정으로 간편하게 로그인</p>
-                <div class="info-group">
-                    <ul class="sns-account">
-                        <li><a href="" class="sns-kakao">카카오톡</a></li>
-                        <li><a href="" class="sns-naver">네이버</a></li>
-                        <li><a href="" class="sns-google">구글</a></li>
-                        <li><a href="" class="sns-face">페이스북</a></li>
-                        <li><a href="" class="sns-apple">애플</a></li>
-                    </ul>
+                    <button class="final-btn">비밀번호 재설정</button>
                 </div>
-            </div>
-            <div class="login__box">
-                <p class="f-sub">아직 daab 회원이 아니신가요<a href="">회원가입</a></p>
             </div>
         </div>
     </div>
@@ -138,14 +126,33 @@
             <div class="btn-totop"><span class="hidden-text">scroll to top</span></div>
         </div>
     </footer>
-    
-    <script>
-        /*풋터 회사정보 열닫*/
-        $(".cp-name").click(function(){
-            $(this).siblings(".cp-info").toggleClass("open");
-            $(this).toggleClass("active");
-        })
-    </script>
 </body>
 
+<script>
+    /*풋터 회사정보 열닫*/
+    $(".cp-name").click(function(){
+        $(this).siblings(".cp-info").toggleClass("open");
+        $(this).toggleClass("active");
+    })
+</script>
+<script>
+    /*비밀번호 show hidden 버튼*/
+    function pswFirst() {
+        var x = document.getElementById("pswFirst");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+    /*비밀번호확인 show hidden 버튼*/
+    function pswSecond() {
+        var x = document.getElementById("pswSecond");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
 </html>

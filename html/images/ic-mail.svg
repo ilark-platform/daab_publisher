@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-ic-mail">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="ic-mail" clip-path="url(#clip-ic-mail)">
+    <rect width="24" height="24" fill="none"/>
+    <g id="사각형_1" data-name="사각형 1" transform="translate(2 5)" fill="none" stroke="#FFF" stroke-width="1">
+      <rect width="20" height="14" rx="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="13" rx="0.5" fill="none"/>
+    </g>
+    <path id="패스_1" data-name="패스 1" d="M5.555,7.162l9,7.5,9-7.5" transform="translate(-2.555 -1.162)" fill="none" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

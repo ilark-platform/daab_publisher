@@ -53,7 +53,6 @@
 
         <div class="login-wrap">
            <h2 class="mypage-title title-margin">계정 찾기</h2>
-        
         <!--*****TAB 시작******-->
         <div class="shortcut__tab">
             <div class="shortcut__item shortcut__email current">이메일</div>
@@ -66,9 +65,25 @@
                 <input type="num" placeholder="휴대폰 번호" class="find-input">
                 <button class="code-require" onclick="msgToast()">인증번호</button>
                 <!--인증번호 발송시 resend버튼 display:block-->
-                <button class="resend f-sub" style="display: none;">번호 재전송</button>
+                <button class="resend f-sub" style="display: block;">번호 재전송</button>
                 <!--입력값 불충분시 display:block-->
                 <span class="msg--error f-sub redheader" style="display: none;">회원가입시 입력한 이름과 휴대폰번호를 입력해주세요.</span>
+            </div>
+            <div class="phone flex-center" style="margin-top: 28px">
+                <input type="num" placeholder="휴대폰 번호" class="find-input">
+                <button class="code-require" onclick="msgToast()">인증번호</button>
+                <!--인증번호 발송시 resend버튼 display:block-->
+                <button class="resend f-sub" style="display: none;">번호 재전송</button>
+                <!--입력값 불충분시 display:block-->
+                <span class="msg--error f-sub redheader" style="display: block;">회원가입시 입력한 이름과 휴대폰번호를 입력해주세요.</span>
+            </div>
+            <div class="verification-code flex-center">
+                <input type="num" class="code">
+                <span class="redheader time f-sub">2분 59초</span>
+                <!--입력값 오류시 display:block-->
+                <span class="msg--error f-sub redheader" style="display: block;">인증번호를 다시 확인해주세요.</span>
+                <!--입력시간 초과시 display:block-->
+                <span class="msg--error f-sub redheader" style="display: none;">입력시간이 초과되었습니다. 재전송 버튼을 눌러주세요.</span>
             </div>
             <div class="verification-code flex-center">
                 <input type="num" class="code">
@@ -76,7 +91,7 @@
                 <!--입력값 오류시 display:block-->
                 <span class="msg--error f-sub redheader" style="display: none;">인증번호를 다시 확인해주세요.</span>
                 <!--입력시간 초과시 display:block-->
-                <span class="msg--error f-sub redheader" style="display: none;">입력시간이 초과되었습니다. 재전송 버튼을 눌러주세요.</span>
+                <span class="msg--error f-sub redheader" style="display: block;">입력시간이 초과되었습니다. 재전송 버튼을 눌러주세요.</span>
             </div>
             <div class="signin__box filter--button">
                 <!--입력값 불충분시 disabled-->
@@ -103,11 +118,29 @@
             <div class="email">
                 <input type="num" placeholder="이메일" class="find-input">
                 <!--이메일 미입력시 display:block-->
-                <span class="msg--error f-sub redheader" style="display: none;">이메일을 입력해주세요. </span>
+                <span class="msg--error f-sub redheader" style="display: block;">이메일을 입력해주세요. </span>
                 <!--이메일 입력오류시 display:block-->
                 <span class="msg--error f-sub redheader" style="display: none;">정확한 이메일을 입력해주세요. 예시:musicis@mylife.com</span>
                 <!--이메일 입력오류시 display:block-->
                 <span class="msg--error f-sub redheader" style="display: none;">가입되지 않은 이메일입니다.</span>
+            </div>
+            <div class="email">
+                <input type="num" placeholder="이메일" class="find-input">
+                <!--이메일 미입력시 display:block-->
+                <span class="msg--error f-sub redheader" style="display: none;">이메일을 입력해주세요. </span>
+                <!--이메일 입력오류시 display:block-->
+                <span class="msg--error f-sub redheader" style="display: block;">정확한 이메일을 입력해주세요. 예시:musicis@mylife.com</span>
+                <!--이메일 입력오류시 display:block-->
+                <span class="msg--error f-sub redheader" style="display: none;">가입되지 않은 이메일입니다.</span>
+            </div>
+            <div class="email">
+                <input type="num" placeholder="이메일" class="find-input">
+                <!--이메일 미입력시 display:block-->
+                <span class="msg--error f-sub redheader" style="display: none;">이메일을 입력해주세요. </span>
+                <!--이메일 입력오류시 display:block-->
+                <span class="msg--error f-sub redheader" style="display: none;">정확한 이메일을 입력해주세요. 예시:musicis@mylife.com</span>
+                <!--이메일 입력오류시 display:block-->
+                <span class="msg--error f-sub redheader" style="display: block;">가입되지 않은 이메일입니다.</span>
             </div>
             <span class="f-sub">* 비밀번호의 경우 암호화 저장되어 분실 시 찾아드릴 수 없는 정보입니다. 재설정 하실 수 있도록 메일을 보내드릴게요.</span>
             <div class="signin__box filter--button">

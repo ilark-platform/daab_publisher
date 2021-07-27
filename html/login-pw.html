@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div id="wrap" class="back--gray">
+    <div id="wrap">
     <!--*****헤더영역******-->
     <header id="header">
         <div class="hd__menu">
@@ -52,10 +52,20 @@
 
        <div class="login-wrap">
            <h2 class="mypage-title">비밀번호 재설정</h2>
-           <p class="f-black f-sub margin">새로운 비밀번호를 입력해주세요.<br>변경된 비밀번호가 고객님의 계정으로 리다이렉트 됩니다. </p>
+           <p class="f-black f-sub margin title-margin">새로운 비밀번호를 입력해주세요.<br>변경된 비밀번호가 고객님의 계정으로 리다이렉트 됩니다. </p>
            <div class="login-form">
-                <input type="text" class="password" placeholder="새 비밀번호">
-                <input type="text" class="password" placeholder="새 비밀번호 확인">
+                <div class="flex-center">
+                    <input type="password" placeholder="비밀번호" id="pswFirst" class="inner-input">
+                    <input type="checkbox" class="ic-psw" id="pswF" onclick="pswFirst()"><label for="pswF"></label>
+                    <!--입력값 불충분시 display:block-->
+                    <span class="msg--error f-sub redheader" style="display: none;">영문,숫자 포함 최소 6자리 이상이어야 합니다.</span>
+                </div>
+                <div class="flex-center" style="margin-bottom: 72px">
+                    <input type="password" placeholder="비밀번호 확인" id="pswSecond" class="inner-input">
+                    <input type="checkbox" class="ic-psw" id="pswS" onclick="pswSecond()"><label for="pswS"></label>
+                    <!--입력값 불충분시 display:block-->
+                    <span class="msg--error f-sub redheader" style="display: none;">잘못 입력하셨습니다.</span>
+                </div>
                 <div class="signin__box filter--button">
                     <button class="final-btn">비밀번호 재설정</button>
                 </div>
@@ -116,14 +126,33 @@
             <div class="btn-totop"><span class="hidden-text">scroll to top</span></div>
         </div>
     </footer>
-    
-    <script>
-        /*풋터 회사정보 열닫*/
-        $(".cp-name").click(function(){
-            $(this).siblings(".cp-info").toggleClass("open");
-            $(this).toggleClass("active");
-        })
-    </script>
 </body>
 
+<script>
+    /*풋터 회사정보 열닫*/
+    $(".cp-name").click(function(){
+        $(this).siblings(".cp-info").toggleClass("open");
+        $(this).toggleClass("active");
+    })
+</script>
+<script>
+    /*비밀번호 show hidden 버튼*/
+    function pswFirst() {
+        var x = document.getElementById("pswFirst");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+    /*비밀번호확인 show hidden 버튼*/
+    function pswSecond() {
+        var x = document.getElementById("pswSecond");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
 </html>

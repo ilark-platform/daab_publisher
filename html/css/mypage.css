@@ -2,6 +2,7 @@
 .header__sub{width: 100%; background: #FFF; border-bottom: 1px solid #CCC;}
 .mypage__header{display: flex; align-items: flex-end; width: 768px; height: 70px; padding-left: 16px; padding-bottom: 20px; margin: 0 auto; background: #FFF; box-sizing: border-box;}
 .mypage-title{display: inline-block; font-size: 1.45em; font-weight: 400; margin-right: 4px; border: 0;}
+.title-margin{margin-bottom: 32px}
 .cart-qty{display: inline-block;}
 .flex-center{display: flex; justify-content: space-between; align-items: center;}
 .flex-top{display: flex; justify-content: space-between; align-items: flex-start;}
@@ -120,7 +121,7 @@ p.block{margin-top: 6px;}
 /**2.배송정보**/
 span.chip{font-size: 0.7em; color: #245117; padding: 2px 4px 1px; margin-left: 8px; border-radius: 4px; border: 1px solid #245217; background: #E4EAE2;}
 span.chip--recently{font-size: 0.7em; color: #707070; padding: 2px 4px 1px; margin-left: 8px; border-radius: 4px; border: 1px solid #A0A0A0; background: #EAEAEA;}
-.inner-btn{position: absolute; top: 0; right: 0; border: 0;}
+.inner-btn{position: absolute; top: 0; right: 0; border: 0; background: #FFF; font-size: 0.9em; color: #245217;}
 .inner-btn>button{border: 0; background: #FFF; font-size: 0.9em; color: #245217;}
 /**3.결제정보**/
 .payment__detail>li{position: relative; display: flex; justify-content: flex-start; align-items: center; width: 100%; height: 68px; border-radius: 8px; background: #F5F5F5; margin-bottom: 8px; padding: 12px 16px; box-sizing: border-box;}
@@ -150,6 +151,8 @@ input[type=checkbox].agr-check + label{position: absolute; display: inline-block
 input[type=checkbox].agr-check:checked + label{background: url(../images/round-check-primary.svg) 0 50% no-repeat; background-size: 24px;}
 .agreement__detail>li>p.main{font-size: 1em !important; margin-bottom: 0px !important; margin-left: 40px;}
 li.terms{display: block !important; background: #FFF !important; margin: 12px 0 24px 0!important; height: 100%;}
+li.notice{display: block !important; background: #FFF !important; padding: 0 16px 12px; height: 100%; border-bottom: 1px solid #CCC; border-radius: 0;}
+li.notice > p{font-size: 0.85em; color: #A0A0A0;}
 li.terms > p{position: relative; display: flex; justify-content: flex-start; align-items: flex-start; margin-bottom: 8px;}
 li.terms > p > input[type=checkbox]{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
 li.terms > p > input[type=checkbox] + label{display: inline-block; width: 18px; height: 18px; margin-left: 3px; margin-right: 19px; background: url(../images/round-check-gray.svg) 0 50% no-repeat; background-size: contain;}
@@ -175,7 +178,7 @@ li.terms > p > a{position: absolute; right: 0; text-decoration: underline; color
 table{width: 100%;}
 .pay__info > div > table{width: 100%; border: 0; padding: 0; margin: 0;}
 td.textfield{display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;}
-table input[type=text], input[type=num], input[type="password"]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
+table input[type=text], input[type=num]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
 .field--small{width: 30%}
 .field--medium{width: 70%}
 .field--large{width: 100%}
@@ -215,7 +218,7 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .addcard > a{display: inline-block; width: 100%; line-height: 56px; text-align: center; color: #707070; }
 .save-check__wrap{padding: 24px 16px 0;}
 .save-chck{height: 18px; margin-bottom: 8px;}
-.save-chck:last-child{margin-bottom: 0;}
+.save-chck:last-child;{margin-bottom: 0;}
 .save-chck > input[type=radio]{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
 .save-chck > input[type=radio] + label{position: absolute; display: inline-block; width: 100%; height: 18px; text-indent: 32px; background: url(../images/radio-default.svg) 0 50% no-repeat; background-size: contain;}
 .save-chck > input[type=radio]:checked + label{background: url(../images/radio-selected.svg) 0 50% no-repeat; background-size: contain;}
@@ -344,7 +347,7 @@ div.delivery__detail{background: #FFF; padding: 16px;}
 
 /**설정**/
 .info-group{margin-top: 16px;}
-.sns-account{display: flex; justify-content: space-between; padding: 0 8px;}
+.sns-account{display: flex; justify-content: space-between; padding: 0;}
 .sns-account > li{display: inline-block; width: 56px; height: 56px; border-radius: 50%; background: #CCC;}
 .sns-account > li > a{display: inline-block; width: 100%; height: 100%; background-size: 75%; text-indent: -9999px;}
 .sns-kakao{background: url(../images/sns-kakao.svg) center no-repeat;}
