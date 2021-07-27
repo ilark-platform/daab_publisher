@@ -178,7 +178,7 @@ li.terms > p > a{position: absolute; right: 0; text-decoration: underline; color
 table{width: 100%;}
 .pay__info > div > table{width: 100%; border: 0; padding: 0; margin: 0;}
 td.textfield{display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;}
-table input[type=text], input[type=num]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
+table input[type=text], input[type=num], input[type="password"]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
 .field--small{width: 30%}
 .field--medium{width: 70%}
 .field--large{width: 100%}
