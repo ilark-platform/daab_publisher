@@ -29,7 +29,7 @@
                 <h1 class="hd__logo">
                     <a href="#"><span class="hidden-text">daab</span></a>
                 </h1>
-                <div class="hd__btn left">    
+                <div class="hd__btn left">
                     <div class="btn-back">
                         <a href="#"><span class="hidden-text">이전 페이지</span></a>
                     </div>
@@ -55,299 +55,316 @@
         <!--*****본문영역******-->
         <div id="contents">
             <div class="payment__wrap">
-            
-            <!--1.주문정보-->
-            <div class="pay__box order">
-                <div class="pay__header">
-                    <h3 class="pay-name">주문 정보</h3>
-                </div>
-                <div class="pay__info">
-                    <div>
-                        <table>
-                            <colgroup>
-                                <col width="25%">
-                                <col width="75%">
-                            </colgroup>
-                            <tr>
-                                <td colspan="2"><p class="main bold">김땡땡</p></td>
-                            </tr>
-                            <tr>
-                                <td class="label">휴대전화</td>
-                                <td class="textfield">
-                                    <ul class="phone flex-center">
-                                        <li><input type="num" class="field--large"></li>
-                                        <li class="hyphen">-</li>
-                                        <li><input type="num" class="field--large"></li>
-                                        <li class="hyphen">-</li>
-                                        <li><input type="num" class="field--large"></li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label">이메일</td>
-                                <td class="textfield"><input type="text" class="field--large"></td>
-                            </tr>
-                        </table>
+
+                <!--1.주문정보-->
+                <div class="pay__box order">
+                    <div class="pay__header">
+                        <h3 class="pay-name">주문 정보</h3>
+                    </div>
+                    <div class="pay__info">
+                        <div>
+                            <table>
+                                <colgroup>
+                                    <col width="25%">
+                                    <col width="75%">
+                                </colgroup>
+                                <tr class="noinput">
+                                    <td colspan="2">
+                                        <p class="main bold">김땡땡</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label f-sub">휴대전화</td>
+                                    <td class="textfield">
+                                        <ul class="phoneinput flex-center">
+                                            <li><input type="num" class="field--large"></li>
+                                            <li class="hyphen">-</li>
+                                            <li><input type="num" class="field--large"></li>
+                                            <li class="hyphen">-</li>
+                                            <li><input type="num" class="field--large"></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label f-sub">이메일</td>
+                                    <td class="textfield"><input type="text" class="field--large"></td>
+                                </tr>
+                            </table>
+                            <p class="register-notice f-sub">상기 이메일로 영수증과 주문정보를 전송합니다.</p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="cancel">취소</button>
+                        <button class="save">저장</button>
                     </div>
                 </div>
-                <div class="btn-group">
-                    <button class="cancel">취소</button>
-                    <button class="save">저장</button>
+                <!--2.배송정보-->
+                <div class="pay__box delivery">
+                    <div class="pay__header">
+                        <h3 class="pay-name">배송 정보</h3>
+                        <button class="btn-list">배송지 목록</button>
+                    </div>
+                    <div class="pay__info">
+                        <div>
+                            <table>
+                                <colgroup>
+                                    <col width="25%">
+                                    <col width="75%">
+                                </colgroup>
+                                <tr class="noinput"><td colspan="2">
+                                    <span class="address-option"><input type="checkbox" id="address-same"><label for="address-same" class="f-black f-sub" style="margin-bottom:20px;">주문자와 동일</label></span>
+                                </td></tr>
+                                <tr>
+                                    <td class="label f-sub">수령인<span class="reddot">*</span></td>
+                                    <td class="textfield"><input type="text" class="field--large"></td>
+                                </tr>
+                                <tr>
+                                    <td class="label f-sub">연락처<span class="reddot">*</span></td>
+                                    <td class="textfield">
+                                        <ul class="phoneinput">
+                                            <li><input type="num" class="field--large"></li>
+                                            <li class="hyphen">-</li>
+                                            <li><input type="num" class="field--large"></li>
+                                            <li class="hyphen">-</li>
+                                            <li><input type="num" class="field--large"></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label f-sub">배송지<span class="reddot">*</span></td>
+                                    <td class="address-wrap">
+                                        <div class="zip"><input type="text" class="field--medium"><a href="" class="address-search">주소검색</a></div>
+                                        <div class="address"><input type="text" class="field--large"><input type="text" class="field--large" placeholder="상세 주소를 입력해주세요"></div>
+                                        <div class="address-option"><input type="checkbox" id="address-default"><label for="address-default" class="f-black f-sub">기본배송지로 선택</label></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="flex-start" style="margin-bottom: 8px;">
+                                            <span class="f-sub">주말/공휴일 수령 여부</span>
+                                            <div class="holiday-chck"><input type="radio" name="holiday" id="able" checked><label for="able" class="f-black f-sub">가능</label></div>
+                                            <div class="holiday-chck"><input type="radio" name="holiday" id="disable"><label for="disable" class="f-black f-sub">불가능</label></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="cancel">취소</button>
+                        <button class="save">저장</button>
+                    </div>
                 </div>
-            </div>
-            <!--2.배송정보-->
-            <div class="pay__box delivery">
-                <div class="pay__header">
-                    <h3 class="pay-name">배송 정보</h3>
-                    <button class="btn-list">배송지 목록</button>
+                <!--3.결제정보-->
+                <div class="pay__box payment">
+                    <div class="pay__header">
+                        <h3 class="pay-name">결제 정보</h3>
+                        <button class="btn-list">카드 변경</button>
+                    </div>
+                    <div class="pay__info">
+                        <div>
+                            <table>
+                                <colgroup>
+                                    <col width="25%">
+                                    <col width="75%">
+                                </colgroup>
+                                <tr>
+                                    <td class="label f-sub">카드번호</td>
+                                    <td class="textfield card-num"><input type="num" placeholder="0000-0000-0000-0000" class="field--large" maxlength="16"><a href="" class="card-camera"></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="label f-sub">유효기간</td>
+                                    <td class="textfield"><input type="text" placeholder="MMYY" class="field--medium" maxlength="4"></td>
+                                </tr>
+                                <tr>
+                                    <td class="label f-sub">CVC</td>
+                                    <td class="textfield"><input type="text" placeholder="카드 뒷면 3자리 숫자" class="field--medium" maxlength="3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="label f-sub">카드비밀번호</td>
+                                    <td class="textfield"><input type="text" placeholder="비밀번호 앞 2자리 숫자" class="field--medium" maxlength="2"></td>
+                                </tr>
+                            </table>
+                            <p class="register-notice f-sub">이 카드를 정기 결제 카드로 등록합니다.<br>이용중 카드변경은 마이페이지에서 가능합니다.</p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="cancel">취소</button>
+                        <button class="save">저장</button>
+                    </div>
                 </div>
-                <div class="pay__info">
-                    <div>
-                        <table>
-                            <colgroup>
-                                <col width="25%">
-                                <col width="75%">
-                            </colgroup>
-                            <tr>
-                                <td class="label">수령인<span class="reddot">*</span></td>
-                                <td class="textfield"><input type="text" class="field--large"></td>
-                            </tr>
-                            <tr>
-                                <td class="label">연락처<span class="reddot">*</span></td>
-                                <td class="textfield">
-                                    <ul class="phone">
-                                        <li><input type="num" class="field--large"></li>
-                                        <li class="hyphen">-</li>
-                                        <li><input type="num" class="field--large"></li>
-                                        <li class="hyphen">-</li>
-                                        <li><input type="num" class="field--large"></li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="label">배송지<span class="reddot">*</span></td>
-                                <td class="address-wrap">
-                                    <div class="zip"><input type="text" class="field--medium"><a href="" class="address-search">주소검색</a></div>
-                                    <div class="address"><input type="text" class="field--large"><input type="text" class="field--large"></div>
-                                    <div class="address-option"><input type="checkbox" id="address-default"><label for="address-default">기본배송지로 선택</label></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <div class="flex-start" style="margin-bottom: 8px;">
-                                    <span>주말/공휴일 수령 여부</span>
-                                    <div class="holiday-chck"><input type="radio" name="holiday" id="able" checked><label for="able">가능</label></div>
-                                    <div class="holiday-chck"><input type="radio" name="holiday" id="disable"><label for="disable">불가능</label></div>
+                <!--4.렌탈이용약관-->
+                <div class="pay__box agreement">
+                    <div class="pay__header">
+                        <h3 class="pay-name">렌탈 이용 약관</h3>
+                    </div>
+                    <div class="pay__info">
+                        <ul class="agreement__detail">
+                            <li>
+                                <!-- 전체 동의 -->
+                                <input type="checkbox" class="agr-check" id="agr1"><label for="agr1"></label>
+                                <p class="main bold">전체 약관 동의 (필수)</p>
+                            </li>
+                            <li class="terms f-black f-sub">
+                                <!-- 개별 동의 -->
+                                <p><input type="checkbox" id="agr1-1"><label for="agr1-1"></label>계약 확인<a href="">보기</a></p>
+                                <p><input type="checkbox" id="agr1-2"><label for="agr1-2"></label>계약 확인<a href="">보기</a></p>
+                                <p><input type="checkbox" id="agr1-3"><label for="agr1-3"></label>계약 확인<a href="">보기</a></p>
+                            </li>
+                            <li>
+                                <!-- 전체 동의 -->
+                                <input type="checkbox" class="agr-check" id="agr2"><label for="agr2"></label>
+                                <p class="main bold">제 3자 정보 제공 동의 (필수)</p>
+                            </li>
+                            <li class="terms f-black f-sub">
+                                <!-- 개별 동의 -->
+                                <p><input type="checkbox" id="agr2-1"><label for="agr2-1"></label>계약 확인<a href="">보기</a></p>
+                                <p><input type="checkbox" id="agr2-2"><label for="agr2-2"></label>계약 확인<a href="">보기</a></p>
+                                <p><input type="checkbox" id="agr2-3"><label for="agr2-3"></label>계약 확인<a href="">보기</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--5.주문정보-->
+                <div class="pay__box order-item">
+                    <div class="pay__header flex-bottom">
+                        <h3 class="pay-name">주문정보<span>(1)</span></h3>
+                        <span class="f-sub delivery-date">가장 빠른 배송 : 4/3~4/9</span>
+                    </div>
+                    <div class="pay__info">
+                        <!--카트 상품-->
+                        <div class="cart__item">
+                            <div class="item__header">
+                                <h3 class="item-name">PHANTOM II 95DB</h3>
+                                <span class="f-sub">수량: 1</span>
+                            </div>
+                            <div class="item__component">
+                                <div class="item--single">
+                                    <div class="single-thumb"><img src="images/prd_img_1.png" alt=""></div>
+                                    <div class="single-text">
+                                        <span class="main">PHANTOM II 95DB</span><br>
+                                        <span class="f-sub">컬러 : 매트블랙</span>
                                     </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <button class="cancel">취소</button>
-                    <button class="save">저장</button>
-                </div>
-            </div>
-            <!--3.결제정보-->
-            <div class="pay__box payment">
-                <div class="pay__header">
-                    <h3 class="pay-name">결제 정보</h3>
-                    <button class="btn-list">내 카드 관리</button>
-                </div>
-                <div class="pay__info">
-                    <div>
-                        <table>
-                            <colgroup>
-                                <col width="25%">
-                                <col width="75%">
-                            </colgroup>
-                            <tr>
-                                <td class="label">카드번호</td>
-                                <td class="textfield card-num"><input type="num" placeholder="0000-0000-0000-0000" class="field--large" maxlength="16"><a href="" class="card-camera"></a></td>
-                            </tr>
-                            <tr>
-                                <td class="label">유효기간</td>
-                                <td class="textfield"><input type="text" placeholder="MMYY" class="field--medium" maxlength="4"></td>
-                            </tr>
-                            <tr>
-                                <td class="label">CVC</td>
-                                <td class="textfield"><input type="text" placeholder="카드 뒷면 3자리 숫자" class="field--medium" maxlength="3"></td>
-                            </tr>
-                            <tr>
-                                <td class="label">카드비밀번호</td>
-                                <td class="textfield"><input type="text" placeholder="비밀번호 앞 2자리 숫자" class="field--medium" maxlength="2"></td>
-                            </tr>
-                        </table>
-                        <p class="register-notice f-sub">이 카드를 정기 결제 카드로 등록합니다.<br>이용중 카드변경은 마이페이지에서 가능합니다.</p>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <button class="cancel">취소</button>
-                    <button class="save">저장</button>
-                </div>
-            </div>
-            <!--4.렌탈이용약관-->
-            <div class="pay__box agreement">
-                <div class="pay__header">
-                    <h3 class="pay-name">렌탈 이용 약관</h3>
-                </div>
-                <div class="pay__info">
-                    <ul class="agreement__detail"> 
-                        <li> <!-- 전체 동의 -->
-                            <input type="checkbox" class="agr-check" id="agr1"><label for="agr1"></label>
-                            <p class="main bold">전체 약관 동의 (필수)</p>
-                        </li>
-                        <li class="terms"> <!-- 개별 동의 -->
-                            <p><input type="checkbox" id="agr1-1"><label for="agr1-1"></label>계약 확인<a href="">보기</a></p>
-                            <p><input type="checkbox" id="agr1-2"><label for="agr1-2"></label>계약 확인<a href="">보기</a></p>
-                            <p><input type="checkbox" id="agr1-3"><label for="agr1-3"></label>계약 확인<a href="">보기</a></p>
-                        </li>
-                        <li> <!-- 전체 동의 -->
-                            <input type="checkbox" class="agr-check" id="agr2"><label for="agr2"></label>
-                            <p class="main bold">제 3자 정보 제공 동의 (필수)</p>
-                        </li>
-                        <li class="terms"> <!-- 개별 동의 -->
-                            <p><input type="checkbox" id="agr2-1"><label for="agr2-1"></label>계약 확인<a href="">보기</a></p>
-                            <p><input type="checkbox" id="agr2-2"><label for="agr2-2"></label>계약 확인<a href="">보기</a></p>
-                            <p><input type="checkbox" id="agr2-3"><label for="agr2-3"></label>계약 확인<a href="">보기</a></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--5.주문정보-->
-            <div class="pay__box order-item">
-                <div class="pay__header">
-                    <h3 class="pay-name">주문정보</h3>
-                    <span></span>
-                </div>
-                <div class="pay__info">
-                <!--카트 상품-->
-                <div class="cart__item">
-                    <div class="item__header">
-                        <h3 class="item-name">PHANTOM II 95DB</h3>
-                        <span class="f-sub">수량: 1</span>
-                    </div>
-                    <div class="item__component">
-                        <div class="item--single">
-                            <div class="single-thumb"><img src="images/prd_img_1.png" alt=""></div>
-                            <div class="single-text">
-                                <span class="main">PHANTOM II 95DB</span><br>
-                                <span class="f-sub">컬러 : 매트블랙</span>
+                                </div>
+                                <div class="item--option flex-start">
+                                    <div class="option-thumb"><img src="images/subordin.svg" alt=""></div>
+                                    <div class="option-thumb"><img src="images/prd_img_4.png" alt=""></div>
+                                    <div class="single-text">
+                                        <span class="f-sub">TREEPOD</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item--option flex-start">
-                            <div class="option-thumb"><img src="images/subordin.svg" alt=""></div>
-                            <div class="option-thumb"><img src="images/prd_img_4.png" alt=""></div>
-                            <div class="single-text">
-                                <span class="f-sub">TREEPOD</span>
+                            <div class="total__price flex-end">
+                                <span class="price-pay">399,000</span>원/<span>48</span>개월
                             </div>
                         </div>
                     </div>
-                    <div class="total__price flex-end">
-                        <span class="price-pay">399,000</span>원/<span>48</span>개월
-                    </div>
-                </div>
                 </div>
             </div>
-            </div>
+            <a href="" class="final-change f-sub redheader">주문변경</a>
         </div>
-        
+
         <!--전체금액-->
         <div class="cart__final">
             <div class="cart__final__wrap">
-            <div class="folder"></div><!--폴딩 버튼-->
-            <ul class="price-detail"><!--폴딩 영역-->
-                <li>
-                    <span class="label">상품 총 금액</span>
-                    <span class="price">11,234,000원</span>
-                </li>
-                <li>
-                    <span class="label">월 이용 금액</span>
-                    <span class="price">123,400원</span>
-                </li>
-                <li>
-                    <span class="label">ODE 스페셜 배송/설치비</span>
-                    <span class="price discount">50,000원</span>
-                </li>
-            </ul>
-            <ul class="price-final"><!--찐 최종 금액-->
-                <li>
-                    <div>렌탈 1회차 결제 금액<span class="tooltip"></span></div>
-                    <div><span class="price-total-pay">99,000</span>원/월</div>
-                </li>
-            </ul>
-            <button>주문하기</button>
-            <dl><!--최종 공지 열닫-->
-                <dt class="notice">개인정보 제3자 제공공지<span class="switch"></span></dt>
-                <dd class="notice-panel">전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전자상거래 구매안전 서비스 안내</dd>
-                <dt class="notice">전자상거래 구매안전 서비스 안내<span class="switch switch-reverse"></span></dt>
-                <dd class="notice-panel" style="display: block;">전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전 서비스 안내전자상거래 구매안전자상거래 구매안전 서비스 안내</dd>
-            </dl>
+                <div class="folder folder-reverse"></div>
+                <!--폴딩 버튼-->
+                <ul class="price-detail" style="display: block;">
+                    <!--폴딩 영역-->
+                    <li>
+                        <span class="label">상품 총 금액</span>
+                        <span class="price">11,234,000원</span>
+                    </li>
+                    <li>
+                        <span class="label">월 이용 금액</span>
+                        <span class="price">123,400원</span>
+                    </li>
+                    <li>
+                        <span class="label">ODE 스페셜 배송/설치비</span>
+                        <span class="price discount">50,000원</span>
+                    </li>
+                </ul>
+                <ul class="price-final">
+                    <!--찐 최종 금액-->
+                    <li>
+                        <div>렌탈 1회차 결제 금액<span class="tooltip"></span></div>
+                        <div><span class="price-total-pay">99,000</span>원/월</div>
+                    </li>
+                </ul>
+                <button>주문하기</button>
+                <div class="notice-box f-sub">‘결제하기’를 클릭하시면, daab.com의 <a href="">최신 이용 약관</a> 및 <a href="">개인 정보 보호 정책</a>에 동의하는 것으로 간주합니다.
+                    <div class="flex-center linkbox">
+                        <a href="" class="f-sub">배송정책</a><span class="divider"></span><a href="" class="f-sub">환불정책</a>
+                    </div>
+                </div>
             </div>
         </div>
-            
+
     </div>
-    
+
     <!--최종 렌탈금액 옆에 i 눌렀을 때 레이어팝업-->
     <div class="layer" style="display: none;">
         <!--가운데정렬용 박스들-->
-        <div class="layer_wrap"><div class="layer_inner">
-        <!--팝업영역-->
-        <div class="layer__back">
-            <div class="layer__top">
-                <span class="point">‘daab’의 결제 정책</span>
-                <button class="close">닫기</button>
-            </div>
-            <div class="layer__text">
-                <dl>
-                    <dt>Q. 왜 렌탈요금을 바로 결제하나요?</dt>
-                    <dd>A. 구독서비스 답은 내부 정책상, 첫 렌탈료를 미리 납부합니다. 첫번째 렌탈료는 렌탈 신청당일 결제하고, 두번째 렌탈료는 두 달 후부터 납부합니다. 매월 정기결제일은 제품 설치 날짜와 동일합니다.</dd>
-                </dl>
+        <div class="layer_wrap">
+            <div class="layer_inner">
+                <!--팝업영역-->
+                <div class="layer__back">
+                    <div class="layer__top">
+                        <span class="point">‘daab’의 결제 정책</span>
+                        <button class="close">닫기</button>
+                    </div>
+                    <div class="layer__text">
+                        <dl>
+                            <dt>Q. 왜 렌탈요금을 바로 결제하나요?</dt>
+                            <dd>A. 구독서비스 답은 내부 정책상, 첫 렌탈료를 미리 납부합니다. 첫번째 렌탈료는 렌탈 신청당일 결제하고, 두번째 렌탈료는 두 달 후부터 납부합니다. 매월 정기결제일은 제품 설치 날짜와 동일합니다.</dd>
+                        </dl>
+                    </div>
+                </div>
             </div>
         </div>
-        </div></div>
         <!--블랙배경-->
         <div class="dimmed"></div>
     </div>
 
-    <script>/*최종금액 디테일 열고닫기*/
+    <script>
+        /*최종금액 디테일 열고닫기*/
         var acc = document.getElementsByClassName("folder");
         var i;
 
         for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
+            acc[i].addEventListener("click", function() {
 
-            this.classList.toggle("folder-reverse");
+                this.classList.toggle("folder-reverse");
 
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-          });
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
         }
     </script>
-    <script> /*카드 라디오 버튼 선택*/
-        $(".payment__detail > li").click(function(){
+    <script>
+        /*카드 라디오 버튼 선택*/
+        $(".payment__detail > li").click(function() {
             $(this).siblings("li").removeClass("card--selected");
             $(this).addClass("card--selected");
         })
     </script>
     <script>
         /*풋터 회사정보 열닫*/
-        $(".cp-name").click(function(){
+        $(".cp-name").click(function() {
             $(this).siblings(".cp-info").toggleClass("open");
             $(this).toggleClass("active");
         })
         /*최종 렌탈금액 옆에 i 눌렀을 때*/
-        $(".tooltip").click(function(){
-            $(".layer").css("display","block");
+        $(".tooltip").click(function() {
+            $(".layer").css("display", "block");
         })
         /*레이어팝업 닫기버튼*/
-        $(".close").click(function(){
-            $(".layer").css("display","none");
+        $(".close").click(function() {
+            $(".layer").css("display", "none");
         })
     </script>
 </body>

@@ -50,7 +50,7 @@
         </header>
         <div class="header__sub">
             <div class="mypage__header">
-                <h2 class="mypage-title">주문취소</h2>
+                <h2 class="mypage-title">해지신청</h2>
             </div>
         </div>
         <!--*****본문영역******-->
@@ -65,143 +65,85 @@
 
             <div class="tab">
                 <div class="cancel__title">
-                    <h3><span>김땡땡</span> 고객님<br>취소를 하신다니 아쉽습니다</h3>
+                    <h3><span>김땡땡</span> 고객님<br>해지를 고려하신다니 아쉽습니다</h3>
                 </div>
                 <div class="cancel__survey">
-                    <p class="f-black f-sub">고객님의 취소 사유를 가장 잘 설명하는 항목은 무엇인가요?</p>
-                    <div class="save-chck"><input type="radio" name="survey" id="reasonA"><label for="reasonA">상품이 마음에 들지 않아요.(단순변심)</label></div>
-                    <div class="save-chck"><input type="radio" name="survey" id="reasonB"><label for="reasonB">다른 상품 추가 후 재주문 예정입니다.</label></div>
-                    <div class="save-chck"><input type="radio" name="survey" id="reasonC"><label for="reasonC">판매자로부터 품절 안내를 받았어요.</label></div>
-                    <div class="save-chck"><input type="radio" name="survey" id="reasonD"><label for="reasonD">서비스가 불만족스러워요.</label></div>
-                    <div class="save-chck"><input type="radio" name="survey" id="reasonE"><label for="reasonE">배송이 너무 느려요.</label></div>
-                    <div class="save-chck"><input type="radio" name="survey" id="reasonF"><label for="reasonF">색상/수량을 변경하고 싶어요.</label></div>
+                    <p class="f-black f-sub">고객님의 해지 사유를 가장 잘 설명하는 항목은 무엇인가요?</p>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonA"><label for="reasonA">제품 성능이 불만족스러워요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonB"><label for="reasonB">다른 상품을 사용해보고 싶어요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonC"><label for="reasonC">서비스 이용이 불편해요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonD"><label for="reasonD">AS가 불만족스러워요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonE"><label for="reasonE">다른 곳의 제품/서비스가 더 좋아보여요.</label></div>
+                    <div class="save-chck"><input type="radio" name="survey" id="reasonF"><label for="reasonF">개인 사정으로 그만 사용하고 싶어요.</label></div>
                 </div>
             </div>
 
             <div class="tab">
                 <div class="order--wrap" style="padding: 0;">
-                    <div class="option--box switch" style="border: 1px solid #CCC;">
-                        <div class="option--name">예상 위약금&nbsp;:&nbsp;<span>25,000원</span></div>
+                    <div class="order__msg redbox" style="line-height:24px;">렌탈 종료일을 정해주세요.</div>
+                    <div class="option--box switch no-line" style="border: 1px solid #CCC; border-top:0;">
+                        <div class="option--name">예상 위약금&nbsp;:&nbsp;<span>1,031,000원</span></div>
                     </div>
                     <div class="option--expand">
                         <div class="pay__detail__wrap">
                             <dl class="pay__detail flex-center">
-                                <dt class="f-sub">취소 주문 금액</dt>
-                                <dd class="price">270,000 <span class="f-sub">원</span></dd>
+                                <dt class="f-sub">발생 유형</dt>
+                                <dd class="f-black f-sub">의무사용기간 미충족</dd>
                             </dl>
                             <dl class="pay__detail flex-center">
-                                <dt class="f-sub">위약금 차감금액</dt>
-                                <dd class="price">- 25,000 <span class="f-sub">원</span></dd>
+                                <dt class="f-sub">렌탈 시작일</dt>
+                                <dd class="f-black f-sub">2021-01-01</dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">렌탈 종료일(회수일)</dt>
+                                <dd>
+                                    <input type="date">
+                                </dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">의무사용기간</dt>
+                                <dd class="f-black f-sub">12개월</dd>
+                            </dl>
+                            <dl class="pay__detail flex-center row-border-bottom">
+                                <dt class="f-sub">남은 일수</dt>
+                                <dd class="f-black f-sub">5개월 10일</dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub flex-center">위약금 <span class="tooltip"></span></dt>
+                                <dd class="price">1,000,000<span class="f-sub"> 원</span></dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">미납렌탈료</dt>
+                                <dd class="price">0<span class="f-sub"> 원</span></dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">연체 이자</dt>
+                                <dd class="price">0<span class="f-sub"> 원</span></dd>
+                            </dl>
+                            <dl class="pay__detail flex-center">
+                                <dt class="f-sub">설치 회수비</dt>
+                                <dd class="price">31,000<span class="f-sub"> 원</span></dd>
                             </dl>
                             <dl class="pay__detail row-border flex-center">
-                                <dt class="f-sub">최종 환불 금액</dt>
-                                <dd class="f-sub"><span class="price-total-pay">245,000</span>원</dd>
+                                <dt class="f-sub">총 해지 위약금</dt>
+                                <dd class="f-sub"><span class="price-total-pay">1,031,000</span>원</dd>
                             </dl>
-                            <dl class="pay__detail flex-center">
-                                <dt class="f-sub">결제 방법</dt>
-                                <dd class="f-sub">원결제 카드 취소</dd>
-                            </dl>
-                            <dl class="pay__detail flex-center">
-                                <dt class="f-sub">위약금 발생 사유</dt>
-                                <dd class="f-sub">배송확정 후 취소 요청</dd>
-                            </dl>
-                            <dl class="pay__detail flex-center">
-                                <dt class="f-sub">취소 사유</dt>
-                                <dd class="f-sub">구매의사 없음</dd>
-                            </dl>
-                            <dl class="pay__detail flex-center">
-                                <dt class="f-sub">취소 요청 일시</dt>
-                                <dd class="f-sub">2021-06-01 18:00</dd>
-                            </dl>
+                            <p class="item-notice f-sub">산정 위약금은 가산출된 금액입니다<br><span class="f-price">회수된 상품의 상태</span>에 따라 변경될 수 있습니다.</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="order--wrap" style="padding: 0;">
+                    <a href="" class="option--box link-switch" style="border: 1px solid #CCC;">
+                        <div class="option--name">렌탈 이용 계약서</div>
+                    </a>
+                </div>
+
                 <div class="order--wrap" style="padding: 0;">
                     <div class="option--box switch" style="border: 1px solid #CCC;">
                         <div class="option--name">주문 정보</div>
                     </div>
                     <div class="option--expand">
-                        <div class="pay__detail__wrap" style="border-bottom: 4px solid #EAEAEA">
-                            <dl class="pay__detail flex-center">
-                                <dt class="f-sub">주문번호</dt>
-                                <dd class="f-sub">SBP-20-38894AA</dd>
-                            </dl>
-                            <dl class="pay__detail flex-center">
-                                <dt class="f-sub">주문날짜</dt>
-                                <dd class="f-sub">2021-03-01</dd>
-                            </dl>
-                            <dl class="pay__detail flex-center">
-                                <dt class="f-sub">주문금액</dt>
-                                <dd><span class="font-bold">99,000</span><span class="f-sub">원/월</span></dd>
-                            </dl>
-                        </div>
-                        <!--패키지, 상품-->
-                        <div class="cart__item order__list">
-                            <div class="item__header flex-center">
-                                <div>
-                                    <h3 class="order__item-name">PACKAGE NAME</h3>
-                                    <span class="status-chip greenchip">배송중</span>
-                                </div>
-                            </div>
-                            <div class="item__component">
-                                <div class="item--package">
-                                    <div class="pkg-thumb"><img src="images/prd_img_1.png" alt=""></div>
-                                    <div class="pkg-text">
-                                        <span class="main">PHANTOM II 95DB</span>
-                                        <span class="f-sub">매트블랙</span>
-                                    </div>
-                                </div>
-                                <div class="item--option flex-start">
-                                    <div class="option-thumb"><img src="images/subordin.svg" alt=""></div>
-                                    <div class="option-thumb"><img src="images/prd_img_4.png" alt=""></div>
-                                    <div class="pkg-text">
-                                        <span class="main">TREEPOD</span>
-                                        <span class="f-sub">매트블랙</span>
-                                    </div>
-                                </div>
-                                <div class="item--package">
-                                    <div class="pkg-thumb"><img src="images/prd_img_2.png" alt=""></div>
-                                    <div class="pkg-text">
-                                        <span class="main">PL1 Plus</span>
-                                        <span class="f-sub">실버</span>
-                                    </div>
-                                </div>
-                                <div class="item--package">
-                                    <div class="pkg-thumb"><img src="images/prd_img_3.png" alt=""></div>
-                                    <div class="pkg-text">
-                                        <span class="main">TREEPOD</span>
-                                        <span class="f-sub">매트블랙</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="item-notice f-sub">렌탈종료일 : 2023-07-01</p>
-                        </div>
-                        <!--옵션상품-->
-                        <div class="cart__item order__list">
-                            <div class="item__header flex-center">
-                                <div>
-                                    <h3 class="order__item-name">PHANTOM II 95DB</h3>
-                                    <span class="status-chip greenchip">배송중</span>
-                                </div>
-                            </div>
-                            <div class="item__component">
-                                <div class="item--single">
-                                    <div class="single-thumb"><img src="images/prd_img_1.png" alt=""></div>
-                                    <div class="single-text">
-                                        <span class="main">PHANTOM II 95DB</span><br>
-                                        <span class="f-sub">컬러 : 매트블랙</span>
-                                    </div>
-                                </div>
-                                <div class="item--option flex-start">
-                                    <div class="option-thumb"><img src="images/subordin.svg" alt=""></div>
-                                    <div class="option-thumb"><img src="images/prd_img_4.png" alt=""></div>
-                                    <div class="single-text">
-                                        <span class="f-sub">TREEPOD</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="item-notice f-sub">렌탈종료일 : 2023-07-01</p>
-                        </div>
                         <!--싱글-->
                         <div class="cart__item order__list" style="margin:0; padding: 12px 0; border:0;">
                             <div class="item__header flex-center">
@@ -223,6 +165,22 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="order--wrap" style="padding: 0;">
+                    <div class="option--box switch" style="border: 1px solid #CCC;">
+                        <div class="option--name">회수 주소 정보</div>
+                    </div>
+                    <div class="option--expand">
+                        <div class="flex-start">
+                            <div class="delivery__detail">
+                                <p class="main bold flex-center">김땡땡<a href="" class="f-sub">주소변경</a></p>
+                                <p class="f-sub">010-1111-1111</p>
+                                <p class="f-sub">서울시 송파구 잠실로123 (잠실아파트 2단지) 101동 202호 (01234)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="order--wrap" style="padding: 0;">
                     <div class="option--box switch" style="border: 1px solid #CCC;">
                         <div class="option--name">위약금 결제 수단</div>
@@ -237,22 +195,128 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="f-center f-sub"><br>해지 신청을 하시겠습니까?<br><span class="f-price">회수일 : 2021년 07월 20일</span></div>
             </div>
 
             <div class="tab">
-                <div class="cancel__title">
-                    <h3>주문취소 완료</h3>
-                    <p class="f-sub">주문취소가 완료되었습니다.<br><br><span class="f-black">최종환불금액 : 245,000원</span><br>최종 환불처리는 카드사 처리일에 따라 3~5일 추가 소요될 수 있습니다. daab서비스를 이용해주셔서 감사합니다.</p>
+                <div class="cancel__title row-border-bottom">
+                    <h3>해지 신청 완료</h3>
+                    <p class="f-black f-sub">해지 신청 접수가 완료되었습니다.</p>
+                    <a href="" class="detail-page f-sub">해지 상세 내역</a>
+                </div>
+                <div class="summary__wrap">
+                    <dl class="cancel__summary">
+                        <dt class="f-price">플랜 날짜</dt>
+                        <dd class="f-black f-sub">현재 플랜은 <span class="f-price redheader">2021년 7월 31일</span>에 종료될 예정입니다.</dd>
+                    </dl>
+                    <dl class="cancel__summary">
+                        <dt class="f-price">개인 취향 맞춤 서비스</dt>
+                        <dd class="f-black f-sub">더 이상 취향 기반의 추천서비스를 받으실 수 없으며, 유료 플랜 서비스도 이용하실 수 없습니다.</dd>
+                    </dl>
+                    <dl class="cancel__summary" style="width:100%">
+                        <dt class="f-price">위약금 결제 프로세스</dt>
+                        <dd class="f-black f-sub" style="width:100%">
+                            <p class="cancel-process f-black flex-center">회수<span class="ic-next"></span>제품 검수<span class="ic-next"></span>최종 위약금 산정<span class="ic-next"></span>결제</p>
+                            현재 플랜은 회수된 날로부터 종료될 예정입니다.<br>
+                            검수 후, 최종 위약금이 자동결제됩니다.<br>
+                            <p class="flex-top">
+                                <span class="f-price redheader">VISA (1111-****-****-1111)</span>
+                                <a href="" class="greenheader f-sub">결제카드 변경</a>
+                            </p>
+                        </dd>
+                    </dl>
                 </div>
             </div>
 
+            <!--추천상품-->
+            <div class="featd">
+                <div class="featd__taste">
+                    <h2 class="featd--title__taste">이런 상품은 어떠세요?</h2>
+                </div>
+                <ul class="prd__list">
+                    <li class="list__pkg"><a href="">
+                            <div class="list__swiper">
+                                <div class="list__swiper--wrap">
+                                    <div class="img-wrap">
+                                        <img src="images/prd_img_1.png" alt="0">
+                                        <img src="images/prd_img_2.png" alt="1">
+                                        <img src="images/prd_img_3.png" alt="2">
+                                    </div>
+                                </div>
+                                <div class="list__swiper--control">
+                                    <div class="pager">
+                                        <div class="pager-item active"><span class="hidden-text">0</span></div>
+                                        <div class="pager-item"><span class="hidden-text">1</span></div>
+                                        <div class="pager-item"><span class="hidden-text">2</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list__info">
+                                <p class="list__info--brand">Devialet</p>
+                                <p class="list__info--name">PACKAGE NAME</p>
+                                <p class="list__info--price">99,000<span>&nbsp;원/월</span></p>
+                                <p class="list__info--color"><span class="color-black hidden-text">Black</span><span class="color-white hidden-text">White</span></p>
+                            </div>
+                        </a></li>
+                    <li class="list__single" style="margin-right:2%;"><a href="">
+                            <div class="list__single--img">
+                                <img src="images/prd_img_1.png" alt="1">
+                            </div>
+                            <div class="list__info">
+                                <p class="list__info--brand">Devialet</p>
+                                <p class="list__info--name">PACKAGE NAME</p>
+                                <p class="list__info--price">99,000<span>&nbsp;원/월</span></p>
+                                <p class="list__info--color"><span class="color-black hidden-text">Black</span><span class="color-white hidden-text">White</span></p>
+                            </div>
+                        </a></li>
+                    <li class="list__single" style="margin-right: 0;"><a href="">
+                            <div class="list__single--img">
+                                <img src="images/prd_img_2.png" alt="1">
+                            </div>
+                            <div class="list__info">
+                                <p class="list__info--brand">Devialet</p>
+                                <p class="list__info--name">PACKAGE NAME</p>
+                                <p class="list__info--price">99,000<span>&nbsp;원/월</span></p>
+                                <p class="list__info--color"><span class="color-black hidden-text">Black</span><span class="color-white hidden-text">White</span></p>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+
+            <!--
             <div style="overflow:auto; padding: 0 16px 0;">
                 <div class="btn-group">
                     <button type="button" id="prevBtn" class="cancel disabled" onclick="nextPrev(-1)">취소</button>
                     <button type="button" id="nextBtn" class="save" onclick="nextPrev(1)">다음</button>
                 </div>
             </div>
+-->
         </div>
+    </div>
+
+    <!--i 눌렀을 때 레이어팝업-->
+    <div class="layer" style="display: none;">
+        <!--가운데정렬용 박스들-->
+        <div class="layer_wrap">
+            <div class="layer_inner">
+                <!--팝업영역-->
+                <div class="layer__back">
+                    <div class="layer__top">
+                        <span class="point">위약금 안내</span>
+                        <button class="close">닫기</button>
+                    </div>
+                    <div class="layer__text">
+                        <ul>
+                            <li>정상적인 제품을 반납 할 시 에는 [월렌탈료 X {(의무사용기간 - 사용일수) ÷ 30} X 15%]+ (연체이자+미납렌탈료) 으로 내용연수를 반영한 위약금 부가한다.</li>
+                            <li>비정상적인 상태의 제품을 반납 할 시 에는 분실/파손과 동일하게 판단하여, {(제품 판매가)- [(제품판매가/렌탈약정일수)X사용개월수]} + (연체이자+미납렌탈료)으로 위약금을 부가한다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--블랙배경-->
+        <div class="dimmed"></div>
     </div>
 
     <!--*****풋터영역******-->
@@ -338,7 +402,7 @@
     </script>
     <script>
         /*스텝*/
-        var currentTab = 0; // Current tab is set to be the first tab (0)
+        var currentTab = 2; // Current tab is set to be the first tab (0)
         showTab(currentTab); // Display the current tab
 
         function showTab(n) {
@@ -411,7 +475,16 @@
             x[n].className += " active";
         }
     </script>
-
+    <script>
+        /* i 눌렀을 때*/
+        $(".tooltip").click(function() {
+            $(".layer").css("display", "block");
+        })
+        /*레이어팝업 닫기버튼*/
+        $(".close").click(function() {
+            $(".layer").css("display", "none");
+        })
+    </script>
 </body>
 
 </html>

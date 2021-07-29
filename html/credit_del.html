@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>daab-account</title>
+    <title>daab-credit</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <div id="wrap" class="back--gray">
+    <div id="wrap">
         <!--*****헤더영역******-->
         <header id="header">
             <div class="hd__menu">
@@ -54,85 +54,105 @@
                 <select name="order-title" id=""  class="mypage-title">
                     <option value="order-list">주문 / 결제내역</option>
                     <option value="address-list">주소록</option>
-                    <option value="payment-list">결제카드</option>
-                    <option value="setting-list" selected>설정</option>
+                    <option value="payment-list" selected>결제카드</option>
+                    <option value="setting-list">설정</option>
                 </select>
                 </div>
             </div>
         </div>
         <!--*****본문영역******-->
         <div id="contents">
-            <!--*****TAB 시작******-->
-            <div class="shortcut__tab">
-                <div class="shortcut__item shortcut__info current">개인 정보 수정</div>
-                <div class="shortcut__item shortcut__alarm">알람설정</div>
+            <div class="card__msg">등록된 카드는 정기결제, AS 및 위약금의 예약형 결제 서비스에서 이용됩니다.</div>
+            <div class="subpage-wrap">
+            <div class="card__del flex-top">
+                <span class="f-sub">총 2개</span>
+<!--                <button class="greenheader">카드 삭제</button>-->
             </div>
-            <!--*****TAB 1******-->
-            <div class="tab__info">
-                <div class="tab__contents">
-                    <div class="pay__box" style="margin-top: 0">
-                        <p class="font-bold">비밀번호 재확인</p>
-                        <p class="f-sub">회원님의 소중한 정보 보호를 위해, 현재 비밀번호를 확인해 주세요.</p>
-                        <div class="info-group">
-                            <table>
-                                <colgroup>
-                                    <col width="25%">
-                                    <col width="75%">
-                                </colgroup>
-                                <tr>
-                                    <td class="label f-sub">이메일</td>
-                                    <td class="textfield"><input type="text" class="field--large" value="zzeunghye@gmail.com"></td>
-                                </tr>
-                                <tr>
-                                    <td class="label f-sub">현재 비밀번호</td>
-                                    <td class="textfield"><input type="text" class="field--large"></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="btn__wrap">
-                            <button class="final-btn">확인</button>
-                        </div>
+            <ul class="payment__detail">
+                <li class="card--selected">
+                    <input type="radio" name="cards" id="card1" class="card-check" checked><label for="card1"></label>
+                    <div>
+                        <p class="main bold">SAMSUNG CARD</p>
+                        <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
                     </div>
-                </div>
+                    <span class="switch-on"></span>
+                </li> <!-- 카드 -->
+                <li class="card-history" style="display: block !important;">
+                    <div class="card-history-one">
+                        <dl>
+                            <dt class="f-sub">주문번호</dt>
+                            <dd class="f-black f-sub">SBP-20-38894AA</dd>
+                        </dl>
+                        <dl>
+                            <dt class="f-sub">주문날짜</dt>
+                            <dd class="f-black f-sub">2021-01-01</dd>
+                        </dl>
+                        <dl>
+                            <dt class="f-sub">결제금액</dt>
+                            <dd class="f-black f-sub"><span class="font-bold">75,0000</span>원/월</dd>
+                        </dl>
+                        <span class="card-status">정기결제중</span>
+                    </div>
+                    <div class="card-history-one">
+                        <dl>
+                            <dt class="f-sub">주문번호</dt>
+                            <dd class="f-black f-sub">SBP-20-38894AA</dd>
+                        </dl>
+                        <dl>
+                            <dt class="f-sub">주문날짜</dt>
+                            <dd class="f-black f-sub">2021-01-01</dd>
+                        </dl>
+                        <dl>
+                            <dt class="f-sub">결제금액</dt>
+                            <dd class="f-black f-sub"><span class="font-bold">75,0000</span>원/월</dd>
+                        </dl>
+                        <span class="card-status">정기결제중</span>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="cards"  id="card2" class="card-check"><label for="card2"></label>
+                    <div>
+                        <p class="main bold">HYUNDAI CARD</p>
+                        <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
+                    </div>
+                    <span class="switch"></span>
+                </li> <!-- 카드 -->
+                <li class="card-history">
+                </li>
+                <li>
+                    <input type="radio" name="cards"  id="card3" class="card-check"><label for="card3"></label>
+                    <div>
+                        <p class="main bold">KAKAO CHECK CARD</p>
+                        <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
+                    </div>
+                    <span class="switch"></span>
+                </li> <!-- 카드 -->
+                <li class="card-history">
+                    <div class="card-history-one">
+                        <dl>
+                            <dt class="f-sub">주문번호</dt>
+                            <dd class="f-black f-sub">SBP-20-38894AA</dd>
+                        </dl>
+                        <dl>
+                            <dt class="f-sub">주문날짜</dt>
+                            <dd class="f-black f-sub">2021-01-01</dd>
+                        </dl>
+                        <dl>
+                            <dt class="f-sub">결제금액</dt>
+                            <dd class="f-black f-sub"><span class="font-bold">75,0000</span>원/월</dd>
+                        </dl>
+                        <span class="card-status">정기결제중</span>
+                    </div>
+                </li>
+<!--                <li class="addcard"><a href="">카드 추가</a></li>-->
+            </ul>
+            
+            <div class="btn-group">
+                <button class="cancel">취소</button>
+                <button class="save">삭제</button>
             </div>
-            <!--*****TAB 2******-->
-            <div class="tab__alarm">
-                <div class="tab__contents">
-                    <ul class="alarm-setting">
-                        <li>
-                            <dl>
-                                <dt class="font-bold">푸시 알람</dt>
-                                <dd><span>ON</span><span class="pagego"></span></dd>
-                            </dl>
-                            <p class="f-sub subbox">답 앱에서 보내는 알림을 받을 수 있습니다.<br>알림 설정은 <span class="f-price">[설정 앱 > 알림 > daab]</span> 에서 변경할 수 있습니다.</p>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt class="font-bold">광고성 정보 수신 동의</dt>
-                                <dd>
-                                    <label class="toggle">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                    </label>
-                                </dd>
-                            </dl>
-                            <p class="f-sub subbox">신규 서비스 및 고객 맞춤 혜택 정보를 받을 수 있습니다.</p>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt class="font-bold">야간 수신 동의</dt>
-                                <dd>
-                                    <label class="toggle">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                    </label>
-                                </dd>
-                            </dl>
-                            <p class="f-sub subbox">야간(오후9시 ~ 오전 8시)에 알림을 받을 수 있습니다.</p>
-                        </li>
-                    </ul>
-                </div>
             </div>
+            
         </div>
     </div>
     
@@ -197,20 +217,14 @@
             $(this).toggleClass("active");
         })
     </script>
-    <script>
-        /*TAB*/
-        $(".shortcut__info").click(function(){
-            $(this).addClass("current");
-            $(this).siblings(".shortcut__alarm").removeClass("current");
-            $(".tab__alarm").css("display","none");
-            $(".tab__info").css("display","block");
+    <script> /*카드 라디오 버튼 선택*/
+        $(".payment__detail > li").click(function(){
+            $(this).siblings("li").removeClass("card--selected");
+            $(this).addClass("card--selected");
         })
-        $(".shortcut__alarm").click(function(){
-            $(this).addClass("current");
-            $(this).siblings(".shortcut__info").removeClass("current");
-            $(".tab__info").css("display","none");
-            $(".tab__alarm").css("display","block");
-        })
+    </script>
+    <script>/*열고닫기*/
+
     </script>
 </body>
 

@@ -66,6 +66,10 @@
                 <div class="shortcut__item shortcut__rentalpay current">렌탈 주문</div>
                 <div class="shortcut__item shortcut__singlepay">일시 결제</div>
             </div>
+            
+            <!--*****TAB 1******-->
+            <div class="tab__rentalpay">
+              
             <!--*****FILTER******-->
             <div class="filter_close">
                 <button class="line-btn filter-open-btn">필터</button>
@@ -102,9 +106,6 @@
                     <button class="final-btn filter-close-btn">조회</button>
                 </div>
             </div>
-            
-            <!--*****TAB 1******-->
-            <div class="tab__rentalpay">
                
                 <!--주문한 상품 : 결제완료-->
                 <div class="order__item">
@@ -299,6 +300,40 @@
             
             <!--*****TAB 2******-->
             <div class="tab__singlepay">
+               
+            <!--*****FILTER******-->
+            <div class="filter_close">
+                <button class="line-btn filter-open-btn">필터</button>
+            </div>
+            <div class="filter_wrap">
+                <div class="filter--word">
+                    <button>SEARCH</button>
+                    <input type="text" placeholder="상품명/주문번호 입력">
+                </div>
+                <ul class="filter--period">
+                    <li class="clicked">전체</li>
+                    <li class="">1개월</li>
+                    <li class="">6개월</li>
+                    <li class="">직접선택</li>
+                </ul>
+                <div class="filter--daterange flex-center">
+                    <input type="date"><span>~</span>
+                    <input type="date">
+                </div>
+                <div class="filter--type flex-center">
+                    <label for="order-type">주문상태</label>
+                    <select id="order-type">
+                        <option value="" selected>전체</option>
+                        <option value="">AS수리</option>
+                        <option value="">위약금</option>
+                        <option value="">미납연체</option>
+                    </select>
+                </div>
+                <div class="filter--button">
+                    <button class="final-btn filter-close-btn">조회</button>
+                </div>
+            </div>
+               
                 <!--일시불 : AS수리-->
                 <div class="order__item">
                     <div class="item__header flex-center">

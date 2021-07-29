@@ -38,7 +38,7 @@
         </header>
         <!--*****본문영역******-->
         <div id="contents">
-        <div class="subpage-wrap">
+        <div class="subpage-wrap pay__info">
                     <div>
                         <table>
                             <colgroup>
@@ -46,13 +46,13 @@
                                 <col width="75%">
                             </colgroup>
                             <tr>
-                                <td class="label">수령인<span class="reddot">*</span></td>
+                                <td class="label f-sub">수령인<span class="reddot">*</span></td>
                                 <td class="textfield"><input type="text" class="field--large"></td>
                             </tr>
                             <tr>
-                                <td class="label">연락처<span class="reddot">*</span></td>
+                                <td class="label f-sub">연락처<span class="reddot">*</span></td>
                                 <td class="textfield">
-                                    <ul class="phone">
+                                    <ul class="phoneinput">
                                         <li><input type="num" class="field--large"></li>
                                         <li class="hyphen">-</li>
                                         <li><input type="num" class="field--large"></li>
@@ -62,28 +62,28 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="label">배송지<span class="reddot">*</span></td>
+                                <td class="label f-sub">배송지<span class="reddot">*</span></td>
                                 <td class="address-wrap">
                                     <div class="zip"><input type="text" class="field--medium"><a href="" class="address-search">주소검색</a></div>
-                                    <div class="address"><input type="text" class="field--large"><input type="text" class="field--large"></div>
-                                    <!--<div class="address-option"><input type="checkbox" id="address-default"><label for="address-default">기본배송지로 선택</label></div>-->
+                                    <div class="address"><input type="text" class="field--large"><input type="text" class="field--large" placeholder="상세 주소를 입력해주세요"></div>
+                                    <div class="address-option"><input type="checkbox" id="address-default" disabled><label for="address-default" class="f-black f-sub">기본배송지로 선택</label></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="2">
                                     <div class="flex-start" style="margin-bottom: 8px;">
-                                    <span>주말/공휴일 수령 여부</span>
-                                    <div class="holiday-chck"><input type="radio" name="holiday" id="able" checked><label for="able">가능</label></div>
-                                    <div class="holiday-chck"><input type="radio" name="holiday" id="disable"><label for="disable">불가능</label></div>
+                                        <span class="f-sub">주말/공휴일 수령 여부</span>
+                                        <div class="holiday-chck"><input type="radio" name="holiday" id="able" checked><label for="able" class="f-black f-sub">가능</label></div>
+                                        <div class="holiday-chck"><input type="radio" name="holiday" id="disable"><label for="disable" class="f-black f-sub">불가능</label></div>
                                     </div>
                                 </td>
                             </tr>
                         </table>
                     </div>
         </div>
-        <div class="btn__wrap">
-            <button class="final-btn">저장</button>
         </div>
+        <div class="p-bottom">
+            <button class="final-btn">저장</button>
         </div>
     </div>
     <script> /*카드 라디오 버튼 선택*/

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -25,7 +25,7 @@
     <div id="wrap" class="back--gray">
         <!--*****헤더영역******-->
         <header id="header">
-            <div class="hd__menu">
+            <div class="hd__menu"> <!--0701 global.css 수정-->
                 <h1 class="hd__logo">
                     <a href="#"><span class="hidden-text">daab</span></a>
                 </h1>
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </header>
-        <div class="header__sub">
+        <div class="header__sub"><!--0701 .header__sub 추가-->
             <div class="mypage__header">
                 <h2 class="mypage-title">장바구니</h2>
                 <div class="cart-qty">(3)</div>
@@ -63,7 +63,7 @@
                     <div class="item__header">
                         <input type="checkbox" class="item-check" id="cb1" checked><label for="cb1"></label>
                         <h3 class="item-name">PL1 Plus</h3>
-                        <span class="item-change">옵션변경</span>
+                        <a class="f-sub">옵션변경</a>
                         <button class="item-delete">장바구니에서 삭제</button>
                     </div>
                     <div class="item__component">
@@ -71,14 +71,14 @@
                             <div class="single-thumb"><img src="images/prd_img_2.png" alt=""></div>
                             <div class="single-text">
                                 <p class="main">PL1 Plus</p>
-                                <p class="sub">컬러 : 실버</p>
+                                <p class="f-sub">컬러 : 실버</p>
                             </div>
                         </div>
                     </div>
                     <div class="item__final-option flex-end">
                         <div class="qty flex-end">
                             <span>수량 : </span>
-                            <div class="qty-select-box">
+                            <div class="item-select-box">
                                 <select name="" id="">
                                     <option value="1" selected>1</option>
                                     <option value="2">2</option>
@@ -88,9 +88,9 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="period flex-end">
+                        <div class="item flex-end">
                             <span>기간 : </span>
-                            <div class="period-select-box">
+                            <div class="item-select-box">
                                 <select name="" id="">
                                     <option value="12">12개월</option>
                                     <option value="24">24개월</option>
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item__price flex-end">
+                    <div class="total__price flex-end">
                         <span class="price-pay">399,000</span>원/월
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                     <div class="item__header">
                         <input type="checkbox" class="item-check" id="cb1" checked><label for="cb1"></label>
                         <h3 class="item-name">PHANTOM II 95DB</h3>
-                        <span class="item-change">옵션변경</span>
+                        <a class="f-sub">옵션변경</a>
                         <button class="item-delete">장바구니에서 삭제</button>
                     </div>
                     <div class="item__component">
@@ -117,20 +117,20 @@
                             <div class="single-thumb"><img src="images/prd_img_1.png" alt=""></div>
                             <div class="single-text">
                                 <span class="main">PHANTOM II 95DB</span><br>
-                                <span class="sub">컬러 : 매트블랙</span>
+                                <span class="f-sub">컬러 : 매트블랙</span>
                             </div>
                         </div>
                         <div class="item--option flex-start">
                             <div class="option-thumb"><img src="images/subordin.svg" alt=""></div>
                             <div class="single-text">
-                                <span class="sub">옵션 선택안함</span>
+                                <span class="f-sub">옵션 선택안함</span>
                             </div>
                         </div>
                     </div>
                     <div class="item__final-option flex-end">
                         <div class="qty flex-end">
                             <span>수량 : </span>
-                            <div class="qty-select-box">
+                            <div class="item-select-box">
                                 <select name="" id="">
                                     <option value="1" selected>1</option>
                                     <option value="2">2</option>
@@ -142,7 +142,7 @@
                         </div>
                         <div class="period flex-end">
                             <span>기간 : </span>
-                            <div class="period-select-box">
+                            <div class="item-select-box">
                                 <select name="" id="">
                                     <option value="12">12개월</option>
                                     <option value="24">24개월</option>
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item__price flex-end">
+                    <div class="total__price flex-end">
                         <span class="price-pay">399,000</span>원/월
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                     <div class="item__header">
                         <input type="checkbox" class="item-check" id="cb1" checked><label for="cb1"></label>
                         <h3 class="item-name">PHANTOM II 95DB</h3>
-                        <span class="item-change">옵션변경</span>
+                        <a class="f-sub">옵션변경</a>
                         <button class="item-delete">장바구니에서 삭제</button>
                     </div>
                     <div class="item__component">
@@ -169,22 +169,22 @@
                             <div class="single-thumb"><img src="images/prd_img_1.png" alt=""></div>
                             <div class="single-text">
                                 <span class="main">PHANTOM II 95DB</span><br>
-                                <span class="sub">컬러 : 매트블랙</span>
+                                <span class="f-sub">컬러 : 매트블랙</span>
                             </div>
                         </div>
                         <div class="item--option flex-start">
                             <div class="option-thumb"><img src="images/subordin.svg" alt=""></div>
                             <div class="option-thumb"><img src="images/prd_img_4.png" alt=""></div>
                             <div class="single-text">
-                                <span class="sub">TREEPOD</span>
+                                <span class="f-sub">TREEPOD</span>
                             </div>
-                            <span class="option-delete">삭제</span>
+                            <span class="option-delete f-sub">삭제</span>
                         </div>
                     </div>
                     <div class="item__final-option flex-end">
                         <div class="qty flex-end">
                             <span>수량 : </span>
-                            <div class="qty-select-box">
+                            <div class="item-select-box">
                                 <select name="" id="">
                                     <option value="1" selected>1</option>
                                     <option value="2">2</option>
@@ -196,7 +196,7 @@
                         </div>
                         <div class="period flex-end">
                             <span>기간 : </span>
-                            <div class="period-select-box">
+                            <div class="item-select-box">
                                 <select name="" id="">
                                     <option value="12">12개월</option>
                                     <option value="24">24개월</option>
@@ -206,7 +206,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item__price flex-end">
+                    <div class="total__price flex-end">
                         <span class="price-pay">399,000</span>원/월
                     </div>
                 </div>
@@ -215,7 +215,7 @@
                     <div class="item__header">
                         <input type="checkbox" class="item-check" id="cb1" checked><label for="cb1"></label>
                         <h3 class="item-name">PACKAGE NAME</h3>
-                        <span class="item-change">옵션변경</span>
+                        <a class="f-sub">옵션변경</a>
                         <button class="item-delete">장바구니에서 삭제</button>
                     </div>
                     <div class="item__component">
@@ -223,7 +223,7 @@
                             <div class="pkg-thumb"><img src="images/prd_img_1.png" alt=""></div>
                             <div class="pkg-text">
                                 <span class="main">PHANTOM II 95DB</span>
-                                <span class="sub">매트블랙</span>
+                                <span class="f-sub">매트블랙</span>
                             </div>
                         </div>
                         <div class="item--option flex-start">
@@ -231,29 +231,29 @@
                             <div class="option-thumb"><img src="images/prd_img_4.png" alt=""></div>
                             <div class="pkg-text">
                                 <span class="main">TREEPOD</span>
-                                <span class="sub">매트블랙</span>
+                                <span class="f-sub">매트블랙</span>
                             </div>
-                            <span class="option-delete">삭제</span>
+                            <span class="option-delete f-sub">삭제</span>
                         </div>
                         <div class="item--package">
                             <div class="pkg-thumb"><img src="images/prd_img_2.png" alt=""></div>
                             <div class="pkg-text">
                                 <span class="main">PL1 Plus</span>
-                                <span class="sub">실버</span>
+                                <span class="f-sub">실버</span>
                             </div>
                         </div>
                         <div class="item--package">
                             <div class="pkg-thumb"><img src="images/prd_img_3.png" alt=""></div>
                             <div class="pkg-text">
                                 <span class="main">TREEPOD</span>
-                                <span class="sub">매트블랙</span>
+                                <span class="f-sub">매트블랙</span>
                             </div>
                         </div>
                     </div>
                     <div class="item__final-option flex-end">
                         <div class="qty flex-end">
                             <span>수량 : </span>
-                            <div class="qty-select-box">
+                            <div class="item-select-box">
                                 <select name="" id="">
                                     <option value="1" selected>1</option>
                                     <option value="2">2</option>
@@ -265,7 +265,7 @@
                         </div>
                         <div class="period flex-end">
                             <span>기간 : </span>
-                            <div class="period-select-box">
+                            <div class="item-select-box">
                                 <select name="" id="">
                                     <option value="12">12개월</option>
                                     <option value="24">24개월</option>
@@ -275,7 +275,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item__price flex-end">
+                    <div class="total__price flex-end">
                         <span class="price-pay">399,000</span>원/월
                     </div>
                 </div>
@@ -283,7 +283,7 @@
         </div>
         
         <!--전체금액-->
-        <div class="cart__final">
+        <div class="cart__final"> <!--0701 .cart__final 위치변경-->
             <div class="cart__final__wrap">
             <div class="folder"></div><!--폴딩 버튼-->
             <ul class="price-detail"><!--폴딩 영역-->

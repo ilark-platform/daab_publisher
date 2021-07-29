@@ -1,6 +1,6 @@
 .back--gray{background: #EAEAEA !important;}
 .header__sub{width: 100%; background: #FFF; border-bottom: 1px solid #CCC;}
-.mypage__header{display: flex; align-items: flex-end; width: 768px; height: 70px; padding-left: 16px; padding-bottom: 20px; margin: 0 auto; background: #FFF; box-sizing: border-box;}
+.mypage__header{position: relative; display: flex; align-items: center; max-width: 768px; height: 70px; padding: 0 16px; margin: 0 auto; background: #FFF; box-sizing: border-box;}
 .mypage-title{display: inline-block; font-size: 1.45em; font-weight: 400; margin-right: 4px; border: 0;}
 .title-margin{margin-bottom: 32px}
 .cart-qty{display: inline-block;}
@@ -8,7 +8,7 @@
 .flex-top{display: flex; justify-content: space-between; align-items: flex-start;}
 .flex-bottom{display: flex; justify-content: space-between; align-items: flex-end;}
 .flex-end{display: flex; justify-content: flex-end;}
-.flex-start{display: flex; justify-content: flex-start;}
+.flex-start{display: flex; justify-content: flex-start; align-items: center;}
 .f-black{color: #111 !important;}
 .f-sub{font-family: 'NotoSansKR'; font-size: 0.9em; color: #707070; font-weight: normal;}
 .f-price{font-weight: bold; color: #111 !important;}
@@ -17,35 +17,40 @@ input[type=text]:focus-visible, input[type=num]:focus-visible {outline-width: 1p
 
 
 /**마이페이지 메인**/
-.my__main{position: relative; height: 240px; background: #245217;}
-.main__title{max-width: 768px; margin: 0 auto; padding: 86px 24px 24px; color: #FFF;}
+.my__main{position: relative; height: 190px; background: #245217;}
+.main__title{max-width: 768px; margin: 0 auto; padding: 32px 24px; color: #FFF;}
 .main__title > .user{display: inline-block; margin-right: 4px; font-size:  1.7em; font-weight: bold;}
 .main__title > span{font-size: 1.4em; font-weight: normal;}
 .main__title > p{margin-top: 8px; font-weight: 200;}
-.process__wrap{position: absolute; bottom: -45%; left: 50%; transform: translate(-50%,-50%);max-width: 768px; width: calc(100% - 24px); height: 108px; border-radius: 8px; background: #FFF; box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16)}
-.process{padding: 20px 24px; box-sizing: border-box;}
-.process>li{display: inline-block; }
+.process__wrap{position: absolute; bottom: -50%; left: 50%; transform: translate(-50%,-50%);max-width: 768px; width: calc(100% - 24px); height: 100px; border-radius: 8px; background: #FFF; box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16)}
+.process{height: 100%; padding: 20px 24px; box-sizing: border-box;}
+.process>li{display: inline-block;}
 .process>li>a{display: inline-block; width: 100%; height: 68px; text-align: center}
 .process>li>a>.count{display: block; font-size: 1.7em; font-weight: 900; margin: 16px 0; color: #707070;}
 .process>li>a>.point{color: #FD9B27}
-.my__menu{margin-top: 72px;}
-.menu__wrap>li{margin-bottom: 4px; height: 64px; background: #FFF; box-sizing: border-box;}
+.recent-order{background: none !important; border-top: 1px solid #CCC; box-shadow: none !important;}
+.recent-order-item{display: flex !important; align-items: center; width: 100%; height: 100%; padding: 4px 32px !important; box-sizing: border-box;}
+.recent-order-item__img{display: inline-block; width: 60px; height: 60px; margin-right: 16px}
+.recent-order-item__img > img{width: 100%; height: auto;}
+.recent-order-item__text{display: inline-block;}
+.my__menu{margin-top: 64px;}
+.menu__wrap>li{margin-bottom: 4px; height: 64px; background: #FFF; box-sizing: border-box;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04)}
 .menu__wrap>li>a{position: relative; display: inline-block; padding: 14px 32px 10px; width: 100%;}
 .menu__wrap>li>a::after{content: ""; position: absolute; top: 50%; bottom: 50%; right: 16px; transform: translate(-50%, -50%); width: 20px; height: 20px; background: url(../images/ic-toggle.svg) no-repeat; background-size: contain;}
 .menu__title{display: block; font-weight: bold;}
 
 
 /**주문결제내역**/
-.mypage__menu__wrap{position: relative;}
-.mypage__menu__wrap::after{position: absolute; content: ""; width: 18px; height: 18px; top: 2px; left: 0; transform: rotate(90deg); background: url(../images/ic-toggle.svg) no-repeat; background-size: contain;}
-.mypage__menu__wrap > select{margin-left: 28px;}
+.mypage__menu__wrap{position: absolute; bottom: 16px;}
+.mypage__menu__wrap::after{position: absolute; content: "내 계정"; width: 60px; height: 18px; top: -20px; left: 0; font-size: 0.9em; color: #707070;}
+.mypage__menu__wrap > select{padding: 0 32px 0 0; width: 100%; height: 100%; border: 0; text-align: left; text-align-last: left; background: url(../images/ic-toggle_active.svg) no-repeat 94% 50%; background-size: 14px;}
 .mypage__menu__wrap > select:focus{outline: none;}
 
 
 /**장바구니 - 상품**/
 .cart__wrap{}
 .cart__item{margin-top: 12px; padding: 24px 16px; background: #FFF; border-bottom: 1px solid #CCC;}
-.item__header{position: relative; display: flex; align-items: baseline; width: 100%; padding-bottom: 16px; border-bottom: 1px solid #EAEAEA;}
+.item__header{position: relative; display: flex; align-items: center; width: 100%; padding-bottom: 16px; border-bottom: 1px solid #EAEAEA;}
 input[type=checkbox].item-check{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
 input[type=checkbox].item-check + label{display: inline-block; width: 18px; height: 18px; background: url(../images/box-noncheck.svg) no-repeat; background-size: contain;}
 input[type=checkbox].item-check:checked + label{background: url(../images/box-checked.svg) no-repeat; background-size: contain;}
@@ -86,7 +91,7 @@ input[type=checkbox].item-check:checked + label{background: url(../images/box-ch
 .price-detail{display: none; padding-bottom: 8px; border-bottom: 1px solid #CCC;}
 .price-detail > li{color: #707070; margin-bottom: 8px;}
 .price-detail > li > .price{float: right; font-weight: bold;}
-.price-detail > li > .discount{text-decoration: line-through;}
+.discount{text-decoration: line-through;}
 .price-final{padding: 24px 0;}
 .price-final > li{display: flex; justify-content: space-between; align-items: baseline; color: #707070;}
 .price-final > li >div:first-child{display: flex; align-items: center;}
@@ -107,19 +112,18 @@ input[type=checkbox].item-check:checked + label{background: url(../images/box-ch
 .pay__box{margin-top: 12px; padding: 24px 16px; background: #FFF; border-bottom: 1px solid #CCC;}
 .pay__header{position: relative; display: flex; align-items: baseline; width: 100%; padding-bottom: 12px; border-bottom: 1px solid #EAEAEA;}
 .pay-name{display: inline-block; max-width: 245px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.2em; font-weight: bold;}
+.pay-name > span{margin-left: 4px; font-weight: normal;}
 .pay__header > button{position: absolute; bottom: 16px; right: 0; border: 0; background: #FFF; font-size: 0.9em; color: #245217;}
 .pay__info{padding-top: 16px;}
-.order__detail{padding-right: 16px;}
-.delivery__detail>li{position: relative; padding-right: 40px;}
+.delivery__detail>li{position: relative; }
 /**1.주문정보**/
-.pay__info p{font-size: 1em;}
-p.main{margin-bottom: 6px;}
+.main{margin-bottom: 6px;}
 p.bold{font-weight: bold;}
 p.sub{color: #707070;}
 p.block{margin-top: 6px;}
 .pay__info hr{margin: 0; padding: 0; height: 1px; border: 0; background: #CCC;}
 /**2.배송정보**/
-span.chip{font-size: 0.7em; color: #245117; padding: 2px 4px 1px; margin-left: 8px; border-radius: 4px; border: 1px solid #245217; background: #E4EAE2;}
+span.chip{font-size: 0.8em; line-height: 1em; color: #245117; padding: 4px 6px; margin-left: 8px; border-radius: 6px; border: 1px solid #245217; background: #E4EAE2;}
 span.chip--recently{font-size: 0.7em; color: #707070; padding: 2px 4px 1px; margin-left: 8px; border-radius: 4px; border: 1px solid #A0A0A0; background: #EAEAEA;}
 .inner-btn{position: absolute; top: 0; right: 0; border: 0; background: #FFF; font-size: 0.9em; color: #245217;}
 .inner-btn>button{border: 0; background: #FFF; font-size: 0.9em; color: #245217;}
@@ -167,27 +171,30 @@ li.terms > p > a{position: absolute; right: 0; text-decoration: underline; color
 .pay__info > .cart__item > .item__component{padding: 12px;}
 .pay__info > .cart__item > .total__price{padding: 0 12px;}
 .pay__info > .cart__item > .total__price > .price-pay{font-size: 1.2em;}
-.cart__final__wrap > dl{margin-top: 24px; color: #707070; background: #F5F5F5; padding: 16px 16px 4px;}
-.cart__final__wrap > dl > dt{font-size: 0.9em; font-weight: 600; margin-bottom: 12px;}
-.cart__final__wrap > dl > dt > .switch{display: inline-block; margin-left:4px; width: 16px; height: 16px; background: url(../images/ic-fold-down.svg) center 2px no-repeat; background-size: contain;}
-.cart__final__wrap > dl > dt > .switch-reverse{background: url(../images/ic-fold.svg) center 2px no-repeat !important; background-size: contain;}
-.cart__final__wrap > dl > dd{display: none; font-size: 0.8em; padding: 12px 0; margin-bottom: 8px; border-top: 1px solid #E0E0E0;}
+a.final-change{display: block; width: 100%; line-height: 48px; text-align: center; margin-top: 16px; margin-bottom: -48px;}
 
 
 /**체크아웃 - 수정**/
+.delivery-date{display: inline-block; padding: 2px 4px; background: #A0A0A0; color: #FFF;}
 table{width: 100%;}
 .pay__info > div > table{width: 100%; border: 0; padding: 0; margin: 0;}
-td.textfield{display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;}
-table input[type=text], input[type=num], input[type="password"]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
+.pay__info table tr {height: 44px}
+.pay__info table tr td {line-height: 44px}
+.info-group table tr {height: 44px}
+.info-group table tr td {line-height: 44px}
+.pay__info table tr.noinput {height: 24px}
+td.textfield{display: flex; justify-content: space-between; align-items: center; }
+table input[type=text], input[type=num]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
 .field--small{width: 30%}
 .field--medium{width: 70%}
 .field--large{width: 100%}
-ul.phone{display: flex; justify-content: space-between; align-items: center; width: 100%;}
-ul.phone>li{position: relative; display: inline-block; width: 30%;}
-ul.phone>li:last-child{margin-right: 0;}
-ul.phone>li.hyphen{width: 16px;text-align: center; margin: 0;}
+ul.phoneinput{display: flex; justify-content: space-between; align-items: center; width: 100%;}
+ul.phoneinput>li{position: relative; display: inline-block; width: 30%;}
+ul.phoneinput>li:last-child{margin-right: 0;}
+ul.phoneinput>li.hyphen{width: 16px;text-align: center; margin: 0;}
 .btn-group{display: flex; justify-content: space-between; align-items: center; margin-top: 20px; width: 100%;}
 .btn-group > button{width: 49%; height: 40px; border: 0; border-radius: 0; font-weight: 400;}
+.p-bottom> button.cancel, .p-bottom> button.save{width: 49%; height: 100%; border: 0; border-radius: 0; font-weight: 400;}
 button.disabled{background: #E0E0E0; color: #999; cursor: none;}
 button.cancel{background: #EAEAEA;}
 button.save{background: #245217; color: #FFF;}
@@ -196,26 +203,31 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .zip{display: flex; justify-content: space-between;}
 .address-search{display: inline-block; padding: 0; margin-left: 10px; border-radius: 4px; width: 30%; height: 36px; line-height: 36px; background: #A0A0A0; color: #FFF; text-align: center; vertical-align: middle;}
 .address-option > input[type=checkbox]{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
-.address-option > input[type=checkbox] + label{display: inline-block; width: 100%; height: 18px; text-indent: 24px; margin-bottom: 32px; background: url(../images/box-noncheck.svg) no-repeat; background-size: contain;}
+.address-option > input[type=checkbox] + label{display: inline-block; width: 100%; line-height: 18px; text-indent: 24px; margin-bottom: 32px; background: url(../images/box-noncheck.svg) no-repeat; background-size: contain;}
 .address-option > input[type=checkbox]:checked + label{background: url(../images/box-checked.svg) no-repeat; background-size: contain;}
+.address-option > input[type=checkbox]:disabled + label{background: url(../images/box-disabled.svg) no-repeat; background-size: contain; color: #A0A0A0 !important}
 .holiday-chck{display: inline-block; margin-left: 24px; width: 64px; height: 20px;}
 .holiday-chck > input[type=radio]{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
-.holiday-chck > input[type=radio] + label{position: absolute; display: inline-block; width: 72px; height: 18px; text-indent: 28px; background: url(../images/radio-default.svg) 0 50% no-repeat; background-size: 18px;}
+.holiday-chck > input[type=radio] + label{position: absolute; display: inline-block; width: 72px; line-height: 18px; text-indent: 28px; background: url(../images/radio-default.svg) 0 50% no-repeat; background-size: 18px;}
 .holiday-chck > input[type=radio]:checked + label{background: url(../images/radio-selected.svg) no-repeat; background-size: 18px;}
 .card-num{position: relative;}
 .card-num > input{padding-right: 40px;}
 .card-camera{position: absolute; top: 0; right: 0; display: inline-block; width: 36px; height: 36px; background: url(../images/camera.svg) no-repeat; background-size: contain;}
-.register-notice{background: #F5F5F5; margin: 8px 0 28px; padding: 16px;}
+.register-notice{background: #F5F5F5; margin: 8px 0; padding: 8px 12px;}
+.notice-box{margin: 20px 0 0;}
+.notice-box > a{text-decoration: underline; color: #707070;}
+.notice-box .linkbox{margin-top: 8px}
+.notice-box .linkbox > a{width: 100%; line-height: 40px; text-align: center}
 
 
 /**체크아웃 - 서브페이지**/
-.subpage__title{text-align: center; line-height: 56px; font-size: 1.5em; font-weight: bold;}
-.subpage-wrap{margin: 16px;}
+.subpage__title{text-align: center; line-height: 56px; font-size: 1.5em; font-weight: bold; width: 70% !important}
+.subpage-wrap{position: relative; margin: 16px;}
 .address-wrap{padding:0}
 .address-wrap > li{position: relative; margin: 16px 0; padding: 0 40px 16px 0; border-bottom: 1px solid #EAEAEA;}
 .inner-delbtn{position: absolute; top: 35%; right: 16px; border: 0; background: rgba(255,255,255,0); font-size: 0.9em; color: #707070;}
-.addcard{background: #FFF !important; border: 2px dashed #CCC !important; color: #707070; padding: 0 !important;box-sizing: border-box;}
-.addcard > a{display: inline-block; width: 100%; line-height: 56px; text-align: center; color: #707070; }
+.addcard{background: none !important; color: #707070; border: 0 !important; padding: 0 !important}
+.addcard > a{display: inline-block; width: 100%; line-height: 56px; text-align: center; font-weight: bold; color: #245217; font-size: 0.9em;}
 .save-check__wrap{padding: 24px 16px 0;}
 .save-chck{height: 18px; margin-bottom: 8px;}
 .save-chck:last-child{margin-bottom: 0;}
@@ -254,7 +266,7 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .filter--daterange > input:focus{outline: none;}
 .filter--type{width: 100%; height: 36px; margin-bottom: 16px;}
 .filter--type > label{width: 35%;}
-.filter--type > select{width: 100%; line-height: 34px; border: 1px solid #CCC; border-radius: 4px; padding: 0 8px;}
+.filter--type > select{width: 100%; line-height: 34px; border: 1px solid #CCC; border-radius: 4px; padding: 0  32px 0 8px; background: url(../images/ic-toggle_active.svg) no-repeat 94% 50%; background-size: 14px}
 .filter--button{width: 100%; height: 48px;}
 .final-btn{display: block; width: 100%; height: 100%; line-height: 48px; text-align: center; padding: 0; background: #245217; color: #FFF; border: 0;}
 .line-btn{width: 100%; height: 100%; padding: 0; background: #FFF; color: #333; border: 1px solid #CCC;}
@@ -262,7 +274,7 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 /**TAB 렌탈주문**/
 .order__item{margin-bottom: 20px; padding: 24px 16px; background: #FFF;}
 h3.order-status{display: inline-block; font-size: 1.4em; font-weight: bold;}
-.greenheader{color: #245217}
+.greenheader{color: #245217 !important}
 .redheader{color: #D84444 !important}
 .grayheader{color: #707070}
 a.detail-page{position: relative; margin-right: 16px;}
@@ -279,7 +291,9 @@ a.detail-page::after{position: absolute; content: ""; top: 1px; width: 16px; hei
 .order__desc > dd:last-child{font-weight: normal;}
 .order__desc > dd > span.price{font-size: 1.5em; font-weight: bold; margin-right: 4px;}
 .order__msg{width: 100%; line-height: 36px; font-size: 0.9em; color: #FFF; text-align: center;}
-.card__msg{width: 100%; height: 40px; font-size: 0.9em; color: #245217; text-align: center; vertical-align: middle;}
+.card__msg{width: 100%; padding: 16px; background: #EAEAEA; box-sizing: border-box; text-align: center;}
+.card__del{margin: 24px 0 8px; padding-bottom: 8px; border-bottom: 1px solid #CCC;}
+.card__del button{background: none; border: none;}
 .greenbox{position: relative; background: #245217}
 .greenbox::after{position: absolute; bottom: -12px; left: calc(50% - 3px); content: ""; border-width: 6px; border-style: solid; border-color: #245217 transparent transparent transparent;}
 .redbox{position: relative; background: #D84444}
@@ -293,7 +307,7 @@ a.detail-page::after{position: absolute; content: ""; top: 1px; width: 16px; hei
 .noline-btn{margin-top: 12px; width: 100%; height: 48px; background: rgba(255,255,255,0); border: 0; color: #D84444;}
 .order__list{margin-top: 0 !important; padding: 16px !important; border-bottom: 4px solid #EAEAEA;}
 .order__item-name{display: inline-block; font-size: 1.15em; font-weight: bold;}
-.status-chip{display: inline-block; margin-left: 4px; padding: 0 4px; border-radius: 4px; font-size: 0.5em; color: #FFF;}
+.status-chip{display: inline-block; margin-left: 4px; padding: 4px 6px; border-radius: 6px; font-size: 0.8em; line-height: 1em; color: #FFF;}
 .greenchip{background: #245217}
 .redchip{background: #D84444}
 .graychip{background: #707070}
@@ -307,10 +321,10 @@ dl.row-border{padding: 16px 0; margin: 16px 0; border-top: 1px solid #EAEAEA; bo
 .row-border-bottom{padding: 0 0 16px; margin-bottom: 16px; border-bottom: 1px solid #EAEAEA}
 dd.price{font-weight: bold;}
 dd.date{text-align: right;}
-.card-btn-group{margin: 24px 0; width: 100%; height: 32px; border: 1px solid #CCC;}
-.noline-btn--s{width: 100%; height: 100%; color: #707070; background: rgba(255,255,255,0); border: 0;}
+.card-btn-group{margin: 24px 0; width: 100%; height: 40px; border: 1px solid #CCC;}
+.noline-btn--s{width: 100%; height: 100%; color: #333; font-weight: bold; background: rgba(255,255,255,0); border: 0;}
 .noline-btn-g{width: 100%; height: 100%; color: #245217; background: rgba(255,255,255,0); border: 0;}
-.invoice-textbtn{width: 100%; height: 48px; padding-top: 16px; border-top: 1px solid #EAEAEA;}
+.invoice-textbtn{width: 100%; height: 56px; padding: 16px 0; border-top: 1px solid #EAEAEA;}
 div.delivery__detail{background: #FFF; padding: 16px;}
 .link-switch{background: url(../images/ic-toggle.svg) #FFF no-repeat !important; background-size: 16px !important; background-position: 98% 50% !important;}
 .font-bold{font-weight: bold; font-size: 1.1em; color: #333;}
@@ -324,8 +338,11 @@ div.delivery__detail{background: #FFF; padding: 16px;}
 
 
 /**주문취소**/
-.step__wrap{width: 100%; margin: 40px 0 24px; text-align: center;}
+.step__wrap{width: 100%; margin: 32px 0; text-align: center;}
 .step {position: relative; line-height: 32px; width: 32px; background-color: #CCC; border: none; border-radius: 50%; display: inline-block; color: #FFF; font-weight: bold;}
+.step__wrap .first::after{content: "피드백"; position: absolute; left: 50%; transform: translate(-50%,0); bottom: -28px; display: inline-block; width: 64px; font-size: 0.85em; font-weight: normal; color: #707070;}
+.step__wrap .second::after{content: "세부정보"; position: absolute; left: 50%; transform: translate(-50%,0); bottom: -28px; display: inline-block; width: 64px; font-size: 0.85em; font-weight: normal; color: #707070;}
+.step__wrap .third::after{content: "접수완료"; position: absolute; left: 50%; transform: translate(-50%,0); bottom: -28px; display: inline-block; width: 64px; font-size: 0.85em; font-weight: normal; color: #707070;}
 .dashline{display: inline-block; width: 64px; height: 4px; border-top: 1px dashed #CCC;}
 .step.finish{background-color: #04AA6D;}
 .tab{display: none; padding: 16px;}
@@ -343,6 +360,7 @@ div.delivery__detail{background: #FFF; padding: 16px;}
 .cancel-process{margin-bottom: 4px; padding: 8px 12px; background: #FFF; border-radius: 4px; text-align: center;}
 .ic-next{display: inline-block; width: 20px; height: 20px; background: url(../images/ic-toggle.svg) center no-repeat; background-size: 14px;}
 .btn__wrap{width: 100%; height: 48px; padding: 16px 0 0;}
+.p-bottom{position: absolute; bottom: 0; left: 0; width: 100%; height: 48px; padding: 0 16px; margin-bottom: 16px; box-sizing: border-box;}
 
 
 /**설정**/
@@ -359,7 +377,7 @@ div.delivery__detail{background: #FFF; padding: 16px;}
 .alarm-setting > li > dl{display: flex; justify-content: space-between;height: 64px; align-items: center;}
 .alarm-setting > li > dl > dd > span{vertical-align: middle;}
 .pagego{display: inline-block; width: 24px; height: 24px; margin-left: 4px; background: url(../images/ic-toggle.svg) center no-repeat; background-size: 16px;}
-.subbox{background: #F5F5F5; border-radius: 8px; padding: 4px 8px; margin-bottom: 16px;}
+.subbox{background: #F5F5F5; padding: 4px 8px; margin-bottom: 16px;}
 /* The switch - the box around the slider */
 .toggle {position: relative; display: inline-block; width: 48px;height: 24px;}
 /* Hide default HTML checkbox */

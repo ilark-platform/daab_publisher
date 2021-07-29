@@ -24,7 +24,7 @@
 <body>
     <div id="wrap" class="back--gray">
         <!--*****헤더영역******-->
-        <header id="header" class="white">
+        <header id="header">
             <div class="hd__menu">
                 <h1 class="hd__logo">
                     <a href="#"><span class="hidden-text">daab</span></a>
@@ -47,6 +47,14 @@
                 </div>
             </div>
         </header>
+        <div class="header__sub">
+            <div class="mypage__header">
+                <div class="flex-bottom" style="width: 100%">
+                    <h2 class="mypage-title">마이페이지</h2>
+                    <p class="f-sub">회원기간 : 4년 이상</p>
+                </div>
+            </div>
+        </div>
         <!--*****본문영역******-->
         <div class="my__main">
             <div class="main__title">
@@ -55,13 +63,13 @@
             </div>
             <div class="process__wrap">
                 <ul class="process flex-center">
-                    <li><a href=""><span class="count">1</span><span class="f-sub">결제완료</span></a></li>
+                    <li><a href=""><span class="count">0</span><span class="f-sub">결제완료</span></a></li>
                     <li class="divider"></li>
                     <li><a href=""><span class="count">0</span><span class="f-sub">상품준비중</span></a></li>
                     <li class="divider"></li>
-                    <li><a href=""><span class="count">0</span><span class="f-sub">배송중</span></a></li>
+                    <li><a href=""><span class="count point">2</span><span class="f-sub">배송중</span></a></li>
                     <li class="divider"></li>
-                    <li><a href=""><span class="count point">1</span><span class="f-sub">렌탈중</span></a></li>
+                    <li><a href=""><span class="count">0</span><span class="f-sub">렌탈중</span></a></li>
                 </ul>
             </div>
         </div>
@@ -69,17 +77,39 @@
             <div class="my__menu">
                 <ul class="menu__wrap">
                     <li class="flex-start"><a href="">
-                        <div><span class="menu__title">주문/결제내역</span><span class="f-sub">3개의 주문내역</span></div>
-                    </a></li>
+                            <div><span class="menu__title">주문/결제내역</span><span class="f-sub">2개의 주문내역</span></div>
+                        </a></li>
+                    <li class="recent-order" style="border-top: none;">
+                        <div class="recent-order-item">
+                            <a class="recent-order-item__img">
+                                <img src="images/prd_img_1.png" alt="">
+                            </a>
+                            <a class="recent-order-item__text">
+                                <p class="font-bold">내일(목) 도착 예정</p>
+                                <p class="f-sub">배송중 | ODE직배송</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="recent-order">
+                        <div class="recent-order-item">
+                            <a class="recent-order-item__img">
+                                <img src="images/prd_img_1.png" alt="">
+                            </a>
+                            <a class="recent-order-item__text">
+                                <p class="font-bold">내일(목) 도착 예정</p>
+                                <p class="f-sub">배송중 | ODE직배송</p>
+                            </a>
+                        </div>
+                    </li>
                     <li class="flex-start"><a href="">
-                        <div><span class="menu__title">주소록</span><span class="f-sub">3개의 주소</span></div>
-                    </a></li>
+                            <div><span class="menu__title">주소록</span><span class="f-sub">3개의 주소</span></div>
+                        </a></li>
                     <li class="flex-start"><a href="">
-                        <div><span class="menu__title">결제카드</span><span class="f-sub">VISA(1234) 외 2개</span></div>
-                    </a></li>
+                            <div><span class="menu__title">결제카드</span><span class="f-sub">VISA(1234) 외 2개</span></div>
+                        </a></li>
                     <li class="flex-start"><a href="">
-                        <div><span class="menu__title">설정</span><span class="f-sub">알람, 비밀번호 변경 등</span></div>
-                    </a></li>
+                            <div><span class="menu__title">설정</span><span class="f-sub">알람, 비밀번호 변경 등</span></div>
+                        </a></li>
                 </ul>
             </div>
         </div>
@@ -87,83 +117,83 @@
     <!--*****풋터영역******-->
     <footer id="footer" style="margin-top: 0 !important;">
         <div class="footer__wrap">
-        <div class="ft__btn">
-            <div class="left">
-                <a href="" class="btn-sq">로그인</a>
-                <a href="" class="btn-sq">공지사항</a>
+            <div class="ft__btn">
+                <div class="left">
+                    <a href="" class="btn-sq">로그인</a>
+                    <a href="" class="btn-sq">공지사항</a>
+                </div>
+                <div class="right">
+                    <a href="" class="btn-icon ic-kakao"><span class="hidden-text">카카오톡</span></a>
+                    <a href="" class="btn-icon ic-insta"><span class="hidden-text">인스타그램</span></a>
+                    <a href="" class="btn-icon ic-youtube"><span class="hidden-text">유튜브</span></a>
+                </div>
             </div>
-            <div class="right">
-                <a href="" class="btn-icon ic-kakao"><span class="hidden-text">카카오톡</span></a>
-                <a href="" class="btn-icon ic-insta"><span class="hidden-text">인스타그램</span></a>
-                <a href="" class="btn-icon ic-youtube"><span class="hidden-text">유튜브</span></a>
+            <div class="ft__company">
+                <div class="cp-name">
+                    <span style="font-weight:bold">(주)인사이트랩</span>
+                    <span class="ic-fold__up"></span>
+                </div>
+                <div class="cp-info">
+                    <dl>
+                        <dt>대표</dt>
+                        <dd>김지훈</dd>
+                        <dt>주소</dt>
+                        <dd>서울시 강남구 논현로 703</dd>
+                        <dt>사업자번호</dt>
+                        <dd>511-81-24974</dd>
+                        <dt>통신판매업</dt>
+                        <dd>제2001-서울강남-00452호</dd>
+                        <dt>정보담당자</dt>
+                        <dd>김땡땡</dd>
+                        <dt>고객센터</dt>
+                        <dd>
+                            <strong>1234-1234</strong><br>
+                            info@daab.com<br>
+                            평일 11:00~17:00
+                        </dd>
+                    </dl>
+                </div>
             </div>
-        </div>
-        <div class="ft__company">
-            <div class="cp-name">
-                <span style="font-weight:bold">(주)인사이트랩</span>
-                <span class="ic-fold__up"></span>
+            <div class="ft__rights">
+                <ul>
+                    <li><a href="#" class="terms">이용약관</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="terms">개인정보 처리방침</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="terms">사업자정보 확인</a></li>
+                </ul>
+                <p>ⓒ 2021 <span style="font-weight:bold">INSIGHT LAB</span> Inc., All Rights Reserved</p>
             </div>
-            <div class="cp-info">
-                <dl>
-                    <dt>대표</dt>
-                    <dd>김지훈</dd>
-                    <dt>주소</dt>
-                    <dd>서울시 강남구 논현로 703</dd>
-                    <dt>사업자번호</dt>
-                    <dd>511-81-24974</dd>
-                    <dt>통신판매업</dt>
-                    <dd>제2001-서울강남-00452호</dd>
-                    <dt>정보담당자</dt>
-                    <dd>김땡땡</dd>
-                    <dt>고객센터</dt>
-                    <dd>
-                        <strong>1234-1234</strong><br>
-                        info@daab.com<br>
-                        평일 11:00~17:00
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <div class="ft__rights">
-            <ul>
-                <li><a href="#" class="terms">이용약관</a></li>
-                <li class="divider"></li>
-                <li><a href="#" class="terms">개인정보 처리방침</a></li>
-                <li class="divider"></li>
-                <li><a href="#" class="terms">사업자정보 확인</a></li>
-            </ul>
-            <p>ⓒ 2021 <span style="font-weight:bold">INSIGHT LAB</span> Inc., All Rights Reserved</p>
-        </div>
-        <div class="btn-totop"><span class="hidden-text">scroll to top</span></div>
+            <div class="btn-totop"><span class="hidden-text">scroll to top</span></div>
         </div>
     </footer>
-    
+
     <script>
         /*풋터 회사정보*/
-        $(".cp-name").click(function(){
-                $(this).siblings(".cp-info").toggleClass("open");
-                $(this).toggleClass("active");
-            })
+        $(".cp-name").click(function() {
+            $(this).siblings(".cp-info").toggleClass("open");
+            $(this).toggleClass("active");
+        })
         /*상세페이지 더보기*/
-        function expandContent(){
-            $(".detail--contents").css("height","100%");
-            $(".contents-more").css("display","none");
+        function expandContent() {
+            $(".detail--contents").css("height", "100%");
+            $(".contents-more").css("display", "none");
         }
         /*상품TAB*/
-        $(".shortcut__detail").click(function(){
+        $(".shortcut__detail").click(function() {
             $(this).addClass("current");
             $(this).siblings(".shortcut__rental").removeClass("current");
-            $(".item__rental").css("display","none");
-            $(".item__detail").css("display","block");
+            $(".item__rental").css("display", "none");
+            $(".item__detail").css("display", "block");
         })
-        $(".shortcut__rental").click(function(){
+        $(".shortcut__rental").click(function() {
             $(this).addClass("current");
             $(this).siblings(".shortcut__detail").removeClass("current");
-            $(".item__detail").css("display","none");
-            $(".item__rental").css("display","block");
+            $(".item__detail").css("display", "none");
+            $(".item__rental").css("display", "block");
         })
         /*추천TAB*/
-        $(".tab__item").click(function(){
+        $(".tab__item").click(function() {
             $(this).toggleClass("current");
             $(this).siblings(".tab__item").removeClass("current");
         })

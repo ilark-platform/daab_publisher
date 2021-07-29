@@ -32,8 +32,8 @@
 
 @font-face {
     font-family: "Brown-Bold";
-    src: url("fonts/lineto-brown-bold.eot");
-    src: url("fonts/lineto-brown-bold.eot?") format("embedded-opentype"),
+    src:url("fonts/lineto-brown-bold.eot");
+    src:url("fonts/lineto-brown-bold.eot?") format("embedded-opentype"),
         url("fonts/lineto-brown-bold.woff2") format("woff2"),
         url("fonts/lineto-brown-bold.woff") format("woff");
     font-weight: bold;
@@ -42,8 +42,8 @@
 
 @font-face {
     font-family: "Brown-Boldalt";
-    src: url("fonts/lineto-brown-boldalt.eot");
-    src: url("fonts/lineto-brown-boldalt.eot?#iefix") format("embedded-opentype"),
+    src:url("fonts/lineto-brown-boldalt.eot");
+    src:url("fonts/lineto-brown-boldalt.eot?#iefix") format("embedded-opentype"),
         url("fonts/lineto-brown-boldalt.woff2") format("woff2"),
         url("fonts/lineto-brown-boldalt.woff") format("woff");
     font-weight: bold;
@@ -52,8 +52,8 @@
 
 @font-face {
     font-family: "Brown-Regular";
-    src: url("fonts/lineto-brown-regular.eot");
-    src: url("fonts/lineto-brown-regular.eot?#iefix") format("embedded-opentype"),
+    src:url("fonts/lineto-brown-regular.eot");
+    src:url("fonts/lineto-brown-regular.eot?#iefix") format("embedded-opentype"),
         url("fonts/lineto-brown-regular.woff2") format("woff2"),
         url("fonts/lineto-brown-regular.woff") format("woff");
     font-weight: normal;
@@ -62,9 +62,9 @@
 
 @font-face {
     font-family: "Brown-Regularalt";
-    src: url("fonts/lineto-brown-regularalt.eot");
-    src: url("fonts/lineto-brown-regularalt.eot?#iefix") format("embedded-opentype"),
-        url("fonts/lineto-brown-regularalt.woff2") format("woff2"),
+    src:url("fonts/lineto-brown-regularalt.eot");
+    src:url("fonts/lineto-brown-regularalt.eot?#iefix") format("embedded-opentype"),
+        url("fonts/lineto-brown-regularaltalt.woff2") format("woff2"),
         url("fonts/lineto-brown-regularalt.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -75,8 +75,8 @@
 
 @font-face {
     font-family: "Brown-Bold";
-    src: url("fonts_subsetted/lineto-brown-bold.eot");
-    src: url("fonts_subsetted/lineto-brown-bold.eot?") format("embedded-opentype"),
+    src:url("fonts_subsetted/lineto-brown-bold.eot");
+    src:url("fonts_subsetted/lineto-brown-bold.eot?") format("embedded-opentype"),
         url("fonts_subsetted/lineto-brown-bold.woff2") format("woff2"),
         url("fonts_subsetted/lineto-brown-bold.woff") format("woff");
     font-weight: bold;
@@ -85,8 +85,8 @@
 
 @font-face {
     font-family: "Brown-Boldalt";
-    src: url("fonts_subsetted/lineto-brown-boldalt.eot");
-    src: url("fonts_subsetted/lineto-brown-boldalt.eot?#iefix") format("embedded-opentype"),
+    src:url("fonts_subsetted/lineto-brown-boldalt.eot");
+    src:url("fonts_subsetted/lineto-brown-boldalt.eot?#iefix") format("embedded-opentype"),
         url("fonts_subsetted/lineto-brown-boldalt.woff2") format("woff2"),
         url("fonts_subsetted/lineto-brown-boldalt.woff") format("woff");
     font-weight: bold;
@@ -95,8 +95,8 @@
 
 @font-face {
     font-family: "Brown-Regular";
-    src: url("fonts_subsetted/lineto-brown-regular.eot");
-    src: url("fonts_subsetted/lineto-brown-regular.eot?#iefix") format("embedded-opentype"),
+    src:url("fonts_subsetted/lineto-brown-regular.eot");
+    src:url("fonts_subsetted/lineto-brown-regular.eot?#iefix") format("embedded-opentype"),
         url("fonts_subsetted/lineto-brown-regular.woff2") format("woff2"),
         url("fonts_subsetted/lineto-brown-regular.woff") format("woff");
     font-weight: normal;
@@ -105,8 +105,8 @@
 
 @font-face {
     font-family: "Brown-Regularalt";
-    src: url("fonts_subsetted/lineto-brown-regularalt.eot");
-    src: url("fonts_subsetted/lineto-brown-regularalt.eot?#iefix") format("embedded-opentype"),
+    src:url("fonts_subsetted/lineto-brown-regularalt.eot");
+    src:url("fonts_subsetted/lineto-brown-regularalt.eot?#iefix") format("embedded-opentype"),
         url("fonts_subsetted/lineto-brown-regularalt.woff2") format("woff2"),
         url("fonts_subsetted/lineto-brown-regularalt.woff") format("woff");
     font-weight: normal;

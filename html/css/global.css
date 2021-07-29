@@ -688,7 +688,7 @@ input[type=checkbox].ic-psw:checked + label{background: url(../images/ic-psw-hid
 .login-form > div{position: relative; margin-bottom: 24px;}
 .login-form > div:last-child{margin-bottom: 0;}
 .login-form>input[type=text], .login-form>input[type=password], .login-form>input[type=num]{display: block; width: 100%; height: 48px; margin-top: 16px; padding: 0 8px; border: 0; border-bottom: 1px solid #CCC; box-sizing: border-box;}
-.login-form > input[type=text]:focus,input[type=password]:focus,input[type=num]:focus{outline: none; border-bottom: 1px solid #FD9B27}
+.login-form > input[type=text]:focus, .login-form>input[type=password]:focus, .login-form>input[type=num]:focus{outline: none; border-bottom: 1px solid #FD9B27}
 .login-sub{margin: 16px 0;}
 input[type=checkbox].remember{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
 input[type=checkbox].remember + label{display: inline-block; width: 100%; height: 18px; background: url(../images/box-noncheck.svg) no-repeat; background-size: contain; text-indent: 24px;}
@@ -717,6 +717,7 @@ button.code-require{border: 0; border-radius: none; background: #245217; color: 
 .tab__email--result, .tab__pw--result{display: none; padding: 24px 0 0;}
 .result-text{text-align: center; margin: 56px 0;}
 p.margin{margin: 12px 0;}
+span.margin{display: block; margin: 12px 0 0;}
 
 .tab__pw{padding: 24px 0 0;}
 .find-text{margin-bottom: 40px;}

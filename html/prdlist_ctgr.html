@@ -15,8 +15,6 @@
     <meta property="og:url" content="">
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="css/brown/brown.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -71,8 +69,7 @@
                     <select class="filter-align" id="">
                         <option value="">추천순</option>
                         <option value="">인기순</option>
-                        <option value="">낮은 가격순</option>
-                        <option value="">높은 가격순</option>
+                        <option value="">가격순</option>
                     </select>
                 </div>
             </div>
@@ -155,6 +152,7 @@
         </div>
         <!--*****풋터영역******-->
         <footer id="footer">
+            <div class="footer__wrap">
             <div class="ft__btn">
                 <div class="left">
                     <a href="" class="btn-sq">로그인</a>
@@ -194,22 +192,23 @@
             </div>
             <div class="ft__rights">
                 <ul>
-                    <li class="item"><a href="#" class="terms">이용약관</a></li>
-                    <li class="item divider"></li>
-                    <li class="item"><a href="#" class="terms">개인정보 처리방침</a></li>
-                    <li class="item divider"></li>
-                    <li class="item"><a href="#" class="terms">사업자정보 확인</a></li>
+                    <li><a href="#" class="terms">이용약관</a></li>
+                    <li class="li-divider">|</li>
+                    <li><a href="#" class="terms">개인정보 처리방침</a></li>
+                    <li class="li-divider">|</li>
+                    <li><a href="#" class="terms">사업자정보 확인</a></li>
                 </ul>
                 <p>ⓒ 2021 <span style="font-weight:bold">INSIGHT LAB</span> Inc., All Rights Reserved</p>
             </div>
             <div class="btn-totop"><span class="hidden-text">scroll to top</span></div>
+            </div>
         </footer>
     </div>
     <script>
         $(".cp-name").click(function(){
-            $(this).siblings(".cp-info").toggleClass("open");
-            $(this).toggleClass("active");
-        })
+                $(this).siblings(".cp-info").toggleClass("open");
+                $(this).toggleClass("active");
+            })
     </script>
 </body>
 

@@ -40,33 +40,45 @@
         <div id="contents">
         <div class="subpage-wrap">
             <ul class="payment__detail">
-                <li> <!-- 카드 -->
-                    <div style="margin:0">
+                <li class="card--selected">
+                    <input type="radio" name="cards" id="card1" class="card-check" checked><label for="card1"></label>
+                    <div>
                         <p class="main bold">SAMSUNG CARD</p>
-                        <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
+                        <p class="f-sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
                     </div>
                     <button class="inner-delbtn">삭제</button>
-                </li> 
-                <li> <!-- 카드 -->
-                    <div style="margin:0">
+                </li> <!-- 카드 -->
+                <li>
+                    <input type="radio" name="cards"  id="card2" class="card-check"><label for="card2"></label>
+                    <div>
                         <p class="main bold">HYUNDAI CARD</p>
-                        <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
+                        <p class="f-sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
                     </div>
                     <button class="inner-delbtn">삭제</button>
-                </li>
-                <li> <!-- 카드 -->
-                    <div style="margin:0">
+                </li> <!-- 카드 -->
+                <li>
+                    <input type="radio" name="cards"  id="card3" class="card-check"><label for="card3"></label>
+                    <div>
                         <p class="main bold">KAKAO CHECK CARD</p>
-                        <p class="sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
+                        <p class="f-sub">1234&nbsp;****&nbsp;****&nbsp;1234</p>
                     </div>
                     <button class="inner-delbtn">삭제</button>
-                </li>
+                </li> <!-- 카드 -->
                 <li class="addcard"><a href="">카드 추가</a></li>
             </ul>
         </div>
         </div>
+        
+        <div class="p-bottom">
+            <button class="final-btn">선택</button>
+        </div>
     </div>
-    
+    <script> /*카드 라디오 버튼 선택*/
+        $(".payment__detail > li").click(function(){
+            $(this).siblings("li").removeClass("card--selected");
+            $(this).addClass("card--selected");
+        })
+    </script>
 </body>
 
 </html>
