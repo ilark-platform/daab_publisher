@@ -14,6 +14,7 @@
 .f-price{font-weight: bold; color: #111 !important;}
 input[type=text]:focus-visible, input[type=num]:focus-visible {outline-width: 1px; outline-color: #FDBB27;}
 .f-center{text-align: center}
+b{font-weight: bold;}
 
 
 /**마이페이지 메인**/
@@ -28,8 +29,8 @@ input[type=text]:focus-visible, input[type=num]:focus-visible {outline-width: 1p
 .process>li>a{display: inline-block; width: 100%; height: 68px; text-align: center}
 .process>li>a>.count{display: block; font-size: 1.7em; font-weight: 900; margin: 16px 0; color: #707070;}
 .process>li>a>.point{color: #FD9B27}
-.recent-order{background: none !important; border-top: 1px solid #CCC; box-shadow: none !important;}
-.recent-order-item{display: flex !important; align-items: center; width: 100%; height: 100%; padding: 4px 32px !important; box-sizing: border-box;}
+.recent-order{position: relative; height: 100% !important; background: none !important; border-top: 1px solid #CCC; box-shadow: none !important;}
+.recent-order-item{display: flex !important; align-items: center; width: 100%; height: 64px; padding: 4px 32px !important; box-sizing: border-box;}
 .recent-order-item__img{display: inline-block; width: 60px; height: 60px; margin-right: 16px}
 .recent-order-item__img > img{width: 100%; height: auto;}
 .recent-order-item__text{display: inline-block;}
@@ -245,6 +246,7 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .tab__singlepay{display: none;}
 .tab__alarm{display: none;}
 .tab__pw{display: none;}
+.tab__inquire{display: none;}
 
 
 
@@ -269,6 +271,7 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .filter--type > select{width: 100%; line-height: 34px; border: 1px solid #CCC; border-radius: 4px; padding: 0  32px 0 8px; background: url(../images/ic-toggle_active.svg) no-repeat 94% 50%; background-size: 14px}
 .filter--button{width: 100%; height: 48px;}
 .final-btn{display: block; width: 100%; height: 100%; line-height: 48px; text-align: center; padding: 0; background: #245217; color: #FFF; border: 0;}
+.final-btn:disabled{background: #A0A0A0}
 .line-btn{width: 100%; height: 100%; padding: 0; background: #FFF; color: #333; border: 1px solid #CCC;}
 
 /**TAB 렌탈주문**/
@@ -391,3 +394,60 @@ input:checked + .slider:before {-webkit-transform: translateX(26px); -ms-transfo
 /* Rounded sliders */
 .slider.round {border-radius: 12px;}
 .slider.round:before {border-radius: 50%;}
+
+
+
+
+/**고객센터 메인**/
+.help__main{position: relative; background: #245217;}
+.help__title{max-width: 768px; margin: 0 auto; padding: 24px 24px 32px; text-align: center;}
+.help__title > p{margin-top: 8px; color: #FFF !important;}
+.help__title > a{font-size: 0.9em; margin-top: 20px;}
+.help__menu{margin-top: 0;}
+.help__as__wrap{width: 100%; border-radius: 8px; background: none;}
+.help__as__wrap > ul{padding: 0 24px 16px;}
+.divider-next{display: inline-block; width: 16px; height: 16px; background: url(../images/ic-toggle.svg) no-repeat; background-size: contain;}
+.help__as__status{padding: 12px 16px; border-top: 1px solid #CCC;}
+
+.help__menu__wrap{position: absolute; bottom: 16px;}
+.help__menu__wrap::after{position: absolute; content: "고객센터"; width: 60px; height: 18px; top: -20px; left: 0; font-size: 0.9em; color: #707070;}
+.help__menu__wrap > select{padding: 0 32px 0 0; width: 100%; height: 100%; border: 0; text-align: left; text-align-last: left; background: url(../images/ic-toggle_active.svg) no-repeat 94% 50%; background-size: 14px;}
+.help__menu__wrap > select:focus{outline: none;}
+
+
+
+/**AS신청**/
+.request-notice{width: 100%; padding: 16px; box-sizing: border-box;}
+.filtering{width: 100%; padding: 0 16px 16px; box-sizing: border-box;}
+.request-process > li{padding: 16px 16px 24px; background: #FFF; margin-bottom: 8px;}
+.as-step-title{margin-bottom: 24px}
+.as-step-title > p{margin: 4px 0 0; font-size: 1.2em; font-weight: bold}
+.as-step-num{font-size: 0.8em; color: #707070;}
+.agree-box{position: relative;width: 100%; border: 1px solid #CCC; padding: 8px 12px; box-sizing: border-box;}
+
+.agree-box input[type=checkbox]{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+.agree-box input[type=checkbox] + label{display: inline-block; width: 100%; line-height: 24px; background: url(../images/round-check-gray.svg) 0 50% no-repeat; background-size: contain; text-indent: 32px}
+.agree-box input[type=checkbox]:checked + label{background: url(../images/round-check-primary.svg) 0 50% no-repeat; background-size: contain;}
+.agree-detail{width: 40px; height: 40px; text-indent: -9999px; background: url(../images/ic-toggle.svg) center no-repeat; background-size: 20px;}
+.as-item-box{background: #F5F5F5; padding: 12px 16px; box-sizing: border-box;}
+.file-upload{margin: 8px 0}
+.fileUploadBtn{display: inline-block; width: 72px; line-height: 32px; padding: 0; margin: 0; background: #245217; border: none; text-align: center; color: #FFF;}
+.fileNmBox{float: left; display: inline-block; width: calc(100% - 72px); line-height: 32px; padding: 0 8px; box-sizing: border-box; background-color: #EAEAEA; border: 0; color: #999; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; word-break: break-all;}
+.fileNmBox:focus{outline: none;}
+.as-file-notice{margin: 8px 0 0 8px}
+.status-detail{font-size: 13px; color: #707070; font-weight: normal;}
+ul.as-item > li:first-child{margin-top: 0}
+ul.as-item > li{border-bottom: 1px solid #A0A0A0; margin-top: 24px}
+ul.as-item > li:last-child{border-bottom: none;}
+ul.as-item > li > div:first-child{background: #F5F5F5; padding-left: 12px; margin-bottom: 12px}
+dl.item__description dt{margin-bottom: 4px;}
+dl.item__description dd{margin-bottom: 24px; width: 100%;}
+dl.item__description textarea{width: 100%; border: 1px solid #CCC; padding: 8px; resize: none; box-sizing: border-box;}
+
+span.ellipsis{width: 90%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;}
+.list-control{display: flex; justify-content: space-between; align-items: flex-end; margin: 24px 0 0; padding: 0 6px 12px 0; border-bottom: 1px solid #A0A0A0;}
+input[type=checkbox].as-item-check{width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+input[type=checkbox].as-item-check + label{display: inline-block; width: 24px; height: 24px; background: url(../images/box-noncheck.svg) no-repeat; background-size: contain; margin-right: 16px;}
+input[type=checkbox].as-item-check:checked + label{background: url(../images/box-checked.svg) no-repeat; background-size: contain;}
+.as-item-list{margin-bottom: 80px;}
+.as-item-list > li{border-bottom: 1px solid #EAEAEA}
