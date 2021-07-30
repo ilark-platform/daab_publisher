@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>daab-help-as-detail</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/option.css">
+
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrap" class="back--gray">
+        <!--*****헤더영역******-->
+        <header id="header" style="border-bottom: 1px solid #CCC;">
+            <div class="hd__menu">
+                <h1 class="hd__logo subpage__title">
+                    AS상세
+                </h1>
+                <div class="hd__btn left">    
+                    <div class="btn-back">
+                        <a href="#"><span class="hidden-text">이전 페이지</span></a>
+                    </div>
+                </div>
+                <div class="hd__btn right">
+                </div>
+            </div>
+        </header>
+        <!--*****본문영역******-->
+        <div id="contents">
+           
+            <!--주문한 상품 : 렌탈중-->
+            <div class="order__msg greenbox">곧 A/S 담당자가 연락드리겠습니다. </div>
+            <div class="order__item">
+                <div class="item__header flex-center">
+                    <h3 class="order-status greenheader">AS접수</h3>
+                </div>
+<!--
+                <div class="item__component">
+                    <div class="item--single">
+                        <div class="single-thumb"><img src="images/prd_img_2.png" alt=""></div>
+                        <div class="single-text">
+                            <p class="main">PL1 Plus</p>
+                            <p class="f-sub">컬러 : 실버</p>
+                            <p class="f-sub">S/N : SDFC12FF24</p>
+                        </div>
+                    </div>
+                </div>
+-->
+                <dl class="order__desc flex-center">
+                    <dt class="f-sub">접수번호</dt><dd>AA3994302</dd>
+                </dl>
+                <dl class="order__desc flex-center">
+                    <dt class="f-sub">접수일자</dt><dd>2021-06-20</dd>
+                </dl>
+            </div>
+            
+            <!--주문 디테일-->
+            <div class="order--wrap">
+                <div class="option--box switch-active border--bottom">
+                    <div class="option--name">AS 접수 내역</div>
+                </div>
+                <div class="option--expand" style="display: block;">
+                    <ul class="as-item">
+                        <li>
+                            <div class="item__component">
+                                <div class="item--single">
+                                    <div class="single-thumb"><img src="images/prd_img_2.png" alt=""></div>
+                                    <div class="single-text">
+                                        <p class="main">PL1 Plus <span class="status-chip greenchip">렌탈중</span></p>
+                                        <p class="f-sub">컬러 : 실버</p>
+                                        <p class="f-sub">S/N : SDFC12FF24</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <dl class="item__description">
+                                <dt class="f-sub">상세 증상</dt>
+                                <dd><textarea name="" id="" cols="30" rows="3">플레이가 안돼요.</textarea></dd>
+                            </dl>
+                            <dl class="item__description">
+                                <dt class="f-sub">첨부파일</dt>
+                                <dd>
+                                    <input type="file" id="fileUpload" style="display:none" onChange="fileChange()" accept=".jpg,.png,.pdf,.mp4,.mp3">
+                                    <input type="text" class="fileNmBox" id="fileNm" disabled>
+                                    <label for="fileUpload" class="fileUploadBtn">파일선택</label>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <!--싱글
+                    <div class="cart__item order__list">
+                        <div class="item__header flex-center">
+                            <div class="flex-center"><h3 class="order__item-name">PL1 Plus</h3>
+                            <span class="status-chip greenchip">렌탈중</span></div>
+                            <p class="item-notice f-sub">렌탈종료일 : 2023-06-25</p>
+                        </div>
+                        <div class="item__component">
+                            <div class="item--single">
+                                <div class="single-thumb"><img src="images/prd_img_2.png" alt=""></div>
+                                <div class="single-text">
+                                    <p class="main">PL1 Plus</p>
+                                    <p class="f-sub">컬러 : 실버</p>
+                                    <p class="f-sub">S/N : SDFC12FF24</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <div class="order--wrap">
+                <div class="option--box switch-active">
+                    <div class="option--name">결제 정보</div>
+                </div>
+                <div class="option--expand" style="display: block;">
+                    <div class="pay__detail__wrap">
+                    <dl class="pay__detail flex-center">
+                        <dt class="f-sub">상품 총 금액/월</dt>
+                        <dd><span class="f-price">400,000</span><span class="f-sub"> 원/월</span></dd>
+                    </dl>
+                    <dl class="pay__detail flex-center">
+                        <dt class="f-sub">할인 금액</dt>
+                        <dd><span class="f-price">- 200,000</span><span class="f-sub"> 원</span></dd>
+                    </dl>
+                    <dl class="pay__detail flex-center">
+                        <dt class="f-sub">ODE 스페셜 배송/설치</dt>
+                        <dd><span class="f-price">0</span><span class="f-sub"> 원</span></dd>
+                    </dl>
+                    <dl class="pay__detail row-border flex-center">
+                        <dt class="f-sub">결제 총 금액</dt>
+                        <dd class="f-sub"><span class="price-total-pay">200,000</span>원/월</dd>
+                    </dl>
+                    <dl class="pay__detail flex-top">
+                        <dt class="f-sub">다음 결제일</dt>
+                        <dd class="f-black f-sub date">2021년 8월 20일<br>VISA (1111-****-****-1111)</dd>
+                    </dl>
+                    <div class="card-btn-group flex-center"><button class="noline-btn--s">카드 변경</button></div>
+                    <div class="invoice-textbtn"><button class="noline-btn-g">인보이스 및 청구내역</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="order--wrap">
+                <div class="option--box switch-active">
+                    <div class="option--name">배송 정보</div>
+                </div>
+                <div class="option--expand" style="display: block;">
+                    <div class="delivery__detail">
+                        <div class="flex-start main font-bold">김땡땡<span class="chip">기본배송지</span></div>
+                        <p class="f-sub">010-1111-1111</p>
+                        <p class="f-sub">서울시 송파구 잠실로123 (잠실아파트 2단지) 101동 202호 (01234)</p>
+                        <p class="f-black f-sub">주말/공휴일 수령 : 가능</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order--wrap">
+                <a href="" class="option--box link-switch">
+                    <div class="option--name">렌탈 이용 계약서</div>
+                </a>
+            </div>
+            <div class="detail-last"><button class="noline-btn">렌탈 해지</button></div>
+        </div>
+    </div>
+</body>
+
+<script>/*옵션 열고닫기*/
+    var acc = document.getElementsByClassName("switch");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        
+        this.classList.toggle("switch-active");
+
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+            
+        } else {
+            panel.style.display = "block";
+        }
+      });
+    }
+</script>
+
+</html>
