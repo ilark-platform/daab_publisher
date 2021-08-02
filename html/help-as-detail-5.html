@@ -43,10 +43,10 @@
         <div id="contents">
            
             <!--주문한 상품 : 렌탈중-->
-            <div class="order__msg greenbox">곧 AS 담당자가 연락드리겠습니다. </div>
+            <a class="order__msg greenbox">엔지니어가 수리를 완료하였습니다.<br><span class="order__msg-link">AS 비용 결제 및 배송일 지정</span></a>
             <div class="order__item">
-                <div class="item__header flex-center" style="margin-bottom: 8px;">
-                    <h3 class="order-status greenheader">AS접수</h3>
+                <div class="item__header flex-start" style="margin-bottom: 8px;">
+                    <h3 class="order-status greenheader">회수 수리 완료</h3>
                 </div>
                 <dl class="order__desc flex-center">
                     <dt class="f-sub">접수번호</dt><dd>AA3994302</dd>
@@ -85,9 +85,9 @@
                 </div>
             </div>
             <div class="order--wrap">
-                <div class="option--box noswitch">
-                    <div class="option--name flexname">AS조치 정보<span class="f-sub">비어있음</span></div>
-                </div>
+                <a href="" class="option--box link-switch">
+                    <div class="option--name flexname">AS조치 정보<span class="f-blue f-sub">완료확인서.pdf</span></div>
+                </a>
                 <div class="option--expand">
                 </div>
             </div>
@@ -105,71 +105,36 @@
                 </div>
             </div>
             <div class="order--wrap">
-                <div class="option--box noswitch">
-                    <div class="option--name flexname">결제 정보<span class="f-sub">&nbsp;비어있음</span></div>
+                <div class="option--box switch-active">
+                    <div class="option--name flexname">결제 정보</div>
                 </div>
-                <div class="option--expand">
-                </div>
-            </div>
-            <div class="detail-last"><button class="noline-btn">AS접수 취소</button></div>
-        </div>
-    </div>
-    
-    <!--AS접수취소 눌렀을 때-->
-    <div class="layer" style="display: none;">
-        <!--가운데정렬용 박스들-->
-        <div class="layer_wrap">
-            <div class="layer_inner">
-                <!--팝업영역-->
-                <div class="layer__back">
-                    <div class="layer__top">
-                        <span class="point">AS접수 취소</span>
-                        <button class="close">닫기</button>
+                <div class="option--expand" style="display: block;">
+                    <div class="pay__detail__wrap">
+                    <dl class="pay__detail flex-center">
+                        <dt class="f-sub">수리 비용</dt>
+                        <dd><span class="f-price">200,000</span><span class="f-sub"> 원</span></dd>
+                    </dl>
+                    <dl class="pay__detail flex-center">
+                        <dt class="f-sub">기타 비용</dt>
+                        <dd><span class="f-price">-</span><span class="f-sub"> 원</span></dd>
+                    </dl>
+                    <dl class="pay__detail flex-center">
+                        <dt class="f-sub">출장비</dt>
+                        <dd><span class="f-price">50,000</span><span class="f-sub"> 원</span></dd>
+                    </dl>
+                    <dl class="pay__detail row-border flex-center">
+                        <dt class="f-sub">결제 총액</dt>
+                        <dd class="f-sub"><span class="price-total-pay">250,000</span>원</dd>
+                    </dl>
+                    
+                    <div class="filter--button">
+                        <button class="final-btn filter-close-btn">결제하기</button>
                     </div>
-                    <div class="layer__text">
-                        <dl>
-                            <dt>아래 내역을 취소하시겠습니까?</dt>
-                            <dd>
-                        <!--접수내역-->
-                        <dl class="flex-center">
-                            <dt class="f-sub">접수번호</dt>
-                            <dd class="f-black f-sub">AA3994302</dd>
-                        </dl>
-                        <dl class="flex-center">
-                            <dt class="f-sub">접수일자</dt>
-                            <dd class="f-black f-sub">2021.06.20</dd>
-                        </dl><br>
-                        <div class="as-detail-item item__component">
-                            <div class="item--single">
-                                <div class="single-thumb"><img src="images/prd_img_2.png" alt=""></div>
-                                <div class="single-text">
-                                    <p class="main">PL1 Plus <span class="status-chip greenchip">렌탈중</span></p>
-                                    <p class="f-sub">컬러 : 실버</p>
-                                    <p class="f-sub">S/N : SDFC12FF24</p>
-                                </div>
-                            </div>
-                        </div>
-                        <dl class="flex-center">
-                            <dt class="f-sub">상세 증상</dt>
-                            <dd class="f-black f-sub">플레이가 안돼요.</dd>
-                        </dl>
-                        <dl class="flex-top">
-                            <dt class="f-sub">첨부 파일</dt>
-                            <dd class="f-black f-sub f-right">rec_012938733.mp4</dd>
-                        </dl>
-                        <!--접수내역 끝-->
-                        </dd>
-                        </dl>
-                    </div>
-                    <div class="layer__ft-btn confirm">
-                        <button>취소</button>
-                        <button>확인</button>
+                    
                     </div>
                 </div>
             </div>
         </div>
-        <!--블랙배경-->
-        <div class="dimmed"></div>
     </div>
     
 </body>
