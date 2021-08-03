@@ -381,18 +381,20 @@ dt+dd {
 }
 
 .btn-totop {
-    position: absolute;
-    top: -20px;
-    left: calc(50% - 20px);
+    position: fixed;
+    top: -60px;
+    right: 10px;
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background: url(../images/btn-totop.svg) center no-repeat;
     background-size: 24px;
-    background-color: #FFF;
-    border: 1px solid #EAEAEA;
+    background-color: rgba(0,0,0,0.3);
+    border: 0;
+    z-index: 20;
 }
+#myBtn {position: absolute; bottom: 10px;}
 
 
 

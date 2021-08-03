@@ -65,7 +65,7 @@
         <!--*****본문영역******-->
         <div id="contents">
            
-            <div class="question active"><span>We provide the athletic gear necess?</span></div>
+            <div class="question opened"><span>We provide the athletic gear necess?</span></div>
             <div class="panel" style="display: block;">
                 <div class="answer">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat purus tortor magna dolor dolor. Morbi orci quis sed tincidunt. Ut vitae accumsan et sed pretium quam. Quam mauris mattis lectus purus at netus blandit pharetra. Tristique purus turpis ac aenean dolor. Sed id </p>
@@ -184,7 +184,7 @@
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
+                this.classList.toggle("opened");
 
                 var panel = this.nextElementSibling;
                 if (panel.style.display === "block") {

@@ -15,7 +15,7 @@
 .no-line::after{content: "";background: rgba(255,255,255,0) !important;}
 
 /**option--box**/
-.option--name{display: inline-block; min-width: 68px; font-weight: 200;}
+.option--name{display: inline-block; min-width: 68px; font-weight: bold;}
 .option--selected{display: flex; justify-content: flex-end; align-items: center; text-align: right; max-width: 80%}
 .option--detail{display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .detail-thumbnail{display: inline-block; width: 40px; height: 40px; margin-right: 4px; vertical-align: middle;}

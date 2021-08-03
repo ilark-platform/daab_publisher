@@ -246,8 +246,12 @@
                 </li>
             </ul>
         </div>
+        
         <!--*****풋터영역******-->
         <footer id="footer">
+            
+        <div class="btn-totop" onclick="topFunction()" id="myBtn" title="Go to top"><span class="hidden-text">scroll to top</span></div>
+           
             <div class="footer__wrap">
             <div class="ft__btn">
                 <div class="left">
@@ -296,7 +300,6 @@
                 </ul>
                 <p>ⓒ 2021 <span style="font-weight:bold">INSIGHT LAB</span> Inc., All Rights Reserved</p>
             </div>
-            <div class="btn-totop"><span class="hidden-text">scroll to top</span></div>
             </div>
         </footer>
     </div>
@@ -316,6 +319,32 @@
            $(this).parents(".main__notice").css("display","none") 
         });
     </script>
+    
+    <script type=text/javascript>
+    $(document).ready(function(){
+
+        $("#myBtn").hide(); // 탑 버튼 숨김
+        $(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) { // 스크롤 내릴 표시
+                    $('#myBtn').fadeIn();
+                } else {
+                    $('#myBtn').fadeOut();
+                }
+            });
+
+            $('.btn-totop').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);  // 탑 이동 스크롤 속도
+                return false;
+            });
+        });
+
+    });
+    </script>
+    
 </body>
 
 </html>

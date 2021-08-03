@@ -1,10 +1,10 @@
 /**브레드크럼**/
 .item__breadcrumb{width: 100%; padding: 12px 16px 16px 16px;}
-.page{position: relative; display: inline-block; float: left; padding-right: 8px; padding-left: 5px;}
-.page:first-child{padding-left: 0;}
-.page>a{font-size: 0.9em; color: #707070;}
-.page>span{position: absolute; top: 7px; right: 2px; display: inline-block; width: 2px; height: 10px; transform: rotate(30deg); background:#CCC;}
-.pages>.current>a{font-weight: bold; color: #4E6F43;}
+.item__breadcrumb .page{position: relative; display: inline-block; float: left; padding-right: 8px; padding-left: 5px;}
+.item__breadcrumb .page:first-child{padding-left: 0;}
+.item__breadcrumb .page>a{font-size: 0.9em; color: #707070;}
+.item__breadcrumb .page>span.next{position: absolute; top: 5px; right: 1px; display: inline-block; width: 2px; height: 10px; margin-top: 0 !important; padding: 0 !important; transform: rotate(30deg); background:#CCC;}
+.item__breadcrumb .pages>.current>a{font-weight: bold; color: #4E6F43;}
 
 /**상품기본정보**/
 .item__info{padding: 16px;}
