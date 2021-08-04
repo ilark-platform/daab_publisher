@@ -197,12 +197,13 @@ a.final-change{display: block; width: 100%; line-height: 48px; text-align: cente
 table{width: 100%;}
 .pay__info > div > table{width: 100%; border: 0; padding: 0; margin: 0;}
 .pay__info table tr {height: 44px}
-.pay__info table tr td {line-height: 44px}
+.pay__info table tr td {line-height: 44px; vertical-align: middle}
 .info-group table tr {height: 44px}
-.info-group table tr td {line-height: 44px}
+.info-group table tr td {line-height: 44px; vertical-align: middle}
 .pay__info table tr.noinput {height: 24px}
+td.address-label{vertical-align: top !important}
 td.textfield{display: flex; justify-content: space-between; align-items: center; }
-table input[type=text], input[type=num]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px;}
+table input[type=text], input[type=num]{height: 36px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; background: #FFF; padding: 0 12px; vertical-align: top}
 .field--small{width: 30%}
 .field--medium{width: 70%}
 .field--large{width: 100%}
@@ -269,7 +270,8 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 
 
 /**주문내역 FILTER**/
-.filter_close{padding: 24px 16px; background: #FFF; box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16); height: 48px; margin-bottom: 20px;}
+.filter_close{padding: 24px 16px; background: #FFF; box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16); height: 100%; margin-bottom: 20px;}
+.filter-open-btn{height: 48px !important;}
 .filter_wrap{display: none; padding: 24px 16px; background: #FFF; box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16); margin-bottom: 20px;}
 .filter--word, .filter--daterange{width: 100%; height: 36px; margin-bottom: 16px; border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box}
 .filter--word > button{display: inline-block; width: 34px; height: 34px; background: url(../images/ic-search.svg) #FFF center no-repeat; background-size: 18px; opacity: 30%; border: 0; text-indent: -9999px;}
@@ -287,9 +289,10 @@ span.reddot{color: #FD9B27; font-weight: bold; margin-top: 2px;}
 .filter--type > label{width: 35%;}
 .filter--type > select{width: 100%; line-height: 34px; border: 1px solid #CCC; border-radius: 4px; padding: 0  32px 0 8px; background: url(../images/ic-toggle_active.svg) no-repeat 94% 50%; background-size: 14px}
 .filter--button{width: 100%; height: 48px;}
-.final-btn{display: block; width: 100%; height: 100%; line-height: 48px; text-align: center; padding: 0; background: #245217; color: #FFF; border: 0;}
+.final-btn{display: block; width: 100%; height: 100%; height: 48px; text-align: center; padding: 0; background: #245217; color: #FFF; border: 0;}
 .final-btn:disabled{background: #A0A0A0}
 .line-btn{width: 100%; height: 100%; padding: 0; background: #FFF; color: #333; border: 1px solid #CCC;}
+a.final-btn{line-height: 48px; font-size: 1em;}
 
 /**TAB 렌탈주문**/
 .order__item{margin-bottom: 20px; padding: 24px 16px; background: #FFF;}
