@@ -59,6 +59,7 @@ input[type=checkbox].item-check{width: 1px; height: 1px; overflow: hidden; posit
 input[type=checkbox].item-check + label{display: inline-block; width: 18px; height: 18px; background: url(../images/box-noncheck.svg) no-repeat; background-size: contain;}
 input[type=checkbox].item-check:checked + label{background: url(../images/box-checked.svg) no-repeat; background-size: contain;}
 .item-name{display: inline-block; margin: 0 8px; max-width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1.5em; font-weight: bold; line-height: 24px;}
+.opt-edit-btn{padding: 1px 6px; border: 1px solid #CCC; border-radius: 4px;  background: #EAEAEA;}
 .item-delete{position: absolute; right: 0; display: inline-block; width: 20px; height: 20px; text-indent: -9999px; background: url(../images/ic-close.svg) #FFF no-repeat; background-size: 20px; border: 0;}
 /**장바구니 - 상품 구성**/
 .item__component{padding: 12px 0 12px 32px;}
@@ -109,6 +110,19 @@ input[type=checkbox].item-check:checked + label{background: url(../images/box-ch
 .featd{padding: 16px;}
 .featd__taste{margin-top: 56px;}
 .featd--title__taste{font-weight: bold; font-size: 2em; line-height: 1.3em; margin-bottom: 32px;}
+
+/**장바구니 옵션 수정**/
+.opt-pkg--switch{display: flex; align-items: center; padding: 0 40px 0 0; height: 50px; border-top: 1px solid #EAEAEA; background: url(../images/ic-toggle.svg) #FFF no-repeat; background-size: 16px; background-position: 98% 50%;}
+.opt-pkg--switch-active{position: relative; background: url(../images/ic-toggle_active.svg) #FFF no-repeat; background-size: 16px; background-position: 98% 50%;}
+.opt-pkg--switch-active::after{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: #245217;}
+.opt-pkg--expand{width: 100%; padding: 0 !important; box-sizing: border-box; display: none; overflow: hidden;}
+.opt-pkg--expand ul {width: 100%; height: 100%;}
+.opt-pkg--expand ul li{padding: 0 16px; line-height: 50px; background: #FFF; border-top: 1px solid #EAEAEA;}
+.opt-pkg__part .opt-detail-thumbnail{width: 32px; height: 32px; margin-right: 8px;}
+.opt-pkg__part .opt-detail-thumbnail img{width: 100%;}
+.opt-pkg__part .opt-detail-text{font-weight: 200;}
+.opt-pkg__part{display: flex; justify-content: flex-start; align-items: center; padding-left: 40px; line-height: 48px; border-top: 1px solid #E0E0E0; background: #f5f5f5;}
+
 
 
 /**체크아웃**/
@@ -368,6 +382,7 @@ div.delivery__detail{background: #FFF; padding: 16px;}
 .ic-next{display: inline-block; width: 20px; height: 20px; background: url(../images/ic-toggle.svg) center no-repeat; background-size: 14px;}
 .btn__wrap{width: 100%; height: 48px; padding: 16px 0 0;}
 .p-bottom{position: absolute; bottom: 0; left: 0; width: 100%; height: 48px; padding: 0 16px; margin-bottom: 16px; box-sizing: border-box;}
+.redinput > input[type=date]{border: 1px solid #D84444; padding: 2px 8px;}
 
 
 /**설정**/
@@ -530,11 +545,13 @@ button.file-down{width: 40px; height: 40px; border: none; background: url(../ima
 
 /**daab정책**/
 .policy--wrap{width: 100%; height: 100%;}
-.policy--chapter{width: 100%; border-bottom: 1px solid #CCC; box-sizing: border-box; background: #FFF;}
-.policy--chapter > select{width: 100%; height: 48px; padding: 0 16px; border: 0; background: url(../images/ic-toggle_active.svg) #FFF right center no-repeat; background-size: 14px;}
-.policy--chapter > select:focus{outline: none; border-bottom: 1px solid #FD9B27;}
-.sticky-chapter{position: sticky; top: 56px; background: #245217;}
-.sticky-chapter > select{font-weight: bold; border-bottom: 2px solid #FD9B27;}
+.policy--chapter{position: relative; width: 100%; box-sizing: border-box; background: #FFF;}
+.policy--chapter > .chapter-select{width: 100%; line-height: 48px; padding: 0 16px; font-weight: bold; border-bottom: 2px solid #FD9B27; background: url(../images/ic-toggle_active.svg) #FFF right 16px center no-repeat; background-size: 14px;}
+.spot{line-height: 110px;}
+.chapter-option{display: none;}
+.chapter-option-open{display: block; position: absolute; left: 0; top: 50px; width: 100%; border: 1px solid #A0A0A0; box-sizing: border-box; background: #FFF;}
+.chapter-option > li{width: 100%; line-height: 40px; padding: 0 16px; box-sizing: border-box; color: #707070; border-bottom: 1px solid #CCC; font-size: 0.9em;}
+.chapter-option > li:last-child{border-bottom: 0;}
 .policy--contents{padding: 24px 16px 64px; box-sizing: border-box;}
 .policy--contents > p{margin-bottom: 8px}
 
@@ -580,32 +597,17 @@ li.current{background: #245217; color: #FFF;}
 
 
 /**ABOUT US animation**/
-.box-daab > .img__box > div:first-child{animation-delay: 0.5s;}
-.box-daab > .img__box up> div:nth-child(2){animation-delay: 1s;}
-.box-daab > .img__box > div:last-child{animation-delay: 1.5s;}
-.box-vision h2{animation-delay: 0s;}
-.contents__box > p:first-child{opacity: 0; animation-delay: 1s;}
-.contents__box > p:nth-child(2){opacity: 0; animation-delay: 1.5s;}
-.contents__box > p:nth-child(3){opacity: 0; animation-delay: 2s;}
-.contents__box > p:nth-child(4){opacity: 0; animation-delay: 2.5s;}
-li.brand__box:first-child{animation-delay: 1s;}
-li.brand__box:nth-child(2){animation-delay: 1.5s;}
-li.brand__box:nth-child(3){animation-delay: 2s;}
-li.brand__box:nth-child(4){animation-delay: 2.5s;}
+.box-daab > .img__box > div:first-child{opacity: 0; animation-delay: 0.5s;}
+.box-daab > .img__box > div:nth-child(2){opacity: 0; animation-delay: 1s;}
+.box-daab > .img__box > div:last-child{opacity: 0; animation-delay: 2s;}
+.box-daab > .contents__box > p{opacity: 0; animation-delay: 3s;}
 
-.animation{animation-duration: 1s}
-.fadeup{animation-name: fadeUp;}
-@-webkit-keyframes fadeUp{
-    from{opacity: 0; transform: translate3d(0,100%,0);}
-    to{opacity: 1; transform: none;}
-}
-.fadeleft{animation-name: fadeLeft;}
-@-webkit-keyframes fadeLeft{
-    from{opacity: 0; transform: translate3d(-100%,0,0);}
-    to{opacity: 1; transform: none;}
-}
-.faderight{animation-name: fadeRight;}
-@-webkit-keyframes fadeRight{
-    from{opacity: 0; transform: translate3d(100%,0,0);}
-    to{opacity: 1; transform: none;}
-}
+.box-vision .contents__box{opacity: 0; animation-delay: 1s;}
+
+.box-service .img__box div{opacity: 0; animation-delay: 0.5s;}
+.box-service .contents__box p{opacity: 0; animation-delay: 1s;}
+
+li.brand__box:first-child{opacity: 0; animation-delay: 0.5s;}
+li.brand__box:nth-child(2){opacity: 0; animation-delay: 1s;}
+li.brand__box:nth-child(3){opacity: 0; animation-delay: 1.5s;}
+li.brand__box:nth-child(4){opacity: 0; animation-delay: 4s;}
