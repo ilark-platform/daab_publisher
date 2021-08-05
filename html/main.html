@@ -246,7 +246,7 @@
                 </li>
             </ul>
             
-            <button class="btn-totop" onclick="topFunction()"><span class="hidden-text">scroll to top</span></button>
+            <div id="TopBtn"><button class="btn-totop" onclick="topFunction()"></button></div>
         </div>
         
         <!--*****풋터영역******-->
@@ -320,13 +320,30 @@
     </script>
     
     <script>
-        $(window).scroll(function(){
-            var scrollTop = $(window).scrollTop();
-            var footer = $("#footer").offset().top;
-            
-            if(scrollTop != 0){ $(".btn-totop").addClass('fadein')}
-            else {$(".btn-totop").addClass('fadeout')}
-        });
+        var Flag_clrBtn = 0; 
+        
+        function hideBtn() { 
+            document.getElementById("TopBtn").style.display = "none";
+        }
+        
+        function fx_TopBtn() { 
+            if ( window.pageYOffset >= 600 ) { 
+                document.getElementById("TopBtn").style.display = "block"; 
+                document.getElementById("TopBtn").style.animationName = "fadein"; 
+                Flag_clrBtn = 1; 
+            } else if ( window.pageYOffset < 600 && Flag_clrBtn ) { 
+                Flag_clrBtn = 0; 
+                document.getElementById("TopBtn").style.animationName = "fadeout"; 
+                document.getElementById("TopBtn").style.animationFillMode = "forwards"; 
+//                setTimeout( hideBtn, 300 ); 
+            } 
+        } 
+        
+        function topFunction() { 
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        } document.addEventListener("scroll",fx_TopBtn);
+
     </script>
    
     

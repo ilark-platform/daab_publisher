@@ -87,10 +87,10 @@
                 <div class="contents__box">
                     <p class="animation fadeup">We provide the athletic gear necessary to keep athletes motivated, and with every purchase an opportunity to give to someone in need.<br>
                     We provide the athletic gear necessary to keep athletes motivated, and with every purchase an opportunity to give to someone in need.</p>
-                    <a class="arrow-box">
+                    <div class="arrow-box tab-vision" onclick="topFunction()">
                         <img src="images/arrow.svg" alt="">
-                        <span>SLIDE</span>
-                    </a>
+                        <span>The Vision</span>
+                    </div>
                 </div>
             </div>
 
@@ -103,9 +103,9 @@
                     <p class="animation fadeup">We provide the athletic gear necessary to keep athletes motivated, and with every purchase an opportunity to give to someone in need.</p>
                     <p class="animation fadeup">We provide the athletic gear necessary to keep athletes motivated, and with every purchase an opportunity to give to someone in need.</p>
                     <p class="animation fadeup">We provide the athletic gear necessary to keep athletes motivated, and with every purchase an opportunity to give to someone in need.</p>
-                    <div class="arrow-box">
+                    <div class="arrow-box tab-service" onclick="topFunction()">
                         <img src="images/arrow.svg" alt="">
-                        <span>SLIDE</span>
+                        <span>Our Service</span>
                     </div>
                 </div>
             </div>
@@ -121,9 +121,9 @@
                 </div>
                 <div class="contents__box">
                     <p class="animation fadeup">We provide the athletic gear necessary to keep athletes motivated, and with every purchase an opportunity to give to someone in need.We provide the athletic gear necessary to keep athletes motivated, and with every purchase an opportunity to give to someone in need.</p>
-                    <div class="arrow-box">
+                    <div class="arrow-box tab-brands" onclick="topFunction()">
                         <img src="images/arrow.svg" alt="">
-                        <span>SLIDE</span>
+                        <span>Our Brands</span>
                     </div>
                 </div>
             </div>
@@ -151,9 +151,9 @@
                         <a href="">제품 바로 보기<span></span></a>
                     </li>
                     </ul>
-                    <div class="arrow-box">
+                    <div class="arrow-box tab-faq" onclick="topFunction()">
                         <img src="images/arrow.svg" alt="">
-                        <span>SLIDE</span>
+                        <span>FAQ</span>
                     </div>
                 </div>
             </div>
@@ -332,6 +332,10 @@
             $(".about__box").css("display", "none");
             $(".box-faq").css("display", "block");
         })
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 </body>
 
