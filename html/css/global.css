@@ -1103,7 +1103,7 @@ input[type=checkbox].ic-psw:checked+label {
     margin-bottom: 0;
 }
 
-.login-form .text-field,
+.login-form .field-text,
 .login-form>input[type=text],
 .login-form>input[type=password],
 .login-form>input[type=num] {
@@ -1117,7 +1117,7 @@ input[type=checkbox].ic-psw:checked+label {
     box-sizing: border-box;
 }
 
-.login-form .text-field,
+.login-form .field-text,
 .login-form>input[type=text]:focus,
 .login-form>input[type=password]:focus,
 .login-form>input[type=num]:focus {
