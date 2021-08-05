@@ -38,8 +38,14 @@ b{font-weight: bold;}
 .recent-order-item__img > img{width: 100%; height: auto;}
 .recent-order-item__text{display: inline-block;}
 .my__menu{margin-top: 64px;}
-.menu__wrap>li{margin-bottom: 4px; height: 64px; background: #FFF; box-sizing: border-box;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04)}
+
+.menu__wrap .item,
+.menu__wrap>li { margin-bottom: 4px; height: 64px; background: #FFF; box-sizing: border-box;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04)}
+
+.menu__wrap .item > a,
 .menu__wrap>li>a{position: relative; display: inline-block; padding: 14px 32px 10px; width: 100%;}
+
+.menu__wrap .item > a::after,
 .menu__wrap>li>a::after{content: ""; position: absolute; top: 50%; bottom: 50%; right: 16px; transform: translate(-50%, -50%); width: 20px; height: 20px; background: url(../images/ic-toggle.svg) no-repeat; background-size: contain;}
 .menu__title{display: block; font-weight: bold;}
 
