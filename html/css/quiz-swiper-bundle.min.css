@@ -229,7 +229,7 @@ label > span{display: block; width: 250px; height: 340px; margin-top: 12px; back
 
 /*quiz-signin*/
 #wrap > .close{position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; background: url(../images/ic-close.svg) no-repeat; background-size: contain; border: 0; text-indent: -9999px;}
-.login-wrap{position: absolute; bottom: 72px; left: 50%; transform: translate(-50%,0); width: 100%; max-width: 769px; padding: 24px 24px 0 24px; box-sizing: border-box;}
+.quiz .login-wrap{position: absolute; bottom: 72px; left: 50%; transform: translate(-50%,0); width: 100%; max-width: 769px; padding: 24px 24px 0 24px; box-sizing: border-box;}
 .sns__box{margin-bottom: 40px;}
 .login__box{margin: 16px 0 0;}
 .login__box a{display: inline-block; margin-left: 6px; color: #245217; text-decoration: underline;}
