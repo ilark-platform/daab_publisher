@@ -6,7 +6,8 @@
     <title>daab-myorder</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
@@ -50,12 +51,12 @@
         <div class="header__sub">
             <div class="mypage__header">
                 <div class="mypage__menu__wrap">
-                <select name="order-title" id=""  class="mypage-title">
-                    <option value="order-list" selected>주문 / 결제내역</option>
-                    <option value="address-list">주소록</option>
-                    <option value="payment-list">결제카드</option>
-                    <option value="setting-list">설정</option>
-                </select>
+                    <select name="order-title" id="" class="mypage-title">
+                        <option value="order-list" selected>주문 / 결제내역</option>
+                        <option value="address-list">주소록</option>
+                        <option value="payment-list">결제카드</option>
+                        <option value="setting-list">설정</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -66,47 +67,47 @@
                 <div class="shortcut__item shortcut__rentalpay current">렌탈 주문</div>
                 <div class="shortcut__item shortcut__singlepay">일시 결제</div>
             </div>
-            
+
             <!--*****TAB 1******-->
             <div class="tab__rentalpay">
-              
-            <!--*****FILTER******-->
-            <div class="filter_close">
-                <button class="line-btn filter-open-btn">필터</button>
-            </div>
-            <div class="filter_wrap">
-                <div class="filter--word">
-                    <button>SEARCH</button>
-                    <input type="text" placeholder="상품명/주문번호 입력">
+
+                <!--*****FILTER******-->
+                <div class="filter_close">
+                    <button class="line-btn filter-open-btn">필터</button>
                 </div>
-                <ul class="filter--period">
-                    <li class="clicked">전체</li>
-                    <li class="">1개월</li>
-                    <li class="">6개월</li>
-                    <li class="">직접선택</li>
-                </ul>
-                <div class="filter--daterange flex-center">
-                    <input type="date"><span>~</span>
-                    <input type="date">
+                <div class="filter_wrap">
+                    <div class="filter--word">
+                        <button>SEARCH</button>
+                        <input type="text" placeholder="상품명/주문번호 입력">
+                    </div>
+                    <ul class="filter--period">
+                        <li class="clicked">전체</li>
+                        <li class="">1개월</li>
+                        <li class="">6개월</li>
+                        <li class="">직접선택</li>
+                    </ul>
+                    <div class="filter--daterange flex-center">
+                        <input type="date"><span>~</span>
+                        <input type="date">
+                    </div>
+                    <div class="filter--type flex-center">
+                        <label for="order-type">주문상태</label>
+                        <select id="order-type">
+                            <option value="" selected>전체</option>
+                            <option value="">결제완료</option>
+                            <option value="">상품준비중</option>
+                            <option value="">배송중</option>
+                            <option value="">렌탈중</option>
+                            <option value="">렌탈종료</option>
+                            <option value="">미납중/추심</option>
+                            <option value="">결제취소/해지</option>
+                        </select>
+                    </div>
+                    <div class="filter--button">
+                        <button class="final-btn filter-close-btn">조회</button>
+                    </div>
                 </div>
-                <div class="filter--type flex-center">
-                    <label for="order-type">주문상태</label>
-                    <select id="order-type">
-                        <option value="" selected>전체</option>
-                        <option value="">결제완료</option>
-                        <option value="">상품준비중</option>
-                        <option value="">배송중</option>
-                        <option value="">렌탈중</option>
-                        <option value="">렌탈종료</option>
-                        <option value="">미납중/추심</option>
-                        <option value="">결제취소/해지</option>
-                    </select>
-                </div>
-                <div class="filter--button">
-                    <button class="final-btn filter-close-btn">조회</button>
-                </div>
-            </div>
-               
+
                 <!--주문한 상품 : 결제완료-->
                 <div class="order__item">
                     <div class="item__header flex-center">
@@ -128,16 +129,19 @@
                         </div>
                     </div>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문번호</dt><dd>SBP-20-38894AA</dd>
+                        <dt class="f-sub">주문번호</dt>
+                        <dd>SBP-20-38894AA</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문일자</dt><dd>2021-06-20</dd>
+                        <dt class="f-sub">주문일자</dt>
+                        <dd>2021-06-20</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">렌탈요금</dt><dd><span class="price">75,000</span>원/월</dd>
+                        <dt class="f-sub">렌탈요금</dt>
+                        <dd><span class="price">75,000</span>원/월</dd>
                     </dl>
                 </div>
-                
+
                 <!--주문한 상품 : 상품준비중-->
                 <div class="order__msg greenbox">지정하신 2021년 07월 10일자로 설치기사 배정중입니다.</div>
                 <div class="order__item">
@@ -160,16 +164,19 @@
                         </div>
                     </div>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문번호</dt><dd>SBP-20-38894AA</dd>
+                        <dt class="f-sub">주문번호</dt>
+                        <dd>SBP-20-38894AA</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문일자</dt><dd>2021-06-25</dd>
+                        <dt class="f-sub">주문일자</dt>
+                        <dd>2021-06-25</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">렌탈요금</dt><dd><span class="price">75,000</span>원/월</dd>
+                        <dt class="f-sub">렌탈요금</dt>
+                        <dd><span class="price">75,000</span>원/월</dd>
                     </dl>
                 </div>
-                
+
                 <!--주문한 상품 : 배송중-->
                 <div class="order__msg greenbox">2021년 07월 10일 설치 방문예정입니다.</div>
                 <div class="order__item">
@@ -192,16 +199,19 @@
                         </div>
                     </div>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문번호</dt><dd>SBP-20-38894AA</dd>
+                        <dt class="f-sub">주문번호</dt>
+                        <dd>SBP-20-38894AA</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문일자</dt><dd>2021-06-25</dd>
+                        <dt class="f-sub">주문일자</dt>
+                        <dd>2021-06-25</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">렌탈요금</dt><dd><span class="price">75,000</span>원/월</dd>
+                        <dt class="f-sub">렌탈요금</dt>
+                        <dd><span class="price">75,000</span>원/월</dd>
                     </dl>
                 </div>
-                
+
                 <!--주문한 상품 : 렌탈중-->
                 <div class="order__item">
                     <div class="item__header flex-center">
@@ -223,16 +233,19 @@
                         </div>
                     </div>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문번호</dt><dd>SBP-20-38894AA</dd>
+                        <dt class="f-sub">주문번호</dt>
+                        <dd>SBP-20-38894AA</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문일자</dt><dd>2021-06-25</dd>
+                        <dt class="f-sub">주문일자</dt>
+                        <dd>2021-06-25</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">렌탈요금</dt><dd><span class="price">75,000</span>원/월</dd>
+                        <dt class="f-sub">렌탈요금</dt>
+                        <dd><span class="price">75,000</span>원/월</dd>
                     </dl>
                 </div>
-                
+
                 <!--주문한 상품 : 렌탈미납-->
                 <div class="order__msg redbox">청구문제가 발생했습니다.</div>
                 <div class="order__item">
@@ -255,16 +268,19 @@
                         </div>
                     </div>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문번호</dt><dd>SBP-20-38894AA</dd>
+                        <dt class="f-sub">주문번호</dt>
+                        <dd>SBP-20-38894AA</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문일자</dt><dd>2021-06-25</dd>
+                        <dt class="f-sub">주문일자</dt>
+                        <dd>2021-06-25</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">렌탈요금</dt><dd><span class="price">75,000</span>원/월</dd>
+                        <dt class="f-sub">렌탈요금</dt>
+                        <dd><span class="price">75,000</span>원/월</dd>
                     </dl>
                 </div>
-                
+
                 <!--주문한 상품 : 해지완료-->
                 <div class="order__item">
                     <div class="item__header flex-center">
@@ -286,54 +302,57 @@
                         </div>
                     </div>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문번호</dt><dd>SBP-20-38894AA</dd>
+                        <dt class="f-sub">주문번호</dt>
+                        <dd>SBP-20-38894AA</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">주문일자</dt><dd>2021-06-25</dd>
+                        <dt class="f-sub">주문일자</dt>
+                        <dd>2021-06-25</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">렌탈요금</dt><dd><span class="price">-</span>원/월</dd>
+                        <dt class="f-sub">렌탈요금</dt>
+                        <dd><span class="price">-</span>원/월</dd>
                     </dl>
                 </div>
-                
+
             </div>
-            
+
             <!--*****TAB 2******-->
             <div class="tab__singlepay">
-               
-            <!--*****FILTER******-->
-            <div class="filter_close">
-                <button class="line-btn filter-open-btn">필터</button>
-            </div>
-            <div class="filter_wrap">
-                <div class="filter--word">
-                    <button>SEARCH</button>
-                    <input type="text" placeholder="상품명/주문번호 입력">
+
+                <!--*****FILTER******-->
+                <div class="filter_close">
+                    <button class="line-btn filter-open-btn">필터</button>
                 </div>
-                <ul class="filter--period">
-                    <li class="clicked">전체</li>
-                    <li class="">1개월</li>
-                    <li class="">6개월</li>
-                    <li class="">직접선택</li>
-                </ul>
-                <div class="filter--daterange flex-center">
-                    <input type="date"><span>~</span>
-                    <input type="date">
+                <div class="filter_wrap">
+                    <div class="filter--word">
+                        <button>SEARCH</button>
+                        <input type="text" placeholder="상품명/주문번호 입력">
+                    </div>
+                    <ul class="filter--period">
+                        <li class="clicked">전체</li>
+                        <li class="">1개월</li>
+                        <li class="">6개월</li>
+                        <li class="">직접선택</li>
+                    </ul>
+                    <div class="filter--daterange flex-center">
+                        <input type="date"><span>~</span>
+                        <input type="date">
+                    </div>
+                    <div class="filter--type flex-center">
+                        <label for="order-type">주문상태</label>
+                        <select id="order-type">
+                            <option value="" selected>전체</option>
+                            <option value="">AS수리</option>
+                            <option value="">위약금</option>
+                            <option value="">미납연체</option>
+                        </select>
+                    </div>
+                    <div class="filter--button">
+                        <button class="final-btn filter-close-btn">조회</button>
+                    </div>
                 </div>
-                <div class="filter--type flex-center">
-                    <label for="order-type">주문상태</label>
-                    <select id="order-type">
-                        <option value="" selected>전체</option>
-                        <option value="">AS수리</option>
-                        <option value="">위약금</option>
-                        <option value="">미납연체</option>
-                    </select>
-                </div>
-                <div class="filter--button">
-                    <button class="final-btn filter-close-btn">조회</button>
-                </div>
-            </div>
-               
+
                 <!--일시불 : AS수리-->
                 <div class="order__item">
                     <div class="item__header flex-center">
@@ -341,19 +360,23 @@
                         <a class="detail-page f-sub">결제상세</a>
                     </div>
                     <dl class="order__desc singlepay__desc flex-center">
-                        <dt class="f-sub">제품명</dt><dd>TRANSPARENT SPEAKER</dd>
+                        <dt class="f-sub">제품명</dt>
+                        <dd>TRANSPARENT SPEAKER</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">접수번호</dt><dd>ASASAS-ABCD001</dd>
+                        <dt class="f-sub">접수번호</dt>
+                        <dd>ASASAS-ABCD001</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">접수일자</dt><dd>2021-06-20</dd>
+                        <dt class="f-sub">접수일자</dt>
+                        <dd>2021-06-20</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">결제금액</dt><dd><span class="price">55,000</span>원</dd>
+                        <dt class="f-sub">결제금액</dt>
+                        <dd><span class="price">55,000</span>원</dd>
                     </dl>
                 </div>
-                
+
                 <!--일시불 : 해지위약금-->
                 <div class="order__item">
                     <div class="item__header flex-center">
@@ -361,19 +384,23 @@
                         <a class="detail-page f-sub">결제상세</a>
                     </div>
                     <dl class="order__desc singlepay__desc flex-center">
-                        <dt class="f-sub">제품명</dt><dd>TRANSPARENT SPEAKER</dd>
+                        <dt class="f-sub">제품명</dt>
+                        <dd>TRANSPARENT SPEAKER</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">접수번호</dt><dd>ASASAS-ABCD002</dd>
+                        <dt class="f-sub">접수번호</dt>
+                        <dd>ASASAS-ABCD002</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">접수일자</dt><dd>2021-06-20</dd>
+                        <dt class="f-sub">접수일자</dt>
+                        <dd>2021-06-20</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">결제금액</dt><dd><span class="price">125,000</span>원</dd>
+                        <dt class="f-sub">결제금액</dt>
+                        <dd><span class="price">125,000</span>원</dd>
                     </dl>
                 </div>
-                
+
                 <!--일시불 : 미납금-->
                 <div class="order__item">
                     <div class="item__header flex-center">
@@ -381,19 +408,23 @@
                         <a class="detail-page f-sub">결제상세</a>
                     </div>
                     <dl class="order__desc singlepay__desc flex-center">
-                        <dt class="f-sub">제품명</dt><dd>TRANSPARENT SPEAKER</dd>
+                        <dt class="f-sub">제품명</dt>
+                        <dd>TRANSPARENT SPEAKER</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">접수번호</dt><dd>ASASAS-ABCD003</dd>
+                        <dt class="f-sub">접수번호</dt>
+                        <dd>ASASAS-ABCD003</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">접수일자</dt><dd>2021-06-20</dd>
+                        <dt class="f-sub">접수일자</dt>
+                        <dd>2021-06-20</dd>
                     </dl>
                     <dl class="order__desc flex-center">
-                        <dt class="f-sub">결제금액</dt><dd><span class="price">125,000</span>원</dd>
+                        <dt class="f-sub">결제금액</dt>
+                        <dd><span class="price">125,000</span>원</dd>
                     </dl>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -450,36 +481,36 @@
             <div class="btn-totop"><span class="hidden-text">scroll to top</span></div>
         </div>
     </footer>
-    
+
     <script>
         /*풋터 회사정보 열닫*/
-        $(".cp-name").click(function(){
+        $(".cp-name").click(function () {
             $(this).siblings(".cp-info").toggleClass("open");
             $(this).toggleClass("active");
         })
-        
+
         /*상품TAB*/
-        $(".shortcut__rentalpay").click(function(){
+        $(".shortcut__rentalpay").click(function () {
             $(this).addClass("current");
             $(this).siblings(".shortcut__singlepay").removeClass("current");
-            $(".tab__singlepay").css("display","none");
-            $(".tab__rentalpay").css("display","block");
+            $(".tab__singlepay").css("display", "none");
+            $(".tab__rentalpay").css("display", "block");
         })
-        $(".shortcut__singlepay").click(function(){
+        $(".shortcut__singlepay").click(function () {
             $(this).addClass("current");
             $(this).siblings(".shortcut__rentalpay").removeClass("current");
-            $(".tab__rentalpay").css("display","none");
-            $(".tab__singlepay").css("display","block");
+            $(".tab__rentalpay").css("display", "none");
+            $(".tab__singlepay").css("display", "block");
         })
-        
+
         /*필터열닫*/
-        $(".filter-open-btn").click(function(){
-            $(this).parent().css("display","none");
-            $(this).parent().siblings(".filter_wrap").css("display","block");
+        $(".filter-open-btn").click(function () {
+            $(this).parent().css("display", "none");
+            $(this).parent().siblings(".filter_wrap").css("display", "block");
         })
-        $(".filter-close-btn").click(function(){
-            $(this).parents(".filter_wrap").css("display","none");
-            $(this).parents().siblings(".filter_close").css("display","block");
+        $(".filter-close-btn").click(function () {
+            $(this).parents(".filter_wrap").css("display", "none");
+            $(this).parents().siblings(".filter_close").css("display", "block");
         })
     </script>
 </body>

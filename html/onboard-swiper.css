@@ -35,7 +35,7 @@
     background: #F6F5E8;
 }
 
-.swiper-container-vertical > .swiper-wrapper {
+.swiper-container-vertical>.swiper-wrapper {
     flex-direction: column
 }
 
@@ -54,16 +54,16 @@
     transform: translate3d(0px, 0, 0)
 }
 
-.swiper-container-multirow > .swiper-wrapper {
+.swiper-container-multirow>.swiper-wrapper {
     flex-wrap: wrap
 }
 
-.swiper-container-multirow-column > .swiper-wrapper {
+.swiper-container-multirow-column>.swiper-wrapper {
     flex-wrap: wrap;
     flex-direction: column
 }
 
-.swiper-container-free-mode > .swiper-wrapper {
+.swiper-container-free-mode>.swiper-wrapper {
     transition-timing-function: ease-out;
     margin: 0 auto
 }
@@ -82,7 +82,7 @@
     height: 100%;
     position: relative;
     transition-property: transform;
-    
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -154,25 +154,25 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
 }
 
-.swiper-container-css-mode > .swiper-wrapper {
+.swiper-container-css-mode>.swiper-wrapper {
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none
 }
 
-.swiper-container-css-mode > .swiper-wrapper::-webkit-scrollbar {
+.swiper-container-css-mode>.swiper-wrapper::-webkit-scrollbar {
     display: none
 }
 
-.swiper-container-css-mode > .swiper-wrapper > .swiper-slide {
+.swiper-container-css-mode>.swiper-wrapper>.swiper-slide {
     scroll-snap-align: start start
 }
 
-.swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper {
+.swiper-container-horizontal.swiper-container-css-mode>.swiper-wrapper {
     scroll-snap-type: x mandatory
 }
 
-.swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {
+.swiper-container-vertical.swiper-container-css-mode>.swiper-wrapper {
     scroll-snap-type: y mandatory
 }
 
@@ -261,7 +261,7 @@
     opacity: 0
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
     bottom: 10px;
@@ -329,43 +329,43 @@ button.swiper-pagination-bullet {
     background: var(--swiper-pagination-color, var(--swiper-theme-color))
 }
 
-.swiper-container-vertical > .swiper-pagination-bullets {
+.swiper-container-vertical>.swiper-pagination-bullets {
     right: 10px;
     top: 50%;
     transform: translate3d(0px, -50%, 0)
 }
 
-.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 6px 0;
     display: block
 }
 
-.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
     top: 50%;
     transform: translateY(-50%);
     width: 8px
 }
 
-.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     display: inline-block;
     transition: .2s transform, .2s top
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 4px
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     transition: .2s transform, .2s left
 }
 
-.swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-container-horizontal.swiper-container-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     transition: .2s transform, .2s right
 }
 
@@ -389,16 +389,16 @@ button.swiper-pagination-bullet {
     transform-origin: right top
 }
 
-.swiper-container-horizontal > .swiper-pagination-progressbar,
-.swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+.swiper-container-horizontal>.swiper-pagination-progressbar,
+.swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
     width: 100%;
     height: 4px;
     left: 0;
     top: 0
 }
 
-.swiper-container-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
-.swiper-container-vertical > .swiper-pagination-progressbar {
+.swiper-container-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-container-vertical>.swiper-pagination-progressbar {
     width: 4px;
     height: 100%;
     left: 0;
@@ -424,7 +424,7 @@ button.swiper-pagination-bullet {
     background: rgba(0, 0, 0, .1)
 }
 
-.swiper-container-horizontal > .swiper-scrollbar {
+.swiper-container-horizontal>.swiper-scrollbar {
     position: absolute;
     left: 1%;
     bottom: 3px;
@@ -433,7 +433,7 @@ button.swiper-pagination-bullet {
     width: 98%
 }
 
-.swiper-container-vertical > .swiper-scrollbar {
+.swiper-container-vertical>.swiper-scrollbar {
     position: absolute;
     right: 3px;
     top: 1%;
@@ -469,9 +469,9 @@ button.swiper-pagination-bullet {
     text-align: center
 }
 
-.swiper-zoom-container > canvas,
-.swiper-zoom-container > img,
-.swiper-zoom-container > svg {
+.swiper-zoom-container>canvas,
+.swiper-zoom-container>img,
+.swiper-zoom-container>svg {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain
@@ -569,7 +569,7 @@ button.swiper-pagination-bullet {
 
 .swiper-container-cube .swiper-slide-active,
 .swiper-container-cube .swiper-slide-next,
-.swiper-container-cube .swiper-slide-next + .swiper-slide,
+.swiper-container-cube .swiper-slide-next+.swiper-slide,
 .swiper-container-cube .swiper-slide-prev {
     pointer-events: auto;
     visibility: visible
@@ -635,23 +635,133 @@ button.swiper-pagination-bullet {
 }
 
 
-.btn-group{position: absolute; top: 20px; left: 50%; transform: translate(-50%,0); display: flex; justify-content: space-between; align-items: center; width: calc(100% - 32px); line-height: 24px; z-index: 30;}
-.btn-group > button{background: none; border: none; color: #000; font-size: 0.9em;}
+.onboard .btn-group {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 32px);
+    line-height: 24px;
+    z-index: 30;
+}
 
-.slide-box{position: absolute; top: 56px; padding: 24px;}
-.img-box{position: relative; width: 100%; padding-bottom: 100%; margin-bottom: 24px;}
-.img-box img{position: absolute;}
-.slide-box .slide-text h3{font-weight: bold; font-size: 1.4em; margin-bottom: 16px;}
-.slide-box .slide-text p{margin-bottom: 8px;}
-.slide-box .slide-text p.f-sub{font-size: 0.9em; color: #707070;}
-.toquiz{position: relative; height: 100px; text-align: center;}
-.toquiz button{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); min-width: 72px; height: 40px; padding: 4px 16px; background: #245217; border: 0; border-radius: 20px; color: #FFF;}
+.onboard .btn-group>button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 0.9em;
+}
 
-.first{width: 100%; height: 100%;}
-.first::after{content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;  background: url(../images/back.png) center no-repeat; background-size: cover; opacity: 0.4}
-.first h2{margin-bottom: 40px; font-size: 2.6em; line-height: 1.2em; font-weight: bold;}
-.first p{font-size: 1.1em; line-height: 1.4em;}
-.first .slide-text{margin: 100px 24px 24px;}
-.arrow-img{margin-top: 64px; width: 60px; height: 20px;}
-.arrow-img img{width: 100%; opacity: 0.8;}
-.arrow-img span{display: inline-block; text-indent: 10px; font-size: 0.9em;}
+.slide-box {
+    position: absolute;
+    top: 56px;
+    padding: 24px;
+}
+
+.img-box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    margin-bottom: 24px;
+}
+
+.img-box img {
+    position: absolute;
+}
+
+.slide-box .slide-text h3 {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 16px;
+}
+
+.slide-box .slide-text p {
+    margin-bottom: 8px;
+}
+
+.slide-box .slide-text p.f-sub {
+    font-size: 0.9em;
+    color: #707070;
+}
+
+.toquiz {
+    position: relative;
+    height: 100px;
+    text-align: center;
+}
+
+.toquiz button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 72px;
+    height: 40px;
+    padding: 4px 16px;
+    background: #245217;
+    border: 0;
+    border-radius: 20px;
+    color: #FFF;
+}
+
+.first {
+    width: 100%;
+    height: 100%;
+}
+
+.first::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/back.png) center no-repeat;
+    background-size: cover;
+    opacity: 0.4
+}
+
+.first h2 {
+    margin-bottom: 40px;
+    font-size: 2.6em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+.first p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.first .slide-text {
+    margin: 100px 24px 24px;
+}
+
+.arrow-img {
+    margin-top: 64px;
+    width: 60px;
+    height: 20px;
+}
+
+.arrow-img img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.arrow-img span {
+    display: inline-block;
+    text-indent: 10px;
+    font-size: 0.9em;
+}
+
+.onboard.swiper-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
