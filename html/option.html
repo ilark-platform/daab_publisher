@@ -1,676 +1,744 @@
 <html>
+
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
-    
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/prd.css">
     <link rel="stylesheet" href="css/option.css">
     <link rel="stylesheet" href="css/slider.css">
-    
+
     <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js" type="text/javascript"></script>
-    
+
 </head>
+
 <body>
-<div id="wrap">
-    <div id="contents">
-        <!--*****옵션설정 싱글******-->
-        <br><br><br>싱글-부가상품없음
-        <div class="item__option">
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">색상</div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-thumbnail"><img src="images/TS-B-Front.png" alt=""></span>
-                            <span class="detail-text">블랙</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="option--expand">
-                    <ul>
-                        <li> <span class="detail-thumbnail"><img src="images/TS-B-Front.png" alt=""></span>
-                            <span class="detail-text">블랙</span></li>
-                        <li> <span class="detail-thumbnail"><img src="images/TS-B-Front.png" alt=""></span>
-                            <span class="detail-text">화이트</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">기간</div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-text">48개월</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="option--expand">
-                    <ul><li style="height: 90px; padding: 12px 16px;">
-                    <!--*****기간설정 슬라이더******-->
-                    <div id="app">
-                        <div class="slider-container">
-                            <div class="slider vue-slider vue-slider-ltr">
-                                <div class="vue-slider-rail">
-                                    <div class="vue-slider-process" style=""></div>
-                                    <div class="vue-slider-marks">
-                                        <div class="vue-slider-mark vue-slider-mark-active month-first"\>
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">12</div>
-                                        </div>
-                                        <div class="vue-slider-mark vue-slider-mark-active month-second">
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">24</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-third">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">36</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-fourth">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">48</div>
-                                        </div>
-                                    </div>
-                                    <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover" role="slider" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" aria-orientation="horizontal" tabindex="0" style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
-                                        <div class="vue-slider-dot-handle"></div>
-                                        <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
-                                            <div class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top"><span class="vue-slider-dot-tooltip-text">24</span></div>
-                                        </div>
-                                    </div>
-                                </div>
+    <div id="wrap">
+        <div id="contents">
+            <!--*****옵션설정 싱글******-->
+            <br><br><br>싱글-부가상품없음
+            <div class="item__option">
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">색상</div>
+                        <div class="option--selected">
+                            <div class="option--detail">
+                                <span class="detail-thumbnail"><img src="images/TS-B-Front.png" alt=""></span>
+                                <span class="detail-text">블랙</span>
                             </div>
                         </div>
                     </div>
-                    </li></ul>
-                </div>
-            </div>
-            <div class="option--wrap">
-                <div class="option--box noswitch">
-                    <div class="option--name">수량</div>
-                    <div class="option--selected">
-                        <div class="quantity">
-                            <div class="quantity-button quantity-down">-</div>
-                            <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
-                            <div class="quantity-button quantity-up">+</div>
-                        </div>
+                    <div class="option--expand">
+                        <ul>
+                            <li> <span class="detail-thumbnail"><img src="images/TS-B-Front.png" alt=""></span>
+                                <span class="detail-text">블랙</span></li>
+                            <li> <span class="detail-thumbnail"><img src="images/TS-B-Front.png" alt=""></span>
+                                <span class="detail-text">화이트</span></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <!--*****옵션설정 싱글+부가******-->
-        <br><br><br>싱글-부가상품있음
-        <div class="item__option">
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">색상</div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                            <span class="detail-text">블랙</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="option--expand">
-                    <ul>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                            <span class="detail-text">매트블랙</span></li>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                            <span class="detail-text">아이코닉화이트</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">기간</div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-text">48개월</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="option--expand">
-                    <ul><li style="height: 90px; padding: 12px 16px;">
-                    <!--*****기간설정 슬라이더******-->
-                    <div id="app">
-                        <div class="slider-container">
-                            <div class="slider vue-slider vue-slider-ltr">
-                                <div class="vue-slider-rail">
-                                    <div class="vue-slider-process" style=""></div>
-                                    <div class="vue-slider-marks">
-                                        <div class="vue-slider-mark vue-slider-mark-active month-first"\>
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">12</div>
-                                        </div>
-                                        <div class="vue-slider-mark vue-slider-mark-active month-second">
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">24</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-third">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">36</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-fourth">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">48</div>
-                                        </div>
-                                    </div>
-                                    <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover" role="slider" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" aria-orientation="horizontal" tabindex="0" style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
-                                        <div class="vue-slider-dot-handle"></div>
-                                        <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
-                                            <div class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top"><span class="vue-slider-dot-tooltip-text">24</span></div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">기간</div>
+                        <div class="option--selected">
+                            <div class="option--detail">
+                                <span class="detail-text">48개월</span>
                             </div>
                         </div>
                     </div>
-                    </li></ul>
-                </div>
-            </div>
-            <div class="option--wrap">
-                <div class="option--box noswitch">
-                    <div class="option--name">수량</div>
-                    <div class="option--selected">
-                        <div class="quantity">
-                            <div class="quantity-button quantity-down">-</div>
-                            <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
-                            <div class="quantity-button quantity-up">+</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">악세사리 추가</div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-price">선택안함</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="option--expand">
-                    <ul>
-                        <li> <span class="detail-thumbnail"></span>
-                            <span class="detail-text">선택안함</span></li>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span></li>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_5.png" alt=""></span>
-                            <span class="detail-text">TREE</span><span class="detail-price">20,000원/월</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <!--*****옵션설정 부가+필수******-->
-        <br><br><br>부가-필수옵션
-        <div class="item__option">
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">색상</div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">블랙</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="option--expand">
-                    <ul>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">매트블랙</span></li>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">아이코닉화이트</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">필수옵션<span style="color: #FF0000; margin-right: 4px;">*</span></div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                            <span class="detail-text">PHANTOM II 95DB</span><span class="detail-price">199,000원/월</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="option--expand">
-                    <ul>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                            <span class="detail-text">PHANTOM I 103DB</span><span class="detail-price">199,000원/월</span></li>
-                        <li> <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                            <span class="detail-text">PHANTOM II 95DB</span><span class="detail-price">199,000원/월</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">기간</div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-text">48개월</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="option--expand">
-                    <ul><li style="height: 90px; padding: 12px 16px;">
-                    <!--*****기간설정 슬라이더******-->
-                    <div id="app">
-                        <div class="slider-container">
-                            <div class="slider vue-slider vue-slider-ltr">
-                                <div class="vue-slider-rail">
-                                    <div class="vue-slider-process" style=""></div>
-                                    <div class="vue-slider-marks">
-                                        <div class="vue-slider-mark vue-slider-mark-active month-first"\>
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">12</div>
-                                        </div>
-                                        <div class="vue-slider-mark vue-slider-mark-active month-second">
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">24</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-third">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">36</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-fourth">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">48</div>
-                                        </div>
-                                    </div>
-                                    <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover" role="slider" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" aria-orientation="horizontal" tabindex="0" style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
-                                        <div class="vue-slider-dot-handle"></div>
-                                        <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
-                                            <div class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top"><span class="vue-slider-dot-tooltip-text">24</span></div>
+                    <div class="option--expand">
+                        <ul>
+                            <li style="height: 90px; padding: 12px 16px;">
+                                <!--*****기간설정 슬라이더******-->
+                                <div id="app">
+                                    <div class="slider-container">
+                                        <div class="slider vue-slider vue-slider-ltr">
+                                            <div class="vue-slider-rail">
+                                                <div class="vue-slider-process" style=""></div>
+                                                <div class="vue-slider-marks">
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-first" \>
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            12</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-second">
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            24</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-third">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">36</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-fourth">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">48</div>
+                                                    </div>
+                                                </div>
+                                                <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover"
+                                                    role="slider" aria-valuenow="24" aria-valuemin="0"
+                                                    aria-valuemax="100" aria-orientation="horizontal" tabindex="0"
+                                                    style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
+                                                    <div class="vue-slider-dot-handle"></div>
+                                                    <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
+                                                        <div
+                                                            class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top">
+                                                            <span class="vue-slider-dot-tooltip-text">24</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option--wrap">
+                    <div class="option--box noswitch">
+                        <div class="option--name">수량</div>
+                        <div class="option--selected">
+                            <div class="quantity">
+                                <div class="quantity-button quantity-down">-</div>
+                                <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
+                                <div class="quantity-button quantity-up">+</div>
                             </div>
                         </div>
                     </div>
-                    </li></ul>
                 </div>
             </div>
-            <div class="option--wrap">
-                <div class="option--box noswitch">
-                    <div class="option--name">수량</div>
-                    <div class="option--selected">
-                        <div class="quantity">
-                            <div class="quantity-button quantity-down">-</div>
-                            <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
-                            <div class="quantity-button quantity-up">+</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!--*****옵션설정 패키지******-->
-        <br><br><br>패키지
-        <div class="item__option">
-            <div class="option--wrap">
-                <div class="option--box">
-                    <div class="option--name">색상</div>
-                </div>
-                <div class="option--pkg">
-                    <ul>
-                        <!--패키지구성 1-->
-                        <li class="pkg--switch">
-                            <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                            <span class="detail-text">PHANTOM II 95 DB</span>
-                            <span class="detail-color f-sub">매트블랙</span>
-                        </li>
-                        <li class="pkg--expand">
-                            <div class="pkg__part">
+
+            <!--*****옵션설정 싱글+부가******-->
+            <br><br><br>싱글-부가상품있음
+            <div class="item__option">
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">색상</div>
+                        <div class="option--selected">
+                            <div class="option--detail">
                                 <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                                <span class="detail-text">매트블랙</span>
+                                <span class="detail-text">블랙</span>
                             </div>
-                            <div class="pkg__part">
+                        </div>
+                    </div>
+                    <div class="option--expand">
+                        <ul>
+                            <li> <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
+                                <span class="detail-text">매트블랙</span></li>
+                            <li> <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
+                                <span class="detail-text">아이코닉화이트</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">기간</div>
+                        <div class="option--selected">
+                            <div class="option--detail">
+                                <span class="detail-text">48개월</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option--expand">
+                        <ul>
+                            <li style="height: 90px; padding: 12px 16px;">
+                                <!--*****기간설정 슬라이더******-->
+                                <div id="app">
+                                    <div class="slider-container">
+                                        <div class="slider vue-slider vue-slider-ltr">
+                                            <div class="vue-slider-rail">
+                                                <div class="vue-slider-process" style=""></div>
+                                                <div class="vue-slider-marks">
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-first" \>
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            12</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-second">
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            24</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-third">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">36</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-fourth">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">48</div>
+                                                    </div>
+                                                </div>
+                                                <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover"
+                                                    role="slider" aria-valuenow="24" aria-valuemin="0"
+                                                    aria-valuemax="100" aria-orientation="horizontal" tabindex="0"
+                                                    style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
+                                                    <div class="vue-slider-dot-handle"></div>
+                                                    <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
+                                                        <div
+                                                            class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top">
+                                                            <span class="vue-slider-dot-tooltip-text">24</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option--wrap">
+                    <div class="option--box noswitch">
+                        <div class="option--name">수량</div>
+                        <div class="option--selected">
+                            <div class="quantity">
+                                <div class="quantity-button quantity-down">-</div>
+                                <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
+                                <div class="quantity-button quantity-up">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">악세사리 추가</div>
+                        <div class="option--selected">
+                            <div class="option--detail">
+                                <span class="detail-price">선택안함</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option--expand">
+                        <ul>
+                            <li> <span class="detail-thumbnail"></span>
+                                <span class="detail-text">선택안함</span></li>
+                            <li> <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                                <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span></li>
+                            <li> <span class="detail-thumbnail"><img src="images/prd_img_5.png" alt=""></span>
+                                <span class="detail-text">TREE</span><span class="detail-price">20,000원/월</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--*****옵션설정 부가+필수******-->
+            <br><br><br>부가-필수옵션
+            <div class="item__option">
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">색상</div>
+                        <div class="option--selected">
+                            <div class="option--detail">
+                                <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                                <span class="detail-text">블랙</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option--expand">
+                        <ul>
+                            <li> <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                                <span class="detail-text">매트블랙</span></li>
+                            <li> <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                                <span class="detail-text">아이코닉화이트</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">필수옵션<span style="color: #FF0000; margin-right: 4px;">*</span></div>
+                        <div class="option--selected">
+                            <div class="option--detail">
                                 <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
+                                <span class="detail-text">PHANTOM II 95DB</span><span
+                                    class="detail-price">199,000원/월</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option--expand">
+                        <ul>
+                            <li> <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
+                                <span class="detail-text">PHANTOM I 103DB</span><span
+                                    class="detail-price">199,000원/월</span></li>
+                            <li> <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
+                                <span class="detail-text">PHANTOM II 95DB</span><span
+                                    class="detail-price">199,000원/월</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">기간</div>
+                        <div class="option--selected">
+                            <div class="option--detail">
+                                <span class="detail-text">48개월</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option--expand">
+                        <ul>
+                            <li style="height: 90px; padding: 12px 16px;">
+                                <!--*****기간설정 슬라이더******-->
+                                <div id="app">
+                                    <div class="slider-container">
+                                        <div class="slider vue-slider vue-slider-ltr">
+                                            <div class="vue-slider-rail">
+                                                <div class="vue-slider-process" style=""></div>
+                                                <div class="vue-slider-marks">
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-first" \>
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            12</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-second">
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            24</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-third">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">36</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-fourth">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">48</div>
+                                                    </div>
+                                                </div>
+                                                <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover"
+                                                    role="slider" aria-valuenow="24" aria-valuemin="0"
+                                                    aria-valuemax="100" aria-orientation="horizontal" tabindex="0"
+                                                    style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
+                                                    <div class="vue-slider-dot-handle"></div>
+                                                    <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
+                                                        <div
+                                                            class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top">
+                                                            <span class="vue-slider-dot-tooltip-text">24</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option--wrap">
+                    <div class="option--box noswitch">
+                        <div class="option--name">수량</div>
+                        <div class="option--selected">
+                            <div class="quantity">
+                                <div class="quantity-button quantity-down">-</div>
+                                <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
+                                <div class="quantity-button quantity-up">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--*****옵션설정 패키지******-->
+            <br><br><br>패키지
+            <div class="item__option">
+                <div class="option--wrap">
+                    <div class="option--box">
+                        <div class="option--name">색상</div>
+                    </div>
+                    <div class="option--pkg">
+                        <ul>
+                            <!--패키지구성 1-->
+                            <li class="pkg--switch">
+                                <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
+                                <span class="detail-text">PHANTOM II 95 DB</span>
+                                <span class="detail-color f-sub">매트블랙</span>
+                            </li>
+                            <li class="pkg--expand">
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
+                                    <span class="detail-text">매트블랙</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
                                     <span class="detail-text">아이코닉화이트</span>
-                            </div>
-                        </li>
-                        <!--패키지구성 1-2-->
-                        <li class="option-add pkg--switch">
-                            <span class="detail-thumbnail"></span>
-                            <span>악세사리 추가</span>
-                            <span class="detail-color f-sub">선택안함</span>
-                        </li>
-                        <li class="pkg--expand">
-                            <div class="pkg__part">
+                                </div>
+                            </li>
+                            <!--패키지구성 1-2-->
+                            <li class="option-add pkg--switch">
                                 <span class="detail-thumbnail"></span>
-                            <span class="detail-text">선택안함</span>
-                            </div>
-                            <div class="pkg__part">
-                                <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span>
-                            </div>
-                            <div class="pkg__part">
-                                <span class="detail-thumbnail"><img src="images/prd_img_5.png" alt=""></span>
-                            <span class="detail-text">TREE</span><span class="detail-price">20,000원/월</span>
-                            </div>
-                        </li>
-                        <!--패키지구성 2-->
-                        <li class="pkg--switch">
-                            <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
-                            <span class="detail-text">PL1 plus</span>
-                            <span class="detail-color f-sub">실버</span>    
-                        </li>
-                        <li class="pkg--expand">
-                            <div class="pkg__part">
+                                <span>악세사리 추가</span>
+                                <span class="detail-color f-sub">선택안함</span>
+                            </li>
+                            <li class="pkg--expand">
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"></span>
+                                    <span class="detail-text">선택안함</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                                    <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_5.png" alt=""></span>
+                                    <span class="detail-text">TREE</span><span class="detail-price">20,000원/월</span>
+                                </div>
+                            </li>
+                            <!--패키지구성 2-->
+                            <li class="pkg--switch">
                                 <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
-                                <span class="detail-text">실버</span>
-                            </div>
-                            <div class="pkg__part">
-                                <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
+                                <span class="detail-text">PL1 plus</span>
+                                <span class="detail-color f-sub">실버</span>
+                            </li>
+                            <li class="pkg--expand">
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
+                                    <span class="detail-text">실버</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
                                     <span class="detail-text">화이트</span>
-                            </div>
-                        </li>
-                        <!--패키지구성 3-->
-                        <li class="pkg--switch">
-                            <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">Treepod</span>
-                            <span class="detail-color f-sub">매트블랙</span>   
-                        </li>
-                        <li class="pkg--expand">
-                            <div class="pkg__part">
+                                </div>
+                            </li>
+                            <!--패키지구성 3-->
+                            <li class="pkg--switch">
                                 <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                                <span class="detail-text">매트블랙</span>
-                            </div>
-                            <div class="pkg__part">
-                                <span class="detail-thumbnail"><img src="images/prd_img_3.png" alt=""></span>
+                                <span class="detail-text">Treepod</span>
+                                <span class="detail-color f-sub">매트블랙</span>
+                            </li>
+                            <li class="pkg--expand">
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                                    <span class="detail-text">매트블랙</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_3.png" alt=""></span>
                                     <span class="detail-text">아이코닉화이트</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">기간</div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-text">48개월</span>
-                        </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="option--expand">
-                    <ul><li style="height: 90px; padding: 12px 16px;">
-                    <!--*****기간설정 슬라이더******-->
-                    <div id="app">
-                        <div class="slider-container">
-                            <div class="slider vue-slider vue-slider-ltr">
-                                <div class="vue-slider-rail">
-                                    <div class="vue-slider-process" style=""></div>
-                                    <div class="vue-slider-marks">
-                                        <div class="vue-slider-mark vue-slider-mark-active month-first"\>
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">12</div>
-                                        </div>
-                                        <div class="vue-slider-mark vue-slider-mark-active month-second">
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">24</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-third">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">36</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-fourth">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">48</div>
-                                        </div>
-                                    </div>
-                                    <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover" role="slider" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" aria-orientation="horizontal" tabindex="0" style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
-                                        <div class="vue-slider-dot-handle"></div>
-                                        <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
-                                            <div class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top"><span class="vue-slider-dot-tooltip-text">24</span></div>
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">기간</div>
+                        <div class="option--selected">
+                            <div class="option--detail">
+                                <span class="detail-text">48개월</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option--expand">
+                        <ul>
+                            <li style="height: 90px; padding: 12px 16px;">
+                                <!--*****기간설정 슬라이더******-->
+                                <div id="app">
+                                    <div class="slider-container">
+                                        <div class="slider vue-slider vue-slider-ltr">
+                                            <div class="vue-slider-rail">
+                                                <div class="vue-slider-process" style=""></div>
+                                                <div class="vue-slider-marks">
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-first" \>
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            12</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-second">
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            24</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-third">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">36</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-fourth">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">48</div>
+                                                    </div>
+                                                </div>
+                                                <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover"
+                                                    role="slider" aria-valuenow="24" aria-valuemin="0"
+                                                    aria-valuemax="100" aria-orientation="horizontal" tabindex="0"
+                                                    style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
+                                                    <div class="vue-slider-dot-handle"></div>
+                                                    <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
+                                                        <div
+                                                            class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top">
+                                                            <span class="vue-slider-dot-tooltip-text">24</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option--wrap">
+                    <div class="option--box noswitch">
+                        <div class="option--name">수량</div>
+                        <div class="option--selected">
+                            <div class="quantity">
+                                <div class="quantity-button quantity-down">-</div>
+                                <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
+                                <div class="quantity-button quantity-up">+</div>
                             </div>
                         </div>
                     </div>
-                    </li></ul>
                 </div>
             </div>
-            <div class="option--wrap">
-                <div class="option--box noswitch">
-                    <div class="option--name">수량</div>
-                    <div class="option--selected">
-                        <div class="quantity">
-                            <div class="quantity-button quantity-down">-</div>
-                            <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
-                            <div class="quantity-button quantity-up">+</div>
-                        </div>
+
+            <!--*****옵션설정 패키지 - 옵션선택한거******-->
+            <br><br><br>패키지 옵션선택한거
+            <div class="item__option">
+                <div class="option--wrap">
+                    <div class="option--box">
+                        <div class="option--name">색상</div>
                     </div>
-                </div>
-            </div>
-        </div>
-        
-        <!--*****옵션설정 패키지 - 옵션선택한거******-->
-        <br><br><br>패키지 옵션선택한거
-        <div class="item__option">
-            <div class="option--wrap">
-                <div class="option--box">
-                    <div class="option--name">색상</div>
-                </div>
-                <div class="option--pkg">
-                    <ul>
-                        <!--패키지구성 1-->
-                        <li class="pkg--switch">
-                            <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                            <span class="detail-text">PHANTOM II 95 DB</span>
-                            <span class="detail-color f-sub">매트블랙</span>
-                        </li>
-                        <li class="pkg--expand">
-                            <div class="pkg__part">
+                    <div class="option--pkg">
+                        <ul>
+                            <!--패키지구성 1-->
+                            <li class="pkg--switch">
                                 <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
-                                <span class="detail-text">매트블랙</span>
-                            </div>
-                            <div class="pkg__part">
-                                <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
+                                <span class="detail-text">PHANTOM II 95 DB</span>
+                                <span class="detail-color f-sub">매트블랙</span>
+                            </li>
+                            <li class="pkg--expand">
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
+                                    <span class="detail-text">매트블랙</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_1.png" alt=""></span>
                                     <span class="detail-text">아이코닉화이트</span>
-                            </div>
-                        </li>
-                        <!--패키지구성 1-2-->
-                        <li class="option-add pkg--switch">
-                            <span class="detail-thumbnail"><img src="images/subordin.svg" alt=""></span>
-                            <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span>
-                        </li>
-                        <li class="pkg--expand">
-                            <div class="pkg__part">
-                                <span class="detail-thumbnail"></span>
-                            <span class="detail-text">선택안함</span>
-                            </div>
-                            <div class="pkg__part">
+                                </div>
+                            </li>
+                            <!--패키지구성 1-2-->
+                            <li class="option-add pkg--switch">
+                                <span class="detail-thumbnail"><img src="images/subordin.svg" alt=""></span>
                                 <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span>
-                            </div>
-                            <div class="pkg__part">
-                                <span class="detail-thumbnail"><img src="images/prd_img_5.png" alt=""></span>
-                            <span class="detail-text">TREE</span><span class="detail-price">20,000원/월</span>
-                            </div>
-                        </li>
-                        <!--패키지구성 2-->
-                        <li class="pkg--switch">
-                            <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
-                            <span class="detail-text">PL1 plus</span>
-                            <span class="detail-color f-sub">실버</span>    
-                        </li>
-                        <li class="pkg--expand">
-                            <div class="pkg__part">
+                                <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span>
+                            </li>
+                            <li class="pkg--expand">
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"></span>
+                                    <span class="detail-text">선택안함</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                                    <span class="detail-text">TREEPOD</span><span class="detail-price">20,000원/월</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_5.png" alt=""></span>
+                                    <span class="detail-text">TREE</span><span class="detail-price">20,000원/월</span>
+                                </div>
+                            </li>
+                            <!--패키지구성 2-->
+                            <li class="pkg--switch">
                                 <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
-                                <span class="detail-text">실버</span>
-                            </div>
-                            <div class="pkg__part">
-                                <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
+                                <span class="detail-text">PL1 plus</span>
+                                <span class="detail-color f-sub">실버</span>
+                            </li>
+                            <li class="pkg--expand">
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
+                                    <span class="detail-text">실버</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_2.png" alt=""></span>
                                     <span class="detail-text">화이트</span>
-                            </div>
-                        </li>
-                        <!--패키지구성 3-->
-                        <li class="pkg--switch">
-                            <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                            <span class="detail-text">Treepod</span>
-                            <span class="detail-color f-sub">매트블랙</span>   
-                        </li>
-                        <li class="pkg--expand">
-                            <div class="pkg__part">
+                                </div>
+                            </li>
+                            <!--패키지구성 3-->
+                            <li class="pkg--switch">
                                 <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
-                                <span class="detail-text">매트블랙</span>
-                            </div>
-                            <div class="pkg__part">
-                                <span class="detail-thumbnail"><img src="images/prd_img_3.png" alt=""></span>
+                                <span class="detail-text">Treepod</span>
+                                <span class="detail-color f-sub">매트블랙</span>
+                            </li>
+                            <li class="pkg--expand">
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_4.png" alt=""></span>
+                                    <span class="detail-text">매트블랙</span>
+                                </div>
+                                <div class="pkg__part">
+                                    <span class="detail-thumbnail"><img src="images/prd_img_3.png" alt=""></span>
                                     <span class="detail-text">아이코닉화이트</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="option--wrap">
-                <div class="option--box switch">
-                    <div class="option--name">기간</div>
-                    <div class="option--selected">
-                        <div class="option--detail">
-                            <span class="detail-text">48개월</span>
-                        </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="option--expand">
-                    <ul><li style="height: 90px; padding: 12px 16px;">
-                    <!--*****기간설정 슬라이더******-->
-                    <div id="app">
-                        <div class="slider-container">
-                            <div class="slider vue-slider vue-slider-ltr">
-                                <div class="vue-slider-rail">
-                                    <div class="vue-slider-process" style=""></div>
-                                    <div class="vue-slider-marks">
-                                        <div class="vue-slider-mark vue-slider-mark-active month-first"\>
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">12</div>
-                                        </div>
-                                        <div class="vue-slider-mark vue-slider-mark-active month-second">
-                                            <div class="vue-slider-mark-step vue-slider-mark-step-active"></div>
-                                            <div class="vue-slider-mark-label vue-slider-mark-label-active">24</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-third">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">36</div>
-                                        </div>
-                                        <div class="vue-slider-mark month-fourth">
-                                            <div class="vue-slider-mark-step"></div>
-                                            <div class="vue-slider-mark-label">48</div>
-                                        </div>
-                                    </div>
-                                    <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover" role="slider" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" aria-orientation="horizontal" tabindex="0" style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
-                                        <div class="vue-slider-dot-handle"></div>
-                                        <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
-                                            <div class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top"><span class="vue-slider-dot-tooltip-text">24</span></div>
+                <div class="option--wrap">
+                    <div class="option--box switch">
+                        <div class="option--name">기간</div>
+                        <div class="option--selected">
+                            <div class="option--detail">
+                                <span class="detail-text">48개월</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option--expand">
+                        <ul>
+                            <li style="height: 90px; padding: 12px 16px;">
+                                <!--*****기간설정 슬라이더******-->
+                                <div id="app">
+                                    <div class="slider-container">
+                                        <div class="slider vue-slider vue-slider-ltr">
+                                            <div class="vue-slider-rail">
+                                                <div class="vue-slider-process" style=""></div>
+                                                <div class="vue-slider-marks">
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-first" \>
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            12</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark vue-slider-mark-active month-second">
+                                                        <div class="vue-slider-mark-step vue-slider-mark-step-active">
+                                                        </div>
+                                                        <div class="vue-slider-mark-label vue-slider-mark-label-active">
+                                                            24</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-third">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">36</div>
+                                                    </div>
+                                                    <div class="vue-slider-mark month-fourth">
+                                                        <div class="vue-slider-mark-step"></div>
+                                                        <div class="vue-slider-mark-label">48</div>
+                                                    </div>
+                                                </div>
+                                                <div aria-valuetext="24" class="vue-slider-dot vue-slider-dot-hover"
+                                                    role="slider" aria-valuenow="24" aria-valuemin="0"
+                                                    aria-valuemax="100" aria-orientation="horizontal" tabindex="0"
+                                                    style="width: 14px; height: 14px; transform: translate(-50%, -50%); top: 50%; left: 33.3333%; transition: left 0.5s ease 0s;">
+                                                    <div class="vue-slider-dot-handle"></div>
+                                                    <div class="vue-slider-dot-tooltip vue-slider-dot-tooltip-top">
+                                                        <div
+                                                            class="vue-slider-dot-tooltip-inner vue-slider-dot-tooltip-inner-top">
+                                                            <span class="vue-slider-dot-tooltip-text">24</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option--wrap">
+                    <div class="option--box noswitch">
+                        <div class="option--name">수량</div>
+                        <div class="option--selected">
+                            <div class="quantity">
+                                <div class="quantity-button quantity-down">-</div>
+                                <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
+                                <div class="quantity-button quantity-up">+</div>
                             </div>
                         </div>
                     </div>
-                    </li></ul>
                 </div>
             </div>
-            <div class="option--wrap">
-                <div class="option--box noswitch">
-                    <div class="option--name">수량</div>
-                    <div class="option--selected">
-                        <div class="quantity">
-                            <div class="quantity-button quantity-down">-</div>
-                            <input type="number" min="1" max="9" step="1" value="1" class="qty-field">
-                            <div class="quantity-button quantity-up">+</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
-        
     </div>
-</div>
 </body>
-<script>/*패키지 옵션 열고닫기*/
+<script>
+    /*패키지 옵션 열고닫기*/
     var acc = document.getElementsByClassName("pkg--switch");
     var i;
 
     for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        
-        this.classList.toggle("pkg--switch-active");
+        acc[i].addEventListener("click", function () {
 
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-      });
+            this.classList.toggle("pkg--switch-active");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
     }
 </script>
-<script>/*옵션 열고닫기*/
+<script>
+    /*옵션 열고닫기*/
     var acc = document.getElementsByClassName("switch");
     var i;
 
     for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        
-        this.classList.toggle("switch-active");
+        acc[i].addEventListener("click", function () {
 
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-            
-        } else {
-            panel.style.display = "block";
-        }
-      });
+            this.classList.toggle("switch-active");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+
+            } else {
+                panel.style.display = "block";
+            }
+        });
     }
 </script>
-<script>/*수량 버튼*/
-    jQuery('.quantity').each(function() {
-      var spinner = jQuery(this),
-        input = spinner.find('input[type="number"]'),
-        btnUp = spinner.find('.quantity-up'),
-        btnDown = spinner.find('.quantity-down'),
-        min = input.attr('min'),
-        max = input.attr('max');
+<script>
+    /*수량 버튼*/
+    jQuery('.quantity').each(function () {
+        var spinner = jQuery(this),
+            input = spinner.find('input[type="number"]'),
+            btnUp = spinner.find('.quantity-up'),
+            btnDown = spinner.find('.quantity-down'),
+            min = input.attr('min'),
+            max = input.attr('max');
 
-      btnUp.click(function() {
-        var oldValue = parseFloat(input.val());
-        if (oldValue >= max) {
-          var newVal = oldValue;
-        } else {
-          var newVal = oldValue + 1;
-        }
-        spinner.find("input").val(newVal);
-        spinner.find("input").trigger("change");
-      });
+        btnUp.click(function () {
+            var oldValue = parseFloat(input.val());
+            if (oldValue >= max) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue + 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
 
-      btnDown.click(function() {
-        var oldValue = parseFloat(input.val());
-        if (oldValue <= min) {
-          var newVal = oldValue;
-        } else {
-          var newVal = oldValue - 1;
-        }
-        spinner.find("input").val(newVal);
-        spinner.find("input").trigger("change");
-      });
+        btnDown.click(function () {
+            var oldValue = parseFloat(input.val());
+            if (oldValue <= min) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue - 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
 
     });
 </script>
-<script>/*슬라이드*/
+<script>
+    /*슬라이드*/
     import vueSliderComponent from "https://cdn.skypack.dev/vue-slider-component@3.2.12";
 
     const app = new Vue({
-      el: '#app',
+        el: '#app',
 
-      components: { vueSliderComponent },
+        components: {
+            vueSliderComponent
+        },
     })
 </script>
+
 </html>
