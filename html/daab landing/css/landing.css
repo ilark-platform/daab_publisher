@@ -10,6 +10,31 @@
     }
 }
 
+@media (min-width: 1281px) {
+.header{background: transparent;}
+.header.shrink  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1000;
+    height: 100px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+.header.shrink .banner > .inner { -webkit-transition:  0.3s;-moz-transition:  0.3s;transition:  0.3s;text-align:left;padding: 20px 0 0;display: flex;justify-content: space-between;align-items: center;width: 1280px;margin: auto;}
+.header.shrink .banner > .inner>h2{display: inline-block;font-size: 60px;}
+.header.shrink .banner > .inner>h2>span, .header.shrink .banner > .inner>p, .header.shrink .appstore>p{display: none;}
+.header.shrink .sns_wrap{display: inline-block;}
+.header.shrink .appstore{display: inline-block;margin-top: 0;}
+.shrink-only{display: none;}
+.header.shrink .shrink-only{display: inline-block;width: 460px;padding-left: 60px;}
+.header.shrink .appstore>a{width: 220px;height: 60px;margin:0 2px;padding: 12px 0 0 66px;font-size: 20px;line-height: 20px;}
+}
 
 body {
     width: 100vw;

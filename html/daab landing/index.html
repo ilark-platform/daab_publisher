@@ -13,22 +13,25 @@
 	<body>
 
 		<!-- Banner -->
-		<section class="banner full">
-			<div class="inner">
-				<h2>Daab <span>for everyone</span></h2>
-				<p>라이프스타일 오디오 전문 구독/렌탈 서비스, 답</p>
-				<div class="sns_wrap">
-					<a href="#" class="ic-kakao"></a>
-					<a href="#" class="ic-share"></a>
-					<a href="#" class="ic-qrcode"></a>
+		<div class="header">
+			<section class="banner full">
+				<div class="inner">
+					<h2>Daab <span>for everyone</span></h2>
+					<p>라이프스타일 오디오 전문 구독/렌탈 서비스, 답</p>
+					<div class="shrink-only">지금 다운로드하여<br>취향기반의 오디오 추천을 받아보세요.</div>
+					<div class="sns_wrap">
+						<a href="#" class="ic-kakao"></a>
+						<a href="#" class="ic-share"></a>
+						<a href="#" class="ic-qrcode"></a>
+					</div>
+					<div class="appstore">
+						<a href="#" class="google">Google Play<span>다운로드 하기</span></a>
+						<a href="#" class="apple">Apple Store<span>다운로드 하기</span></a>
+						<p>Daab은 모바일에서만 이용 가능합니다.</p>
+					</div>
 				</div>
-				<div class="appstore">
-					<a href="#" class="google">Google Play<span>다운로드 하기</span></a>
-					<a href="#" class="apple">Apple Store<span>다운로드 하기</span></a>
-					<p>Daab은 모바일에서만 이용 가능합니다.</p>
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 		<!-- about Us -->
 		<section class="banner02 aboutUs">
 			<div class="aboutUs-bg">
@@ -245,6 +248,25 @@
 					$(this).siblings(".cp-info").toggleClass("open");
 					$(this).toggleClass("active");
 				})
+
+				
+$(function(){
+ var shrinkHeader = 300;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('.header').addClass('shrink');
+        }
+        else {
+            $('.header').removeClass('shrink');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+});
+
+
 			</script>
 	</body>
 </html>
