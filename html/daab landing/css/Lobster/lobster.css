@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Lobster-Regular";
+    src:url("Lobster-Regular.ttf");
+    src:url("Lobster-Regular.eot?") format("embedded-opentype"),
+        url("Lobster-Regular.woff2") format("woff2"),
+        url("Lobster-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+

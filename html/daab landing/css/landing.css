@@ -1,0 +1,438 @@
+@charset "utf-8";
+
+
+@media (min-width: 768px) {
+
+    #wrap,
+    #contents {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    font-family:'NotoSansKR', sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;letter-spacing:-0.5pt;
+    font-weight: normal;
+    color: #111;
+    margin:0;
+}
+
+#wrap {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+
+#contents {
+    position: relative;
+}
+.container {
+    position: relative;width:1440px;margin:auto;
+}
+
+/**Common**************/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.hidden-text {
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+.open {
+    display: block !important;
+}
+
+.sns_wrap>a{display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0 8px;border-radius: 100%;
+    background-repeat: no-repeat;
+    background-color:rgba(61, 61, 61, 0.1);background-size: 28px; background-repeat: no-repeat;background-position: center;}
+.ic-kakao {background-image: url(../images/kakao.png);}
+.ic-share {background-image: url(../images/ico-share.svg);}
+.ic-qrcode {background-image: url(../images/ic-qrcode.svg);}
+
+.appstore{margin-top:100px;}
+.appstore>a {display: inline-block;position: relative;font-size: 25px;font-weight: bold;line-height: 26px;box-sizing: border-box;color: #fff;
+    width: 250px;
+    height: 80px;padding:14px 0 0 36px;
+    margin: 2px 8px;border-radius: 6px;background-color:rgba(0, 0, 0, 1.2);vertical-align: middle;}
+.appstore>a:before{content: '';position:absolute;left:10px;top:0px; display: inline-block;width:50px;height:100%; vertical-align: middle;}
+.appstore>a.google:before{ background: url(../images/google_play.png) no-repeat center;background-size: 44px;}
+.appstore>a.apple:before{ background: url(../images/apple_store.png) no-repeat center;background-size: 48px;}
+.appstore>a>span{display:block;font-size: 14px;font-weight: 400;}
+.appstore>p{display:block;font-size: 20px;font-weight: 600;padding-top: 30px;}
+
+/**Footer**************/
+#footer {width: 100%;margin: 50px auto 0;padding:60px 100px 40px;color: #fff;background-color: #1F3A2F;box-sizing: border-box;}
+.footer__wrap {position: relative;margin: 0 auto;display: flex;justify-content: space-between;width:90%}
+    
+.btn-icon {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin: 0 4px;border-radius: 100%;
+    background-repeat: no-repeat;
+    background-color:rgba(255, 255, 255, 0.15);background-size: 20px; background-repeat: no-repeat;background-position: center;
+}
+
+.ic-insta {background-image: url(../images/insta.svg);}
+.ic-twitter {background-image: url(../images/twitter.svg);}
+.ic-youtube {background-image: url(../images/youtube.svg);}
+
+.ft__customer{float:left;font-size: 13px;line-height: 22px;}
+.ft__customer>h2{font-size:24px;margin: 22px 0;font-weight: bold;}
+
+.ft__company {width: 22%;font-size: 14px;}
+
+.cp-name {
+    padding-bottom: 40px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.ic-fold__up {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    margin-left: 4px;
+    background: url(../images/ic-fold.svg) no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+.ft__company .ic-fold__up{display: none;}
+.ft__company>.active>.ic-fold__up {
+    transform: rotate(0deg);display: none;
+}
+.footer__wrap .cp-info {
+    display: block;
+}
+.cp-info>dl>dt {
+    display: inline-block;
+    width: 25%;
+}
+
+.cp-info>dl>dd {
+    display: inline-block;
+    padding-bottom: 8px;
+    width: 70%;
+}
+
+.cp-info>dl>dd:last-child {
+    padding-bottom: 12px;
+}
+
+dt+dd {
+    vertical-align: top;line-height: 16px;font-size: 13px;
+}
+
+.ft__menu {float:left;margin-right:150px}
+
+.ft__menu>ul {
+    width: 100%;
+    display: display;
+    margin-bottom: 16px;
+}
+
+.ft__menu>ul>li {font-size: 16px;line-height: 32px;}
+
+.ft__license{width: 90%; border-top:1px solid rgba(255, 255, 255, 0.2);padding: 50px 0 20px;margin: 50px auto 0;text-align: center;color: rgba(255, 255, 255, 0.5);}
+.ft__license>h2{font-family: Lobster-Regular;font-size: 32px;line-height: 70px;}
+
+
+@media screen and (max-width: 1100px) {
+
+    .container {width:100%;}
+    #footer{padding:35px}
+    .footer__wrap{display: block;width: 100%;}
+    .ft__company{width:100%; clear: both;padding-top: 30px;}
+
+    .ft__menu {padding-top: 50px;float: unset;margin-right: 0px;}
+    .ft__menu>ul {
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 30px;
+    }
+    .footer__wrap .cp-info{display: none;}
+    .cp-name{padding-bottom: 0px;}
+    .cp-info{padding-top: 20px;}
+    .ft__menu>ul>li {font-size: 13px;}
+    .ft__btn{position: absolute;top:0;right:-10px}
+    .ft__company .ic-fold__up{display:inline-block;}
+    .ft__company>.active>.ic-fold__up {display: inline-block;}
+    .ft__license{padding: 10px 0;margin-top: 20px;font-size: 12px;}
+}
+
+.animation {
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+.fadein {
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeout {
+    animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeup {
+    animation-name: fadeUp;
+}
+
+@-webkit-keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeleft {
+    animation-name: fadeLeft;
+}
+
+@-webkit-keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.faderight {
+    animation-name: fadeRight;
+}
+
+@-webkit-keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+
+
+@-webkit-keyframes fadein {
+    from {
+        top: -30px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        top: -30px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+
+
+.banner {
+    background-color: #fff;
+    position: relative;
+    -moz-transition: opacity 1.5s ease, visibility 1.5s;
+    -webkit-transition: opacity 1.5s ease, visibility 1.5s;
+    -ms-transition: opacity 1.5s ease, visibility 1.5s;
+    transition: opacity 1.5s ease, visibility 1.5s;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner.full {
+    padding: 0;
+    min-height: 100vh;
+    height: 100vh !important;
+}
+
+.banner > .inner {margin:0;text-align: center;padding:14% 0 0;}
+.banner > .inner>h2 {font-family: Lobster-Regular;font-size: 100px;line-height: 60px;margin:0}
+.banner > .inner>h2>span {font-family: initial;font-size:40px;font-weight: bold; padding-left: 10px;}
+.banner > .inner>p {font-size:30px;margin: 20px 0 70px;font-weight: 300;}
+
+.banner02 h2{font-family: Lobster-Regular;font-size: 72px;margin-bottom: 40px;}
+.banner02 h5{font-size: 16px; text-transform:uppercase;margin-bottom:10px;}
+.banner02 p{font-size: 18px;line-height: 26px;}
+.banner02.aboutUs { -moz-transition: opacity 1.5s ease, visibility 1.5s;
+    -webkit-transition: opacity 1.5s ease, visibility 1.5s;
+    -ms-transition: opacity 1.5s ease, visibility 1.5s;
+    transition: opacity 1.5s ease, visibility 1.5s;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;background-image: url(../images/aboutus-bg.jpg);padding:120px 60px}
+.banner02.aboutUs .aboutUs-bg{position: relative;width:90%; background:rgba(255, 255, 255, 0.6);padding:70px 80px;margin: auto;}
+.banner02 .thumb{position: absolute;top:120px;right:70px; width:38%;text-align: right;}
+.banner02 .thumb>img{width:100%}
+
+.benefit{background:#8EA49B;text-align: center;padding:140px 100px;}
+ul.benefit-list {display: flex;justify-content: space-between;margin: 120px auto 0;width:90%;}
+ul.benefit-list li{width:30%;text-align: left;position: relative;padding-left:70px}
+.benefit-list li .title{font-size: 30px;font-weight: bold;margin: 10px 0 20px;}
+.benefit-list li:before{position: absolute;left: 0;top:0;width:40px; font-family: Lobster-Regular;font-size: 6rem;font-weight: bold;}
+.benefit-list li:first-child:before{content: '1';}
+.benefit-list li:nth-child(2):before{content: '2';}
+.benefit-list li:nth-child(3):before{content: '3'}
+.benefit-list li:nth-child(4):before{content: '4'}
+.benefit-list li:nth-child(5):before{content: '5'}
+.benefit-list li:nth-child(6):before{content: '6'}
+
+.service-bg{position: relative;width:90%; background:rgba(255, 255, 255, 0.6);padding:120px 80px;margin: auto;}
+.service-bg .thumb{top:120px;right:70px; width:34%}
+.service-bg02{position: relative;width:90%; padding:40px 40px;margin: auto;}
+
+.banner02.brands{background:#f2f2f2;text-align: center;padding:140px 100px;}
+.brands ul{display: flex;justify-content: space-between;align-items: center; margin: 120px auto 0;width:90%;}
+.banner02.brands li{width:15%;text-align: center;padding:10px;}
+.banner02.brands li img{width:100%;}
+
+.guide{background:#fff;text-align: center;padding:140px 100px;}
+.guide ul.benefit-list{display: block;}
+.guide ul.benefit-list li{width:100%;text-align: left;position: relative;padding:0px 0 0 100px;display: flex;justify-content: space-between; border-bottom: 1px solid #ddd;margin-bottom:20px;margin-left:20px}
+.guide ul.benefit-list li:last-child{border-bottom: 0px solid #ddd;}
+.guide ul.benefit-list li:before{font-size: 2.8rem;padding-left: 66px;padding-top:10px}
+.guide ul.benefit-list li .title{width:30%;margin: 18px 0 20px;}
+.guide ul.benefit-list li .scribe{width:70%;text-align: left;padding:10px 50px 30px}
+
+@media screen and (min-width:1281px) and (max-width:1500px) {
+    .banner02 .thumb>img{width: 80%;}
+    .ft__company{width: 35%;}
+}
+
+    @media screen and (max-width: 1280px) {
+
+        .banner.full {
+        }
+        .banner > .inner{padding:27% 0 0}
+        .banner > .inner>h2{font-size: 50px;}
+        .banner > .inner>p, .banner > .inner>h2>span{font-size: 16px;}
+        .appstore>a{height: 60px;padding-top:6px;font-size: 20px;}
+        .appstore>p{font-size: 14px;}
+
+        .banner02.aboutUs{padding:20px 0}
+        .banner02.aboutUs .aboutUs-bg{padding: 50px 30px 30px;}
+        .banner02 h2{font-size: 38px;}
+        .banner02 h5{font-size: 12px;}
+        .banner02 p{font-size: 14px;}
+        .banner02.guide p{width: 70%;margin: auto;}
+        .banner02 .thumb{position:unset;width: 100%;margin-top: 20px;}
+        .benefit{padding:80px 30px}
+        ul.benefit-list{display: block;width: 100%;margin: 60px auto 0;}
+        ul.benefit-list li{width: 100%;padding-left: 24px;}
+        .benefit-list li:before{font-size: 2rem;}
+        .benefit-list li .title{font-size: 20px;margin: 20px 0;line-height: 26px;}
+        .service-bg{padding: 80px 20px 20px;}
+        .service-bg02{width:100%; padding:20px 8px;margin: auto;}
+        .banner02.brands{padding: 70px 30px;}
+        .brands ul{display: block;width: 40%;margin-top: 40px;}
+        .banner02.brands li{width: 100%;padding:40px 0;}
+        .guide{padding:70px 30px 30px}
+        .guide ul.benefit-list li{display: block; padding-left:20px;margin-left: 0px;}
+        .guide ul.benefit-list li:before{font-size: 1.5rem;padding-left:0;padding-top: 0px;}
+        .guide ul.benefit-list li .title{width: 100%;}
+        .guide ul.benefit-list li .scribe{width: 100%;padding:0px 0 20px}
+    }
+
