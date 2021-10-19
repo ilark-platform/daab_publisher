@@ -25,8 +25,8 @@
 						<a href="#" class="ic-qrcode"></a>
 					</div>
 					<div class="appstore">
-						<a href="#" class="google">Google Play<span>다운로드 하기</span></a>
-						<a href="#" class="apple">Apple Store<span>다운로드 하기</span></a>
+						<a href="#" class="qrcode google">Google Play<span>다운로드 하기</span></a>
+						<a href="#" class="qrcode apple">Apple Store<span>다운로드 하기</span></a>
 						<p>Daab은 모바일에서만 이용 가능합니다.</p>
 					</div>
 				</div>
@@ -191,6 +191,16 @@
 			<footer id="footer">
 				<div class="footer__wrap">
 					<div class="left">
+						<div class="ft__customer">
+							<h4>고객센터</h4>
+							<h2>1234-5678</h2>
+							<p>
+							월 ~ 금 11:00 AM-12:00 PM / 1:00 PM-5:30 PM<br>
+							토 ~ 일 고객센터 휴무    <br>
+							이메일 : info@daab.com    <br>
+							1:1문의 : @답  
+							</p>
+						</div>
 						<div class="ft__menu">
 							<ul>
 								<li><a href="#">About</a></li>
@@ -203,16 +213,6 @@
 								<a href="" class="btn-icon ic-twitter"><span class="hidden-text">트위터</span></a>
 								<a href="" class="btn-icon ic-youtube"><span class="hidden-text">유튜브</span></a>
 							</div>
-						</div>
-						<div class="ft__customer">
-							<h4>고객센터</h4>
-							<h2>1234-5678</h2>
-							<p>
-							월 ~ 금 11:00 AM-12:00 PM / 1:00 PM-5:30 PM<br>
-							토 ~ 일 고객센터 휴무    <br>
-							이메일 : info@daab.com    <br>
-							1:1문의 : @답  
-							</p>
 						</div>
 					</div>
 					<div class="ft__company">
@@ -242,6 +242,47 @@
 				</div>
 			</footer>
 
+
+     <!--QRcode 레이어팝업-->
+     <div class="layer" style="display: none;">
+		<!--가운데정렬용 박스들-->
+		<div class="layer_wrap">
+			<div class="layer_inner">
+				<!--팝업영역-->
+				<div class="layer__back">
+					<div class="layer__top">
+						<span class="point">QR 스캔하기</span>
+						<button class="close">닫기</button>
+					</div>
+					<div class="qrcode__tab">
+						<div class="qrcode-android current">Android</div><div class="qrcode-ios">iOS</div>
+					</div>
+					<div class="tab__android" style="display: block;">
+						<div class="tab__contents">
+							<strong>Daab 모바일 앱 다운로드</strong>
+							<img src="images/ic-qrcode.svg">
+							<p>휴대폰 스캔앱으로  QR코드를  스캔하고 <br> 모바일에서 다운로드 받으세요.</p>
+						</div>
+					</div>
+					<div class="tab__ios" style="display: none;">
+						<div class="tab__contents">
+							<div class="pay__box" style="margin-top: 0">
+								<p class="font-bold">ios 모바일 앱 다운로드</p>
+								<p class="f-sub">회원님의 소중한 정보 보호를 위해, 현재 비밀번호를 확인해 주세요.</p>
+								<img src="images/ic-qrcode.svg">
+								<div class="f-sub">휴대폰 스캔앱으로  QR코드를  스캔하고 
+								모바일에서 다운로드 받으세요.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--블랙배경-->
+		<div class="dimmed"></div>
+	</div>
+
+
 			<script>
 				/*풋터 회사정보*/
 				$(".cp-name").click(function() {
@@ -249,9 +290,31 @@
 					$(this).toggleClass("active");
 				})
 
-				
+				/*qrcode 눌렀을 때*/
+				$(".qrcode").click(function () {
+					$(".layer").css("display", "block");
+				})
+				/*레이어팝업 닫기버튼*/
+				$(".close").click(function () {
+					$(".layer").css("display", "none");
+				})
+
+				/*TAB*/
+				$(".qrcode-android").click(function(){
+					$(this).addClass("current");
+					$(this).siblings(".qrcode-ios").removeClass("current");
+					$(".tab__ios").css("display","none");
+					$(".tab__android").css("display","block");
+				})
+				$(".qrcode-ios").click(function(){
+					$(this).addClass("current");
+					$(this).siblings(".qrcode-android").removeClass("current");
+					$(".tab__android").css("display","none");
+					$(".tab__ios").css("display","block");
+				})
+
 $(function(){
- var shrinkHeader = 300;
+ var shrinkHeader = 1100;
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
