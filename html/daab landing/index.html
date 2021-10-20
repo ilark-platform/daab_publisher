@@ -14,7 +14,7 @@
 
 		<!-- Banner -->
 		<div class="header">
-			<section class="banner full">
+			<section class="banner ">
 				<div class="inner">
 					<h2>Daab <span>for everyone</span></h2>
 					<p>라이프스타일 오디오 전문 구독/렌탈 서비스, 답</p>
@@ -266,13 +266,9 @@
 					</div>
 					<div class="tab__ios" style="display: none;">
 						<div class="tab__contents">
-							<div class="pay__box" style="margin-top: 0">
-								<p class="font-bold">ios 모바일 앱 다운로드</p>
-								<p class="f-sub">회원님의 소중한 정보 보호를 위해, 현재 비밀번호를 확인해 주세요.</p>
-								<img src="images/ic-qrcode.svg">
-								<div class="f-sub">휴대폰 스캔앱으로  QR코드를  스캔하고 
-								모바일에서 다운로드 받으세요.</div>
-							</div>
+							<strong>Daab 모바일 앱 다운로드</strong>
+							<img src="images/ic-qrcode.svg">
+							<p>휴대폰 스캔앱으로  QR코드를  스캔하고 <br> 모바일에서 다운로드 받으세요.</p>
 						</div>
 					</div>
 				</div>
@@ -314,7 +310,7 @@
 				})
 
 $(function(){
- var shrinkHeader = 1100;
+ var shrinkHeader = 10;
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {

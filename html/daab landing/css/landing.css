@@ -12,7 +12,7 @@
 
 @media (min-width: 1281px) {
 .header{background: transparent;}
-.header.shrink  {
+.header.shrink {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@
 .header.shrink .appstore{display: inline-block;margin-top: 0;}
 
 .header.shrink .shrink-only{display: inline-block;width: 550px;padding-left: 50px;}
-.header.shrink .appstore>a{width: 180px;height: 50px;margin:0 2px;padding: 8px 0 0 65px;font-size: 18px;line-height: 20px;}
+.header.shrink .appstore>a{width: 180px;height: 50px;margin:0 2px;padding: 4px 0 0 65px;font-size: 18px;line-height: 20px;}
 .header.shrink .sns_wrap>a{display: inline-block;width: 38px;height: 38px;margin: 0 4px;background-size: 22px;}
 .header.shrink .appstore>a:before{background-size: 33px;}
 .header.shrink .banner {
@@ -128,6 +128,8 @@ select {
 .appstore>a.apple:before{ background: url(../images/apple_store.png) no-repeat center;background-size: 48px;}
 .appstore>a>span{display:block;font-size: 14px;font-weight: 400;}
 .appstore>p{display:block;font-size: 20px;font-weight: 600;padding-top: 30px;}
+.tab__contents > p {font-size: 12px;line-height: 18px;}
+.tab__contents > strong {font-weight: bold;}
 
 /**Footer**************/
 #footer {width: 100%;margin: 50px auto 0;padding:60px 100px 40px;color: #fff;background-color: #1F3A2F;box-sizing: border-box;}
@@ -395,7 +397,7 @@ dt+dd {
     height: 100vh !important;
 }
 
-.banner > .inner {margin:0;text-align: center;padding:14% 0 0;}
+.banner > .inner {margin:0;text-align: center;padding:14% 0 6%;}
 .banner > .inner>h2 {font-family: Lobster-Regular;font-size: 100px;line-height: 60px;margin:0}
 .banner > .inner>h2>span {font-family: initial;font-size:40px;font-weight: bold; padding-left: 10px;}
 .banner > .inner>p {font-size:30px;margin: 20px 0 70px;font-weight: 300;}
@@ -410,7 +412,7 @@ dt+dd {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;background-image: url(../images/aboutus-bg.jpg);padding:120px 60px}
+    background-size: cover;background-image: url(../images/aboutus-bg.jpg);padding:120px 60px;margin-top: 260px;}
 .banner02.aboutUs .aboutUs-bg{position: relative;width:90%; background:rgba(255, 255, 255, 0.6);padding:70px 80px;margin: auto;}
 .banner02 .thumb{position: absolute;top:120px;right:70px; width:38%;text-align: right;}
 .banner02 .thumb>img{width:100%}
@@ -451,15 +453,14 @@ ul.benefit-list li{width:30%;text-align: left;position: relative;padding-left:70
 
     @media screen and (max-width: 1280px) {
 
-        .banner.full {
-        }
-        .banner > .inner{padding:27% 0 0}
+        .banner {max-height: 100vh;height: 100vh;}
+        .banner > .inner{padding:24% 0 0}
         .banner > .inner>h2{font-size: 50px;}
         .banner > .inner>p, .banner > .inner>h2>span{font-size: 16px;}
         .appstore>a{height: 60px;padding-top:6px;font-size: 20px;}
         .appstore>p{font-size: 14px;}
 
-        .banner02.aboutUs{padding:20px 0}
+        .banner02.aboutUs{padding:20px 0;margin-top:0}
         .banner02.aboutUs .aboutUs-bg{padding: 50px 30px 30px;}
         .banner02 h2{font-size: 38px;}
         .banner02 h5{font-size: 12px;}
