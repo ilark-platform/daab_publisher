@@ -412,7 +412,7 @@ dt+dd {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;background-image: url(../images/aboutus-bg.jpg);padding:120px 60px;margin-top: 260px;}
+    background-size: cover;background-image: url(../images/aboutus-bg.jpg);padding:120px 60px;margin-top: 140px;}
 .banner02.aboutUs .aboutUs-bg{position: relative;width:90%; background:rgba(255, 255, 255, 0.6);padding:70px 80px;margin: auto;}
 .banner02 .thumb{position: absolute;top:120px;right:70px; width:38%;text-align: right;}
 .banner02 .thumb>img{width:100%}
@@ -562,3 +562,28 @@ button.close {
 .tab__contents{text-align: center;}
 .tab__contents img{width:100%;padding:20px;margin: 20px auto;border:1px solid #ddd;border-radius: 6px;}
 .tab__android, .tab__ios{padding: 20px;}
+
+
+#TopBtn {
+    opacity: 0;
+    display: none;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 16px;
+    width: 100%;
+    z-index: 20;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+.btn-totop {
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(https://icongr.am/material/arrow-up.svg?size=28&color=ffffff) center no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+}
