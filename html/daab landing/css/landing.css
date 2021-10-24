@@ -63,7 +63,7 @@ body {
     height: 100vh;
     overflow: hidden;
     overflow-y: auto;
-    font-family:'NotoSansKR', sans-serif;
+    font-family:'NotoSansKR', sans-serif !important;
     font-size: 14px;
     line-height: 1.4em;letter-spacing:-0.5pt;
     font-weight: normal;
@@ -419,7 +419,7 @@ dt+dd {
 
 .benefit{background:#8EA49B;text-align: center;padding:140px 100px;}
 ul.benefit-list {display: flex;justify-content: space-between;margin: 120px auto 0;width:90%;}
-ul.benefit-list li{width:30%;text-align: left;position: relative;padding-left:70px}
+ul.benefit-list li{width:30%;text-align: left;position: relative;padding-left:70px;margin-top: 40px;}
 .benefit-list li .title{font-size: 30px;font-weight: bold;margin: 10px 0 20px;}
 .benefit-list li:before{position: absolute;left: 0;top:0;width:40px; font-family: Lobster-Regular;font-size: 6rem;font-weight: bold;}
 .benefit-list li:first-child:before{content: '1';}
@@ -440,7 +440,7 @@ ul.benefit-list li{width:30%;text-align: left;position: relative;padding-left:70
 
 .guide{background:#fff;text-align: center;padding:140px 100px;}
 .guide ul.benefit-list{display: block;}
-.guide ul.benefit-list li{width:100%;text-align: left;position: relative;padding:0px 0 0 100px;display: flex;justify-content: space-between; border-bottom: 1px solid #ddd;margin-bottom:20px;margin-left:20px}
+.guide ul.benefit-list li{width:100%;text-align: left;position: relative;padding:0px 0 30px 100px;display: flex;justify-content: space-between; border-bottom: 1px solid #ddd;margin-bottom:40px;margin-left:20px}
 .guide ul.benefit-list li:last-child{border-bottom: 0px solid #ddd;}
 .guide ul.benefit-list li:before{font-size: 2.8rem;padding-left: 66px;padding-top:10px}
 .guide ul.benefit-list li .title{width:30%;margin: 18px 0 20px;}
@@ -454,7 +454,7 @@ ul.benefit-list li{width:30%;text-align: left;position: relative;padding-left:70
     @media screen and (max-width: 1280px) {
 
         .banner {max-height: 100vh;height: 100vh;}
-        .banner > .inner{padding:24% 0 0}
+        .banner > .inner{padding:24% 0 40px}
         .banner > .inner>h2{font-size: 50px;}
         .banner > .inner>p, .banner > .inner>h2>span{font-size: 16px;}
         .appstore>a{height: 60px;padding-top:6px;font-size: 20px;}
