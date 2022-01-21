@@ -129,7 +129,8 @@
                 <div class="pay__box order-item">
                     <div class="pay__header flex-bottom">
                         <h3 class="pay-name">주문정보<span>(3)</span></h3>
-                        <span class="f-sub delivery-date">가장 빠른 배송 : 4/3~4/9</span>
+                        <button class="btn-change">주문변경</button>
+                        <!--span class="f-sub delivery-date">가장 빠른 배송 : 4/3~4/9</span>-->
                     </div>
                     <div class="pay__info">
                         <!--카트 상품-->
@@ -260,42 +261,45 @@
                         </ul>
                     </div>
                 </div>
+
+                <!--전체금액-->
+                <div class="pay__box order">
+                    <ul class="price-detail">
+                        <!--폴딩 영역-->
+                        <li>
+                            <span class="label">상품 총 금액</span>
+                            <span class="price">11,234,000원</span>
+                        </li>
+                        <li>
+                            <span class="label">월 이용 금액</span>
+                            <span class="price">123,400원</span>
+                        </li>
+                        <li>
+                            <span class="label">ODE 스페셜 배송/설치비</span>
+                            <span class="price discount">50,000원</span>
+                        </li>
+                    </ul>
+                    <ul class="price-final">
+                        <!--찐 최종 금액-->
+                        <li>
+                            <div>렌탈 1회차 결제 금액<span class="tooltip"></span></div>
+                            <div><span class="price-total-pay">99,000</span>원/월</div>
+                        </li>
+                    </ul>
+                    
+                    <div class="notice-box f-sub">‘결제하기’를 클릭하시면, daab.com의 <a href="">최신 이용 약관</a> 및 <a href="">개인 정보 보호 정책</a>에 동의하는 것으로 간주합니다.
+                        <div class="flex-center linkbox">
+                            <a href="" class="f-sub">배송정책</a><span class="divider"></span><a href="" class="f-sub">환불정책</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        
         <!--전체금액-->
-        <div class="cart__final">
+        <div class="cart__final rental_total">
             <div class="cart__final__wrap">
-                <div class="folder folder-reverse"></div>
-                <!--폴딩 버튼-->
-                <ul class="price-detail" style="display: block;">
-                    <!--폴딩 영역-->
-                    <li>
-                        <span class="label">상품 총 금액</span>
-                        <span class="price">11,234,000원</span>
-                    </li>
-                    <li>
-                        <span class="label">월 이용 금액</span>
-                        <span class="price">123,400원</span>
-                    </li>
-                    <li>
-                        <span class="label">ODE 스페셜 배송/설치비</span>
-                        <span class="price discount">50,000원</span>
-                    </li>
-                </ul>
-                <ul class="price-final">
-                    <!--찐 최종 금액-->
-                    <li>
-                        <div>렌탈 1회차 결제 금액<span class="tooltip"></span></div>
-                        <div><span class="price-total-pay">99,000</span>원/월</div>
-                    </li>
-                </ul>
-                
-                <div class="notice-box f-sub">‘결제하기’를 클릭하시면, daab.com의 <a href="">최신 이용 약관</a> 및 <a href="">개인 정보 보호 정책</a>에 동의하는 것으로 간주합니다.
-                    <div class="flex-center linkbox">
-                        <a href="" class="f-sub">배송정책</a><span class="divider"></span><a href="" class="f-sub">환불정책</a>
-                    </div>
-                </div>
                 <button>렌탈 1회차 <span class="orange">99,000원</span> 결제하기</button>
             </div>
         </div>

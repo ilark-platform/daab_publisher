@@ -504,7 +504,10 @@ input[type=checkbox].item-check:checked+label {
     background: #FFF;
     box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.16)
 }
-
+.cart__final.rental_total {
+    padding: 16px;
+    margin: 0;
+}
 .cart__final__wrap {
     max-width: 768px;
     margin: 0 auto;
