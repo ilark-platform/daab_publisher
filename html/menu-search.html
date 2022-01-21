@@ -48,8 +48,14 @@
         </header>
         <!-- Overlay Menu -->
         <div id="myNav" class="overlay">
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!--2022-01-17 추가-->
+            <ul class="overlay-header">
+                <div class="logo"></div>
+                <div>
+                    <a href="#" class="notification"><span class="check"></span></a><!--새 알람이 있을 경우 check 추가-->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+            </ul>
             <!-- Overlay content -->
             <div class="overlay-content">
                 <a href="" class="menu">취향퀴즈</a>
@@ -69,7 +75,7 @@
                 </ul>
             </div>
             <ul class="overlay-footer">
-                <li><a href="">마이페이지</a></li>
+                <!--<li><a href="">마이페이지</a></li> 비회원일 경우 삭제-->
                 <li><a href="">고객지원</a></li>
                 <li><a href="">로그인</a></li>
             </ul>
