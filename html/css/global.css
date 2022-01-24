@@ -74,9 +74,9 @@ body {
     z-index: 2;
     font-size: 13px;
     color: #707070;
+    padding: 24px 16px calc(constant(safe-area-inset-bottom)) 16px;
+    padding: 24px 16px calc(env(safe-area-inset-bottom)) 16px;
 }
-
-
 
 /**Common**************/
 a {
@@ -362,7 +362,9 @@ dt+dd {
 .ft__rights {
     margin-top: 16px;
 }
-
+.ft__rights p {
+    padding-bottom: 16px;
+}
 .ft__rights>ul {
     width: 100%;
     display: flex;
@@ -742,16 +744,15 @@ dt+dd {
 .overlay-content {
     position: relative;
     top: 15%;
-    width: 100%;
+    width: 84%;
     max-height: 67%;
     overflow: scroll;
-    text-align: center;
+    margin:auto;
 }
 
 .overlay-content a {
     color: #fff;
     text-align: left;
-    padding-left: 40px;
     display: block;
     transition: 0.3s;
 }
@@ -779,15 +780,15 @@ a.menu {
     line-height: 64px;
 }
 
-.menu-dropdown {
-    font-size: 2em;
+.menu-dropdown, .overlay-content>a {
+    font-size: 1.6em;
     color: #fff;
+    padding:0;
     font-weight: 600;
     display: block;
     border: none;
     background: none;
     width: 100%;
-    padding-left: 40px;
     line-height: 64px;
     text-align: left;
     cursor: pointer;
@@ -801,12 +802,13 @@ a.menu {
 .menu-active {
     color: #FFF;
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .dropdown-list {
     display: none;
     margin-bottom: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
 }
 
 .dropdown-list>li {
@@ -814,9 +816,8 @@ a.menu {
 }
 
 .dropdown-list>li>a {
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: normal;
-    padding-left: 60px;
 }
 
 .overlay-footer {
@@ -826,13 +827,11 @@ a.menu {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .overlay-footer>li {
     width: 100%;
     text-align: center;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .overlay-footer>li:first-child {
@@ -841,7 +840,7 @@ a.menu {
 
 .overlay-footer>li>a {
     font-size: 1.1em;
-    line-height: 56px;
+    line-height: 70px;
     color: #fff;
     text-align: center;
 }
@@ -890,7 +889,6 @@ a.menu {
 
 .search-back button {
     width: 50px;
-    ;
     padding: 15px;
     background: url(../images/ic-search.svg) center #FFF no-repeat;
     background-size: 20px;
@@ -1752,10 +1750,23 @@ button.next {
 .text-center{text-align: center;}
 .ico-delete{display: inline-block;width:30px;height:30px;margin-left: 6px;border-radius: 4px; background:#fff url(https://icongr.am/clarity/trash.svg?size=20&color=6666666) no-repeat center;}
 .policy--chapter{position:sticky !important;top:50px;}
-:not(.policy--chapter:first-child)>.chapter-select{background: none !important;}
+.chapter-select{background: none !important;}
 .about__tab__wrap{width:100%!important;margin: 16px 0 32px!important;padding-left: 10px;}
 
 .overlay-header {position: absolute; top: 10px;left: 0px;display: flex;justify-content: space-between;width: 100%;}
 .overlay-header>.logo{display: block;width: 100px;height: 34px;margin: 20px 30px;background: url(../images/daab-ci-white.svg) center no-repeat;background-size: contain;}
 .overlay-header .notification {position: absolute;top: 15px;right: 60px;width: 48px;height: 48px;background:url(https://icongr.am/material/bell-outline.svg?size=30&color=ffffff) no-repeat 0;}
 .overlay-header .notification>.check {display: inline-block;margin-left: 22px;border-radius:100%;width:6px;height: 6px;background:#FD9B27}
+
+
+/* iOS 11.0 버전 */
+constant(safe-area-inset-top)
+constant(safe-area-inset-right)
+constant(safe-area-inset-bottom)
+constant(safe-area-inset-left)
+
+/* iOS 11.2 이상 */
+env(safe-area-inset-top)
+env(safe-area-inset-right)
+env(safe-area-inset-bottom)
+env(safe-area-inset-left)

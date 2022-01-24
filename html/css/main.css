@@ -50,7 +50,7 @@
 .ctgr__filter{padding:0 16px; text-align: right;}
 .filter-align{position: relative; padding: 4px 20px 4px 12px; font-size: 0.9em; color: #707070; background: #FFF; border: none; background: url(../images/ic-fold-down.svg) right 2px no-repeat; background-size: 16px; }
 .filter-align:focus{outline: none;}
-.ctgr__tag-swiper{margin-left: 16px; width: 100%; overflow: hidden;}
+.ctgr__tag-swiper{padding-left: 16px; width: 100%; overflow: hidden;}
 .ctgr-tagwrap{width: 1000px; height: 100%; display: flex; flex-wrap: wrap;}
 .ctgr-tagwrap > li{display: inline-block; margin-right: 8px;}
 .ctgr-tagwrap > li > .tag{display: inline-block; padding: 4px 10px; background: #FFF; border: 1px solid #EAEAEA; }
