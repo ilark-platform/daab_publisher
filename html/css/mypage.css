@@ -293,11 +293,15 @@ b {
 .cart__wrap {}
 
 .cart__item {
-    margin-top: 12px;
+    margin-bottom: 12px;
     padding: 24px 16px;
     background: #FFF;
     border-bottom: 1px solid #CCC;
 }
+.cart__select {display: flex;justify-content: space-between;align-items: center; padding: 16px 16px;}
+.cart__select>div {display: flex;align-items: center;}
+.cart__select>div span {padding-left: 8px;}
+.cart__select .opt-edit-btn {background:#fff;}
 
 .item__header {
     position: relative;

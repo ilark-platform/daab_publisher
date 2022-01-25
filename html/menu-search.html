@@ -181,6 +181,25 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+for (var i = 0; i < dropdown.length; i++) {
+    dropdown[i].onclick = function() {  
+   for (var j = 0 ; j<dropdown.length; j++){
+      dropdown[j].classList.remove("menu-active");
+       if (this!==dropdown[j]) {
+        dropdown[j].nextElementSibling.style.display = "none";
+       }
+   }
+
+  this.classList.toggle("menu-active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.maxHeight){
+      this.classList.remove("menu-active");
+      dropdownContent.style.maxHeight = null;
+  } else {
+    dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
+  }
+}}
 </script>
 
 <script>/*서치*/
