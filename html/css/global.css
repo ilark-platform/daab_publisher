@@ -744,7 +744,8 @@ dt+dd {
 .overlay-content {
     position: relative;
     top: 15%;
-    width: 84%;
+    width: 100%;
+    padding:0 30px;
     max-height: 67%;
     overflow: scroll;
     margin:auto;
@@ -764,13 +765,14 @@ dt+dd {
 
 .overlay .closebtn {
     position: absolute;
-    top: 33px;
-    right: 24px;
-    width: 48px;
-    height: 48px;
-    font-size: 3em;
+    top: 19px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
     text-align: center;
     color: #fff;
+    background:url(../images/ic-close-white.svg) no-repeat 0;
 }
 
 a.menu {
@@ -781,7 +783,7 @@ a.menu {
 }
 
 .menu-dropdown, .overlay-content>a {
-    font-size: 1.6em;
+    font-size: 1.4em;
     color: #fff;
     padding:0;
     font-weight: 600;
@@ -812,17 +814,17 @@ a.menu {
 }
 
 .dropdown-list>li {
-    line-height: 40px;
+    line-height: 38px;
 }
 
 .dropdown-list>li>a {
-    font-size: 1.3em;
+    font-size: 1.0em;
     font-weight: normal;
 }
 
 .overlay-footer {
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
     left: 0;
     display: flex;
     justify-content: space-between;
@@ -840,9 +842,11 @@ a.menu {
 
 .overlay-footer>li>a {
     font-size: 1.1em;
-    line-height: 70px;
+    line-height: 40px;
     color: #fff;
     text-align: center;
+    display: inline-block;
+    width: 100%;
 }
 
 
@@ -1754,8 +1758,8 @@ button.next {
 .about__tab__wrap{width:100%!important;margin: 16px 0 32px!important;padding-left: 10px;}
 
 .overlay-header {position: absolute; top: 10px;left: 0px;display: flex;justify-content: space-between;width: 100%;}
-.overlay-header>.logo{display: block;width: 100px;height: 34px;margin: 20px 30px;background: url(../images/daab-ci-white.svg) center no-repeat;background-size: contain;}
-.overlay-header .notification {position: absolute;top: 15px;right: 60px;width: 48px;height: 48px;background:url(https://icongr.am/material/bell-outline.svg?size=30&color=ffffff) no-repeat 0;}
+.overlay-header>.logo{display: block;width: 100px;height: 34px;margin: 20px 20px;background: url(../images/daab-ci-white.svg) center no-repeat;background-size: contain;}
+.overlay-header .notification {position: absolute;top: 19px;right: 54px;width: 40px;height: 40px;background:url(https://icongr.am/material/bell-outline.svg?size=30&color=ffffff) no-repeat 0;}
 .overlay-header .notification>.check {display: inline-block;margin-left: 22px;border-radius:100%;width:6px;height: 6px;background:#FD9B27}
 
 
