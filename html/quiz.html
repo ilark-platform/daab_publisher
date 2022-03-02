@@ -117,13 +117,15 @@
                 <span class="page-counter">7 / 10</span>
                 <div class="qna">
                     <h2 class="question">좋아하는 <span>공간 스타일</span>은 무엇인가요?</h2>
-                    <div class="scroll-wrap">
-                        <ul class="space"><!--max6-->
-                            <li><input type="checkbox" id="spaceA" class="space-check"><label for="spaceA">내츄럴<span class="spaceA-img"></span></label></li>
-                            <li><input type="checkbox" id="spaceB" class="space-check"><label for="spaceB">모던<span class="spaceB-img"></span></label></li>
-                            <li><input type="checkbox" id="spaceC" class="space-check"><label for="spaceC">레트로<span class="spaceC-img"></span></label></li>
-                            <li><input type="checkbox" id="spaceD" class="space-check"><label for="spaceD">인더스트리얼<span class="spaceD-img"></span></label></li>
-                        </ul>
+                    <div class="scroll-wrap swiper-container quiz">
+                        <div class="space swiper-wrapper">
+                          <div class="swiper-slide"><!--max6-->
+                            <input type="checkbox" id="spaceA" class="space-check"><label for="spaceA">내츄럴<span class="spaceA-img"></span></label>
+                          </div>
+                          <div class="swiper-slide"><input type="checkbox" id="spaceB" class="space-check"><label for="spaceB">모던<span class="spaceB-img"></span></label></div>
+                            <div class="swiper-slide"><input type="checkbox" id="spaceC" class="space-check"><label for="spaceC">레트로<span class="spaceC-img"></span></label></div>
+                            <div class="swiper-slide"><input type="checkbox" id="spaceD" class="space-check"><label for="spaceD">인더스트리얼<span class="spaceD-img"></span></label></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,6 +192,12 @@
         navigation: {
           nextEl: "li",
           prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".quiz", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "cumstom",
         },
       });
     </script>
