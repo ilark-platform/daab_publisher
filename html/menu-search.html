@@ -59,9 +59,11 @@
             <!-- Overlay content -->
             <div class="overlay-content">
                 <a href="" class="menu">취향퀴즈</a>
-                <button class="menu-dropdown">제품보기</button>
+                <button class="menu-dropdown">제품</button>
                 <ul class="dropdown-list">
-                    <li><a href="">와이어리스</a></li>
+                    <li><a href="">전체</a></li>
+                    <li><a href="">큐레이션 패키지</a></li>
+                    <li><a href="">와이어리스 스피커</a></li>
                     <li><a href="">턴테이블</a></li>
                     <li><a href="">악세사리</a></li>
                 </ul>
@@ -69,15 +71,16 @@
                 <ul class="dropdown-list">
                     <li><a href="">우리는</a></li>
                     <li><a href="">우리의 비전</a></li>
-                    <li><a href="">답서비스</a></li>
+                    <li><a href="">답 서비스</a></li>
                     <li><a href="">브랜드</a></li>
                     <li><a href="">자주 묻는 질문</a></li>
                 </ul>
+                <a href="" class="menu">고객지원</a>
             </div>
             <ul class="overlay-footer">
                 <!--<li><a href="">마이페이지</a></li> 비회원일 경우 삭제-->
-                <li><a href="">고객지원</a></li>
                 <li><a href="">로그인</a></li>
+                <li><a href="">마이페이지</a></li>
             </ul>
         </div>
         <!-- Overlay Search -->
@@ -181,6 +184,25 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+for (var i = 0; i < dropdown.length; i++) {
+    dropdown[i].onclick = function() {  
+   for (var j = 0 ; j<dropdown.length; j++){
+      dropdown[j].classList.remove("menu-active");
+       if (this!==dropdown[j]) {
+        dropdown[j].nextElementSibling.style.display = "none";
+       }
+   }
+
+  this.classList.toggle("menu-active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.maxHeight){
+      this.classList.remove("menu-active");
+      dropdownContent.style.maxHeight = null;
+  } else {
+    dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
+  }
+}}
 </script>
 
 <script>/*서치*/
