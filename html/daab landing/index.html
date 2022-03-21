@@ -25,8 +25,8 @@
 					<a href="#" class="qrcode ic-qrcode"></a>
 				</div>
 				<div class="appstore">
-					<a href="https://play.google.com/store/apps/details?id=com.dilabs.daab.prod" class="google">Google Play<span>다운로드 하기</span></a>
-					<a href="https://apps.apple.com/app/id1540687795" class="apple">Apple Store<span>다운로드 하기</span></a>
+					<a class="google">Google Play<span>다운로드 하기</span></a>
+					<a class="apple">Apple Store<span>다운로드 하기</span></a>
 					<p>Daab은 모바일에서만 이용 가능합니다.</p>
 				</div>
 			</div>
@@ -347,6 +347,27 @@
 			document.body.scrollTop = 0; 
 			document.documentElement.scrollTop = 0; 
 		} document.addEventListener("scroll",fx_TopBtn);
+
+		function mobileCheck() {
+			let isMobile = /Mobi/i.test(window.navigator.userAgent)
+			return isMobile;
+		}
+
+		$('.google').click(function () {
+			if (mobileCheck()) location.href='https://play.google.com/store/apps/details?id=com.dilabs.daab.prod'
+			else {
+				$(".layer").css("display", "block");
+				$('.qrcode-android').click()
+			}
+		})
+
+		$('.apple').click(function () {
+			if (mobileCheck()) location.href='https://apps.apple.com/app/id1540687795'
+			else {
+				$(".layer").css("display", "block");
+				$('.qrcode-ios').click()
+			}
+		})
 
 	</script>
 
