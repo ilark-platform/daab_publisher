@@ -6,6 +6,7 @@
 	<title>Title</title>
 </head>
 <body>
+<button onclick="move()">클릭</button>
 <section class="test">
 	<div onclick="GoogleLoginBtn()">구글 OAuth2 연동</div>
 	<div id="my-signin2" style="display: none"></div>
@@ -57,6 +58,10 @@
 	//구글 로그인 콜백함수 (실패)
 	function GoogleLoginFailure(error) {
 		console.log(error);
+	}
+
+	function move() {
+		location.href='/test'
 	}
 </script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
