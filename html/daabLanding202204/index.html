@@ -267,7 +267,7 @@
 	
 			/*qrcode 눌렀을 때*/
 			$(".qrcode").click(function () {
-				$(".layer").css("display", "block");
+				checkMobileLink()
 			})
 			/*레이어팝업 닫기버튼*/
 			$(".close").click(function () {
@@ -322,7 +322,7 @@
 				return isMobile;
 			}
 	
-			
+
 			$('.google').click(function () {
 				if (mobileCheck()) location.href='https://play.google.com/store/apps/details?id=com.dilabs.daab.prod'
 				else {
@@ -352,6 +352,10 @@
 				// iOS detection from: http://stackoverflow.com/a/9039885/177710
 				if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
 					location.href = 'https://itunes.apple.com/kr/app/id1540687795'
+				}
+
+				if (/Mobi/i.test(navigator.userAgent) === false) {
+					$(".layer").css("display", "block");
 				}
 
 				return "unknown";
