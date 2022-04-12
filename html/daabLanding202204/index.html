@@ -377,6 +377,7 @@
 			  Kakao.init('6792f3878406b15402ce073f4e782050');  //Kakao Developers 에서 앱 생성후 자바스크립트 키 변경
 			  // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 			function sendLink() {
+				alert('공유하기 실행됨')
 				Kakao.Link.createDefaultButton({
 					container: '#kakao-link-btn',
 					objectType: 'feed',
