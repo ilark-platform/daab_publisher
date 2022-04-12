@@ -3,8 +3,6 @@
 	--app-height: 100%;
 }
 
-.foo {}
-
 #header { position: fixed; left: 0px; top: 0px; right: 0px; height: 90px; background-color: #fff; z-index: 1000; transition: all 0.3s; }
 .header_wrap { position: relative; display: flex; justify-content: space-between; align-items: center; max-width: 1430px; height: 100%; margin: 0px auto; }
 .logo { padding-bottom: 5px; }
