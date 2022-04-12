@@ -21,7 +21,7 @@
 						<a href="/index2.html">Daab</a>
 					</h1>
 					<div class="sns_wrap">
-						<button onclick="sendLink()" id="kakao-link-btn" class="ic-kakao"></button>
+						<button id="kakao-link-btn" class="ic-kakao"></button>
 						<button onclick="CopyUrlToClipboard()" class="ic-share"></button>
 						<button class="qrcode ic-qrcode"></button>
 						<a class="mo_agent_down" href="javascript:checkMobileLink();"><span>앱 다운로드</span></a>
@@ -359,6 +359,7 @@
 
 			/* 클립보드 복사 */
 			function CopyUrlToClipboard(){
+				alert('복사 되었습니다.')
 				let dummy   = document.createElement("input");
 				let text    = location.href;
 				
@@ -376,8 +377,6 @@
 			  // // 사용할 앱의 JavaScript 키를 설정해 주세요.
 			  Kakao.init('6792f3878406b15402ce073f4e782050');  //Kakao Developers 에서 앱 생성후 자바스크립트 키 변경
 			  // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-			function sendLink() {
-				alert('공유하기 실행됨')
 				Kakao.Link.createDefaultButton({
 					container: '#kakao-link-btn',
 					objectType: 'feed',
@@ -412,7 +411,6 @@
 						}
 					]
 				});
-			}
 
 			//]]>
 		</script>
