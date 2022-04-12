@@ -1,10 +1,420 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<html lang="ko">
+	<head>
+		<title>daab</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/aos.css" />
+		<link rel="stylesheet" href="css/landing.css" />
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/function.js"></script>
+		<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<header id="header">
+				<div class="header_wrap">
+					<h1 class="logo">
+						<a href="/index2.html">Daab</a>
+					</h1>
+					<div class="sns_wrap">
+						<button onclick="sendLink()" id="kakao-link-btn" class="ic-kakao"></button>
+						<button onclick="CopyUrlToClipboard()" class="ic-share"></button>
+						<button class="qrcode ic-qrcode"></button>
+						<a class="mo_agent_down" href="javascript:checkMobileLink();"><span>앱 다운로드</span></a>
+					</div>	
+				</div>
+			</header>
+			
+			<div id="container">
+				<div class="main_container">
+					<div id="main_visual" class="visual_wrap">
+						<div class="visual_box">
+							<div class="txt_wrap" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1600">
+								<strong>내 취향에 맞는 오디오<br>렌탈로 쉽고 간편하게</strong>		
+							</div>
+							<div class="btn_wrap" data-aos="fade-down" data-aos-delay="700" data-aos-duration="1600">
+								<a class="google" href="https://play.google.com/store/apps/details?id=com.dilabs.daab.prod">Google Play</a>
+								<a class="apple" href="https://apps.apple.com/app/id1540687795">Apple Store</a>
+							</div>
+							<a class="mo_agent_down" href="javascript:checkMobileLink();" data-aos="fade-down" data-aos-delay="700" data-aos-duration="1600"><span>앱 다운로드</span></a>
+						</div>
+						<div class="bg_box">
+							<div class="visual_intro_line"></div>
+							<div class="visual_intro_line"></div>
+							<div class="visual_intro_line"></div>
+							<div class="visual_intro_line"></div>
+							<div class="visual_intro_line"></div>
+						</div>
+						<div class="line_box">
+							<div class="visual_intro_line"></div>
+							<div class="visual_intro_line"></div>
+							<div class="visual_intro_line"></div>
+							<div class="visual_intro_line"></div>
+							<div class="visual_intro_line"></div>
+						</div>
+					</div>
+					<div class="content_wrap">
+						<div class="con_section about">
+							<div class="inner">
+								<p class="headline" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1300">나에게 딱 맞는 오디오를 클릭 한 번에 이제 오디오도 큐레이팅 받으세요.<br> 라이프 스타일 오디오 렌탈 서비스 ‘답’ 의  오디오 전문가,<br> 체계적인 렌탈 관리 시스템으로 새로운 취미생활을 시작하세요.</p>
+							</div>
+						</div>
+						<div class="con_section rental">
+							<div class="inner">
+								<div class="flexbox">
+									<div class="txtarea">
+										<span class="ta_tit1" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">오디오 취미 생활의 시작</span>
+										<strong class="ta_tit2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">국내 최저 렌탈 이자율로<br> 더 가볍게</strong>
+										<p class="ta_desc" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">오디오 시작하기, 이제 부담 갖지 마세요. <br>원하는 렌탈 기간 선택하고 국내 최저 렌탈 이자율로<br> 더 가볍고 현명하게 시작하세요.</p>
+									</div>
+									<div class="conarea">
+										<div class="image_box">
+											<div class="image" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1300"><img src="./images/rental_img01.png"></div>
+											<div class="image" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1300"><img src="./images/rental_img02.png"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="con_section curating">
+							<div class="inner">
+								<div class="flexbox">
+									<div class="txtarea">
+										<span class="ta_tit1" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">오디오 큐레이팅 서비스</span>
+										<strong class="ta_tit2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">오디오 잘 몰라도 퀴즈 풀면<br> 취향 맞춤 추천</strong>
+										<p class="ta_desc" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">오디오 잘 몰라도 문제없어요.<br> 앱에서 퀴즈를 풀면, 취향에 맞추어<br> 나에게 딱 맞는 오디오를 추천드려요.</p>
+									</div>
+									<div class="conarea">
+										<div class="image_box">
+											<div class="image" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1300"><img src="./images/curating_img01.png"></div>
+											<div class="image" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1300"><img src="./images/curating_img02.png"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="con_section delivery">
+							<div class="inner">
+								<div class="flexbox">
+									<div class="txtarea">
+										<span class="ta_tit1" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">직접 배송 직접 설치</span>
+										<strong class="ta_tit2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">기계치여도 문제없는<br> 오디오 전문가 직접 설치</strong>
+										<p class="ta_desc" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">오디오와 친하지 않아도 걱정 마세요.<br> 전문가가 방문해 직접 설치하고<br> 사용법까지 자세하게 알려드려요.</p>
+									</div>
+									<div class="conarea">
+										<div class="image_box" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1300">
+											<div class="image"><img src="./images/delivery_img01.png"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="con_section as">
+							<div class="inner">
+								<div class="flexbox">
+									<div class="txtarea">
+										<span class="ta_tit1" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">쉽고 빠른 AS</span>
+										<strong class="ta_tit2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">수리 기간 기다릴 필요 없이<br> 바로 교체</strong>
+										<p class="ta_desc" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">걱정 말고 마음껏 쓰세요.<br> 수리 기간 동안 쓰고 있는 오디오와<br> 같은 등급 제품으로 교체해 드려요.</p>
+									</div>
+									<div class="conarea">
+										<div class="image_box" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1300">
+											<div class="image"><img src="./images/as_img01.png"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="con_section expert">
+							<div class="inner">
+								<div class="flexbox">
+									<div class="txtarea">
+										<span class="ta_tit1" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">큐레이터가 선별한 제품</span>
+										<strong class="ta_tit2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">두들겨보고, 뜯어보고, 살펴보고<br> 고르다</strong>
+										<p class="ta_desc" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">오디오 전문 큐레이터가 여러분 대신<br> 먼저 써보고, 살펴보고 세심하게 선택한<br> 오디오를 만나보세요.</p>
+									</div>
+									<div class="conarea">
+										<div class="image_box">
+											<div class="image" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1300"><img src="./images/expert_img01.png"></div>
+											<div class="image" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1300"><img src="./images/expert_img02.png"></div>
+											<div class="image" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1300"><img src="./images/expert_img03.png"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="con_section newhobby">
+							<div class="inner">
+								<div class="flexbox">
+									<div class="txtarea">
+										<strong class="ta_tit2" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1300">시작하세요<br> 새로운 취미 생활</strong>
+										<div class="image_box" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1300">
+											<div class="image"><img src="./images/newhobby_img01.png"></div>
+										</div>
+										<p class="ta_desc" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">더 이상 고민하지 마세요. 취향에 맞는 오디오 렌탈하고<br> 매일 듣던 음악을 새롭게 즐겨보세요.</p>
+									</div>
+								</div>	
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
 
-</body>
+			<footer id="footer">
+				<div class="footer_wrap">
+					<div class="left">
+						<div class="ft_customer">
+							<h4>고객센터</h4>
+							<h2>02-6951-0933</h2>
+							<p>
+								월~ 금 11:00 AM - 12:00 PM / 1:00 PM - 5:30 PM<br>
+								토 ~일 고객센터 휴무<br>
+								이메일 : info@daab.com<br>
+								1:1문의 : @답
+							</p>
+						</div>
+						<div class="ft_menu">
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">Notice</a></li>
+							</ul>
+							<div class="ft__btn">
+								<a href="" class="btn-icon ic-insta"><span class="hidden-text">인스타그램</span></a>
+								<a href="" class="btn-icon ic-twitter"><span class="hidden-text">트위터</span></a>
+								<a href="" class="btn-icon ic-youtube"><span class="hidden-text">유튜브</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="ft_company">
+						<div class="cp-name">
+							<span class="drop">(주) 인사이트랩 <i></i></span>
+							<span class="ic-fold__up"></span>
+						</div>
+						<div class="cp-info">
+							<dl>
+								<dt>대표 :</dt>
+								<dd>김지훈</dd>
+								<dt>사업자등록번호 :</dt>
+								<dd>511-81-24974</dd>
+								<dt>주소 :</dt>
+								<dd>서울시 강남구 논현로 703, DI빌딩 5F</dd>
+								<dt>통신판매업 :</dt>
+								<dd>제2021-서울강남-00452호</dd>
+								<dt>개인정보보호책임자 :</dt>
+								<dd>김지훈</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="ft__license container">
+					<h2>Daab</h2>
+					<p>Copyright © 2020, InsightLab</p>
+				</div>
+			</footer>
+		</div>
+
+		<div id="TopBtn" style="display: block; animation-name: fadein; animation-fill-mode: forwards;">
+			<button class="btn-totop" onclick="topFunction()"></button>
+		</div>
+
+		<!-- QRcode 레이어팝업 -->
+		<div class="layer" style="display: none;">
+			<!--가운데정렬용 박스들-->
+			<div class="layer_wrap">
+				<div class="layer_inner">
+					<!--팝업영역-->
+					<div class="layer__back">
+						<div class="layer__top">
+							<span class="point">QR 스캔하기</span>
+							<button class="close">닫기</button>
+						</div>
+						<div class="qrcode__tab">
+							<div class="qrcode-android current">Android</div><div class="qrcode-ios">iOS</div>
+						</div>
+						<div class="tab__android" style="display: block;">
+							<div class="tab__contents">
+								<strong>Daab 모바일 앱 다운로드</strong>
+								<img src="images/qr_code.svg">
+								<p>휴대폰 스캔앱으로  QR코드를  스캔하고 <br> 모바일에서 다운로드 받으세요.</p>
+							</div>
+						</div>
+						<div class="tab__ios" style="display: none;">
+							<div class="tab__contents">
+								<strong>Daab 모바일 앱 다운로드</strong>
+								<img src="images/qr_code.svg">
+								<p>휴대폰 스캔앱으로  QR코드를  스캔하고 <br> 모바일에서 다운로드 받으세요.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--블랙배경-->
+			<div class="dimmed"></div>
+		</div>
+	
+		<script>
+			/*풋터 회사정보*/
+			$(".cp-name").click(function() {
+				$(this).siblings(".cp-info").toggleClass("open");
+				$(this).toggleClass("active");
+			})
+	
+			/*qrcode 눌렀을 때*/
+			$(".qrcode").click(function () {
+				$(".layer").css("display", "block");
+			})
+			/*레이어팝업 닫기버튼*/
+			$(".close").click(function () {
+				$(".layer").css("display", "none");
+			})
+	
+			/*TAB*/
+			$(".qrcode-android").click(function(){
+				$(this).addClass("current");
+				$(this).siblings(".qrcode-ios").removeClass("current");
+				$(".tab__ios").css("display","none");
+				$(".tab__android").css("display","block");
+			})
+			$(".qrcode-ios").click(function(){
+				$(this).addClass("current");
+				$(this).siblings(".qrcode-android").removeClass("current");
+				$(".tab__android").css("display","none");
+				$(".tab__ios").css("display","block");
+			})
+	
+			
+	
+	
+			/* go to top */
+			let Flag_clrBtn = 0;
+			
+			function hideBtn() { 
+				document.getElementById("TopBtn").style.display = "none";
+			}
+			
+			function fx_TopBtn() { 
+				if ( window.pageYOffset >= 300 ) { 
+					document.getElementById("TopBtn").style.display = "block"; 
+					document.getElementById("TopBtn").style.animationName = "fadein"; 
+					Flag_clrBtn = 1; 
+				} else if ( window.pageYOffset < 300 && Flag_clrBtn ) { 
+					Flag_clrBtn = 0; 
+					document.getElementById("TopBtn").style.animationName = "fadeout"; 
+					document.getElementById("TopBtn").style.animationFillMode = "forwards"; 
+		//                setTimeout( hideBtn, 300 ); 
+				} 
+			} 
+			
+			function topFunction() { 
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			} document.addEventListener("scroll",fx_TopBtn);
+	
+			/*
+			function mobileCheck() {
+				let isMobile = /Mobi/i.test(window.navigator.userAgent)
+				return isMobile;
+			}
+	
+			
+			$('.google').click(function () {
+				if (mobileCheck()) location.href='https://play.google.com/store/apps/details?id=com.dilabs.daab.prod'
+				else {
+					$(".layer").css("display", "block");
+					$('.qrcode-android').click()
+				}
+			})
+	
+			$('.apple').click(function () {
+				if (mobileCheck()) location.href='https://apps.apple.com/app/id1540687795'
+				else {
+					$(".layer").css("display", "block");
+					$('.qrcode-ios').click()
+				}
+			})
+			*/
+			
+			/* 모바일 체크 후 앱 다운로드 */
+			function checkMobileLink(){
+				let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+				if (/windows phone/i.test(userAgent)) {
+					location.href = 'market://details?id=com.dilabs.daab.prod'
+				}
+				if (/android/i.test(userAgent)) {
+					location.href = 'market://details?id=com.dilabs.daab.prod'
+				}
+				// iOS detection from: http://stackoverflow.com/a/9039885/177710
+				if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+					location.href = 'https://itunes.apple.com/kr/app/id1540687795'
+				}
+
+				return "unknown";
+			}
+
+			/* 클립보드 복사 */
+			function CopyUrlToClipboard(){
+				let dummy   = document.createElement("input");
+				let text    = location.href;
+				
+				document.body.appendChild(dummy);
+				dummy.value = text;
+				dummy.select();
+				document.execCommand("copy");
+				document.body.removeChild(dummy);
+			}
+		</script>
+
+		<!-- 카카오 공유하기 -->
+		<script type='text/javascript'>
+			//<![CDATA[
+			  // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+			  Kakao.init('6792f3878406b15402ce073f4e782050');  //Kakao Developers 에서 앱 생성후 자바스크립트 키 변경
+			  // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+			function sendLink() {
+				Kakao.Link.createDefaultButton({
+					container: '#kakao-link-btn',
+					objectType: 'feed',
+					content: {
+						title: '오디오 렌탈 서비스 답',
+						description: '#오디오 #구독 #렌탈서비스 #큐레이팅 #취미생활 #취향찾기',
+						imageUrl: 'http://crowsok1.cafe24.com/123/images/kakaolink.png', //대표 이미지 URL 변경
+						link: {
+							mobileWebUrl: 'https://developers.kakao.com',
+							webUrl: 'https://developers.kakao.com'
+						}
+					},
+					social: {
+						likeCount: 286,
+						commentCount: 45,
+						sharedCount: 845
+					},
+					buttons: [
+						{
+							title: '웹으로 보기',
+							link: {
+								mobileWebUrl: 'https://developers.kakao.com',
+								webUrl: 'https://developers.kakao.com'
+							}
+						},
+						{
+							title: '앱으로 보기',
+							link: {
+								mobileWebUrl: 'https://developers.kakao.com',
+								webUrl: 'https://developers.kakao.com'
+							}
+						}
+					]
+				});
+			}
+
+			//]]>
+		</script>
+	
+	</body>
 </html>
