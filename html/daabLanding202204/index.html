@@ -378,11 +378,11 @@
 				if (/Mobi/i.test(navigator.userAgent) === true) {
 					let userAgent = navigator.userAgent || navigator.vendor || window.opera;
 					if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-						return 'https://itunes.apple.com/kr/app/id1540687795'
+						return 'market://details?id=com.dilabs.daab.prod'
 					}
 
 					if (/android/i.test(userAgent)) {
-						return 'https://play.google.com/store/apps/details?id=com.dilabs.daab.prod'
+						return 'market://details?id=com.dilabs.daab.prod'
 					}
 
 					if (/windows phone/i.test(userAgent)) {
@@ -427,8 +427,8 @@
 						{
 							title: '웹으로 보기 테스트',
 							link: {
-								mobileWebUrl: 'https://play.google.com/store/apps/details?id=com.dilabs.daab.prod',
-								webUrl: 'https://play.google.com/store/apps/details?id=com.dilabs.daab.prod'
+								mobileWebUrl: 'https://stage.daab.me/customer_v2',
+								webUrl: 'https://stage.daab.me/customer_v2'
 							}
 						},
 						{
