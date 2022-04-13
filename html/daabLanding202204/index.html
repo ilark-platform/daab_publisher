@@ -382,7 +382,7 @@
 					}
 
 					if (/android/i.test(userAgent)) {
-						return 'market://details?id=com.dilabs.daab.prod'
+						return 'https://play.google.com/store/apps/details?id=com.dilabs.daab.prod'
 					}
 
 					if (/windows phone/i.test(userAgent)) {
@@ -390,6 +390,11 @@
 					}
 				}
 				return false
+			}
+
+			function button() {
+				console.log(compareOs())
+				return compareOs()
 			}
 		</script>
 
@@ -429,8 +434,8 @@
 						{
 							title: '앱으로 보기',
 							link: {
-								mobileWebUrl: compareOs(),
-								webUrl: compareOs(),
+								mobileWebUrl: button(),
+								webUrl: button(),
 								// androidExecParams: 'kakao6792f3878406b15402ce073f4e782050://kakaolink?$key1=daabtest://open?url=https://stage.daab.me/customer_v2',
 								// iosExecutionParams: 'daabtest://open?url=https://stage.daab.me/customer_v2',
 							}
