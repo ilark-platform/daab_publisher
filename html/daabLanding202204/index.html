@@ -392,10 +392,6 @@
 
 				return false
 			}
-
-			function button() {
-				return compareOs
-			}
 		</script>
 
 		<!-- 카카오 공유하기 -->
@@ -434,8 +430,8 @@
 						{
 							title: '앱으로 보기',
 							link: {
-								mobileWebUrl: button(),
-								webUrl: button(),
+								mobileWebUrl: () => compareOs,
+								webUrl: () => compareOs,
 								// androidExecParams: 'kakao6792f3878406b15402ce073f4e782050://kakaolink?$key1=daabtest://open?url=https://stage.daab.me/customer_v2',
 								// iosExecutionParams: 'daabtest://open?url=https://stage.daab.me/customer_v2',
 							}
