@@ -373,29 +373,6 @@
 				document.execCommand("copy");
 				document.body.removeChild(dummy);
 			}
-
-			function compareOs() {
-				if (/Mobi/i.test(navigator.userAgent) === true) {
-					let userAgent = navigator.userAgent || navigator.vendor || window.opera;
-					if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-						return 'market://details?id=com.dilabs.daab.prod'
-					}
-
-					if (/android/i.test(userAgent)) {
-						return 'market://details?id=com.dilabs.daab.prod'
-					}
-
-					if (/windows phone/i.test(userAgent)) {
-						return 'market://details?id=com.dilabs.daab.prod'
-					}
-				}
-				return false
-			}
-
-			function button() {
-				console.log(compareOs())
-				return compareOs()
-			}
 		</script>
 
 		<!-- 카카오 공유하기 -->
@@ -434,8 +411,8 @@
 						{
 							title: '앱으로 보기 테스트',
 							link: {
-								mobileWebUrl: button(),
-								webUrl: button(),
+								mobileWebUrl: checkMobileLink(),
+								webUrl: checkMobileLink(),
 								// androidExecParams: 'kakao6792f3878406b15402ce073f4e782050://kakaolink?$key1=daabtest://open?url=https://stage.daab.me/customer_v2',
 								// iosExecutionParams: 'daabtest://open?url=https://stage.daab.me/customer_v2',
 							}
