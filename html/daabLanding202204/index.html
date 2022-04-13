@@ -378,22 +378,18 @@
 				if (/Mobi/i.test(navigator.userAgent) === true) {
 					let userAgent = navigator.userAgent || navigator.vendor || window.opera;
 					if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-						location.href = 'https://itunes.apple.com/kr/app/id1540687795'
+						return 'https://itunes.apple.com/kr/app/id1540687795'
 					}
 
 					if (/android/i.test(userAgent)) {
-						location.href = 'market://details?id=com.dilabs.daab.prod'
+						return 'market://details?id=com.dilabs.daab.prod'
 					}
 
 					if (/windows phone/i.test(userAgent)) {
-						location.href = 'market://details?id=com.dilabs.daab.prod'
+						return 'market://details?id=com.dilabs.daab.prod'
 					}
 				}
 				return false
-			}
-
-			function button() {
-				return compareOs
 			}
 		</script>
 
@@ -433,8 +429,8 @@
 						{
 							title: '앱으로 보기',
 							link: {
-								mobileWebUrl: button(),
-								webUrl: button(),
+								mobileWebUrl: compareOs(),
+								webUrl: compareOs(),
 								// androidExecParams: 'kakao6792f3878406b15402ce073f4e782050://kakaolink?$key1=daabtest://open?url=https://stage.daab.me/customer_v2',
 								// iosExecutionParams: 'daabtest://open?url=https://stage.daab.me/customer_v2',
 							}
