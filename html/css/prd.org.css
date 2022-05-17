@@ -26,30 +26,26 @@
 /**구매버튼 바텀고정**/
 .bottom-buttons{display: flex; justify-content: space-between; width: 100vw; height: 56px; margin: 0; padding: 0; z-index: 20;}
 .bottom-button{width: 50%;}
-.bottom-button button{width: 100%; height: 100%; border: 0; color: #FFF; font-weight: bold; font-size: 1.15em;}
+.bottom-button>button{width: 100%; height: 100%; border: 0; color: #FFF; font-weight: bold; font-size: 1.15em;}
 .secondary{background: #111;}
 .primary{background: #245217;}
 .sticky-btn{position: sticky; position: -webkit-sticky; bottom: 0;}
 
 /**상품부가정보**/
-/*.item__note{padding: 40px 24px 0; box-sizing: border-box;}*/
-.item__note { padding: 40px 0; box-sizing: border-box;} /* prod-content: 권오규실장님 */
-/*.note-title{width: 100%; height: 40px; background: url(../images/label-green.png) left center no-repeat; background-size: contain; font-size: 1.4em; line-height: 40px; color: #FFF; text-indent: 28px;}*/
+.item__note{padding: 40px 24px 0; box-sizing: border-box;}
+.note-title{width: 100%; height: 40px; background: url(../images/label-green.png) left center no-repeat; background-size: contain; font-size: 1.4em; line-height: 40px; color: #FFF; text-indent: 28px;}
 .note-text{font-size: 0.9em; font-weight: 200; margin: 24px 16px 0;}
 
 /**상품TAB**/
 .shortcut__tab{display: flex; justify-content: space-between; height: 48px; margin-top: 16px; padding: 0;}
 .shortcut__item{display: inline-block; width: 50%; line-height: 48px; border-bottom: 1px solid #EAEAEA; text-align: center; color: #999;}
 .shortcut__tab > .current{font-weight: bold; color: #245217; border-bottom: 3px solid #245217;}
-/*.item__detail,.item__rental{padding: 16px; margin-bottom: 40px; box-sizing: border-box;}*/
-.item__detail { margin-bottom: 40px; box-sizing: border-box;} /* prod-content: 권오규실장님 */
-.item__rental { padding: 16px; margin-bottom: 40px; box-sizing: border-box;} /* prod-content: 권오규실장님 */
+.item__detail,.item__rental{padding: 16px; margin-bottom: 40px; box-sizing: border-box;}
 .item__detail>div,.item__rental>div{margin-bottom: 12px}
 .sticky {position: fixed; top: 0; width: 100%; background: #FFF; margin-top: 0; z-index: 30;}
 
 /**상품TAB - 아코디언**/
-/*.detail--contents{position: relative; width: 100%; height: 800px; overflow: hidden;}*/
-.detail--contents {overflow: hidden;} /* prod-content: 권오규실장님 */
+.detail--contents{position: relative; width: 100%; height: 800px; overflow: hidden;}
 .detail--contents>img{width: 100%;}
 .contents-more{position: relative; margin-bottom: 56px !important;}
 .contents-more::before{content: ""; position: absolute; bottom: 48px; left: 0; width: 100%; height: 100px; background: linear-gradient(0deg, rgba(255,255,255,1), rgba(255,255,255,0));}
