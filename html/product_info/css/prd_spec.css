@@ -1,0 +1,41 @@
+
+.item__detail-spec { padding: 16px; margin-bottom: 0; box-sizing: border-box; }
+.detail-box { font-size: 1em !important; font-weight: 700 !important; color: #000 !important; -webkit-appearance: none; }
+.detail-box::after { opacity: 0.25 !important; }
+
+/* 상품 상세 스팩 & 상품 정보 표기 */
+.prdspec__wrap { margin: 12px 0 40px; }
+.prdspec-table { table-layout: fixed; empty-cells: show; border-top: 1px solid #7a7a7a; margin-left: -1px; margin-right: -1px; font-size: 0.929em; }
+.prdspec-table caption { padding: 0; margin: 0; font-size: 0; width: 0; height: 0; line-height: 0; text-indent: -9999px; }
+.prdspec-table th { text-align: left; vertical-align: middle; font-weight: 500; color: #000; padding: 12px 10px; border-bottom: 1px solid #f0f0f0; }
+.prdspec-table td { vertical-align: middle; color: #707070; padding: 12px 10px; border-bottom: 1px solid #f0f0f0; }
+
+/* 렌탈정보 */
+.rental__wrap { margin: 12px 0; }
+.rental__price { display: flex; flex-direction: row; align-items: center; width: 100%; padding: 6px 12px; }
+.rental__price + .rental__price { border-top: 1px solid #e5e5e5; }
+.rental__price:nth-child(2n-1) { background-color: #fafafa; }
+.rental__price--month { width: 28%; height: 100%; text-align: center; font-size: 1.1em; font-weight: 700; color: #245217; }
+.rental__price--term { width: 72%; }
+.rental__price--term dl { display: flex; flex-direction: row; width: 100%; padding: 6px 12px; }
+.rental__price--term dl + dl { border-top: 1px dashed #e5e5e5; }
+.rental__price--term dt { width: 40%; padding: 4px 0; color: #707070; }
+.rental__price--term dd { width: 60%; padding: 4px 0; text-align: right; font-weight: 700; color: #000; }
+
+/* 배송 및 설치 안내 & AS 정책/상품 교환/렌탈 해지 */
+.panel__wrap { margin: 12px 0; }
+.panel__wrap .panel-tit { font-size: 1.1em; font-weight: 700; color: #245217; padding: 0 12px; margin-bottom: 12px; }
+.panel__wrap .small { display: block; font-size: 0.786em; }
+.panel-dl { padding: 16px 12px; }
+.panel-dl + .panel-dl { border-top: 1px dashed #e5e5e5; }
+.panel-dl > dt { position: relative; font-size: 1em; font-weight: 700; color: #000; margin-bottom: 4px; }
+.panel-dl > dd { position: relative; font-size: 0.857em; color: #707070; padding: 1px 0 1px 12px; }
+.panel-dl > dd::after { position: absolute; left: 0; top: 9px; content: ''; width: 6px; height: 1px; background-color: #bfbfbf; }
+.panel-dl > dd.no-dddot::after { display: none; }
+.panel-process { display: flex; flex-wrap: wrap; margin-top: 8px; }
+.panel-process .process-item { position: relative; margin: 3px 14px 3px 0; text-align: center; }
+.panel-process .process-item::after { position: absolute; right: -14px; top: 8px; content: ''; opacity: 0.3; width: 12px; height: 12px; background: url('../images/ic-toggle.svg') left top no-repeat; background-size: contain; }
+.panel-process .process-item span { display: block; padding: 0 16px; font-size: 0.857em; line-height: 28px; color: #000; border: 1px solid #e4e4e4; background-color: #efefef; border-radius: 28px; }
+.panel-process .process-item em { display: block; font-size: 0.786em; }
+.panel-process .process-item:last-child span { font-weight: 700; border: 1px solid #245217; background-color: #245217; color: #fff; }
+.panel-process .process-item:last-child::after { display: none; }
