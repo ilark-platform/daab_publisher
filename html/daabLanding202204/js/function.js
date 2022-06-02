@@ -1,6 +1,6 @@
 $(function() {
 
-	$(document).ready('load', function () {
+	$(window).on('load', function () {
     	AOS.init({
 			once: true
 		});
