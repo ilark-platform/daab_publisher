@@ -1,11 +1,5 @@
 $(function() {
 
-	$(window).on('load', function () {
-    	AOS.init({
-			once: true
-		});
-	});
-
 	$(window).on('scroll', function () {
         if ($(this).scrollTop() > 0) {
 			$('#header').addClass('fixed');
@@ -19,6 +13,12 @@ $(function() {
 		$('#main_visual .bg_box').delay(600).animate({'z-index':'0'}, function(){
 			$(this).hide();
 		})
+	});
+
+	$(window).on('load', function () {
+		AOS.init({
+			once: true
+		});
 	});
 
 	function appHeight() {
