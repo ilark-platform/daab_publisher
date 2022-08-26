@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/aos.css" />
 		<link rel="stylesheet" href="css/landing.css" />
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/function.js"></script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics: BEGIN -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7YMTDCH77N"></script>
@@ -19,9 +22,6 @@
 		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics: END -->
 
-		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src="js/aos.js"></script>
-		<script src="js/function.js"></script>
 		<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 	</head>
 	<body>
@@ -36,16 +36,16 @@
 						<button onclick="CopyUrlToClipboard()" class="ic-share"></button>
 						<button class="qrcode ic-qrcode"></button>
 						<a class="mo_agent_down" href="javascript:checkMobileLink();"><span>앱 다운로드</span></a>
-					</div>	
+					</div>
 				</div>
 			</header>
-			
+
 			<div id="container">
 				<div class="main_container">
 					<div id="main_visual" class="visual_wrap">
 						<div class="visual_box">
 							<div class="txt_wrap" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1600">
-								<strong>내 취향에 맞는 오디오<br>렌탈로 쉽고 간편하게</strong>		
+								<strong>내 취향에 맞는 오디오<br>렌탈로 쉽고 간편하게</strong>
 							</div>
 							<div class="btn_wrap" data-aos="fade-down" data-aos-delay="700" data-aos-duration="1600">
 								<a class="google" href="https://play.google.com/store/apps/details?id=com.dilabs.daab.prod">Google Play</a>
@@ -168,8 +168,8 @@
 										</div>
 										<p class="ta_desc" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1300">더 이상 고민하지 마세요. 취향에 맞는 오디오 렌탈하고<br> 매일 듣던 음악을 새롭게 즐겨보세요.</p>
 									</div>
-								</div>	
-							</div>	
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -204,7 +204,7 @@
 					</div>
 					<div class="ft_company">
 						<div class="cp-name">
-							<span class="drop">(주) 인사이트랩 <i></i></span>
+							<span class="drop">(주) 인사이트랩 </span>
 							<span class="ic-fold__up"></span>
 						</div>
 						<div class="cp-info">
@@ -268,14 +268,14 @@
 			<!--블랙배경-->
 			<div class="dimmed"></div>
 		</div>
-	
+
 		<script>
 			/*풋터 회사정보*/
 			$(".cp-name").click(function() {
 				$(this).siblings(".cp-info").toggleClass("open");
 				$(this).toggleClass("active");
 			})
-	
+
 			/*qrcode 눌렀을 때*/
 			$(".qrcode").click(function () {
 				checkMobileLink()
@@ -284,7 +284,7 @@
 			$(".close").click(function () {
 				$(".layer").css("display", "none");
 			})
-	
+
 			/*TAB*/
 			$(".qrcode-android").click(function(){
 				$(this).addClass("current");
@@ -298,41 +298,41 @@
 				$(".tab__android").css("display","none");
 				$(".tab__ios").css("display","block");
 			})
-	
-			
-	
-	
+
+
+
+
 			/* go to top */
 			let Flag_clrBtn = 0;
-			
-			function hideBtn() { 
+
+			function hideBtn() {
 				document.getElementById("TopBtn").style.display = "none";
 			}
-			
-			function fx_TopBtn() { 
-				if ( window.pageYOffset >= 300 ) { 
-					document.getElementById("TopBtn").style.display = "block"; 
-					document.getElementById("TopBtn").style.animationName = "fadein"; 
-					Flag_clrBtn = 1; 
-				} else if ( window.pageYOffset < 300 && Flag_clrBtn ) { 
-					Flag_clrBtn = 0; 
-					document.getElementById("TopBtn").style.animationName = "fadeout"; 
-					document.getElementById("TopBtn").style.animationFillMode = "forwards"; 
-		//                setTimeout( hideBtn, 300 ); 
-				} 
-			} 
-			
-			function topFunction() { 
-				document.body.scrollTop = 0; 
-				document.documentElement.scrollTop = 0; 
+
+			function fx_TopBtn() {
+				if ( window.pageYOffset >= 300 ) {
+					document.getElementById("TopBtn").style.display = "block";
+					document.getElementById("TopBtn").style.animationName = "fadein";
+					Flag_clrBtn = 1;
+				} else if ( window.pageYOffset < 300 && Flag_clrBtn ) {
+					Flag_clrBtn = 0;
+					document.getElementById("TopBtn").style.animationName = "fadeout";
+					document.getElementById("TopBtn").style.animationFillMode = "forwards";
+		//                setTimeout( hideBtn, 300 );
+				}
+			}
+
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
 			} document.addEventListener("scroll",fx_TopBtn);
-	
+
 			/*
 			function mobileCheck() {
 				let isMobile = /Mobi/i.test(window.navigator.userAgent)
 				return isMobile;
 			}
-	
+
 
 			$('.google').click(function () {
 				if (mobileCheck()) location.href='https://play.google.com/store/apps/details?id=com.dilabs.daab.prod'
@@ -341,7 +341,7 @@
 					$('.qrcode-android').click()
 				}
 			})
-	
+
 			$('.apple').click(function () {
 				if (mobileCheck()) location.href='https://apps.apple.com/app/id1540687795'
 				else {
@@ -350,7 +350,7 @@
 				}
 			})
 			*/
-			
+
 			/* 모바일 체크 후 앱 다운로드 */
 			function checkMobileLink(){
 				let userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -377,7 +377,7 @@
 				alert('복사 되었습니다.')
 				let dummy   = document.createElement("input");
 				let text    = location.href;
-				
+
 				document.body.appendChild(dummy);
 				dummy.value = text;
 				dummy.select();
@@ -433,6 +433,6 @@
 
 			//]]>
 		</script>
-	
+
 	</body>
 </html>
