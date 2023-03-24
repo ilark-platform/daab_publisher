@@ -1,0 +1,86 @@
+@import url(../css/brown/brown.css);
+@import url(../css/NotoSansKR/NotoSansKR.css);
+
+:root {
+    --navy:#012754;
+    --skyblue:#91defa;
+}
+/* rem 설정을 위한 폰트 */
+html { font-size: 16px; }
+@media (max-width: 1023px) { html { font-size: 14px; } }
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: 'Brown-Regular', 'NotoSansKR', sans-serif;
+    line-height: 1.4em;
+    font-weight: normal;
+    color: #333;
+}
+
+.clearfix::after{content: "";display: block;clear: both;}
+.blind {position: absolute;clip: rect(0 0 0 0);width: 1px;height: 1px;margin: -1px;overflow: hidden;}
+.pc_only{display: block;}
+.mo_only{display: none;}
+
+.mgt1{margin-top: .625rem !important}
+.mgt2{margin-top:1.25rem !important}
+.mgt3{margin-top:1.875rem !important;}
+
+.text-center {text-align: center;}
+.col2>li{width:50%; float:left;}
+.col3>li{width:33%; float:left;}
+.col4>li{width: 25%; float:left;}
+.col5>li{width:20%; float:left;}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.inner {
+    max-width: 1440px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+    .inner {
+        width: 100%;
+        padding:0;
+    }
+    .pc_only{display: none !important;}
+    .mo_only{display: block !important;}
+}
+
+
+.btn_round{background-color: #fff; font-size: .95rem;color: initial;text-align:center;min-width:90px;padding:4px; border-radius: 20px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);}
+.btn_round.large {padding:8px 2.25rem; font-size: 1.15rem;}
+.navy {background-color: var(--navy); color: #fff;}
+
+.btn_round:hover {-webkit-transition: all 0.7s;transition: all 0.7s; box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.5);}
+
+
+#TopBtn {opacity: 0;display: none;position: sticky;position: -webkit-sticky;bottom:60px;width: 100%;z-index: 10;animation-duration: 0.1s;animation-fill-mode: forwards;}
+#TopBtn button[class*="btn-"] {position: absolute;right: 12px;bottom: 20px;width: 45px;height: 45px;border-radius: 50%;box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);}
+.btn-totop {background: url(https://icongr.am/jam/chevron-up.svg?size=30&color=333333) center no-repeat;}
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 20px; opacity: 1;}
+}
+@keyframes fadein {
+from {bottom: 0; opacity: 0;}
+to {bottom: 20px; opacity: 1;}
+}
+@-webkit-keyframes fadeout {
+from {bottom: 20px; opacity: 1;} 
+to {bottom: 0; opacity: 0;}
+}
+@keyframes fadeout {
+from {bottom: 20px; opacity: 1;}
+to {bottom: 0; opacity: 0;}
+}

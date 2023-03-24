@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ODD</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div id="wrap" class="main">
+    <header id="header" class="topnav">
+      <div class="inner">
+        <nav>
+          <a href="#home" class="logo"><img src="../images/ode-logo.png"></a>
+          <div class="dropdown">
+            <button class="dropbtn">ABOUT ODD</button>
+            <div class="dropdown-content">
+              <a href="#">오드</a>
+              <a href="#">오르페오</a>
+              <a href="#">구독서비스</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">PRODUCTS</button>
+            <div class="dropdown-content wide">
+              <a href="#">드비알레</a>
+              <a href="#">카르마</a>
+              <a href="#">라이라복스</a>
+              <a href="#">이나쿠스틱</a>
+              <a href="#">레보</a>
+              <a href="#">스타인웨이링돌프</a>
+              <a href="#">다즐</a>
+              <a href="#">프로그래시브 오디오</a>
+              <a href="#">어쿠스틱시그니처</a>
+              <a href="#">트래스페어런트</a>
+            </div>
+          </div>  
+          <div class="dropdown">
+            <button class="dropbtn">CONTENTS</button>
+            <div class="dropdown-content">
+              <a href="#">전체보기</a>
+              <a href="#">아티클</a>
+              <a href="#">카르마</a>
+              <a href="#">플레이리스트</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">A/S</button>
+            <div class="dropdown-content">
+              <a href="#">A/S 신청</a>
+              <a href="#">정품등록</a>
+              <a href="#">문의하기</a>
+            </div>
+          </div> 
+          <a href="#">제휴문의</a>
+          <a href="#">대관문의</a>
+          <input type="checkbox" id="hamburger" onclick="myFunction()" />
+            <label for="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </nav>
+        <div class="utillity">
+          <p>
+            오드 멤버가 되어 다양한 음악 콘텐츠와<br>읽을거리를 만나보세요. 
+          </p>
+          <button type="button" class="btn_round">로그인</button>
+          <button type="button" class="btn_round navy">가입하기</button>
+        </div>
+      </div>
+    </header>
+	  <!--// header -->
+
+    <div id="contents">
+
+      <section class="main-visual">
+        <div class="image"><img src="../images/main_visual.jpg"></div>
+        <div class="slogan">
+          <h2 class="main_tit">Devialet Mania</h2>
+          <p class="mgt3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="btn">
+            <a href="#" class="btn_round large">Discover</a>
+          </div>
+        </div>
+      </section>
+      
+      <section class="main-bestseller">
+        <div class="inner">
+          <h3 class="main_tit">Best Seller</h3>
+          <div class="pc_only">
+            <div class="gallery_wrap">
+              <div class="big">
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best01.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+              </div>
+              <div class="small">
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best02.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best03.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best04.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best05.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper slide_progress bestSwifer">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best01.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best02.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best03.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best04.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="info_wrap">
+                  <img src="../images/main_best05.jpg">
+                  <div class="info">
+                    <h1>Devialet Dione</h1>
+                    <h2>3,790,000원</h2>
+                  </div>
+                </a> 
+              </div>
+            </div>
+            <div class="swiper-pagination inner"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-contents">
+        <div class="inner">
+          <h3 class="main_tit">Content</h3>
+        </div>
+        <div class="visual_wrap">
+          <div class="image"><img src="../images/main_content01.jpg"></div>
+          <div class="slogan">
+            <h2 class="main_tit">News Letter issue 11 2022. SUMMER</h2>
+            <p class="mgt3 pc_only">ODE Newsletter는 오드의 오디오 소식과 문화 컨텐츠 등 다양한 정보를 제공하는 있는 소식지입니다.</p>
+            <div class="btn pc_only">
+              <a href="#" class="btn_round large">Discover</a>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper slide_progress contentSwifer">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="info_wrap">
+                <img src="../images/main_content02.jpg">
+                <div class="info">
+                  <h1>오드의 사운드가 깃든 공간들</h2>
+                </div>
+              </a> 
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="info_wrap">
+                <img src="../images/main_content03.jpg">
+                <div class="info">
+                  <h1>바다 건너 여행지에서 채집한 음악</h2>
+                </div>
+              </a> 
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="info_wrap">
+                <img src="../images/main_content04.jpg">
+                <div class="info">
+                  <h1>영화관을 집으로, 간편 홈 시네마</h2>
+                </div>
+              </a> 
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="info_wrap">
+                <img src="../images/main_content05.jpg">
+                <div class="info">
+                  <h1>오드의 사운드가 깃든 공간들</h2>
+                </div>
+              </a> 
+            </div>
+          </div>
+          <div class="swiper-pagination inner"></div>
+        </div>
+      </section>
+
+      
+      <section class="main-playlist">
+        <div class="inner mgt2">
+          <h3 class="main_tit text-center">Play List</h3>
+          <p class="main_tit text-center">이달의 추천 곡</p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper slide_progress playSwifer mgt3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/main_playlist01.jpg"><h2>September In The Rain - Roy Hargrove Big..</h2></div>
+            <div class="swiper-slide"><img src="../images/main_playlist02.jpg"><h2>Four Brothers - Woody Herman..</h2></div>
+            <div class="swiper-slide"><img src="../images/main_playlist03.jpg"><h2>Four Brothers - Woody Herman..</h2></div>
+            <div class="swiper-slide"><img src="../images/main_playlist04.jpg"><h2>Four Brothers - Woody Herman..</h2></div>
+            <div class="swiper-slide"><img src="../images/main_playlist05.jpg"><h2>Four Brothers - Woody Herman..</h2></div>
+          </div>
+          <div class="swiper-pagination inner mo_only"></div>
+          <div class="swiper-button-next pc_only"></div>
+          <div class="swiper-button-prev pc_only"></div>
+        </div>
+      </section>
+
+      <section class="main-gallery mgt3">
+        <!-- Swiper -->
+        <div class="swiper basicSwifer">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/main_slideimg.jpg"></div>
+            <div class="swiper-slide"><img src="../images/main_best02.jpg"></div>
+            <div class="swiper-slide"><img src="../images/main_best03.jpg"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <h2>ODE AUDIO</h2>
+        <p class="text-center">Subscribe to newsletter</p>
+        <form>
+            <label for="Email">Email Address</label>
+            <input type="text" id="Email" name="Email" placeholder="email@example.com">
+            <input type="submit" value="">
+        </form>
+      </section>
+    </div> 
+    
+    <footer id="footer">
+      <div class="inner">
+        <div class="logo">
+          <img src="../images/ode-logo.png">
+        </div>
+        <div class="sns">
+          <a href="#"><img src="https://icongr.am/jam/instagram.svg?size=28&color=333333"></a>
+          <a href="#"><img src="https://icongr.am/material/facebook.svg?size=28&color=333333"></a>
+        </div>
+        <button class="collapsible mo_only">(주)디아이</button>
+        <div class="info_wrap content">
+          <ul class="company">
+            <div>
+            <li><strong>대표</strong>조윤형</li>
+            <li><strong>주소</strong>서울특별시 강남구 논현로 703(논현동)</li>
+            <li><strong>사업자번호</strong>211-81-24974</li>
+            <li><strong>통신판매업</strong>조윤형</li>
+            <li><strong>정보담당자</strong>김성우</li>
+            </div>
+            <div>
+              <li><strong>고객센터</strong>02-123-4567</li>
+              <li><strong>영업시간</strong>평일 09:00-14:00 / 14:00-19:00</li>
+            </div>
+          </ul>
+          <ul class="fmenu">
+            <div>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTENTS</a></li>
+              <li><a href="#">PRODUCTS</a></li>
+              <li><a href="#">A/S</a></li><li>
+            </div>
+            <div>
+              <li><a href="#">제휴문의</a></li>
+              <li><a href="#">대관문의</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">회원가입</a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a href="#">이용약관</a>
+          <a href="#">개인정보취급방침</a>
+          <span>©2016 ODE All Rights Reserved</span>
+        </div>
+      </div>
+    </footer> 
+ 
+    <div id="TopBtn">
+      <button class="btn-totop" onclick="topFunction()"></button>
+    </div>   
+    
+  </div> 
+ 
+  
+
+<script src="../js/common.js" type="text/javascript"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+<script>
+  function myFunction() {
+    var x = document.getElementById("header");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+//main swifer 4종
+  var swiper = new Swiper(".bestSwifer", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+    },
+  });  
+
+  var swiper = new Swiper(".contentSwifer", {
+    slidesPerView: 1.3,  
+    spaceBetween: 10,
+    grabCursor: true,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    breakpoints: {
+      1100: {
+        slidesPerView: 3.5, 
+        spaceBetween: 10,
+      },
+    },
+  });   
+
+  var swiper = new Swiper(".playSwifer", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      spaceBetween: 30,
+      initialSlide: 2,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+      1100: {
+        spaceBetween: 100,
+      },
+    },
+  });
+
+  var swiper = new Swiper(".basicSwifer", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+  });  
+</script>
+    
+</body>
+</html>
