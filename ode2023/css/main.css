@@ -17,7 +17,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
 .main-bestseller .gallery_wrap .big .info_wrap{width:100%;height: 100%;}
 .main-bestseller .gallery_wrap img { width: 100%;height: 100%;object-fit: cover;}
 .main-bestseller .info_wrap{position: relative;display: inline-block;width: 49%;margin-bottom:10px;}
-.main-bestseller .info_wrap .info{position: absolute;bottom: 0;left: 0;width: 100%;padding:1rem 1.8rem; color: #fff;background-color: rgba(0, 0, 0, 0.4);}
+.main-bestseller .info_wrap .info{padding:1rem 1.8rem; height: auto;}
 .main-bestseller .info_wrap .info h1{font-size: 1.2rem;font-weight: bold;}
 .bestSwifer {display: none !important;}
 .bestSwifer img{width: 100%;height: 100%;object-fit: cover;}
@@ -30,7 +30,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
 .contentSwifer {height:14rem;}
 .contentSwifer .swiper-slide img {width:100%;height: 100%;object-fit: cover;}
 .main-contents .info_wrap{position: relative;display: inline-block;width: 100%;height:100%}
-.main-contents .info_wrap .info{position: absolute;bottom: 0;left: 0;display: flex;align-items: flex-end;width: 100%;height:100%;padding:1.8rem; color: #fff;background-color: rgba(0, 0, 0, 0.4);}
+.main-contents .info_wrap .info{display: flex;align-items: flex-end;padding:1.8rem; color: #fff;}
 .main-contents .info_wrap .info h1{font-size: 1rem;font-weight: bold;text-align: center;width: 100%;}
 
 .playSwifer h2{position: absolute;bottom: 0;left: 0;width: 100%;height: 4rem; color: #fff;text-align: center;padding:0 1.8rem}
@@ -60,7 +60,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
 #wrap .swiper-pagination-bullet-active{width: 0.8755rem; height: 0.8755rem;background-color: #fff;opacity: 1;}
 #wrap .swiper-button-next, #wrap .swiper-button-prev{color: #333;}
 
-.subscribe {width: 40rem;margin:10rem auto 10rem;}
+.subscribe {width: 40rem;margin:8rem auto 2rem;}
 .subscribe h2{font-weight: bold; font-size: 1.3rem;text-align: center;border-bottom:1px solid #333;margin:16px 0;padding-bottom: 16px;}
 .subscribe form {padding:3.125rem 0 .5rem 0;border-bottom:1px solid #333; display: flex; justify-content: space-between; align-items: center;}
 .subscribe form label {width:15rem;}
@@ -96,7 +96,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   .basicSwifer{margin-top: 8rem;}
   .main-playlist h3{margin-top: 6rem;}
   .swiper-pagination.inner{width:88% !important}
-  .subscribe {width: 90%;margin:6rem auto 6rem;}
+  .subscribe {width: 90%;margin:6rem auto 3rem;}
 
 }
 
@@ -104,7 +104,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
 
 .topnav {
   overflow: hidden;
-  background-color: #fff;
+  background-color: #f1f1f1;
   height: 8.75rem;
   z-index: 1;
 }
@@ -172,7 +172,8 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   display: block;
 }
 
-.logo img {width:6.25rem; margin-right: 40px;}
+.topnav .logo img, 
+#footer .logo img {width:6.25rem; margin-right: 40px;}
 .topnav .utillity{font-size: .95rem;margin: 16px 24px;}
 .topnav .utillity button{float:right;margin-right:10px;}
 
@@ -207,10 +208,10 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
     width: 100%;
     text-align: left;
   }
-
+  .topnav .dropdown-content {background: transparent; box-shadow:none}
   .topnav .dropdown .dropbtn:after {
     content:'';
-    background: url(https://icongr.am/clarity/add.svg?size=18&color=333333) center no-repeat !important;
+    background: #f1f1f1 url(https://icongr.am/clarity/add.svg?size=18&color=333333) center no-repeat !important;
     width:30px;
     height:30px;
     position: absolute;
@@ -219,7 +220,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   }
   .topnav.responsive .dropdown-content:before {
     content:'';
-    background:#fff url(https://icongr.am/clarity/minus.svg?size=18&color=333333) center no-repeat !important;
+    background: #f1f1f1 url(https://icongr.am/clarity/minus.svg?size=18&color=333333) center no-repeat !important;
     width:30px;
     height:30px;
     position: absolute;
@@ -283,10 +284,10 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
 
 }
 
-footer {background-color: #D9D9D9; width: 100%;padding: 3rem 2rem;font-size: .9rem;}
+footer {background-color: #D9D9D9; width: 100%;margin-top: 8rem;padding: 3rem 2rem;font-size: .9rem;}
 footer .logo {margin-bottom: 2rem;}
 footer .info_wrap{ display: flex; justify-content: space-between; align-items: self-start;}
-footer .company, footer .fmenu{width: 50%;display: flex;}
+footer .company, footer .fmenu{width: 51%;display: flex;}
 footer .fmenu{width: 270px;justify-content: flex-end;}
 footer .company div, footer .fmenu div{width: 50%;}
 footer .company strong{width: 5.5rem;display: inline-block;font-weight: bold;}
@@ -297,7 +298,7 @@ footer .sns{position: absolute;left:25%;top:115px;margin-left: 20px;}
 footer .sns a{margin-left: 8px;}
 
 
-.collapsible:after, .active:after {
+.collapsible:after, .collapsible.active:after {
   content: '';
   width: 20px;
   height: 20px;
@@ -306,18 +307,18 @@ footer .sns a{margin-left: 8px;}
   background: url(https://icongr.am/jam/chevron-down.svg?size=18&color=333333) center no-repeat;
 }
 
-.active:after {
+.collapsible.active:after {
   background: url(https://icongr.am/jam/chevron-up.svg?size=18&color=333333) center no-repeat;
 }
 
-.content {
+.info_wrap.content {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
 @media (max-width: 1023px) {
-  .content {max-height: 0;}
-  footer {font-size: 1rem;}
+  .info_wrap.content {max-height: 0;}
+  footer {font-size: 1rem;margin-top: 5rem;}
   footer .info_wrap, footer .company {display: block;width:100%;margin-top: 10px;}
   footer .fmenu {width:100%;margin-top: 30px;}
   footer .company div, footer .fmenu div {width:100%}
