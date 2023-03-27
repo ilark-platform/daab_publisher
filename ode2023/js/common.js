@@ -1,33 +1,37 @@
-/*헤더고정*/
-$(window).scroll(function(){
-    var scrollTop = $(window).scrollTop();
-    if(scrollTop != 0) $('#header').addClass('scroll');
-    else $('#header').removeClass('scroll');
-});
-
-/*메뉴 열고닫기*/
-var acc = document.getElementsByClassName("switch");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-acc[i].addEventListener("click", function() {
-    
-    this.classList.toggle("switch-active");
-
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-        panel.style.display = "none";
-        
+//header gnb
+function myFunction() {
+    var x = document.getElementById("header");
+    if (x.className === "topnav") {
+      x.className += " responsive";
     } else {
-        panel.style.display = "block";
+      x.className = "topnav";
     }
-});
-}
+  }
+  
+//collapsible component
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+} 
 
-/*상단 공지 고정*/
-$(".notice__close").click(function(){
-    $(this).parents(".main__notice").css("display","none") 
- });
+//product list hover effect
+$(document).ready(function () {
+    $(".thumb .logo").mouseover(function () {
+        $(this).addClass("add");
+    });
+    $(".thumb .logo").mouseleave(function () {
+        $(this).removeClass("add");
+    });
+});
 
 /*위로가기 버튼*/
 var Flag_clrBtn = 0; 

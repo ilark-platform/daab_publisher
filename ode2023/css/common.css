@@ -1,9 +1,9 @@
 @import url(../css/brown/brown.css);
 @import url(../css/NotoSansKR/NotoSansKR.css);
+@import url("main.css");
 
 :root {
     --navy:#012754;
-    --skyblue:#91defa;
 }
 /* rem 설정을 위한 폰트 */
 html { font-size: 16px; }
@@ -49,24 +49,21 @@ body {
     margin: 0 auto;
 }
 @media screen and (max-width: 1023px) {
-    .inner {
-        width: 100%;
-        padding:0;
-    }
+    .inner {width: 100%;padding:0;}
     .pc_only{display: none !important;}
     .mo_only{display: block !important;}
+    .col3>li{width:100%;}
 }
-
 
 .btn_round{background-color: #fff; font-size: .95rem;color: initial;text-align:center;min-width:90px;padding:4px; border-radius: 20px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);}
 .btn_round.large {padding:8px 2.25rem; font-size: 1.15rem;}
 .navy {background-color: var(--navy); color: #fff;}
-
 .btn_round:hover {-webkit-transition: all 0.7s;transition: all 0.7s; box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.5);}
 
+.black_box{position: absolute;left: 0;bottom: 0;width: 100%;height: 100%;color: #fff;background-color: rgba(0, 0, 0, 0.4)}
 
-#TopBtn {opacity: 0;display: none;position: sticky;position: -webkit-sticky;bottom:60px;width: 100%;z-index: 10;animation-duration: 0.1s;animation-fill-mode: forwards;}
-#TopBtn button[class*="btn-"] {position: absolute;right: 12px;bottom: 20px;width: 45px;height: 45px;border-radius: 50%;box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);}
+#TopBtn {opacity: 0;display: none;position: sticky;position: -webkit-sticky;bottom:60px;width: 100%;z-index: 1;animation-duration: 0.1s;animation-fill-mode: forwards;}
+#TopBtn button[class*="btn-"] {position: absolute;right: 20px;bottom: 20px;width: 45px;height: 45px;border-radius: 50%;box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);}
 .btn-totop {background: url(https://icongr.am/jam/chevron-up.svg?size=30&color=333333) center no-repeat;}
 @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;} 
@@ -84,3 +81,4 @@ to {bottom: 0; opacity: 0;}
 from {bottom: 20px; opacity: 1;}
 to {bottom: 0; opacity: 0;}
 }
+

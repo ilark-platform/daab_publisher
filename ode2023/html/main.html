@@ -110,7 +110,7 @@
               <div class="big">
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best01.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
@@ -119,28 +119,28 @@
               <div class="small">
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best02.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
                 </a> 
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best03.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
                 </a> 
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best04.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
                 </a> 
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best05.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
@@ -156,7 +156,7 @@
               <div class="swiper-slide">
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best01.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
@@ -165,7 +165,7 @@
               <div class="swiper-slide">
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best02.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
@@ -174,7 +174,7 @@
               <div class="swiper-slide">
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best03.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
@@ -183,7 +183,7 @@
               <div class="swiper-slide">
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best04.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
@@ -192,7 +192,7 @@
               <div class="swiper-slide">
                 <a href="#" class="info_wrap">
                   <img src="../images/main_best05.jpg">
-                  <div class="info">
+                  <div class="info black_box">
                     <h1>Devialet Dione</h1>
                     <h2>3,790,000원</h2>
                   </div>
@@ -224,7 +224,7 @@
             <div class="swiper-slide">
               <a href="#" class="info_wrap">
                 <img src="../images/main_content02.jpg">
-                <div class="info">
+                <div class="info black_box">
                   <h1>오드의 사운드가 깃든 공간들</h2>
                 </div>
               </a> 
@@ -232,7 +232,7 @@
             <div class="swiper-slide">
               <a href="#" class="info_wrap">
                 <img src="../images/main_content03.jpg">
-                <div class="info">
+                <div class="info black_box">
                   <h1>바다 건너 여행지에서 채집한 음악</h2>
                 </div>
               </a> 
@@ -240,7 +240,7 @@
             <div class="swiper-slide">
               <a href="#" class="info_wrap">
                 <img src="../images/main_content04.jpg">
-                <div class="info">
+                <div class="info black_box">
                   <h1>영화관을 집으로, 간편 홈 시네마</h2>
                 </div>
               </a> 
@@ -248,7 +248,7 @@
             <div class="swiper-slide">
               <a href="#" class="info_wrap">
                 <img src="../images/main_content05.jpg">
-                <div class="info">
+                <div class="info black_box">
                   <h1>오드의 사운드가 깃든 공간들</h2>
                 </div>
               </a> 
@@ -361,29 +361,6 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
 <script>
-  function myFunction() {
-    var x = document.getElementById("header");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-
 //main swifer 4종
   var swiper = new Swiper(".bestSwifer", {
       slidesPerView: 1,
