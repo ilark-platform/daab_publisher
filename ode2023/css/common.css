@@ -1,9 +1,13 @@
 @import url(../css/brown/brown.css);
 @import url(../css/NotoSansKR/NotoSansKR.css);
 @import url("main.css");
+@import url("content.css");
 
 :root {
     --navy:#012754;
+    --gray:#808080;
+    --kakao:#FEE500;
+    --naver:#03C75A;
 }
 /* rem 설정을 위한 폰트 */
 html { font-size: 16px; }
@@ -16,7 +20,8 @@ body {
     overflow-y: auto;
     font-family: 'Brown-Regular', 'NotoSansKR', sans-serif;
     line-height: 1.4em;
-    font-weight: normal;
+    letter-spacing: -0.05em;
+    font-weight: 300;
     color: #333;
 }
 
@@ -29,7 +34,11 @@ body {
 .mgt2{margin-top:1.25rem !important}
 .mgt3{margin-top:1.875rem !important;}
 
+small {font-size: .9rem;}
 .text-center {text-align: center;}
+.fGray{color:var(--gray);}
+h2.sub_tit {font-size: 1.7rem;font-weight: bold;text-align: center;}
+
 .col2>li{width:50%; float:left;}
 .col3>li{width:33%; float:left;}
 .col4>li{width: 25%; float:left;}
@@ -53,14 +62,97 @@ body {
     .pc_only{display: none !important;}
     .mo_only{display: block !important;}
     .col3>li{width:100%;}
+    h2.sub_tit {font-size: 1.4rem;line-height: 1.8rem;}
+
 }
 
-.btn_round{background-color: #fff; font-size: .95rem;color: initial;text-align:center;min-width:90px;padding:4px; border-radius: 20px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);}
+.btn_round{background-color: #fff; font-size: .95rem;color: initial;text-align:center;min-width:90px;padding:4px; border-radius: 30px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);  transition: 0.3s;}
 .btn_round.large {padding:8px 2.25rem; font-size: 1.15rem;}
-.navy {background-color: var(--navy); color: #fff;}
-.btn_round:hover {-webkit-transition: all 0.7s;transition: all 0.7s; box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.5);}
+.btn_round.x-large {display: inline-block;width:100%;padding:18px 2.25rem; font-size: 1.15rem;}
+.btn_round.navy:hover {background-color: #fff; color: var(--navy);}
+.navy, .btn_round:hover {background-color: var(--navy); color: #fff;}
+.btn_round.kakao{background-color: var(--kakao);}
+.btn_round.naver{background-color: var(--naver);}
 
 .black_box{position: absolute;left: 0;bottom: 0;width: 100%;height: 100%;color: #fff;background-color: rgba(0, 0, 0, 0.4)}
+
+.dotList li+li{margin-top:6px}
+.dotList li {background: url(https://icongr.am/octicons/dot-fill.svg?size=8&color=cccccc) 0 4px no-repeat; vertical-align:middle;padding-left:12px}
+.flexList li{display: flex;justify-content: space-between;align-items: center;margin-top:6px}
+
+input[type=text], input[type=password], select, textarea {
+    font-family: 'Brown-Regular', 'NotoSansKR', sans-serif;
+    width: 100%;
+    font-size: 1rem;
+    padding: 18px 1.8rem;
+    border: 1px solid #f4f4f4;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1); 
+  }
+input::-webkit-input-placeholder { font-size: 1rem;color:var(--gray) }
+input::-moz-placeholder { font-size: 1rem;color:var(--gray) }
+input:-ms-input-placeholder { font-size: 1rem;color:var(--gray) }
+input:-moz-placeholder { font-size: 1rem;color:var(--gray)}
+input::placeholder { font-size: 1rem; color:var(--gray); font-weight: 300; }
+
+.custom-chk {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin:2px 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+.custom-chk input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border:1px solid var(--navy);
+    border-radius: 4px;
+  }
+.custom-chk:hover input ~ .checkmark {background-color: #f0f0f0;}
+.custom-chk input:checked ~ .checkmark {background-color: var(--navy);}
+.checkmark:after {content: "";position: absolute;display: none;}
+.custom-chk input:checked ~ .checkmark:after {display: block;}
+.custom-chk .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.checkmark.radio{border-radius: 50%;background-color: #fff !important;}
+.custom-chk .checkmark.radio:after {
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--navy);
+    transform: none;
+   }
 
 #TopBtn {opacity: 0;display: none;position: sticky;position: -webkit-sticky;bottom:60px;width: 100%;z-index: 1;animation-duration: 0.1s;animation-fill-mode: forwards;}
 #TopBtn button[class*="btn-"] {position: absolute;right: 20px;bottom: 20px;width: 45px;height: 45px;border-radius: 50%;box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);}

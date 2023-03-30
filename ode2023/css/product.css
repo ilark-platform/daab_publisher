@@ -1,0 +1,67 @@
+.product_wrap .sub-visual{background-attachment:fixed ;}
+
+.prod_main_list {display: grid;  grid-template-columns: repeat(3, 1fr);grid-gap: 8px;}
+.prod_main_list .colgroup {grid-column: 1/ span 3;display: flex;}
+.prod_main_list .colgroup .card {height: 450px;margin-right:8px}
+.prod_main_list .colgroup .card:last-child {margin-right:0px}
+.prod_main_list .card {
+    position: relative;
+    width: 100%; min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    transition: all .1s ease-in;
+}
+.prod_main_list .card .thumb {
+    height:100%;
+    background-size: cover;
+    background-position: center center;;
+}
+.prod_main_list .card .logo { transition: .5s ease;}
+.prod_main_list .card .logo img{max-width:60%;max-height:70%; position: absolute;left:50%;top:50%;transform: translate(-50%, -50%); transition: .5s ease;}
+.prod_main_list .card .logo:hover{background-color: rgba(0, 0, 0, 0.7); transition: .5s ease;}
+.prod_main_list .card .logo h1{font-size: 2rem;width: 90%;text-align: center;color: transparent; position: absolute;left:50%;top:50%;transform: translate(-50%, -50%); transition: .5s ease;}
+.prod_main_list .card .logo.add h1{font-size: 2rem; color:#fff; transition: .5s ease;}
+.prod_main_list .card .logo.add img{opacity: 0; transition: .5s ease;}
+
+.prod_title {margin:6rem 1rem 4rem;}
+.prod_title h2{font-size: 2.4rem;font-weight: bold; margin-bottom: .5rem;}
+.prod_title h2 span{font-size: 1rem;font-weight: normal;vertical-align: middle; padding-left: 28px;}
+.prod_title h3{position: relative;font-size: 1.4rem;color: #808080;margin-bottom: 1.6rem;}
+.prod_title h3::before{content: '';position: absolute;top: 50%;right:0;width: calc( 100% - 7.5rem );display: inline-block; border-bottom: 1px solid #808080;}
+.prod_title p{line-height: 2rem;font-weight: 300; color: #808080;margin-top: 3rem;}
+
+.prod_list li{padding:20px;}
+.prod_list img{width: 100%;}
+.prod_info {position: relative;font-weight: 300;margin-top:10px;}
+.prod_info h2 {font-size: 1.2rem;font-weight: bold;padding: 8px 0 0;}
+.prod_info h3 {font-size: 1.1rem;font-weight: normal;padding: 6px 0 0;}
+.prod_info p{font-size: .95rem;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;word-break: break-all;}
+
+.prod_color {position: absolute;right:4px;top:0px;}
+.prod_color span {display: inline-block;vertical-align: middle;width: 15px;height: 15px;border-radius: 100%;margin-left: 6px;}
+.prod_color span.selected {border: 4px solid #fff;padding: 6px;outline: solid 1px #333;box-sizing: border-box;}
+.gold{background-color: #D8AE96;}
+.light-gray{background-color: #808080;}
+.gray{background-color: #616161;}
+.black{background-color: #000;}
+.red{background-color: #CC3514;}
+.white{background-color: #fff;border:1px solid #333;}
+
+
+@media screen and (max-width: 1023px) {
+    .prod_main_list {grid-template-columns: repeat(1, 1fr);grid-gap: 0px;}
+    .prod_main_list .colgroup .card{height:300px;}
+    .prod_main_list .colgroup {display:block;}
+    .prod_title {overflow: hidden;margin:3rem 2rem 1rem;}
+    .prod_title h2 span{display: block;margin-top: 1rem;padding-left:0;}
+    .prod_title p{display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; 
+        overflow: hidden;}    
+    .prod_title .more-btn {float: right;appearance: none;padding-bottom: 0.5rem;cursor: pointer;font-weight: bold;}  
+    .prod_title .more-btn::before {content: '더보기'; background: url(https://icongr.am/jam/chevron-down.svg?size=18&color=333333) 0 center no-repeat;padding-left: 22px;}
+    .prod_title .more-btn:checked::before {content: '접기';background: url(https://icongr.am/jam/chevron-up.svg?size=18&color=333333) 0 center no-repeat}
+    .prod_title p:has(+ .more-btn:checked) {-webkit-line-clamp:unset}
+
+}

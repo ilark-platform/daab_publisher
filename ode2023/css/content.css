@@ -1,0 +1,34 @@
+.sub-visual{position: relative; background-size: cover;background-position: center bottom;background-repeat: no-repeat;width:100%; height:44rem;overflow: auto;}
+.sub-visual .black_box {display: flex;justify-content: center; align-items: center; padding:0 1rem; text-align: center;}
+.sub-visual h1{font-size: 3rem;display: block;font-weight: bold;margin-bottom: 2rem;}
+.sub-visual p{font-size: 1.4rem;line-height: 2rem;margin-bottom: 2rem;}
+.sub-visual.sign {background-image:url(../images/main_visual.jpg);}
+
+.login_wrap {width:500px; margin: 9rem auto 3rem;}
+.line_title{position: relative;width:95%; color:#808080; text-align: center;margin:3.8rem auto 1.8rem;}
+.line_title::before{content: '';position: absolute;top: 50%;left:0;width: 30%;display: inline-block; border-bottom: 1px solid #D9D9D9;}
+.line_title::after{content: '';position: absolute;top: 50%;right:0;width: 30%;display: inline-block; border-bottom: 1px solid #D9D9D9;}
+.login_go{text-align: right;margin: 30px 10px;color: #616161;}
+.login_go a{font-weight: bold;margin-left: 8px;}
+
+.signup_wrap {width:550px; margin: 7rem auto 3rem;}
+.signup_wrap .musicList.col3>li {margin:8px 0}
+.id_confirm{position: relative;}
+.id_confirm button{position: absolute; top:24px;right:30px;color: var(--navy);font-weight: bold;}
+.infoList li{margin:10px 0;position: relative;}
+
+input[type=checkbox].ic-psw {width: 1px;height: 1px;overflow: hidden;position: absolute;left: -9999px;}
+input[type=checkbox].ic-psw+label {display: inline-block;width: 40px;height: 40px;background: url(https://icongr.am/clarity/eye.svg?size=28&color=777777) center no-repeat;position: absolute;right: 20px;top:40px;opacity: .3;}
+input[type=checkbox].ic-psw:checked+label {background: url(https://icongr.am/clarity/eye-hide.svg?size=28&color=777777) center no-repeat;}
+
+
+@media screen and (max-width: 1023px) {
+    .sub-visual {}
+    .sub-visual h1 {font-size: 2.2rem;line-height: 3rem;margin-bottom: 1rem;}
+    .sub-visual p {font-size: 1.2rem;}
+    .sub-visual.sign {height: 26rem;}
+    .login_wrap,
+    .signup_wrap {width:90%;margin: 3rem auto 2rem;}
+    .signup_wrap .musicList.col3>li {width:33%}
+
+}

@@ -52,11 +52,29 @@ function fx_TopBtn() {
 //                setTimeout( hideBtn, 300 ); 
     } 
 } 
-
 function topFunction() { 
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0; 
 } document.addEventListener("scroll",fx_TopBtn);
+
+/*비밀번호 show hidden 버튼*/
+function psw() {
+  var x = document.getElementById("pswFirst");
+  if (x.type === "password") {
+      x.type = "text";
+  } else {
+      x.type = "password";
+  }
+}
+/*비밀번호확인 show hidden 버튼*/
+function psw2() {
+  var x = document.getElementById("pswSecond");
+  if (x.type === "password") {
+      x.type = "text";
+  } else {
+      x.type = "password";
+  }
+}
 
 /*bottom up modal*/
 $('.js-click-modal').click(function(){
