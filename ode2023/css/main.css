@@ -100,8 +100,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
 
 }
 
-
-
+/*header 영역*/
 .topnav {
   overflow: hidden;
   background-color: #f1f1f1;
@@ -181,7 +180,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
 
 
 @media screen and (max-width: 1023px) {
-  .topnav{height: unset;}
+  .topnav{height: unset;background:#fff;}
   .topnav .inner {display: block; padding:10px 16px; min-width: unset;}
   .topnav nav {width:100%}
   .topnav a:not(:first-child), .topnav .dropdown .dropbtn, .topnav .utillity {
@@ -213,7 +212,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   .topnav .dropdown-content {background: transparent; box-shadow:none}
   .topnav .dropdown .dropbtn:after {
     content:'';
-    background: #f1f1f1 url(https://icongr.am/clarity/add.svg?size=18&color=333333) center no-repeat !important;
+    background: url(https://icongr.am/clarity/add.svg?size=18&color=333333) center no-repeat !important;
     width:30px;
     height:30px;
     position: absolute;
@@ -222,7 +221,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   }
   .topnav.responsive .dropdown-content:before {
     content:'';
-    background: #f1f1f1 url(https://icongr.am/clarity/minus.svg?size=18&color=333333) center no-repeat !important;
+    background: url(https://icongr.am/clarity/minus.svg?size=18&color=333333) center no-repeat !important;
     width:30px;
     height:30px;
     position: absolute;
@@ -299,12 +298,12 @@ footer .inner {position: relative;}
 footer .sns{position: absolute;left:25%;top:115px;margin-left: 20px;}
 footer .sns a{margin-left: 8px;}
 
-
 .collapsible:after, .collapsible.active:after {
   content: '';
   width: 20px;
   height: 20px;
-  float: right;
+  display: inline-block;
+  vertical-align: middle;
   margin-left: 5px;
   background: url(https://icongr.am/jam/chevron-down.svg?size=18&color=333333) center no-repeat;
 }
@@ -312,14 +311,15 @@ footer .sns a{margin-left: 8px;}
 .collapsible.active:after {
   background: url(https://icongr.am/jam/chevron-up.svg?size=18&color=333333) center no-repeat;
 }
-
-.info_wrap.content {
+.collaps-content {max-height: 0;}
+.info_wrap.content, .collaps-content {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
+
 @media (max-width: 1023px) {
-  .info_wrap.content {max-height: 0;}
+  .info_wrap.content {max-height: 0;}/*모바일에서만 footer 접기*/
   footer {font-size: 1rem;margin-top: 5rem;}
   footer .info_wrap, footer .company {display: block;width:100%;margin-top: 10px;}
   footer .fmenu {width:100%;margin-top: 30px;}

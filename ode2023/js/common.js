@@ -23,6 +23,7 @@ for (i = 0; i < coll.length; i++) {
   });
 } 
 
+
 //product list hover effect
 $(document).ready(function () {
     $(".thumb .logo").mouseover(function () {

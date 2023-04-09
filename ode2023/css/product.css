@@ -1,5 +1,3 @@
-.product_wrap .sub-visual{background-attachment:fixed ;}
-
 .prod_main_list {display: grid;  grid-template-columns: repeat(3, 1fr);grid-gap: 8px;}
 .prod_main_list .colgroup {grid-column: 1/ span 3;display: flex;}
 .prod_main_list .colgroup .card {height: 450px;margin-right:8px}
