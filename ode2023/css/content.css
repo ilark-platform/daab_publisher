@@ -1,7 +1,7 @@
 /*서브페이지 비주얼 공통 */
 .sub-visual{background-attachment:fixed;position: relative; background-size: cover;background-position: center bottom;background-repeat: no-repeat;width:100%; height:44rem;overflow: auto;}
 .sub-visual .black_box {display: flex;justify-content: center; align-items: center; padding:0 1rem; text-align: center;}
-.sub-visual h1{font-size: 3rem;display: block;font-weight: bold;letter-spacing: .4rem;margin-bottom: 2rem;}
+.sub-visual h1{font-size: 3rem;display: block;font-weight: bold;letter-spacing: 0rem;margin-bottom: 2rem;}
 .sub-visual h1 img{width:10rem;}
 .sub-visual p{font-size: 1.4rem;line-height: 2rem;margin-bottom: 2rem;}
 .sub-visual.sign {background-image:url(../images/main_visual.jpg);}

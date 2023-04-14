@@ -18,12 +18,12 @@
 .prod_main_list .card .logo { transition: .5s ease;}
 .prod_main_list .card .logo img{max-width:60%;max-height:70%; position: absolute;left:50%;top:50%;transform: translate(-50%, -50%); transition: .5s ease;}
 .prod_main_list .card .logo:hover{background-color: rgba(0, 0, 0, 0.7); transition: .5s ease;}
-.prod_main_list .card .logo h1{font-size: 2rem;width: 90%;text-align: center;color: transparent; position: absolute;left:50%;top:50%;transform: translate(-50%, -50%); transition: .5s ease;}
+.prod_main_list .card .logo h1{font-size: 1.69rem;width: 90%;text-align: center;color: transparent; position: absolute;left:50%;top:50%;transform: translate(-50%, -50%); transition: .5s ease;}
 .prod_main_list .card .logo.add h1{font-size: 2rem; color:#fff; transition: .5s ease;}
 .prod_main_list .card .logo.add img{opacity: 0; transition: .5s ease;}
 
 .prod_title {margin:6rem 1rem 4rem;}
-.prod_title h2{font-size: 2.4rem;font-weight: bold; margin-bottom: .5rem;}
+.prod_title h2{font-size: 1.875rem;font-weight: bold; margin-bottom: .5rem;}
 .prod_title h2 span{font-size: 1rem;font-weight: normal;vertical-align: middle; padding-left: 28px;}
 .prod_title h3{position: relative;font-size: 1.4rem;color: #808080;margin-bottom: 1.6rem;}
 .prod_title h3::before{content: '';position: absolute;top: 50%;right:0;width: calc( 100% - 7.5rem );display: inline-block; border-bottom: 1px solid #808080;}

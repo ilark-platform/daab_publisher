@@ -68,7 +68,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   width: 100%;
   padding: 12px;
   border: none;
-  box-sizing: border-box;
+  box-shadow: none;
 }
 .subscribe input[type=submit] {
   background: url(https://icongr.am/jam/arrow-right.svg?size=30&color=333333) right center no-repeat;
@@ -81,6 +81,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   .main-visual {height: auto;display: block;}
   .main-visual .image, .main-visual .slogan {width:100%;height: 58vh;float: none;}
   .main-visual .slogan{text-align: center;padding:30px 20px;height: auto;}
+  .main-visual .slogan>p{margin-top: 10px!important;}
 
   .main-bestseller h3, .main-contents h3 {margin:2rem 2rem 1.5rem}
   .main-contents h3 {margin-top:5rem;}
@@ -212,7 +213,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   .topnav .dropdown-content {background: transparent; box-shadow:none}
   .topnav .dropdown .dropbtn:after {
     content:'';
-    background: url(https://icongr.am/clarity/add.svg?size=18&color=333333) center no-repeat !important;
+    background: #fff url(https://icongr.am/clarity/add.svg?size=18&color=333333) center no-repeat !important;
     width:30px;
     height:30px;
     position: absolute;
@@ -221,7 +222,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   }
   .topnav.responsive .dropdown-content:before {
     content:'';
-    background: url(https://icongr.am/clarity/minus.svg?size=18&color=333333) center no-repeat !important;
+    background: #fff url(https://icongr.am/clarity/minus.svg?size=18&color=333333) center no-repeat !important;
     width:30px;
     height:30px;
     position: absolute;
@@ -234,7 +235,7 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   }
   input[id="hamburger"] + label {
     display: block;
-    width: 26px;
+    width: 22px;
     height: 20px;
     position: relative;
     cursor: pointer;
@@ -290,7 +291,8 @@ footer .logo {margin-bottom: 2rem;}
 footer .info_wrap{ display: flex; justify-content: space-between; align-items: self-start;}
 footer .company, footer .fmenu{width: 51%;display: flex;}
 footer .fmenu{width: 270px;justify-content: flex-end;}
-footer .company div, footer .fmenu div{width: 50%;}
+footer .company div{width: 50%;}
+footer .fmenu div{width: 50%;letter-spacing: 0.2rem;font-weight: 600;}
 footer .company strong{width: 5.5rem;display: inline-block;font-weight: bold;}
 footer .copyright{margin-top: 2rem;font-size: .8rem;}
 footer .copyright a{margin-right: 2rem;}
