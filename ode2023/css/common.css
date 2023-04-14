@@ -25,7 +25,7 @@ body {
     color: #333;
 }
 
-.clearfix::after{content: "";display: block;clear: both;}
+.clearfix::after, .clearfix{content: "";display: block;clear: both;}
 .blind {position: absolute;clip: rect(0 0 0 0);width: 1px;height: 1px;margin: -1px;overflow: hidden;}
 .pc_only{display: block;}
 .mo_only{display: none;}
@@ -89,17 +89,17 @@ h2.sub_tit {font-size: 1.7rem;font-weight: bold;text-align: center;}
 .dotList li {background: url(https://icongr.am/octicons/dot-fill.svg?size=8&color=cccccc) 0 4px no-repeat; vertical-align:middle;padding-left:12px}
 .flexList li{display: flex;justify-content: space-between;align-items: center;margin-top:6px}
 
-input[type=text], input[type=password], select, textarea {
+input[type=text], input[type=password], input[type=search], select, textarea {
     font-family: 'Brown-Regular', 'NotoSansKR', sans-serif;
     width: 100%;
     font-size: 1rem;
-    padding: 18px 1.8rem;
+    padding: 16px 1.8rem;
     border: 1px solid #f4f4f4;
     border-radius: 30px;
     box-sizing: border-box;
     margin: 6px auto;
     resize: vertical;
-    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1); 
+    box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.15); 
   }
 input::-webkit-input-placeholder { font-size: 1rem;color:var(--gray) }
 input::-moz-placeholder { font-size: 1rem;color:var(--gray) }

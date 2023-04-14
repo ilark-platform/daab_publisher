@@ -8,6 +8,7 @@
 .about_ode .sub-visual {background-image:url(../images/sub_visual_ode.jpg);}
 .about_orfeo .sub-visual {background-image:url(../images/sub_visual_orfeo.jpg);}
 .about_daab .sub-visual {background-image:url(../images/sub_visual_daab.jpg);}
+.content_wrap .sub-visual {background-image:url(../images/content_visual.jpg);}
 
 /*Login, Signup*/
 .login_wrap {width:500px; margin: 9rem auto 3rem;}
@@ -53,7 +54,7 @@ ul.about-list li .btn_round{display: block;margin: 1rem 0;width:140px}
 .about_location .collapsible {position: absolute;bottom:0px;right: 0;width:100%;text-align: right;padding-bottom: 10px; opacity: .5;font-size: .8rem;border-bottom: 1px solid #333;}
 .about_location .collapsible:after, .about_location .collapsible.active:after {content: '자세히보기';width: 9rem;text-align: right;}
 .about_location .collapsible.active:after {content: '접기';width: 80px;}
-.about-map{background-color: #f4f4f4;height:50rem} 
+.about-map{background-color: #f4f4f4;height:40rem} 
 .about-map ul.about-list {position: relative; background-color: #fff;width: 80%;margin: auto;padding:2rem 0 0 1rem}
 .about-map ul.about-list .collaps-content {max-height: fit-content;}
 .btn-close{position: absolute; right: 20px;top:20px; width: 30px; height: 30px;background-size: contain !important;}
@@ -77,6 +78,47 @@ ul.about-list li .btn_round{display: block;margin: 1rem 0;width:140px}
     .about_location {padding:2rem 0;gap: 0rem;grid-template-columns: 1fr;}
     ul.about-list {order: 2;padding: 2rem;}
     .orfeoSwifer {margin:0 0rem 6rem !important;}
-
-
+    .about-map{height:30rem} 
 }
+
+
+/* Contents */
+.content_wrap .prod_title{margin:2rem 0 0;}
+.sch {width: calc( 100% - 7.5rem );float:right;}
+.sch input[type=search]{padding-left:3.75rem;background: url(https://icongr.am/clarity/search.svg?size=22&color=666666)  no-repeat 20px center;}
+
+.sch h2 {font-size: 1rem;margin:1rem 0 0.7rem 1.5rem;}
+.sch .chip-group {margin:2rem 0 0.7rem 1.5rem;}
+.chip-group a {display: inline-block;border-radius: 20px; margin:0 10px 10px 0; border:1px solid var(--navy);padding:4px 1.25rem;box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);}
+.tab {border-bottom: 1px solid #808080;padding-top: 4rem;}
+.tab button {float: left;cursor: pointer;text-align: center; padding: 8px 3rem;transition: 0.3s;font-size: 1rem;color:#808080;background-color: #f4f4f4;}
+.tab button:hover {background-color: #ddd;}
+.tab button.active {background-color: var(--navy);color:#fff;}
+.tabcontent {display: none;padding: 3rem 0;-webkit-animation: fadein 1s;animation: fadein 1s;}
+.tabcontent .box {display: flex;justify-content: space-between;margin-bottom: 4rem;}
+.tabcontent .box img {width:55%;object-fit: contain;padding-right:6rem;}
+.tabcontent .box .content {position: relative; width:45%; border-bottom: 1px solid #ddd;}
+.tabcontent .box .content>h2 {font-size: 1.4rem;line-height: 2rem;font-weight: bold;margin:2rem 0 0.625rem}
+.tabcontent .box .content>h3 {color:#808080;margin-bottom:2rem}
+.tabcontent .box .content>small {color:#808080;justify-content: space-between;}
+.tabcontent .box .content>.option {position: absolute; bottom: 10px;right:0;}
+.tabcontent .box .content>.option .scrap{font-size:0;width: 30px;height: 30px;display: inline-block;background: url(https://icongr.am/clarity/search.svg?size=22&color=666666)  no-repeat center;}
+
+
+@media screen and (max-width: 1023px) {
+    .sch {width: 100%;padding:2rem;float:none;}
+    .sch h2 {margin-left:0;}
+    .sch .chip-group {margin:0;}
+    .tab {padding-top: 0rem;margin: 0 2rem;}
+    .tab button {width:33.333%;padding: 8px 1rem;}
+    .tabcontent .box {display: block;margin-bottom: 4rem;}
+    .tabcontent .box img {width:100%;padding-right:0rem;}
+    .tabcontent .box .content {width:100%;padding:1rem 2rem}
+    .tabcontent .box .content>h2 {margin-top:1rem}
+    
+}
+
+
+
+
+
