@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ODE</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!-- 팝업 -->
+<section class="layer_popup">
+    <div class="layer_inner">
+        <!--팝업 헤더-->
+        <div class="layer_header">
+            <h2></h2>
+            <button type="button" class="close">닫기</button>
+        </div>
+        <!--팝업 컨텐츠-->
+        <div class="layer_content">
+            <p>비밀번호를 변경하시려면<br>
+               새로운 비밀번호를 입력해주세요.
+            </p>
+            <div class="positionR mgt2">
+                <input type="password" id="pswFirst" class="inner-input" placeholder="사용할 비밀번호를 입력해주세요.">
+                <input type="checkbox" class="ic-psw" id="pswF" onclick="psw()"><label for="pswF"></label>
+            </div>
+            <small class="hintTxt fRed">잘못된 형식의 비밀번호입니다. 다시 입력해 주세요.</small>
+            <div class="positionR">
+                <input type="password" id="pswSecond" class="inner-input" placeholder="한번 더 입력해주세요.">
+                <input type="checkbox" class="ic-psw" id="pswS" onclick="psw2()"><label for="pswS"></label>
+            </div>
+            <small class="hintTxt">비밀번호는 영문, 숫자, 특수문자를 함께 사용해<br>
+                8자 이상 16자 이하로 입력해주세요.
+            </small>
+            
+            <div class="layer_btn">
+                <button class="btn_round x-large gray">변경하기</button>
+            </div>
+        </div>
+        <!--//팝업 컨텐츠-->
+    </div>
+    <!--블랙배경-->
+    <div class="dimmed"></div>
+</section>
+<!-- //팝업 -->
+
+
+<script src="../js/common.js" type="text/javascript"></script>
+  
+</body>
+</html>

@@ -43,10 +43,11 @@ small {font-size: .9rem;}
 .orfeo-btn {background-color: #790000 !important;color:#fff !important}
 .daab-btn {background-color: #314D46 !important;color:#fff !important}
 h2.sub_tit {font-size: 1.4rem;font-weight: bold;text-align: center;}
+h2.sub_tit2 {font-size: 1.4rem;font-weight: bold;color:#808080;}
 
 .col2>li{width:50%; float:left;}
 .col3>li{width:33%; float:left;}
-.col4>li{width: 25%; float:left;}
+.col4>li{width:25%; float:left;}
 .col5>li{width:20%; float:left;}
 
 .d-flex{display: flex;align-items: center;}
@@ -65,22 +66,18 @@ h2.sub_tit {font-size: 1.4rem;font-weight: bold;text-align: center;}
     padding: 0 40px;
     margin: 0 auto;
 }
-@media screen and (max-width: 1023px) {
-    .inner {width: 100%;padding:0;}
-    .pc_only{display: none !important;}
-    .mo_only{display: block !important;}
-    .col3>li{width:100%;}
-    h2.sub_tit {font-size: 1.4rem;line-height: 1.8rem;}
-    .col2>li, .col3>li{width:100%;}
-}
 
 .btn_round{background-color: #fff; font-size: .95rem;color: initial;text-align:center;min-width:90px;padding:4px 24px; border-radius: 30px;box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);  transition: 0.3s;}
 .btn_round.large {padding:8px 2.25rem; font-size: 1.15rem;}
-.btn_round.x-large {display: inline-block;width:100%;padding:18px 2.25rem; font-size: 1.15rem;}
-.btn_round.navy:hover {opacity: .7;}
+.btn_round.x-large {display:inline-block;width:100%;padding:18px 2.25rem; font-size: 1.15rem;}
+.btn_round.x-large.more {display: block;width:400px;margin: auto;}
+.btn_round.navy:hover {opacity: .8;}
 .navy, .btn_round:hover {background-color: var(--navy); color: #fff;}
 .btn_round.kakao{background-color: var(--kakao);}
-.btn_round.naver{background-color: var(--naver);}
+.btn_round.naver{background-color: var(--naver); color: #fff;}
+.btn_round.spotify{background-color: #24DF91; color: #fff;}
+.btn_round.gray{background-color: #E4E4E4; color: #808080;box-shadow: none;}
+
 .btn-close{background: url(https://icongr.am/clarity/times.svg?size=20&color=333333) center no-repeat;}
 
 .black_box{position: absolute;left: 0;bottom: 0;width: 100%;height: 100%;color: #fff;background-color: rgba(0, 0, 0, 0.4)}
@@ -101,6 +98,7 @@ input[type=text], input[type=password], input[type=search], select, textarea {
     resize: vertical;
     box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.15); 
   }
+input.error{border-color: #FF0000;color: #FF0000;}
 input::-webkit-input-placeholder { font-size: 1rem;color:var(--gray) }
 input::-moz-placeholder { font-size: 1rem;color:var(--gray) }
 input:-ms-input-placeholder { font-size: 1rem;color:var(--gray) }
@@ -182,3 +180,28 @@ from {bottom: 20px; opacity: 1;}
 to {bottom: 0; opacity: 0;}
 }
 
+/** 레이어팝업 **/
+.layer_popup {z-index: 2;position: fixed;top: 0;bottom: 0;left: 0;right: 0;}
+.layer_popup .layer_inner {z-index: 3;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);width: 500px;min-height: 500px;background: #FFF;border-radius: 10px;box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);padding: 1.25rem;}
+.layer_popup .layer_header {display: flex;justify-content: space-between;align-items: center;padding: 6px 12px 0;}
+.layer_popup .layer_header>h2 {font-size: 1.4em;font-weight: bold;text-align: left;}
+.layer_popup .layer_content {width: 100%;padding: 1.25rem 0px;text-align: left;}
+.layer_popup .layer_content p {text-align: center;font-size: 1.4rem;font-weight: bold;line-height: 140%;}
+.layer_popup .layer_content small {padding:1rem 2rem;display: inline-block;}
+.layer_popup .layer_btn {margin-top:1.4rem}
+.layer_popup button.close {width: 30px;height: 30px;background: url("https://icongr.am/material/close.svg?size=22&color=333333") center no-repeat;border: 0;text-indent: -9999px;}
+.layer_popup .dimmed {z-index: 2;background: rgba(0, 0, 0, 0.3);width: 100%;height: 100%;position: absolute;top: 0;bottom: 0;left: 0;right: 0;}
+.vMiddle{margin-top:80px;}
+
+@media screen and (max-width: 1023px) {
+  .inner {width: 100%;padding:0;}
+  .pc_only{display: none !important;}
+  .mo_only{display: block !important;}
+  .col3>li{width:100%;}
+  h2.sub_tit {font-size: 1.4rem;line-height: 1.8rem;}
+  .col2>li, .col3>li{width:100%;}
+  .btn_round.x-large.more {width:90%;}
+
+  .layer_popup .layer_inner {width: 90%;min-height: 300px;}
+  .vMiddle{margin-top:20px;}
+}

@@ -121,3 +121,12 @@ document.getElementById(tabMenu).style.display = "block";
 evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+
+/* bookmark/like toggle button */
+function bookmarkBtn(x) {
+  x.classList.toggle("scrap-check");}
+function likeBtn(x) {
+    x.classList.toggle("like-check");
+}
+
