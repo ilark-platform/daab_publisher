@@ -125,6 +125,7 @@ ul.about-list li .btn_round{display: block;margin: 1rem 0;width:140px}
 .sch .chip-group {margin:0;}
 .tab {padding-top: 0rem;margin: 0 2rem;}
 .tab button {width:33.333%;padding: 8px 0.5rem;}
+.product_wrap .tab button {width:unset; margin:10px 3px !important}
 .content-list .box {display: block;margin-bottom: 4rem;}
 .content-list .box .left {width:100%;padding-right:0rem;}
 .content-list .box .summary {width:100%;padding:1rem 2rem 2rem}
