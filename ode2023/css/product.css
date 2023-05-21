@@ -46,6 +46,12 @@
 .red{background-color: #CC3514;}
 .white{background-color: #fff;border:1px solid #333;}
 
+.product_wrap .tab{padding:0;border:0}
+.product_wrap .tab button{border-radius: 20px; margin: 10px;border: 1px solid var(--navy);padding: 4px 1.25rem;box-shadow: 1px 1px 4px 1px rgba(0,0,0,.2);background-color:#fff;color:initial}
+.product_wrap .tab{padding:0;border:0}
+.product_wrap .tab button.active {background-color: var(--navy);color: #fff;}
+
+
 
 @media screen and (max-width: 1023px) {
     .prod_main_list {grid-template-columns: repeat(1, 1fr);grid-gap: 0px;}
