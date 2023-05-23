@@ -8,7 +8,7 @@
 .about_ode .sub-visual {background-image:url(../images/sub_visual_ode.jpg);}
 .about_orfeo .sub-visual {background-image:url(../images/sub_visual_orfeo.jpg);}
 .about_daab .sub-visual {background-image:url(../images/sub_visual_daab.jpg);}
-.content_wrap .sub-visual {background-image:url(../images/prod_main_visual.jpg);}
+.content_wrap .sub-visual {background-image:url(../images/content_visual.jpg);}
 
 /*Login, Signup*/
 .login_wrap {width:490px; margin: 9rem auto 3rem;}
@@ -124,7 +124,8 @@ ul.about-list li .btn_round{display: block;margin: 1rem 0;width:140px}
 .sch h2 {margin-left:0;}
 .sch .chip-group {margin:0;}
 .tab {padding-top: 0rem;margin: 0 2rem;}
-.tab button {width:33.333%;padding: 8px 1rem;}
+.tab button {width:33.333%;padding: 8px 0.5rem;}
+.product_wrap .tab button {width:unset; margin:10px 3px !important}
 .content-list .box {display: block;margin-bottom: 4rem;}
 .content-list .box .left {width:100%;padding-right:0rem;}
 .content-list .box .summary {width:100%;padding:1rem 2rem 2rem}
