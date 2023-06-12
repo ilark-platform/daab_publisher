@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ODE</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header" class="topnav">
+      <div class="inner">
+        <nav>
+          <a href="#home" class="logo"><img src="../images/ode-logo.png"></a>
+          <div class="dropdown">
+            <button class="dropbtn">ABOUT ODE</button>
+            <div class="dropdown-content">
+              <a href="#">오드</a>
+              <a href="#">오르페오</a>
+              <a href="#">구독서비스</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">PRODUCTS</button>
+            <div class="dropdown-content wide">
+              <a href="#">드비알레</a>
+              <a href="#">카르마</a>
+              <a href="#">라이라복스</a>
+              <a href="#">이나쿠스틱</a>
+              <a href="#">레보</a>
+              <a href="#">스타인웨이링돌프</a>
+              <a href="#">다즐</a>
+              <a href="#">프로그래시브 오디오</a>
+              <a href="#">어쿠스틱시그니처</a>
+              <a href="#">트래스페어런트</a>
+            </div>
+          </div>  
+          <div class="dropdown">
+            <button class="dropbtn">CONTENTS</button>
+            <div class="dropdown-content">
+              <a href="#">전체보기</a>
+              <a href="#">아티클</a>
+              <a href="#">카르마</a>
+              <a href="#">플레이리스트</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">A/S</button>
+            <div class="dropdown-content">
+              <a href="#">A/S 신청</a>
+              <a href="#">정품등록</a>
+              <a href="#">문의하기</a>
+            </div>
+          </div> 
+          <a href="#">제휴문의</a>
+          <a href="#">대관문의</a>
+          <input type="checkbox" id="hamburger" onclick="myFunction()" />
+            <label for="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </nav>
+        <div class="utillity">
+          <p>
+            오드 멤버가 되어 다양한 음악 콘텐츠와<br>읽을거리를 만나보세요. 
+          </p>
+          <button type="button" class="btn_round">로그인</button>
+          <button type="button" class="btn_round navy">가입하기</button>
+        </div>
+      </div>
+    </header>
+	  <!--// header -->
+
+    <div id="contents" class="rental_wrap">
+        <section class="sub-visual">
+            <div class="black_box">
+                <div>
+                    <h1>대관문의</h1>
+                    <p>오드의 감도 높은 공간들을 대관으로 이용할 수 있다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="inner">
+            <div class="rental_title">
+                <h3>대관안내</h3>
+                <p>스타인웨이 링돌프는 세계 최고의 그랜드 피아노 브랜드 스타인웨이 앤 선즈가 최초이자 유일하게 협업을 허락한 브랜드입니다. 스타인웨이 링돌프는 아날로그 변환이 없는 순수 디지털 기반의 통합 시스템을 통해 원음에 한층 더 가까운 소리를 재현하며, 독보적인 공간 음향 보정 기술 룸퍼펙트(RoomPerfect™)로 어느 공간에나 일정하게 완벽한 소리를 보장합니다. 소스 기기를 제외하고 타 오디오 브랜드와 호환이 되지 않는 폐쇄적인 시스템을 고집하는 이유는 스타인웨이 링돌프만의 특별한 소리를 유지하기 위함입니다.</p>
+            </div>
+
+            <!-- Swiper -->
+            <div class="orfeoSwifer swiper slide_progress">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/main_content02.jpg"></div>
+                    <div class="swiper-slide"><img src="../images/main_content03.jpg"></div>
+                    <div class="swiper-slide"><img src="../images/main_content04.jpg"></div>
+                </div>
+                <div class="swiper-pagination inner"></div>
+            </div>
+
+            <div class="underline"></div>
+
+            <h3 class="sub_tit mgt3">대관 공간 정보</h3>
+            <p class="subword mgt1">소규모 공연과 강연 등 다양한 이벤트가 가능한 공간 오드 포트</p>
+            
+            <!-- Tab links -->
+            <div class="tab tab4 clearfix">
+                <button class="tablinks" onclick="tabMenu(event, 'odeMaison')" id="defaultOpen">오드 메종</button>
+                <button class="tablinks" onclick="tabMenu(event, 'odePort')">오드 포트</button>
+                <button class="tablinks" onclick="tabMenu(event, 'orfeo')">오르페오</button>
+                <button class="tablinks" onclick="tabMenu(event, 'villa15')">빌라 15</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="odeMaison" class="tabcontent">
+            <h3 class="blind">오드 메종</h3>
+
+                <!-- Swiper -->
+                <div class="contentSwifer swiper slide_progress">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../images/main_content02.jpg"></div>
+                        <div class="swiper-slide"><img src="../images/main_content03.jpg"></div>
+                        <div class="swiper-slide"><img src="../images/main_content04.jpg"></div>
+                    </div>
+                    <div class="swiper-pagination inner"></div>
+                </div>
+                <p class="rental_content">
+                    의붓아버지가 파리로 전근하자 루이르그랑중학교로 전학한 뒤 최고학년이 된 18세 때 품행 문제로 퇴학처분을 당하였으나 바칼로레아(대학입학 자격시험)에는 단번에 합격하였다. 그뒤 문학지망을 표명하여 양친을 실망시키고, 카르테 라탱을 방랑하며 방종한 생활을 하였다. 보다 못해 내려진 친족회의)에는 단번에 합격하였다. 그뒤 문학지망을 표명하여 양친을 실망시키고, 카르테 라탱을 방랑하며 방종한 생활을 하였다. 보다 못해 내려진 친족회의
+                    <br><br>주소 : 서울시 강남구 논현로 703 <br>수용 인원 : 30명
+                </p>
+            </div>
+
+            <div id="odePort" class="tabcontent">
+                <h3 class="blind">오드 포트</h3>
+                <div class="box">
+                    오드 포트
+                </div>
+            </div>
+            <div id="orfeo" class="tabcontent">
+                <h3 class="blind">오르페오</h3>
+                <div class="box">
+                    오르페오
+                </div>
+            </div>
+            <div id="villa15" class="tabcontent">
+                <h3 class="blind">빌라 15</h3>
+                <div class="box">
+                    빌라 15
+                </div>
+            </div>
+            <!-- // Tab content -->
+            <button type="button" class="btn_round x-large more navy mgt3">대관 문의하기</button>
+        </section>
+    </div> 
+    
+    <footer id="footer">
+      <div class="inner">
+        <div class="logo">
+          <img src="../images/ode-logo.png">
+        </div>
+        <div class="sns">
+          <a href="#"><img src="https://icongr.am/jam/instagram.svg?size=28&color=333333"></a>
+          <a href="#"><img src="https://icongr.am/material/facebook.svg?size=28&color=333333"></a>
+        </div>
+        <button class="collapsible mo_only">(주)디아이</button>
+        <div class="info_wrap content">
+          <ul class="company">
+            <div>
+            <li><strong>대표</strong>조윤형</li>
+            <li><strong>주소</strong>서울특별시 강남구 논현로 703(논현동)</li>
+            <li><strong>사업자번호</strong>211-81-24974</li>
+            <li><strong>통신판매업</strong>조윤형</li>
+            <li><strong>정보담당자</strong>김성우</li>
+            </div>
+            <div>
+              <li><strong>고객센터</strong>02-123-4567</li>
+              <li><strong>영업시간</strong>평일 09:00-14:00 / 14:00-19:00</li>
+            </div>
+          </ul>
+          <ul class="fmenu">
+            <div>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTENTS</a></li>
+              <li><a href="#">PRODUCTS</a></li>
+              <li><a href="#">A/S</a></li><li>
+            </div>
+            <div>
+              <li><a href="#">제휴문의</a></li>
+              <li><a href="#">대관문의</a></li>
+              <li><a href="#">마이페이지</a></li>
+              <li><a href="#">회원가입</a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="copyright">
+          <a href="#">이용약관</a>
+          <a href="#">개인정보취급방침</a>
+          <span>©2016 ODE All Rights Reserved</span>
+        </div>
+      </div>
+    </footer> 
+ 
+    <div id="TopBtn">
+      <button class="btn-totop" onclick="topFunction()"></button>
+    </div>   
+    
+  </div> 
+ 
+  
+
+<script src="../js/common.js" type="text/javascript"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+<script>
+var swiper = new Swiper(".orfeoSwifer", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: 10,
+    initialSlide: 0,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 0,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    breakpoints: {
+    1100: {
+      spaceBetween: 0,
+    },
+  },
+});
+
+var swiper = new Swiper(".contentSwifer", {
+    slidesPerView: 1,  
+    spaceBetween: 10,
+    grabCursor: true,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    breakpoints: {
+      1100: {
+        slidesPerView: 2, 
+        spaceBetween: 10,
+      },
+    },
+  });   
+
+
+</script>
+ 
+</body>
+</html>

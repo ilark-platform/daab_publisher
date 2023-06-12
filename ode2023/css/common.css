@@ -44,6 +44,8 @@ small {font-size: .9rem;}
 .daab-btn {background-color: #314D46 !important;color:#fff !important}
 h2.sub_tit {font-size: 1.4rem;font-weight: bold;text-align: center;}
 h2.sub_tit2 {font-size: 1.4rem;font-weight: bold;color:#808080;}
+h3.sub_tit {font-size: 1.4rem;color: #808080;padding-top: 2rem;}
+
 
 .col2>li{width:50%; float:left;}
 .col3>li{width:33%; float:left;}
@@ -52,6 +54,7 @@ h2.sub_tit2 {font-size: 1.4rem;font-weight: bold;color:#808080;}
 
 .d-flex{display: flex;align-items: center;}
 .positionR{position: relative;}
+.underline{border-bottom:1px solid #ddd;}
 
 #wrap {
     position: relative;
@@ -85,7 +88,9 @@ h2.sub_tit2 {font-size: 1.4rem;font-weight: bold;color:#808080;}
 .dotList li+li{margin-top:6px}
 .dotList li {background: url(https://icongr.am/octicons/dot-fill.svg?size=8&color=cccccc) 0 4px no-repeat; vertical-align:middle;padding-left:12px}
 .flexList li{display: flex;justify-content: space-between;align-items: center;margin-top:6px}
+.fieldChk {display:inline-block; width:24px;height:20px;margin: 4px;vertical-align: middle; background: url(https://icongr.am/feather/check-square.svg?size=18&color=#012754) center no-repeat;}
 
+select {background: url(https://icongr.am/feather/chevron-down.svg?size=24&color=888888) right 16px top 50% no-repeat;-webkit-appearance: none;}
 input[type=text], input[type=password], input[type=search], select, textarea {
     font-family: 'Brown-Regular', 'NotoSansKR', sans-serif;
     width: 100%;
@@ -197,7 +202,6 @@ to {bottom: 0; opacity: 0;}
   .inner {width: 100%;padding:0;}
   .pc_only{display: none !important;}
   .mo_only{display: block !important;}
-  .col3>li{width:100%;}
   h2.sub_tit {font-size: 1.4rem;line-height: 1.8rem;}
   .col2>li, .col3>li{width:100%;}
   .btn_round.x-large.more {width:90%;}

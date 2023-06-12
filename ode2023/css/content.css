@@ -9,6 +9,8 @@
 .about_orfeo .sub-visual {background-image:url(../images/sub_visual_orfeo.jpg);}
 .about_daab .sub-visual {background-image:url(../images/sub_visual_daab.jpg);}
 .content_wrap .sub-visual {background-image:url(../images/content_visual.jpg);}
+.rental_wrap .sub-visual {background-image:url(../images/content_visual.jpg);}
+.affiliate.rental_wrap .sub-visual {background-image:url(../images/content_visual.jpg);}
 
 /*Login, Signup*/
 .login_wrap {width:490px; margin: 9rem auto 3rem;}
@@ -125,6 +127,7 @@ ul.about-list li .btn_round{display: block;margin: 1rem 0;width:140px}
 .sch .chip-group {margin:0;}
 .tab {padding-top: 0rem;margin: 0 2rem;}
 .tab button {width:33.333%;padding: 8px 0.5rem;}
+.tab.tab4 button {width:25%;}
 .product_wrap .tab button {width:unset; margin:10px 3px !important}
 .content-list .box {display: block;margin-bottom: 4rem;}
 .content-list .box .left {width:100%;padding-right:0rem;}
@@ -162,8 +165,28 @@ header.mo_header .pre-link {position: absolute; left:1rem;top:10px;
     background-repeat: no-repeat;
     background-size: 30px;}
 header.mo_header .sub_tit{margin-top: 16px;}
-
-
 }
 
+/* rental & affilate */
+.rental_title {margin:6rem 0rem 4rem;}
+.rental_title h3{position: relative;font-size: 1.4rem;color: #808080;margin-bottom: 1.6rem;}
+.rental_title h3::before{content: '';position: absolute;top: 50%;right:0;width: calc( 100% - 7.5rem );display: inline-block; border-bottom: 1px solid #808080;}
+.rental_title p{line-height: 2rem;font-weight: 300; color: #808080;margin-top: 3rem;}
 
+.rental_wrap .orfeoSwifer {margin: 0 0rem 5rem !important;}
+.rental_wrap .orfeoSwifer .swiper-slide {width: 100%;height:25rem;}
+.rental_wrap .contentSwifer {height:25rem;}
+.rental_content{line-height: 2rem;color:#808080;margin:2rem 0 2rem;}
+.rental_wrap .signup_wrap {margin-top: 3rem;}
+.rentalList li{padding:10px 0;}
+.calendar_box {height: 100px;border:1px solid #f4f4f4;border-radius: 12px;box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.1);padding:10px;margin-top: 20px;}
+
+@media screen and (max-width: 1023px) {
+    .rental_title,
+    .rental_content,
+    h3.sub_tit,
+    p.subword {margin-left: 2rem;margin-right: 2rem}
+    p.subword {margin-bottom: 2rem;}
+    .rentalList .col3 li{width:33%;}
+    .rental_wrap .signup_wrap {margin-top: 5rem;}
+}
