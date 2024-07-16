@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ODD</title>
+    <title>ODE</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
@@ -16,17 +16,21 @@
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/product.css">
     <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
   <div id="wrap">
-    <header id="header" class="topnav">
+    <header id="header" class="topnav pc_only">
       <div class="inner">
         <nav>
           <a href="#home" class="logo"><img src="../images/ode-logo.png"></a>
           <div class="dropdown">
-            <button class="dropbtn">ABOUT ODD</button>
+            <button class="dropbtn">ABOUT ODE</button>
             <div class="dropdown-content">
               <a href="#">오드</a>
               <a href="#">오르페오</a>
@@ -85,43 +89,70 @@
     </header>
 	  <!--// header -->
 
-    <div id="contents">
-      <section class="login_wrap">
-          <h2 class="sub_tit">당신의 사운드 플랫폼 <strong>오드</strong></h2>
-          <form>
-            <ul class="infoList mgt3">
-                <li>
-                    <input type="text" id="email" name="email" placeholder="아이디(이메일)">
-                </li>
-                <li>
-                  <div class="positionR">
-                    <input type="password" id="pswFirst" class="inner-input" placeholder="비밀번호">
-                    <input type="checkbox" class="ic-psw" id="pswF" onclick="psw()"><label for="pswF"></label>
-                  </div>
-                </li>
-                <li class="mgL3">
-                    <label class="custom-chk">자동 로그인
-                        <input type="checkbox" ">
-                        <span class="checkmark"></span>
-                    </label>
-                </li>
-            </ul>
-            <button type="button" class="btn_round navy x-large mgt2">로그인</button>
-          </form>
-          
-          <div class="find_box text-center mgt2">
-            <a href="#">아이디 찾기</a>
-            <a href="#">비밀번호 찾기</a>
-          </div>
-
-          <div class="line_title"><span>SNS 계정으로 가입</span></div>
-          <a href="#" class="btn_round x-large kakao">카카오로 시작하기</a>
-          <a href="#" class="btn_round x-large naver mgt1">네이버로 시작하기</a>
-          <div class="login_go">아직 회원이 아니세요? <a href="#">회원가입 하러가기</a></div>
-      </section>
+    <div id="contents" class="rental_wrap">
+        
+        <!--모바일 상단 헤더 네비게이션 : PC에서는 title만 표현됨 -->
+        <header class="mo_header">
+            <a href="#" class="pre-link"></a>
+            <h2 class="sub_tit">정품등록</h2>
+          </header>
+          <!--//모바일 상단 헤더 네비게이션-->
+  
+          <section class="signup_wrap">
+              
+              <form>
+                <ul class="rentalList mgt3">
+                    <h2 class="sub_tit2">제품 정보</h2>
+                    <li>
+                        <label for="brand">브랜드<span class="fieldChk"></span><!--입력 완료 check icon 출력시 추가 : class="fieldChk"--></label>
+                        <select>
+                            <option>브랜드를 선택해 주세요.</option>
+                            <option>드비알레</option>
+                            <option>트랜스페어런트</option>
+                            <option>스타인웨이 링돌프</option>
+                            <option>카르마</option>
+                            <option>다질</option>
+                            <option>라이라복스</option>
+                            <option>프로그래시브 오디오</option>
+                            <option>링돌프</option>
+                            <option>어쿠스틱 시그니처</option>
+                            <option>애트모스피어</option>
+                            <option>레보</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="product">제품<span class="fieldChk"></span></label>
+                        <select>
+                            <option>제품을 선택해 주세요.</option>
+                            <option>마니아 익스클루시브 에디션</option>
+                            <option>마니아 익스클루시브 에디션</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="color">색상을 선택해 주세요.</label>
+                        <ul class="col3 mgt1 clearfix">
+                            <li>
+                                <label class="custom-chk">샌드스톰 <span class="colorPick st"></span>
+                                    <input type="radio" name="샌드스톰">
+                                    <span class="checkmark radio"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="custom-chk">선셋로즈 <span class="colorPick sr"></span>
+                                    <input type="radio" name="선셋로즈">
+                                    <span class="checkmark radio"></span>
+                                </label>
+                            </li>
+                        </ul>        
+                    </li>
+                </ul>
+                      
+                <a href="#" class="btn_round x-large navy mgt3">다음</a>
+              </form>
+          </section>
     </div> 
     
-    <footer id="footer">
+    <footer id="footer" class="pc_only">
       <div class="inner">
         <div class="logo">
           <img src="../images/ode-logo.png">
@@ -177,6 +208,6 @@
   
 
 <script src="../js/common.js" type="text/javascript"></script>
-  
+ 
 </body>
 </html>

@@ -76,6 +76,13 @@ h3.main_tit{font-size: 2rem;color:#808080;font-weight: bold;}
   border: none;
   cursor: pointer;
 }
+.required {
+  margin-top: 20px;
+}
+.required a {
+  text-decoration: underline;
+  color: var(--navy);
+}
 
 @media screen and (max-width: 1023px) {
   .main-visual {height: auto;display: block;}
