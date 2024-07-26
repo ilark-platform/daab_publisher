@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ODD</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <section class="lnb">
+            <h2>ODE</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">회원관리</a>
+                        <ul>
+                            <li><a href="#">회원검색</a></li>
+                            <li><a href="#">탈퇴회원관리</a></li> 
+                        </ul>
+                    </li>
+                    <li><a href="#">메뉴관리</a></li>
+                    <li><a href="#">콘텐츠관리</a></li>
+                    <li><a href="#">제휴관리</a></li>
+                    <li><a href="#">대관관리</a></li>
+                    <li><a href="#">메시지관리</a></li>
+                    <li><a href="#">정품등록관리</a></li>
+                    <li><a href="#">청음예약관리</a></li>
+                    <li><a href="#">문의관리</a></li>
+                    <li><a href="#">대시보드관리</a></li>
+                </ul>
+            </nav>
+            <div class="logout">
+                <button class="btn-round">Logout</button>
+            </div>     
+        </section>
+    
+        <section class="content-adm">
+            <h2>Admin Dashboard</h2>
+            <div class="dashboard">
+
+                <article class="mem">
+                    <div class="title-box">
+                        <h2>회원현황</h2>
+                    </div>
+                    <div class="status">
+                        <span>
+                            기준일시
+                            <strong>07월 01일 13:12</strong>
+                        </span>
+                        <ul>
+                           <li>
+                              <h3>회원가입</h3>
+                              <strong>123명</strong>
+                           </li> 
+                           <li>
+                            <h3>탈퇴회원</h3>
+                            <strong>1명</strong>
+                           </li> 
+                           <li>
+                            <h3>지난주 대비</h3>
+                            <strong>+20명</strong>
+                           </li> 
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="d-flex">
+                    <article class="content-list total">
+                        <h2>콘텐츠 현황</h2>
+                        <div class="segment">
+                            <button class="selected">전체</button><!-- 버튼이 선택되었을 경우 class="selected" -->
+                            <button>월</button>
+                            <button>주</button>
+                            <button>일</button>
+                        </div>
+                        <div class="d-flex">
+                            <ul class="total">
+                                <li>좋아요 현황<span>7</span></li>
+                                <li>등록 콘텐츠<span>37</span></li>
+                                <li>전체 콘텐츠 조회 수<span>498</span></li>
+                            </ul>
+                            <div class="status-ver-bar" style="height: 100%;"></div>
+                            <ul class="total">
+                                <li>Playlist 조회 수<span>1</span></li>
+                                <li>신규 스크랩 수<span>6001</span></li>
+                                <li>신규 좋아요 수<span>45678</span></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="content-list">                       
+                        <h2>스크랩 통계 <span>(기간비교)</span></h2>
+                        
+                        <div class="count" style="padding:0 0 0 0px">
+                            <h3 style="text-align:left;padding-bottom: 14px;">스크랩 비교</h3>
+                            <div class="rangePick">
+                                <div class="start">
+                                    <input type="text" value="2024/07/01">
+                                    <button type="button" class="ico-date"></button>
+                                    <div class="result">시작날짜 : <strong>7건</strong></div>
+                                </div>
+                                <div class="from"></div>
+                                <div class="end">
+                                    <input type="text" value="2024/07/01">
+                                    <button type="button" class="ico-date"></button>
+                                    <div class="result">시작날짜 : <strong>7건</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-ver-bar" style="height: 100%;"></div>
+                        <div class="count" style="padding:0 0 0 0px">
+                            <h3 style="text-align:left;padding-bottom: 14px;">좋아요 비교</h3>
+                            <div class="rangePick">
+                                <div class="start">
+                                    <input type="text" value="2024/07/01">
+                                    <button type="button" class="ico-date"></button>
+                                    <div class="result">시작날짜 : <strong>7건</strong></div>
+                                </div>
+                                <div class="from"></div>
+                                <div class="end">
+                                    <input type="text" value="2024/07/01">
+                                    <button type="button" class="ico-date"></button>
+                                    <div class="result">시작날짜 : <strong>7건</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <article class="true">
+                    <div class="title-box">
+                        <h2>금일 정품등록</h2>
+                    </div>
+                    <div class="status">
+                        <div class="count" style="padding:0 260px 0 20px;">
+                            <h3>신규 정품등록</h3>
+                            <span>1개</span>
+                        </div>
+                        <div class="status-ver-bar"></div>
+                        <div class="count" style="padding:0 50px 0 10px;">
+                            <h3>정품등록접수(기간비교)</h3>
+                            <span>32개</span>
+                        </div>
+                        <div class="rangePick">
+                            <div class="start">
+                                <input type="text" value="2024/07/01">
+                                <button type="button" class="ico-date"></button>
+                                <div class="result">시작날짜 : <strong>7건</strong></div>
+                            </div>
+                            <div class="from"></div>
+                            <div class="end">
+                                <input type="text" value="2024/07/01">
+                                <button type="button" class="ico-date"></button>
+                                <div class="result">시작날짜 : <strong>7건</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="as">
+                    <div class="title-box">
+                        <h2>A/S 현황<div>(금일기준)</div></h2>
+                    </div>
+                    <div class="status">
+                        <div class="count" style="padding:0 260px 0 20px;">
+                            <h3>신규 A/S접수</h3>
+                            <span>12개</span>
+                        </div>
+                        <div class="status-ver-bar"></div>
+                        <div class="count" style="padding:0 26px 0 0px;">
+                            <h3>진행현황</h3>
+                            <span></span>
+                        </div>
+                        <ul class="delivery-step">
+                            <li>택배수신 <strong>3건</strong></li>
+                            <li>고객확인 <strong>0건</strong></li>  
+                            <li>수리대기 <strong>13건</strong></li>                               
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="true">
+                    <div class="title-box">
+                        <h2>문의현황</h2>
+                    </div>
+                    <div class="status">
+                        <div class="count" style="padding:0 25px;">
+                            <h3>신규 문의접수</h3>
+                            <span>14개</span>
+                        </div>
+                        <div class="count" style="padding:0 20px;">
+                            <h3>전체문의</h3>
+                            <span>51개</span>
+                        </div>
+                        <div class="count" style="padding:0 20px;">
+                            <h3>전체답변</h3>
+                            <span>51개</span>
+                        </div>
+                        <div class="status-ver-bar"></div>
+                        <div class="count" style="padding:0 30px;">
+                            <h3>문의현황 통계</h3>
+                            <span></span>
+                        </div>
+                        <div class="rangePick">
+                            <div class="start">
+                                <input type="text" value="2024/07/01">
+                                <button type="button" class="ico-date"></button>
+                                <div class="result">시작날짜 : <strong>7건</strong></div>
+                            </div>
+                            <div class="from"></div>
+                            <div class="end">
+                                <input type="text" value="2024/07/01">
+                                <button type="button" class="ico-date"></button>
+                                <div class="result">시작날짜 : <strong>7건</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="d-flex">
+                    <article class="true">
+                        <div class="title-box">
+                            <h2>대관현황</h2>
+                        </div>
+                        <div class="status">
+                            <div class="count" style="padding:0 0px 0 0px;">
+                                <h3>금일<br>대관접수</h3>
+                                <span>1개</span>
+                            </div>
+                            <div class="status-ver-bar"></div>
+                            <div class="count" style="padding:0 0px 0 0px;">
+                                <h3>대관<br>진행중 홀</h3>
+                                <span>32개</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="true">
+                        <div class="title-box">
+                            <h2>제휴문의</h2>
+                        </div>
+                        <div class="status">
+                            <div class="count" style="padding:0 0px;">
+                                <h3>금일<br>제휴문의</h3>
+                                <span>32개</span>
+                            </div>
+                            <div class="status-ver-bar"></div>
+                            <div class="count" style="padding:0 0 0 10px">
+                                <h3 style="text-align:left;padding-bottom: 10px;">제휴 통계</h3>
+                                <div class="rangePick" style="margin-right:20px;">
+                                    <div class="start">
+                                        <input type="text" value="2024/07/01">
+                                        <button type="button" class="ico-date"></button>
+                                        <div class="result">시작날짜 : <strong>7건</strong></div>
+                                    </div>
+                                    <div class="from"></div>
+                                    <div class="end">
+                                        <input type="text" value="2024/07/01">
+                                        <button type="button" class="ico-date"></button>
+                                        <div class="result">시작날짜 : <strong>7건</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </article>
+                </div>
+
+            </div>       
+        </section>
+    </div>
+    
+</body>
+</html>
